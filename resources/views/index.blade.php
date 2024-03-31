@@ -24,7 +24,7 @@
     ================================================== -->
     <script src="{{asset('js/modernizr.js')}}"></script>
 </head>
-
+<h1>HeLOL</h1>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
     tabindex="0">
     @extends('nav')
