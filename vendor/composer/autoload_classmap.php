@@ -142,6 +142,7 @@ return array(
     'Database\\Factories\\UserFactory' => $baseDir . '/database/factories/UserFactory.php',
     'Database\\Seeders\\DanhMucSeeder' => $baseDir . '/database/seeders/DanhMucSeeder.php',
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',
+    'Database\\Seeders\\TaiKhoanKhachSeeder' => $baseDir . '/database/seeders/TaiKhoanKhachSeeder.php',
     'Database\\Seeders\\trangthaispSeeder' => $baseDir . '/database/seeders/trangthaispSeeder.php',
     'DateError' => $vendorDir . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
     'DateException' => $vendorDir . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
