@@ -22,6 +22,7 @@ class trangthaispSeeder extends Seeder
             'TrangThai'=>'Hết Hàng'],
             ['MaTrangThai'=>'NB01',
             'TrangThai'=>'Ngừng Bán'],
+           
         ]);
     }
 }
