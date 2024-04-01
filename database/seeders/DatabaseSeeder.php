@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         $this->call(trangthaispSeeder::class);
         $this->call(TaiKhoanKhachSeeder::class);
         $this->call(NhaSanXuatSeeder::class);
+        $this->call(TaiKhoanAdmin::class);
     }
 }
