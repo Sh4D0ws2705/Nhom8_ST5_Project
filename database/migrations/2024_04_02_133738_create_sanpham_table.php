@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('sanpham', function (Blueprint $table) {
-            $table->string('maSP');
+            $table->string('maSP')->primary();
             $table->string('tenSP');
             $table->string('giaBan');
             $table->string('giaGiam');
