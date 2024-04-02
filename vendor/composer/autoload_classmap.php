@@ -143,6 +143,7 @@ return array(
     'Database\\Seeders\\DanhMucSeeder' => $baseDir . '/database/seeders/DanhMucSeeder.php',
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',
     'Database\\Seeders\\NhaSanXuatSeeder' => $baseDir . '/database/seeders/NhaSanXuatSeeder.php',
+    'Database\\Seeders\\SanPhamSeeder' => $baseDir . '/database/seeders/SanPhamSeeder.php',
     'Database\\Seeders\\TaiKhoanAdmin' => $baseDir . '/database/seeders/TaiKhoanAdmin.php',
     'Database\\Seeders\\TaiKhoanKhachSeeder' => $baseDir . '/database/seeders/TaiKhoanKhachSeeder.php',
     'Database\\Seeders\\trangthaispSeeder' => $baseDir . '/database/seeders/trangthaispSeeder.php',
