@@ -665,6 +665,7 @@ class ComposerStaticInit65e85f9f959c0b087110331754d451cf
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DanhMucSeeder' => __DIR__ . '/../..' . '/database/seeders/DanhMucSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\DonHangSeeder' => __DIR__ . '/../..' . '/database/seeders/DonHangSeeder.php',
         'Database\\Seeders\\NhaSanXuatSeeder' => __DIR__ . '/../..' . '/database/seeders/NhaSanXuatSeeder.php',
         'Database\\Seeders\\SanPhamSeeder' => __DIR__ . '/../..' . '/database/seeders/SanPhamSeeder.php',
         'Database\\Seeders\\TaiKhoanAdmin' => __DIR__ . '/../..' . '/database/seeders/TaiKhoanAdmin.php',

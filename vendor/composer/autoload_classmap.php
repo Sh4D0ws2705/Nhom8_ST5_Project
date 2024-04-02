@@ -142,6 +142,7 @@ return array(
     'Database\\Factories\\UserFactory' => $baseDir . '/database/factories/UserFactory.php',
     'Database\\Seeders\\DanhMucSeeder' => $baseDir . '/database/seeders/DanhMucSeeder.php',
     'Database\\Seeders\\DatabaseSeeder' => $baseDir . '/database/seeders/DatabaseSeeder.php',
+    'Database\\Seeders\\DonHangSeeder' => $baseDir . '/database/seeders/DonHangSeeder.php',
     'Database\\Seeders\\NhaSanXuatSeeder' => $baseDir . '/database/seeders/NhaSanXuatSeeder.php',
     'Database\\Seeders\\SanPhamSeeder' => $baseDir . '/database/seeders/SanPhamSeeder.php',
     'Database\\Seeders\\TaiKhoanAdmin' => $baseDir . '/database/seeders/TaiKhoanAdmin.php',
