@@ -17,14 +17,17 @@ class DanhMucSeeder extends Seeder
     {
         //
         DB::table('danhmuc')->insert([
-            ['idDanhMuc'=>'DM01',
-            'tenDanhMuc'=>'Điện Thoại'],
-            ['idDanhMuc'=>'DM02',
-            'tenDanhMuc'=>'Laptop'],
-            ['idDanhMuc'=>'DM03',
-            'tenDanhMuc'=>'Tablet'],
-            ['idDanhMuc'=>'DM04',
-            'tenDanhMuc'=>'Phụ Kiện']
+            ['idDanhMuc'=>'DM01','tenDanhMuc'=>'Điện Thoại'],
+            ['idDanhMuc'=>'DM02','tenDanhMuc'=>'Laptop'],
+            ['idDanhMuc'=>'DM03','tenDanhMuc'=>'Tablet'],
+            ['idDanhMuc'=>'DM04','tenDanhMuc'=>'Loa'],
+            ['idDanhMuc'=>'DM05','tenDanhMuc'=>'Smart Watch'],
+            ['idDanhMuc'=>'DM06','tenDanhMuc'=>'Apple Watch'],
+            ['idDanhMuc'=>'DM07','tenDanhMuc'=>'Sạc dự phòng'],
+            ['idDanhMuc'=>'DM08','tenDanhMuc'=>'Đồng hồ điện tử'],
+            ['idDanhMuc'=>'DM09','tenDanhMuc'=>'PC Gaming'],
+            ['idDanhMuc'=>'DM10','tenDanhMuc'=>'PC Working']
         ]);
+        
     }
 }
