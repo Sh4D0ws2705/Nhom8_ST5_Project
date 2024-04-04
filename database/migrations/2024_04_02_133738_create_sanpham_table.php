@@ -27,7 +27,6 @@ return new class extends Migration
             $table->string('MaTrangThai');
             $table->longText('thongSoKyThuat');
             $table->string('soLuongTrongKho');
-            $table->foreign('idDanhMuc')->references('idDanhMuc')->on('danhmuc')->onDelete('cascade');
             $table->foreign('maNhaSX')->references('maNhaSX')->on('nhasanxuat')->onDelete('cascade');
             $table->foreign('MaTrangThai')->references('MaTrangThai')->on('trangthaisp')->onDelete('cascade');
         });
