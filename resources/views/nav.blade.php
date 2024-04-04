@@ -149,9 +149,13 @@
                                     <a href="{{ route('page',['name'=>'shopping_cart']) }}"
                                         class="dropdown-item">Cart</a>
                                 </li>
-                                <!-- <li>
-                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                </li> -->
+
+                                <!-- so danh muc len dropdown -->
+                                @foreach($datadm as $row)
+                                <li>
+                                    <a href="#" class="dropdown-item">{{ $row->tenDanhMuc }}</a>
+                                </li>
+                                @endforeach
                                 <!-- <li>
                                     <a href="single-post.html" class="dropdown-item">Single Post</a>
                                 </li>
