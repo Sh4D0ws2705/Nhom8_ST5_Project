@@ -30,3 +30,4 @@ use App\Http\Controllers\PageControl;
 // });
 
 Route::get("/{name?}",[PageControl::class,'page'])->name('page');
+Route::get("/nav",[PageControl::class,'hienthidanhmuc']);

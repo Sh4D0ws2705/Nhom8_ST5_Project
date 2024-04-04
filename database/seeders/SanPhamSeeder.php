@@ -30,7 +30,7 @@ class SanPhamSeeder extends Seeder
             'thongSoKyThuat'=>'Thông số kỹ thuật 01','soLuongTrongKho'=>'20'],
 
 
-            ['maSP'=>'SP02','tenSP'=>'Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/120Hz/OfficeHS/Win11 (i5U085W11BLU) '
+            ['maSP'=>'SP02','tenSP'=>'Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/120Hz/OfficeHS/Win11 (i5U085W11BLU)'
             ,'giaBan'=>'15.190.000','giaGiam'=>'14.490.000',
             'anhDaiDien'=>'3.png','anhChiTiet'=>'4.png',
             'mauSP'=>'Đen','moTa'=>'Laptop Dell Inspiron mang trên mình sức mạnh từ bộ vi xử lý Intel Core i5 1235U cùng card tích hợp Intel UHD giúp bạn giải quyết mượt mà mọi tác vụ học tập, văn phòng cơ bản trên Word, Excel, PowerPoint,... hay đáp ứng nhu cầu thiết kế đồ họa cơ bản trên Photoshop, AI,... dễ dàng nâng lên card Iris Xe mạnh mẽ hơn bằng cách lắp thêm RAM và kích hoạt Dual Channel.',
