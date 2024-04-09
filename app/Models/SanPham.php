@@ -17,4 +17,8 @@ class SanPham extends Model
     public function nhasanxuats(){
         return $this->belongsTo(NhaSanXuat::class, 'maNhaSX', 'maNhaSX');
     }
+
+    public function trangthaisps(){
+        return $this->belongsTo(TrangThaiSP::class, 'MaTrangThai', 'MaTrangThai');
+    }
 }
