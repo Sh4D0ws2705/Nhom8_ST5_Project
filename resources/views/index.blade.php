@@ -183,6 +183,8 @@
                                     </h3>
                                 </div>
                                 <span class="item-price text-primary">{{ $row->giaBan }}</span>
+                                <br>
+                                <span class="item-price text-primary">{{ $row->trangthaisps->TrangThai }}</span>
                             </div>
                         </div>
                         @endforeach
