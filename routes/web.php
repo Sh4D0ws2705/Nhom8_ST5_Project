@@ -29,5 +29,9 @@ use App\Http\Controllers\PageControl;
 //     return view("login");
 // });
 
-Route::get("/{name?}",[PageControl::class,'page'])->name('page');
+//route cho web nguoi dung
+Route::get("/{page?}",[PageControl::class,'showPage'])->name('show.page');
+//route cho trang admin
+Route::get("/admin/{page?}",[PageControl::class,'showPageAdmin'])->name('show.pageAdmin');
+
 //Route::get("/{name?}",[PageControl::class,'hienthidanhmuc'])->name('page');
