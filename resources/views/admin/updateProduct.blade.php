@@ -1,4 +1,4 @@
-@extends('app')
+@extends('admin.app')
 @section('content')
 
 
@@ -72,6 +72,6 @@
     </div>
 </div>
 <!-- đường dẫn ckEditor -->
-<script src="{{ asset('ckEditor5/js/ckeditor.js') }}"></script>
-<script src="{{ asset('ckEditor5/js/script.js') }}"></script>
+<script src="{{ asset('backend/asset/ckEditor5/js/ckeditor.js') }}"></script>
+<script src="{{ asset('backend/asset/ckEditor5/js/script.js') }}"></script>
 @endsection

@@ -49,7 +49,7 @@
                             <td>420a Nơ trang long,F13 Bình Thạnh</td>
                             <td>Giao Hỏa Tốc</td>
                             <!-- xem chi tiết hóa đơn -->
-                            <td><a class="action-link edit-link" href="{{ route('show.page' ,['page' => 'orderDetails']) }}">Xem</a></td>
+                            <td><a class="action-link edit-link" href="{{ route('show.pageAdmin' ,['page' => 'orderDetails']) }}">Xem</a></td>
                             <td>7/4/2024</td>
                             <td><a class="action-link confirm-link" href="">Đã Xác Nhận</a></td>
                             <td>
@@ -63,7 +63,7 @@
                             <td>nguyenvanB@mail.com</td>
                             <td>420 Phạm Văn Đồng,Thủ Đức</td>
                             <td>Giao Nhanh</td>
-                            <td><a class="action-link edit-link" href="{{ route('show.page' ,['page' => 'orderDetails']) }}">Xem</a></td>
+                            <td><a class="action-link edit-link" href="{{ route('show.pageAdmin' ,['page' => 'orderDetails']) }}">Xem</a></td>
                             <td>17/4/2024</td>
                             <td><a class="action-link confirm-link" href="">Chưa Xác Nhận</a></td>
                             <td>

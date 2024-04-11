@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="{{ asset('front-end/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('backend/asset/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
 </head>
 
@@ -58,7 +58,7 @@
                                                     Me</label>
                                             </div>
                                         </div>
-                                        <a href="{{ route('show.page' ,['page' => 'index']) }}" class="btn btn-primary btn-user btn-block">
+                                        <a href="{{ route('show.pageAdmin' ,['page' => 'index']) }}" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </a>
                                     </form>

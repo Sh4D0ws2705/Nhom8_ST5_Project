@@ -26,7 +26,7 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td><img src="{{ asset('front-end/img/ip14.jpg') }}" alt=""></td>
+                            <td><img src="{{ asset('backend/asset/img/ip14.jpg') }}" alt=""></td>
                             <td>Iphone 14</td>
                             <td>15.500.000 vnd</td>
                             <td>1</td>
@@ -35,7 +35,7 @@
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td><img src="{{ asset('front-end/img/ip14.jpg') }}" alt=""></td>
+                            <td><img src="{{ asset('backend/asset/img/ip14.jpg') }}" alt=""></td>
                             <td>Iphone 14</td>
                             <td>15.500.000 vnd</td>
                             <td>1</td>
