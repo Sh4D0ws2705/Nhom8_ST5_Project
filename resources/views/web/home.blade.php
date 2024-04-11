@@ -17,16 +17,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- script
     ================================================== -->
     <script src="{{asset('frontend/js/modernizr.js')}}"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
-    tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     @extends('web.nav')
     @section('navbar')
 
@@ -39,8 +36,7 @@
                             <div class="col-md-6">
                                 <div class="banner-content">
                                     <h1 class="display-2 text-uppercase text-dark pb-5">Your Products Are Great.</h1>
-                                    <a href="shop.html"
-                                        class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                                    <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -58,8 +54,7 @@
                                 <div class="banner-content">
                                     <h1 class="display-2 text-uppercase text-dark pb-5">Technology Hack You Won't Get
                                     </h1>
-                                    <a href="shop.html"
-                                        class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                                    <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
                                 </div>
                             </div>
                             <div class="col-md-5">
@@ -94,7 +89,7 @@
                             </svg>
                         </div>
                         <div class="icon-box-content">
-                            <h3 class="card-title text-uppercase text-dark">Free delivery</h3>
+                            <h2 class="card-title text-uppercase text-dark">Free delivery</h2>
                             <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
@@ -107,7 +102,7 @@
                             </svg>
                         </div>
                         <div class="icon-box-content">
-                            <h3 class="card-title text-uppercase text-dark">Quality guarantee</h3>
+                            <h2 class="card-title text-uppercase text-dark">Quality guarantee</h2>
                             <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
                         </div>
                     </div>
@@ -120,7 +115,7 @@
                             </svg>
                         </div>
                         <div class="icon-box-content">
-                            <h3 class="card-title text-uppercase text-dark">Daily offers</h3>
+                            <h2 class="card-title text-uppercase text-dark">Daily offers</h2>
                             <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
                         </div>
                     </div>
@@ -133,7 +128,7 @@
                             </svg>
                         </div>
                         <div class="icon-box-content">
-                            <h3 class="card-title text-uppercase text-dark">100% secure payment</h3>
+                            <h2 class="card-title text-uppercase text-dark">100% secure payment</h2>
                             <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
                         </div>
                     </div>
@@ -146,48 +141,56 @@
             <div class="row">
 
                 <div class="display-header d-flex justify-content-between pb-3">
-                    <h2 class="display-7 text-dark text-uppercase">Mobile Products</h2>
+                    <h2 class="display-7 text-dark text-uppercase" style="margin-left: calc(50% - 50px); font-weight:bold; margin-bottom: 30px">Mobile Products</h2>
                     <div class="btn-right">
                         <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
                     </div>
                 </div>
                 <div class="swiper product-swiper">
                     <div class="swiper-wrapper">
-                        @foreach($data as $row)
-                        <div class="swiper-slide">
-                            <div class="product-card position-relative">
-                                <div class="image-holder">
-                                    <img src="{{ asset('frontend/images/image-db/' . $row->anhDaiDien) }}" alt="product-item"
-                                        class="img-fluid">
-                                </div>
-                                <div class="cart-concern position-absolute">
-                                    <div class="cart-button d-flex">
-                                        <a href="#" class="btn btn-medium btn-black">Add to Cart<svg
-                                                class="cart-outline">
-                                                <use xlink:href="#cart-outline"></use>
-                                            </svg></a>
+                        <div class="row g-3">
+                            @foreach($data as $row)
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="swiper-slide" style="height: 60vh; width: 300px;">
+                                    <div class="product-card position-relative">
+                                        <div class="image-holder">
+                                            <img style="width: 600px; height: 200px; margin-bottom: 30px;" src="{{ asset('frontend/images/image-db/' . $row->anhDaiDien) }}" alt="product-item" class="img-fluid">
+                                        </div>
+                                        <div class="cart-concern position-absolute">
+                                            <div class="cart-button d-flex">
+                                                <a href="#" class="btn btn-medium btn-black">Add to Cart<svg class="cart-outline">
+                                                        <use xlink:href="#cart-outline"></use>
+                                                    </svg></a>
+                                            </div>
+                                        </div>
+                                        <h3 class="card-title text-uppercase">
+                                            <a href="#">
+                                                <h4 style="line-height: 30px;">{{ $row->danhmucs->tenDanhMuc }}</h4>
+                                            </a>
+                                        </h3>
+                                        <h3 class="card-title text-uppercase">
+                                            <!-- {{ optional($row->nhasxs)->tenNhaSX ?? "Không xác định" }} -->
+                                            <a href="#">
+                                                {{ $row->nhasanxuats->tenNhaSX }}
+                                            </a>
+                                        </h3>
+                                        <div class="card-detail d-flex justify-content-center align-items-baseline pt-3">
+                                            <h3 class="card-title text-uppercase">
+                                                <a href="#">
+                                                    <p style="line-height: 30px;">{{ $row->tenSP }}</p>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <span class="item-price text-primary"><strike style="margin-right: 10px;">{{ $row->giaBan }}</strike>{{ $row->giaBan }}</span>
+                                        <br>
+                                        <span class="item-price text-primary">{{ $row->trangthaisps->TrangThai }}</span>
                                     </div>
                                 </div>
-                                <h3 class="card-title text-uppercase">
-                                    <a href="#">{{ $row->danhmucs->tenDanhMuc }}</a>
-                                </h3>
-                                <h3 class="card-title text-uppercase">
-                                    <!-- {{ optional($row->nhasxs)->tenNhaSX ?? "Không xác định" }} -->
-                                    <a href="#">
-                                        {{ $row->nhasanxuats->tenNhaSX }}
-                                    </a>
-                                </h3>
-                                <div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                                    <h3 class="card-title text-uppercase">
-                                        <a href="#">{{ $row->tenSP }}</a>
-                                    </h3>
-                                </div>
-                                <span class="item-price text-primary">{{ $row->giaBan }}</span>
-                                <br>
-                                <span class="item-price text-primary">{{ $row->trangthaisps->TrangThai }}</span>
                             </div>
+                            @endforeach
                         </div>
-                        @endforeach
+
                     </div>
                 </div>
             </div>
@@ -196,8 +199,7 @@
         </div>
         <div class="swiper-pagination position-absolute text-center"></div>
     </section>
-    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge"
-        style="background-image: url('frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
+    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
         <div class="row d-flex flex-wrap align-items-center">
             <div class="col-md-6 col-sm-12">
                 <div class="text-content offset-4 padding-medium">
@@ -360,8 +362,7 @@
     <section id="subscribe" class="container-grid padding-large position-relative overflow-hidden">
         <div class="container">
             <div class="row">
-                <div
-                    class="subscribe-content bg-dark d-flex flex-wrap justify-content-center align-items-center padding-medium">
+                <div class="subscribe-content bg-dark d-flex flex-wrap justify-content-center align-items-center padding-medium">
                     <div class="col-md-6 col-sm-12">
                         <div class="display-header pe-3">
                             <h2 class="display-7 text-uppercase text-light">Subscribe Us Now</h2>
@@ -371,10 +372,8 @@
                     <div class="col-md-5 col-sm-12">
                         <form class="subscription-form validate">
                             <div class="input-group flex-wrap">
-                                <input class="form-control btn-rounded-none" type="email" name="EMAIL"
-                                    placeholder="Your email address here" required="">
-                                <button class="btn btn-medium btn-primary text-uppercase btn-rounded-none" type="submit"
-                                    name="subscribe">Subscribe</button>
+                                <input class="form-control btn-rounded-none" type="email" name="EMAIL" placeholder="Your email address here" required="">
+                                <button class="btn btn-medium btn-primary text-uppercase btn-rounded-none" type="submit" name="subscribe">Subscribe</button>
                             </div>
                         </form>
                     </div>
