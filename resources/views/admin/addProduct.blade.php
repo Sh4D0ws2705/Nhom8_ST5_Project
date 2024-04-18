@@ -55,9 +55,10 @@
             <div class="admin-content-image ml-5 mt-2">
                 <label for="file">Ảnh Đại Diện</label>
                 <input id="file" type="file">
-                <input type="hidden" value="">
-                <div class="img-show">
-                    <img src="">
+                <!-- thêm 2 cái id từ cái product_ajax.js để hiển thị hình -->
+                <input type="hidden" name="image" id="input-file-img-hiden"> <!-- Lưu đường dẫn hình ảnh vào một input ẩn -->
+                <div class="img-show" id="input-file-img"><!-- Hiển thị hình ảnh trên giao diện-->
+
                 </div>
             </div>
             <div class="admin-content-images ml-5 mt-4">
@@ -71,7 +72,11 @@
         </div>
     </div>
 </div>
+@endsection
+@section('footer')
 <!-- đường dẫn ckEditor -->
-<script src="{{ asset('/backend/asset/ckEditor5/js/ckeditor.js') }}"></script>
-<script src="{{ asset('/backend/asset/ckEditor5/js/script.js') }}"></script>
+<script src="{{ asset('backend/asset/ckEditor5/js/ckeditor.js') }}"></script>
+<script src="{{ asset('backend/asset/ckEditor5/js/script.js') }}"></script>
+<!-- link ajax.js -->
+<script src="{{ asset('backend/asset/js/product_ajax.js') }}"></script>
 @endsection

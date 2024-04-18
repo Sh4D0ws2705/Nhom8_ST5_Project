@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\admin\AdminPageController;
+use App\Http\Controllers\admin\UploadController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\SignUp;
@@ -30,8 +32,10 @@ use App\Http\Controllers\PageControl;
 // });
 
 //route cho web nguoi dung
-Route::get("/{page?}",[PageControl::class,'showPage'])->name('show.page');
+Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');
 //route cho trang admin
-Route::get("/admin/{page?}",[PageControl::class,'showPageAdmin'])->name('show.pageAdmin');
+Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');
 
+// route lấy đường dẫn hình
+Route::post("/upload", [UploadController::class, 'uploadImage']);
 //Route::get("/{name?}",[PageControl::class,'hienthidanhmuc'])->name('page');

@@ -25,11 +25,12 @@
                     @yield('content')
                 </div>
             </div>
-            <!-- End of Page Wrapper -->
-            <footer>
-                @include('admin.part.footer')
-            </footer>
         </div>
+        <!-- End of Page Wrapper -->
+        <footer>
+            @include('admin.part.footer')
+            @yield('footer')
+        </footer>
 </body>
 
 </html>
