@@ -80,3 +80,11 @@ tr td img {
     font-weight: bold;
     font-size: larger;
 }
+/* set width height cho show ảnh đại diện trong trang admin  */
+#input-file-img {
+    padding: 12px 0;
+}
+#input-file-img img {
+    width: 250px;
+    height: 200px;
+}

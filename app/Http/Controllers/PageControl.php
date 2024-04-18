@@ -39,14 +39,4 @@ class PageControl extends Controller
         // Nếu view không tồn tại, trả về lỗi 404
         return abort(404);
     }
-
-     //Controller cho web admin
-     public function showPageAdmin($page = 'index') {
-        //ktra xem web co ton tai khong
-        if (view()->exists("admin.$page")) {
-            return view("admin.$page");
-        }
-         // Nếu view không tồn tại, bạn có thể trả về một trang lỗi hoặc trang mặc định
-         return abort(404);
-    }
 }

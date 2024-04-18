@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="image-holder">
-                                    <img src="frontend/images/banner-image.png" alt="banner">
+                                    <img src="{{asset('frontend/images/banner-image.png')}}" alt="banner">
                                 </div>
                             </div>
                         </div>
@@ -155,7 +155,7 @@
                                 <div class="swiper-slide" style="height: 60vh; width: 300px;">
                                     <div class="product-card position-relative">
                                         <div class="image-holder">
-                                            <img style="width: 600px; height: 200px; margin-bottom: 30px;" src="{{ asset('frontend/images/image-db/' . $row->anhDaiDien) }}" alt="product-item" class="img-fluid">
+                                            <img style="width: 600px; height: 200px; margin-bottom: 30px;" src="{{ asset('storage/images/' . $row->anhDaiDien) }}" alt="product-item" class="img-fluid">
                                         </div>
                                         <div class="cart-concern position-absolute">
                                             <div class="cart-button d-flex">
@@ -199,7 +199,7 @@
         </div>
         <div class="swiper-pagination position-absolute text-center"></div>
     </section>
-    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
+    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('images/single-image1.png');background-position: right; background-repeat: no-repeat;">
         <div class="row d-flex flex-wrap align-items-center">
             <div class="col-md-6 col-sm-12">
                 <div class="text-content offset-4 padding-medium">
@@ -410,7 +410,7 @@
                     </figure>
                     <figure class="instagram-item pe-2">
                         <a href="https://templatesjungle.com/" class="image-link position-relative">
-                            <img src="images/insta-item3.jpg" alt="instagram" class="insta-image">
+                            <img src="frontend/images/insta-item3.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
                                     <use xlink:href="#instagram"></use>
