@@ -62,11 +62,11 @@
                 </div>
             </div>
             <div class="admin-content-images ml-5 mt-4">
-                <label for="file">Ảnh Sản Phẩm</label>
-                <input id="file" type="file">
-                <input type="hidden" value="">
-                <div class="imgs-show">
-                    <img src="">
+                <label for="files">Ảnh Sản Phẩm</label>
+                 <!-- attribute "multiple" để có thể chọn nhiều file ảnh -->
+                <input id="files" type="file" multiple>             
+                <div class="imgs-show" id="input-file-imgs">
+                   
                 </div>
             </div>
         </div>

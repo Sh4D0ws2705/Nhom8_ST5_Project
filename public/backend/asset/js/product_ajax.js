@@ -31,3 +31,37 @@ $("#file").on("change", () => {
         },
     });
 });
+
+// Bắt sự kiện thay đổi của input file với id 'files'
+$("#files").on("change", () => {
+    var formData = new FormData(); // Khởi tạo đối tượng FormData
+    var files = $("#files")[0].files; // Lấy danh sách files người dùng đã chọn
+    // Duyệt qua từng file và thêm vào formData
+    for (let index = 0; index < files.length; index++) {
+        formData.append("files[]", files[index]);
+    }
+
+    // Thực hiện gửi AJAX request đến server
+    $.ajax({
+        url: "/uploads", // Đường dẫn server nhận request
+        method: "POST", // Phương thức gửi là POST
+        dataType: "JSON", // Kiểu dữ liệu trả về là JSON
+        data: formData, // Dữ liệu gửi đi là formData
+        contentType: false, // Không set contentType, sử dụng mặc định cho FormData
+        processData: false, // Không xử lý dữ liệu, gửi raw data
+        success: function (result) {
+            // Hàm xử lý khi nhận được phản hồi thành công
+            if (result.success == true) {
+                // Kiểm tra nếu thành công
+                {
+                    html = "";
+                    // Nếu không phải minacode.net, sử dụng đường dẫn trực tiếp
+                    for (let index = 0; index < result.paths.length; index++) {
+                        html += '<img src="' + result.paths[index] + '" alt=""><input type="hidden" value="' + result.paths[index] + '" class="product-images" name="product_images[]"><input type="hidden" value="'+ result.paths[index] +'" name="images[]">';
+                    }
+                    $("#input-file-imgs").html(html); // Thêm các thẻ img vào DOM
+                }
+            }
+        },
+    });
+});
