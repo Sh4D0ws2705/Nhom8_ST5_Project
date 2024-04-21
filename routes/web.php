@@ -37,5 +37,6 @@ Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');
 Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');
 
 // route lấy đường dẫn hình
-Route::post("/upload", [UploadController::class, 'uploadImage']);
-//Route::get("/{name?}",[PageControl::class,'hienthidanhmuc'])->name('page');
+Route::post("/upload", [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
+Route::post("/uploads", [UploadController::class, 'uploadImages']); //lấy nhiều ảnh sp
+

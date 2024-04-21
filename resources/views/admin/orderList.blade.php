@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Danh Sách Hóa Đơn</h1>
+        <h1 class="h3 mb-0 text-gray-800">Danh Sách Đơn Hàng</h1>
     </div>
     <!-- table order -->
     <div class="card shadow mb-4">
