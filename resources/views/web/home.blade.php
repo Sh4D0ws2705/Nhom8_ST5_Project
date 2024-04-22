@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="image-holder">
-                                    <img src="{{asset('frontend/images/banner-image.png')}}" alt="banner">
+                                    <img src="frontend/images/banner-image.png" alt="banner">
                                 </div>
                             </div>
                         </div>
@@ -146,16 +146,16 @@
                         <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
                     </div>
                 </div>
-                <div class="swiper product-swiper">
+                <div class="swiper product-swiper" method="post" action="{{route('detail')}}">
                     <div class="swiper-wrapper">
                         <div class="row g-3">
                             @foreach($data as $row)
 
                             <div class="col-lg-4 col-md-6">
-                                <div class="swiper-slide" style="height: 60vh; width: 300px;">
+                                <div class="swiper-slide" style="height:500px; width: 300px;">
                                     <div class="product-card position-relative">
                                         <div class="image-holder">
-                                            <img style="width: 600px; height: 200px; margin-bottom: 30px;" src="{{ asset('storage/images/' . $row->anhDaiDien) }}" alt="product-item" class="img-fluid">
+                                            <a href="{{ route('detail')}}?id={{ $row->sanphams->maSP }}"><img style="width:300px; height: 200px;" src="{{ asset('frontend/images/image-db/' . $row->anhDaiDien) }}" alt="product-item" class="img-fluid"></a>
                                         </div>
                                         <div class="cart-concern position-absolute">
                                             <div class="cart-button d-flex">
@@ -164,27 +164,28 @@
                                                     </svg></a>
                                             </div>
                                         </div>
-                                        <h3 class="card-title text-uppercase">
-                                            <a href="#">
-                                                <h4 style="line-height: 30px;">{{ $row->danhmucs->tenDanhMuc }}</h4>
-                                            </a>
+                                        <h3 class="card-title text-uppercase tendm">
+                                            <a href="{{ route('show.page',['page'=>'detail']) }}">
+                                                <h4 style="line-height: 30px; font-weight:bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 20px">{{ $row->danhmucs->tenDanhMuc }}</h4>
+                                            </a>    
                                         </h3>
-                                        <h3 class="card-title text-uppercase">
-                                            <!-- {{ optional($row->nhasxs)->tenNhaSX ?? "Không xác định" }} -->
+                                        <h3 class="card-title text-uppercase tennsx">
                                             <a href="#">
                                                 {{ $row->nhasanxuats->tenNhaSX }}
                                             </a>
                                         </h3>
                                         <div class="card-detail d-flex justify-content-center align-items-baseline pt-3">
-                                            <h3 class="card-title text-uppercase">
+                                            <h3 class="card-title text-uppercase ">
                                                 <a href="#">
-                                                    <p style="line-height: 30px;">{{ $row->tenSP }}</p>
+                                                    <p class="tensp">{{ $row->tenSP }}</p>
                                                 </a>
                                             </h3>
                                         </div>
-                                        <span class="item-price text-primary"><strike style="margin-right: 10px;">{{ $row->giaBan }}</strike>{{ $row->giaBan }}</span>
+                                        <span class="item-price text-primary">
+                                            <strike style="margin-right: 10px;" id="giaban">{{ $row->giaBan }}</strike><gia id="giasp">{{ $row->giaGiam }}</gia>
+                                        </span>
                                         <br>
-                                        <span class="item-price text-primary">{{ $row->trangthaisps->TrangThai }}</span>
+                                        <span class="item-price text-primary status">{{ $row->trangthaisps->TrangThai }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +200,7 @@
         </div>
         <div class="swiper-pagination position-absolute text-center"></div>
     </section>
-    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('images/single-image1.png');background-position: right; background-repeat: no-repeat;">
+    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
         <div class="row d-flex flex-wrap align-items-center">
             <div class="col-md-6 col-sm-12">
                 <div class="text-content offset-4 padding-medium">
@@ -410,7 +411,7 @@
                     </figure>
                     <figure class="instagram-item pe-2">
                         <a href="https://templatesjungle.com/" class="image-link position-relative">
-                            <img src="frontend/images/insta-item3.jpg" alt="instagram" class="insta-image">
+                            <img src="images/insta-item3.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
                                     <use xlink:href="#instagram"></use>
