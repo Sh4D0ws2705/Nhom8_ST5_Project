@@ -1013,3 +1013,18 @@ span .item-price {
   margin-left: 20px;
 }
 
+.tennsx{
+  font-style: italic;
+}
+
+#giaban{
+  color: red;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#giasp{
+  font-style: bolder;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

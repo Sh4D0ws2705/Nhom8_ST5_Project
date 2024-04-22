@@ -40,3 +40,8 @@ Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->nam
 Route::post("/upload", [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
 Route::post("/uploads", [UploadController::class, 'uploadImages']); //lấy nhiều ảnh sp
 
+Route::post("/detail",[
+    'as' => 'detail',
+    'uses' => 'PageControl@getvalue'
+]);
+
