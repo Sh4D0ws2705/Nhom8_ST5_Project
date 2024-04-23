@@ -57,7 +57,7 @@ $("#files").on("change", () => {
                     html = "";
                     // Nếu không phải minacode.net, sử dụng đường dẫn trực tiếp
                     for (let index = 0; index < result.paths.length; index++) {
-                        html += '<img src="' + result.paths[index] + '" alt=""><input type="hidden" value="' + result.paths[index] + '" class="product-images" name="product_images[]"><input type="hidden" value="'+ result.paths[index] +'" name="images[]">';
+                        html += '<img src="' + result.paths[index] + '" alt=""><input type="hidden" value="' + result.paths[index] + '" class="product-images" name="product_images[]">';
                     }
                     $("#input-file-imgs").html(html); // Thêm các thẻ img vào DOM
                 }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\AdminPageController;
+use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\UploadController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -35,6 +36,9 @@ use App\Http\Controllers\PageControl;
 Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');
 //route cho trang admin
 Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');
+
+//route them sp trong trang admin
+Route::post("/admin/addProduct", [ProductController::class, 'insertProduct']);
 
 // route lấy đường dẫn hình
 Route::post("/upload", [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
