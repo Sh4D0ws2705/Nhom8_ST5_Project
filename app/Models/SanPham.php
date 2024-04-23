@@ -9,6 +9,11 @@ class SanPham extends Model
 {
     public $timestamps = false;
     protected $table = 'sanpham';
+    protected $primaryKey = 'maSP';
+    protected $fillable = [
+        'maSP',
+        'tenSP'
+    ];
     use HasFactory;
     public function danhmucs(){
         return $this->belongsTo(DanhMuc::class,'idDanhMuc');

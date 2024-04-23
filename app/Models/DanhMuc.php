@@ -8,9 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class DanhMuc extends Model
 {
     public $primaryKey = 'idDanhMuc';
-    public $timestamps = false;
+    public $timestamps = true;
     protected $table = 'danhmuc';
     use HasFactory;
+
+    protected $fillable = [
+        'idDanhMuc',
+        'tenDanhMuc',
+    ];
 
     public function sanphams(){
         return $this->hasMany(SanPham::class,'idDanhMuc','idDanhMuc');

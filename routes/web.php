@@ -35,14 +35,21 @@ use App\Http\Controllers\PageControl;
 //route cho web nguoi dung
 Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');
 //route cho trang admin
-Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');
+// Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');
+Route::get('/admin/index',function () {
+    return view('admin.index');
+});
 
-//route them sp trong trang admin
-Route::post("/admin/addProduct", [ProductController::class, 'insertProduct']);
+//route product
+Route::post('/admin/product/add', [ProductController::class, 'insertProduct'])->name('insertProduct');
+Route::get('/admin/product/create', [ProductController::class, 'addProduct']);
+Route::get('/admin/product/list', [ProductController::class, 'listProduct']);
+
+
 
 // route lấy đường dẫn hình
-Route::post("/upload", [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
-Route::post("/uploads", [UploadController::class, 'uploadImages']); //lấy nhiều ảnh sp
+Route::post('/upload', [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
+Route::post('/uploads', [UploadController::class, 'uploadImages']); //lấy nhiều ảnh sp
 
 Route::post("/detail",[
     'as' => 'detail',
