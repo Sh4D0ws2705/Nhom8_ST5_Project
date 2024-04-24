@@ -3,7 +3,7 @@
 
 <head>
     <title>Slide Navbar</title>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/css_login_signup.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/css_login_signup.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 
@@ -18,7 +18,8 @@
                 <input type="email" name="email" placeholder="Email" required="">
                 <input type="password" name="pswd" placeholder="Password" required="">
                 <button>Sign up</button>
-                <center><a href=" {{ url('/home')}}" style="color: white; text-decoration: none;">Back to Shop </a></center>
+                <center><a href=" {{ url('/home')}}" style="color: white; text-decoration: none;">Back to Shop </a>
+                </center>
             </form>
         </div>
 
@@ -29,10 +30,10 @@
                 <input type="password" name="pswd" placeholder="Password" required="">
                 <button>Login</button>
             </form>
-        </div>   
-        
+        </div>
+
     </div>
 
 </body>
-    
+
 </html>
