@@ -232,11 +232,11 @@
                         </div>
                         <div class="card-body text-uppercase">
                             <div class="card-meta text-muted">
-                                <span class="meta-date">feb 22, 2023</span>
+                                <span class="meta-date">feb 22, 2024</span>
                                 <span class="meta-category">- Gadgets</span>
                             </div>
                             <h3 class="card-title">
-                                <a href="#">Get some cool gadgets in 2023</a>
+                                <a href="#">Get some cool gadgets in 2024</a>
                             </h3>
                         </div>
                     </div>
