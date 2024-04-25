@@ -20,7 +20,6 @@
                         <th>Giá Bán</th>
                         <th>Giá Giảm</th>
                         <th>Màu</th>
-                        <th>Ngày Đăng</th>
                         <th>Trạng Thái</th>
                         <th>Tùy Chỉnh</th>
                     </tr>
@@ -33,41 +32,27 @@
                         <th>Giá Bán</th>
                         <th>Giá Giảm</th>
                         <th>Màu</th>
-                        <th>Ngày Đăng</th>
                         <th>Trạng Thái</th>
                         <th>Tùy Chỉnh</th>
                     </tr>
                 </tfoot>
                 <tbody>
+                    @foreach ($products as $product)
                     <tr>
-                        <td>1</td>
-                        <td><img src="{{ asset('backend/asset/img/ip14.jpg') }}" alt=""></td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>60</td>
-                        <td>Đen</td>
-                        <td>27/05/2024</td>
-                        <td>Hết Hàng</td>
+                        <td>{{$product -> maSP}}</td>
+                        <td><img style="width: 70px;" src='{{asset($product -> anhDaiDien)}}'' alt=""></td>
+                        <td>{{$product -> tenSP}}</td>
+                        <td>{{number_format($product -> giaBan)}}</td>
+                        <td>{{number_format($product -> giaGiam)}}</td>
+                        <td>{{$product -> mauSP}}</td>
+                        <td>{{$statuses[$product->MaTrangThai]}}</td>
                         <td>
                             <!-- dẫn đường dẫn tới trang sửa sp -->
                             <a class="action-link edit-link" href="">Sửa</a>
                             <a class="action-link del-link" href="">Xóa</a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td><img src="{{ asset('backend/asset/img/ip14.jpg') }}" alt=""></td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>60</td>
-                        <td>Đen</td>
-                        <td>27/05/2024</td>
-                        <td>Còn Hàng</td>
-                        <td>
-                            <a class="action-link edit-link" href="">Sửa</a>
-                            <a class="action-link del-link" href="">Xóa</a>
-                        </td>
-                    </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>

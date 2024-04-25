@@ -141,7 +141,7 @@
             <div class="row">
 
                 <div class="display-header d-flex justify-content-between pb-3">
-                    <h2 class="display-7 text-dark text-uppercase" style="margin-left: calc(50% - 50px); font-weight:bold; margin-bottom: 30px">Mobile Products
+                    <h2 class="display-7 text-dark text-uppercase" style="margin-left: calc(50% - 50px); font-weight:bold; margin-bottom: 30px">Products
                     </h2>
                     <div class="btn-right">
                         <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
@@ -153,10 +153,10 @@
                             @foreach($data as $row)
 
                             <div class="col-lg-4 col-md-6">
-                                <div class="swiper-slide" style="height:550px; width: 300px;">
+                                <div class="swiper-slide" style="height:550px; width: 350px;">
                                     <div class="product-card position-relative">
                                         <div class="image-holder">
-                                            <a href="{{ route('detail')}}?id={{ $row->sanphams->maSP }}"><img style="width:300px; height: 250px;" src="{{ asset( $row->anhDaiDien) }}" alt="product-item" class="img-fluid"></a>
+                                            <a href="{{ route('detail')}}?id={{ $row->sanphams->maSP }}"><img style="width:350px; height: 250px;" src="{{ asset( $row->anhDaiDien) }}" alt="product-item" class="img-fluid"></a>
                                         </div>
                                         <div class="cart-concern position-absolute">
                                             <div class="cart-button d-flex">
@@ -189,8 +189,8 @@
                                             </h3>
                                         </div>
                                         <span class="item-price text-primary">
-                                            <strike style="margin-right: 10px;" id="giaban">{{ $row->giaBan }}</strike>
-                                            <gia id="giasp">{{ $row->giaGiam }}</gia>
+                                            <strike style="margin-right: 10px;" id="giaban">{{ number_format($row->giaBan) }}</strike>
+                                            <gia id="giasp">{{ number_format($row->giaGiam) }}</gia>
                                         </span>
                                         <br>
                                         <span class="item-price text-primary status">{{ $row->trangthaisps->TrangThai }}</span>
