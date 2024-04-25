@@ -155,7 +155,7 @@
                                 <div class="swiper-slide" style="height:500px; width: 300px;">
                                     <div class="product-card position-relative">
                                         <div class="image-holder">
-                                            <a href="{{ route('detail')}}?id={{ $row->sanphams->maSP }}"><img style="width:300px; height: 200px;" src="{{ asset('frontend/images/image-db/' . $row->anhDaiDien) }}" alt="product-item" class="img-fluid"></a>
+                                            <a href="{{ route('detail')}}?id={{ $row->sanphams->maSP }}"><img style="width:300px; height: 250px;" src="{{ asset( $row->anhDaiDien) }}" alt="product-item" class="img-fluid"></a>
                                         </div>
                                         <div class="cart-concern position-absolute">
                                             <div class="cart-button d-flex">
@@ -166,7 +166,7 @@
                                         </div>
                                         <h3 class="card-title text-uppercase tendm">
                                             <a href="{{ route('show.page',['page'=>'detail']) }}">
-                                                <h4 style="line-height: 30px; font-weight:bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 20px">{{ $row->danhmucs->tenDanhMuc }}</h4>
+                                                <h4 style="line-height: 30px; font-weight:bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 20px"></h4>
                                             </a>    
                                         </h3>
                                         <h3 class="card-title text-uppercase tennsx">
