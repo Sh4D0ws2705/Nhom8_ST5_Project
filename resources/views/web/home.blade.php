@@ -153,13 +153,10 @@
                             @foreach($data as $row)
 
                             <div class="col-lg-4 col-md-6">
-                                <div class="swiper-slide" style="height:500px; width: 300px;">
+                                <div class="swiper-slide" style="height:550px; width: 300px;">
                                     <div class="product-card position-relative">
                                         <div class="image-holder">
-                                            <<<<<<< HEAD <a href="{{ route('detail')}}?id={{ $row->sanphams->maSP }}"><img style="width:300px; height: 200px;" src="{{ asset('frontend/images/image-db/' . $row->anhDaiDien) }}" alt="product-item" class="img-fluid"></a>
-                                                =======
-                                                <a href="{{ route('detail')}}?id={{ $row->sanphams->maSP }}"><img style="width:300px; height: 250px;" src="{{ asset( $row->anhDaiDien) }}" alt="product-item" class="img-fluid"></a>
-                                                >>>>>>> v8/ThemSP-ThemAnhSPDung_implode()/NguyenHieuNghia
+                                            <a href="{{ route('detail')}}?id={{ $row->sanphams->maSP }}"><img style="width:300px; height: 250px;" src="{{ asset( $row->anhDaiDien) }}" alt="product-item" class="img-fluid"></a>
                                         </div>
                                         <div class="cart-concern position-absolute">
                                             <div class="cart-button d-flex">
@@ -170,13 +167,14 @@
                                         </div>
                                         <h3 class="card-title text-uppercase tendm">
                                             <a href="{{ route('show.page',['page'=>'detail']) }}">
-                                                <<<<<<< HEAD <h4 style="line-height: 30px; font-weight:bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 20px">
-                                                    {{ $row->danhmucs->tenDanhMuc }}</h4>
+                                                <h4 style="line-height: 30px; font-weight:bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 20px">
+                                                    {{ $row->danhmucs->tenDanhMuc }}
+                                                </h4>
                                             </a>
-                                            =======
+
                                             <h4 style="line-height: 30px; font-weight:bolder;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; margin-top: 20px"></h4>
                                             </a>
-                                            >>>>>>> v8/ThemSP-ThemAnhSPDung_implode()/NguyenHieuNghia
+
                                         </h3>
                                         <h3 class="card-title text-uppercase tennsx">
                                             <a href="#">
