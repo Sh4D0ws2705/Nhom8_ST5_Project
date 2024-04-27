@@ -6,19 +6,20 @@
 </div>
 <!-- Page Heading -->
 <form action="{{ route('insertProduct') }}" enctype="multipart/form-data" method="post">
+        
     <!-- Begin Add Product -->
     <div class="input-group main-content">
         <div class="admin-content-left col-lg-9">
             <div class="input-group-text mb-4">
-                <input type="text" placeholder="Mã Sản Phẩm" {{ old('maSP') }} name="maSP" class="form-control mr-4">
-                <input type="text" placeholder="Tên Sản Phẩm" {{ old('tenSP') }} name="tenSP" class="form-control mr-4">
+                <input type="text" placeholder="Mã Sản Phẩm" name="maSP" class="form-control mr-4" value="{{ old('maSP') }}">
+                <input type="text" placeholder="Tên Sản Phẩm" name="tenSP" class="form-control mr-4" value="{{ old('tenSP') }}">                
             </div>
             <div class="input-group-text mb-4">
                 <select class="form-control mr-4" aria-label="Default select example" name="idDanhMuc">
                     <option value="" selected disabled>Danh Mục</option>
                     @if(isset($categories))
                     @foreach ($categories as $category)
-                    <option value="{{ $category->idDanhMuc}}">{{ $category->tenDanhMuc }}</option>
+                    <option value="{{ $category->idDanhMuc }}" {{ old('idDanhMuc') == $category->idDanhMuc ? 'selected' : '' }}>{{ $category->tenDanhMuc }}</option>
                     @endforeach
                     @endif
                 </select>
@@ -26,7 +27,7 @@
                     <option value="" selected disabled>Hãng</option>
                     @if(isset($nhaSX))
                     @foreach ($nhaSX as $NhaSanXuat)
-                    <option value="{{ $NhaSanXuat->maNhaSX }}">{{ $NhaSanXuat->tenNhaSX }}</option>
+                    <option value="{{ $NhaSanXuat->maNhaSX }}" {{ old('maNhaSX') == $NhaSanXuat->maNhaSX ? 'selected' : '' }}>{{ $NhaSanXuat->tenNhaSX }}</option>
                     @endforeach
                     @endif
                 </select>
@@ -34,30 +35,24 @@
                     <option value="" selected disabled>Trạng Thái</option>
                     @if(isset($trangThai))
                     @foreach ($trangThai as $trangThaiSP)
-                    <option value="{{ $trangThaiSP->MaTrangThai }}">{{ $trangThaiSP->TrangThai }}</option>
+                    <option value="{{ $trangThaiSP->MaTrangThai }}" {{ old('MaTrangThai') == $trangThaiSP->MaTrangThai ? 'selected' : '' }}>{{ $trangThaiSP->TrangThai }}</option>
                     @endforeach
                     @endif
                 </select>
-                <!-- load danh mục từ db
-                    @if(isset($$product_catelogs))
-                    @foreach ($product_catelogs as $product_catelog)
-                    <optionn value="{{ $product_catelog->id }}">{{ $product_catelog->name }}</optionn>
-                    @endforeach
-                    @endif -->
             </div>
             <div class="input-group-text mb-4">
-                <input type="number" placeholder="Giá Bán" {{ old('giaBan') }} name="giaBan" class="form-control mr-4">
-                <input type="number" placeholder="Giá Giảm" {{ old('giaGiam') }} name="giaGiam" class="form-control mr-4">
+                <input type="number" placeholder="Giá Bán" name="giaBan" class="form-control mr-4" value="{{ old('giaBan') }}">
+                <input type="number" placeholder="Giá Giảm" name="giaGiam" class="form-control mr-4" value="{{ old('giaGiam') }}">                
             </div>
             <div class="input-group-text mb-4">
-                <input type="text" placeholder="Màu Sắc" {{ old('mauSP') }} name="mauSP" class="form-control mr-4">
-                <input type="text" placeholder="Số Lượng" {{ old('soLuongTrongKho') }} name="soLuongTrongKho" class="form-control mr-4">
+                <input type="text" placeholder="Màu Sắc" name="mauSP" class="form-control mr-4" value="{{ old('mauSP') }}">
+                <input type="text" placeholder="Số Lượng" name="soLuongTrongKho" class="form-control mr-4" value="{{ old('soLuongTrongKho') }}">
             </div>
             <!-- gọi class của ckEditor -->
             <div class="specs">
-                <textarea {{ old('thongSoKyThuat') }} name="thongSoKyThuat" id="" class="editor1 form-control" cols="25" rows="20" placeholder="Thông Số Kĩ Thuật"></textarea>
+                <textarea name="thongSoKyThuat" class="editor1 form-control" value="{{ old('thongSoKyThuat') }}" cols="25" rows="20" placeholder="Thông Số Kĩ Thuật"></textarea>
             </div>
-            <textarea {{ old('moTa') }} name="moTa" id="" class="editor2 form-control" cols="25" rows="20" placeholder="Mô tả"></textarea>
+                <textarea name="moTa" class="editor2 form-control" value="{{ old('moTa') }}" cols="25" rows="20" placeholder="Mô tả"></textarea>
             <button class="btn btn-primary mt-4" type="submit">Thêm Sản Phẩm</button>
         </div>
         <!-- Begin add img -->
@@ -91,4 +86,5 @@
 <script src="{{ asset('backend/asset/ckEditor5/js/script.js') }}"></script>
 <!-- link ajax.js -->
 <script src="{{ asset('backend/asset/js/product_ajax.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 @endsection

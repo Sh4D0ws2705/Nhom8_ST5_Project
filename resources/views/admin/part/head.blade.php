@@ -9,6 +9,7 @@
 <meta name="csrf-token" content="{{ csrf_token() }}"> 
 <!-- cdn ajax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 <title>SB Admin 2 </title>
 
 <!-- Custom fonts for this template-->

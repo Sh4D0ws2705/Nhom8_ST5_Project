@@ -25,7 +25,7 @@ class NhaSanXuatSeeder extends Seeder
             ['maNhaSX'=>'SXDT04',
             'tenNhaSX'=>'Vivo'],
             ['maNhaSX'=>'SXDT05',
-            'tenNhaSX'=>'Iphone'],
+            'tenNhaSX'=>'Apple'],
 
             ['maNhaSX'=>'SXLT01',
             'tenNhaSX'=>'HP'],

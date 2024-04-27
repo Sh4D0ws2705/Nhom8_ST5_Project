@@ -419,7 +419,7 @@
                     </figure>
                     <figure class="instagram-item pe-2">
                         <a href="https://templatesjungle.com/" class="image-link position-relative">
-                            <img src="images/insta-item3.jpg" alt="instagram" class="insta-image">
+                            <img src="frontend/images/insta-item3.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
                                     <use xlink:href="#instagram"></use>

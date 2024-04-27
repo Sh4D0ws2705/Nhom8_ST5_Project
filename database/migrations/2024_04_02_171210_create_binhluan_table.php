@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('binhluan', function (Blueprint $table) {
-            $table->string('maBL')->primary();
+            $table->string('maBL')->primary()->autoIncrement();
             $table->string('maSP');
             $table->string('maKH');
             $table->longText('danhGia');

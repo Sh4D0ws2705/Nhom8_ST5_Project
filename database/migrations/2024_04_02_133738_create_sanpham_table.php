@@ -14,10 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('sanpham', function (Blueprint $table) {
-            $table->string('maSP')->primary();
-            $table->string('tenSP');
+            $table->string('maSP')->primary()->autoIncrement();
+            $table->string('tenSP')->default();
             $table->string('giaBan');
-            $table->string('giaGiam');
+            $table->string('giaGiam')->nullable();
             $table->string('anhDaiDien');
             $table->string('anhChiTiet');
             $table->string('mauSP');

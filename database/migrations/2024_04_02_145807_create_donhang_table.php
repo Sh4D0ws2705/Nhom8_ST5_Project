@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('donhang', function (Blueprint $table) {
-            $table->string('maDonHang')->primary();
+            $table->string('maDonHang')->primary()->autoIncrement();
             $table->string('tenDonHang');
             $table->integer('soLuong');
             $table->double('tienHang');

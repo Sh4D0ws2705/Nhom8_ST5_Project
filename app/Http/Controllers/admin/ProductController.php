@@ -6,6 +6,7 @@ use App\Models\SanPham;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
@@ -33,29 +34,41 @@ class ProductController extends Controller
     //chen du lieu vao db
     public function insertProduct(Request $request)
     {
-        $request->validate([
-            'maSP' => 'required',
+        // Thực hiện validation
+        $validator = Validator::make($request->all(), [
+            'maSP' => ['required', 'min:3', 'max:10'],
             'tenSP' => 'required',
             'idDanhMuc' => 'required',
             'maNhaSX' => 'required',
             'giaBan' => 'required',
-            'giaGiam' => 'required',
             'mauSP' => 'required',
             'soLuongTrongKho' => 'required',
             'anhDaiDien' => 'required',
             'anhChiTiet' => 'required',
-        ], [
-            'maSP.required' => 'Vui lòng nhập mã sản phẩm.',
-            'tenSP.required' => 'Vui lòng nhập tên sản phẩm.',
-            'idDanhMuc.required' => 'Vui lòng chọn danh mục.',
-            'maNhaSX.required' => 'Vui lòng chọn nhà sản xuất.',
-            'giaBan.required' => 'Vui lòng nhập giá bán.',
-            'giaGiam.required' => 'Vui lòng nhập giá giảm.',
-            'mauSP.required' => 'Vui lòng nhập màu sắc.',
-            'soLuongTrongKho.required' => 'Vui lòng nhập số lượng trong kho.',
-            'anhDaiDien.required' => 'Vui lòng chọn ảnh đại diện cho sản phẩm.',
-            'anhChiTiet.required' => 'Vui lòng chọn ít nhất một ảnh chi tiết cho sản phẩm.',
-        ]);
+        ], config('custom_messages.validation'));
+
+        // Kiểm tra nếu validation thất bại
+        if ($validator->fails()) {
+            // Lấy danh sách các lỗi
+            $errors = $validator->errors()->all();
+
+            // Tìm các thông báo lỗi tương ứng trong cấu trúc config
+            $errorMessages = [];
+            foreach ($errors as $error) {
+                $key = strtolower($error) . '.required'; // Chuyển đổi lỗi thành key trong cấu trúc config
+                if (array_key_exists($key, config('custom_messages.validation'))) {
+                    $errorMessages[] = config('custom_messages.validation.' . $key);
+                }
+            }
+
+            // Xây dựng thông báo chi tiết về các trường nhập thiếu
+            $errorMessage = implode('<br>', $errors);
+
+            // Hiển thị thông báo lỗi
+            toastr()->warning($errorMessage);
+            return redirect()->back()->withInput();
+        }
+
         // Loại bỏ _token từ dữ liệu request
         $data = $request->except('_token');
 
@@ -85,7 +98,6 @@ class ProductController extends Controller
         // Lưu sản phẩm vào cơ sở dữ liệu
         $product->save();
 
-        // Chuyển hướng người dùng trở lại trang trước đó
-        return redirect()->back();
+        toastr()->success(config('custom_messages.success.added', ['timeOut' => 5000]));
     }
 }
