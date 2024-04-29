@@ -16,7 +16,7 @@ class SanPhamSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('sanpham')->insert([
+        // DB::table('sanpham')->insert([
             // ['maSP'=>'SP01','tenSP'=>'Điện thoại Xiaomi Redmi 12 4GB'
             // ,'giaBan'=>'4000000','giaGiam'=>'3900000',
             // 'anhDaiDien'=>'1.png','anhChiTiet'=>'2.png',
@@ -43,7 +43,7 @@ class SanPhamSeeder extends Seeder
         //     'mauSP'=>'Đen','moTa'=>'Laptop Dell Inspiron mang trên mình sức mạnh từ bộ vi xử lý Intel Core i5 1235U cùng card tích hợp Intel UHD giúp bạn giải quyết mượt mà mọi tác vụ học tập, văn phòng cơ bản trên Word, Excel, PowerPoint,... hay đáp ứng nhu cầu thiết kế đồ họa cơ bản trên Photoshop, AI,... dễ dàng nâng lên card Iris Xe mạnh mẽ hơn bằng cách lắp thêm RAM và kích hoạt Dual Channel.',
         //     'idDanhMuc'=>'DM01','maNhaSX'=>'SXDT05','MaTrangThai'=>'NB01',
         //     'thongSoKyThuat'=>'Thông số kỹ thuật 03','soLuongTrongKho'=>'0']
-        ]);
+        // ]);
         
     }
 }

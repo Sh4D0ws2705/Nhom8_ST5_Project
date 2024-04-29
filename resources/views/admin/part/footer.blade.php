@@ -16,3 +16,4 @@
   <!-- <script src="{{ asset('backend/asset/js/demo/chart-area-demo.js') }}"></script>
   <script src="{{ asset('backend/asset/js/demo/chart-pie-demo.js') }}"></script> -->
 
+  <script src="{{ asset('backend/asset/js/product_ajax.js') }}"></script> -->

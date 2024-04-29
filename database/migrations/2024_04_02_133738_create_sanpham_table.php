@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('sanpham', function (Blueprint $table) {
             $table->string('maSP')->primary()->autoIncrement();
-            $table->string('tenSP')->default();
+            $table->string('tenSP');
             $table->string('giaBan');
             $table->string('giaGiam')->nullable();
             $table->string('anhDaiDien');

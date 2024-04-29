@@ -6,7 +6,7 @@
 </div>
 <!-- Page Heading -->
 <form action="{{ route('insertProduct') }}" enctype="multipart/form-data" method="post">
-        
+    @csrf   
     <!-- Begin Add Product -->
     <div class="input-group main-content">
         <div class="admin-content-left col-lg-9">
@@ -50,9 +50,9 @@
             </div>
             <!-- gọi class của ckEditor -->
             <div class="specs">
-                <textarea name="thongSoKyThuat" class="editor1 form-control" value="{{ old('thongSoKyThuat') }}" cols="25" rows="20" placeholder="Thông Số Kĩ Thuật"></textarea>
+                <textarea name="thongSoKyThuat" class="editor1 form-control" cols="25" rows="20" placeholder="Thông Số Kĩ Thuật" value="{{ old('thongSoKyThuat') }}"></textarea>
             </div>
-                <textarea name="moTa" class="editor2 form-control" value="{{ old('moTa') }}" cols="25" rows="20" placeholder="Mô tả"></textarea>
+                <textarea name="moTa" class="editor2 form-control" cols="25" rows="20" placeholder="Mô tả" value="{{ old('moTa') }}"></textarea>
             <button class="btn btn-primary mt-4" type="submit">Thêm Sản Phẩm</button>
         </div>
         <!-- Begin add img -->
@@ -76,7 +76,6 @@
             </div>
         </div>
     </div>
-    @csrf
 </form>
 
 @endsection

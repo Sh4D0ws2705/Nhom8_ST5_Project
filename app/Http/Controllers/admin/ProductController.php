@@ -8,10 +8,29 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
+
 class ProductController extends Controller
 {
+    public function deleteProduct(Request $request)
+    {
+       $result = SanPham::find($request-> maSP)->delete();
+    
+        // Xác định kết quả và đặt thông báo vào session flash
+        if ($result) {
+            // Xóa sản phẩm thành công
+            toastr()->success(config('custom_messages.success.deleted', ['timeOut' => 5000]));
+        } else {
+            // Xóa sản phẩm thất bại
+            toastr()->error(config('custom_messages.success.generic2', ['timeOut' => 5000]));
+        }
+    
+        // Trả về kết quả dưới dạng JSON
+        return response()->json(['success' => true]);
+    }
+
     public function listProduct()
     {
+        // $products = DB::table('sanpham')->get()->paginate(5);//phân trang
         $products = DB::table('sanpham')->get();
         // Lấy danh sách trạng thái
         $statuses = DB::table('trangthaisp')->pluck('TrangThai', 'MaTrangThai'); // Thay 'status_table' bằng tên bảng chứa trạng thái
@@ -98,6 +117,9 @@ class ProductController extends Controller
         // Lưu sản phẩm vào cơ sở dữ liệu
         $product->save();
 
+        // Hiển thị thông báo thành công
         toastr()->success(config('custom_messages.success.added', ['timeOut' => 5000]));
+        // Redirect về trang trước
+        return redirect()->back();
     }
 }

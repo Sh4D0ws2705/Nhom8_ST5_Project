@@ -44,6 +44,7 @@ Route::get('/admin/index',function () {
 Route::post('/admin/product/add', [ProductController::class, 'insertProduct'])->name('insertProduct');
 Route::get('/admin/product/create', [ProductController::class, 'addProduct']);
 Route::get('/admin/product/list', [ProductController::class, 'listProduct']);
+Route::get('/admin/product/delete', [ProductController::class, 'deleteProduct'])->name('product.delete');
 
 
 
