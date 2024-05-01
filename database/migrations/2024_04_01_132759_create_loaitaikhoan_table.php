@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('taikhoankhach', function (Blueprint $table) {
-            $table->string('maKH')->primary()->autoIncrement();
+            $table->increments('maKH');
             $table->string('email')->unique();
             $table->string('matKhau');
             $table->string('soDienThoai')->unique();
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('loaitaikhoan');
+        Schema::dropIfExists('taikhoankhach');
     }
 };

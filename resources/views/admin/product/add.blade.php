@@ -11,7 +11,6 @@
     <div class="input-group main-content">
         <div class="admin-content-left col-lg-9">
             <div class="input-group-text mb-4">
-                <input type="text" placeholder="Mã Sản Phẩm" name="maSP" class="form-control mr-4" value="{{ old('maSP') }}">
                 <input type="text" placeholder="Tên Sản Phẩm" name="tenSP" class="form-control mr-4" value="{{ old('tenSP') }}">                
             </div>
             <div class="input-group-text mb-4">

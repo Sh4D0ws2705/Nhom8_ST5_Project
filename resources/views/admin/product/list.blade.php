@@ -45,7 +45,7 @@
                                 <td>{{ $statuses[$product->MaTrangThai] }}</td>
                                 <td>
                                     <!-- dẫn đường dẫn tới trang sửa sp -->
-                                    <a class="action-link edit-link" href="">Sửa</a>
+                                    <a class="action-link edit-link" href="/admin/product/edit/{{ $product->maSP }}">Sửa</a>
                                     <a onclick="removeRow('{{ $product->maSP }}', '/admin/product/delete')" class="action-link del-link" href="#">Xóa</a>
                                 </td>
                             </tr>

@@ -17,16 +17,16 @@ class DanhMucSeeder extends Seeder
     {
         //
         DB::table('danhmuc')->insert([
-            ['idDanhMuc'=>'DM01','tenDanhMuc'=>'Điện Thoại'],
-            ['idDanhMuc'=>'DM02','tenDanhMuc'=>'Laptop'],
-            ['idDanhMuc'=>'DM03','tenDanhMuc'=>'Tablet'],
-            ['idDanhMuc'=>'DM04','tenDanhMuc'=>'Loa'],
-            ['idDanhMuc'=>'DM05','tenDanhMuc'=>'Smart Watch'],
-            ['idDanhMuc'=>'DM06','tenDanhMuc'=>'Apple Watch'],
-            ['idDanhMuc'=>'DM07','tenDanhMuc'=>'Sạc dự phòng'],
-            ['idDanhMuc'=>'DM08','tenDanhMuc'=>'Đồng hồ điện tử'],
-            ['idDanhMuc'=>'DM09','tenDanhMuc'=>'PC Gaming'],
-            ['idDanhMuc'=>'DM10','tenDanhMuc'=>'PC Working']
+            ['idDanhMuc'=>'1','tenDanhMuc'=>'Điện Thoại'],
+            ['idDanhMuc'=>'2','tenDanhMuc'=>'Laptop'],
+            ['idDanhMuc'=>'3','tenDanhMuc'=>'Tablet'],
+            ['idDanhMuc'=>'4','tenDanhMuc'=>'Loa'],
+            ['idDanhMuc'=>'5','tenDanhMuc'=>'Smart Watch'],
+            ['idDanhMuc'=>'6','tenDanhMuc'=>'Apple Watch'],
+            ['idDanhMuc'=>'7','tenDanhMuc'=>'Sạc dự phòng'],
+            ['idDanhMuc'=>'8','tenDanhMuc'=>'Đồng hồ điện tử'],
+            ['idDanhMuc'=>'9','tenDanhMuc'=>'PC Gaming'],
+            ['idDanhMuc'=>'10','tenDanhMuc'=>'PC Working']
         ]);
         
     }

@@ -15,11 +15,13 @@ return [
 
     'success' => [
         'added' => 'Bạn đã thêm sản phẩm thành công.',
-        'deleted' => 'Bạn đã xóa sản phẩm thành công'
+        'deleted' => 'Bạn đã xóa sản phẩm thành công',
+        'updated' => 'Bạn đã sửa sản phẩm thành công'
     ],
 
     'error' => [
         'generic' => 'Có lỗi xảy ra, không thêm sản phẩm vào Database được. Vui lòng kiểm tra lại thông tin.',
         'generic2' => 'Có lỗi xảy ra, không xóa sản phẩm được',
+        'generic3' => 'Có lỗi xảy ra, không sửa sản phẩm được',
     ],
 ];

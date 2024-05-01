@@ -66,6 +66,7 @@ $("#files").on("change", () => {
                             '" class="product-images" name="anhChiTiet[]">';
                     }
                     $("#input-file-imgs").html(html); // Thêm các thẻ img vào DOM
+                    $("#input-file-imgs-hiden").val(result.path); // Lưu đường dẫn hình ảnh vào một input ẩn
                 }
             }
         },

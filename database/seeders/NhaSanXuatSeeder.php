@@ -16,40 +16,28 @@ class NhaSanXuatSeeder extends Seeder
     {
         //
         DB::table('nhasanxuat')->insert([
-            ['maNhaSX'=>'SXDT01',
+            ['maNhaSX'=>'1',
             'tenNhaSX'=>'Samsung'],
-            ['maNhaSX'=>'SXDT02',
+            ['maNhaSX'=>'2',
             'tenNhaSX'=>'Oppo'],
-            ['maNhaSX'=>'SXDT03',
+            ['maNhaSX'=>'3',
             'tenNhaSX'=>'Xiaomi'],
-            ['maNhaSX'=>'SXDT04',
+            ['maNhaSX'=>'4',
             'tenNhaSX'=>'Vivo'],
-            ['maNhaSX'=>'SXDT05',
+            ['maNhaSX'=>'5',
             'tenNhaSX'=>'Apple'],
 
-            ['maNhaSX'=>'SXLT01',
+            ['maNhaSX'=>'6',
             'tenNhaSX'=>'HP'],
-            ['maNhaSX'=>'SXLT02',
+            ['maNhaSX'=>'7',
             'tenNhaSX'=>'Asus'],
-            ['maNhaSX'=>'SXLT03',
+            ['maNhaSX'=>'8',
             'tenNhaSX'=>'Acer'],
-            ['maNhaSX'=>'SXLT04',
+            ['maNhaSX'=>'9',
             'tenNhaSX'=>'Lenovo'],
-            ['maNhaSX'=>'SXLT05',
+            ['maNhaSX'=>'10',
             'tenNhaSX'=>'Dell'],
-            ['maNhaSX'=>'SXLT06',
-            'tenNhaSX'=>'MacBook'],
 
-            ['maNhaSX'=>'SXTL01',
-            'tenNhaSX'=>'Ipad'],
-            ['maNhaSX'=>'SXTL02',
-            'tenNhaSX'=>'Samsung'],
-            ['maNhaSX'=>'SXTL03',
-            'tenNhaSX'=>'Xiaomi'],
-            ['maNhaSX'=>'SXTL04',
-            'tenNhaSX'=>'Oppo'],
-            ['maNhaSX'=>'SXTL05',
-            'tenNhaSX'=>'Lenovo']
         ]);
     }
 }

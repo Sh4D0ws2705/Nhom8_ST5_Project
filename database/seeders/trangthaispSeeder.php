@@ -16,11 +16,11 @@ class trangthaispSeeder extends Seeder
     public function run()
     {
         DB::table('trangthaisp')->insert([
-            ['MaTrangThai'=>'CH01',
+            ['MaTrangThai'=>'1',
             'TrangThai'=>'Còn Hàng'],
-            ['MaTrangThai'=>'HH01',
+            ['MaTrangThai'=>'2',
             'TrangThai'=>'Hết Hàng'],
-            ['MaTrangThai'=>'NB01',
+            ['MaTrangThai'=>'3',
             'TrangThai'=>'Ngừng Bán'],
            
         ]);
