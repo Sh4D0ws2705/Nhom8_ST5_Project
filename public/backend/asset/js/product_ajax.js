@@ -1,7 +1,9 @@
 /* Token này sẽ được máy chủ
  kiểm tra để đảm bảo rằng yêu cầu đó là hợp lệ và không phải là một phần của tấn công CSRF*/
 $.ajaxSetup({
-    headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") },
+    headers: {
+        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+    },
 });
 
 /**xử lý sự kiện khi người dùng chọn một tệp tin từ một phần tử input có id là "file" */
@@ -56,11 +58,34 @@ $("#files").on("change", () => {
                 {
                     html = "";
                     for (let index = 0; index < result.paths.length; index++) {
-                        html += '<img src="' + result.paths[index] + '" alt=""><input type="hidden" value="' + result.paths[index] + '" class="product-images" name="anhChiTiet[]">';
+                        html +=
+                            '<img src="' +
+                            result.paths[index] +
+                            '" alt=""><input type="hidden" value="' +
+                            result.paths[index] +
+                            '" class="product-images" name="anhChiTiet[]">';
                     }
                     $("#input-file-imgs").html(html); // Thêm các thẻ img vào DOM
+                    $("#input-file-imgs-hiden").val(result.path); // Lưu đường dẫn hình ảnh vào một input ẩn
                 }
             }
         },
     });
 });
+function removeRow(maSP,url) {
+    if (confirm('Are You Sure')) {
+        console.log(maSP,url);
+        $.ajax({
+            url:  url,
+            data: {maSP},
+            method: 'GET',
+            dataType: 'JSON',
+            success: function(res) {
+                if (res.success == true) {
+                    location.reload();
+                }
+            }
+        })
+    }
+}
+

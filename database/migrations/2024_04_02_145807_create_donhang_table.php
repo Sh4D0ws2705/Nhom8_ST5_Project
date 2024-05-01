@@ -14,13 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::create('donhang', function (Blueprint $table) {
-            $table->string('maDonHang')->primary()->autoIncrement();
+            $table->increments('maDonHang');
             $table->string('tenDonHang');
             $table->integer('soLuong');
             $table->double('tienHang');
             $table->double('tongTien');
-            $table->string('maSP');
-            $table->string('maKH');
+            $table->unsignedInteger('maSP');
+            $table->unsignedInteger('maKH');
             $table->foreign('maSP')->references('maSP')->on('sanpham')->onDelete('cascade');
             $table->foreign('maKH')->references('maKH')->on('taikhoankhach')->onDelete('cascade');
         });

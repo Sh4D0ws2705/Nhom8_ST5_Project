@@ -14,9 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('binhluan', function (Blueprint $table) {
-            $table->string('maBL')->primary()->autoIncrement();
-            $table->string('maSP');
-            $table->string('maKH');
+            $table->increments('maBL');
+            $table->unsignedInteger('maSP');
+            $table->unsignedInteger('maKH');
             $table->longText('danhGia');
             $table->string('hinhAnhKemTheo')->nullable();
             $table->date('ngayDanhGia');

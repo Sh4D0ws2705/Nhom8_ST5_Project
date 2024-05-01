@@ -12,6 +12,7 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        //
+        'upload', // Đường dẫn cho việc tải lên ảnh đại diện
+        'uploads', // Đường dẫn cho việc tải lên nhiều ảnh sản phẩm
     ];
 }
