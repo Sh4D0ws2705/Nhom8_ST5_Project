@@ -379,7 +379,7 @@
                 <div class="swiper product-swiper" method="post">
                     <div class="swiper-wrapper product">
                         <div class="row g-4">
-                            @foreach($data as $row)
+                            @foreach($sanPhams as $row)
                             <!-- 1 -->
                             <div class="col-lg-4 col-md-6 ">
                                 <div class="swiper-slide product-list">

@@ -7,16 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class SanPham extends Model
 {
+    
+    use HasFactory;
     public $timestamps = false;
     protected $table = 'sanpham';
     protected $primaryKey = 'maSP';
-    protected $fillable = [
-        'maSP',
-        'tenSP'
-    ];
-    use HasFactory;
+    public $incrementing = false;       // Đặt này nếu khóa chính không phải là số tự tăng
+    protected $keyType = 'string';
     public function danhmucs(){
-        return $this->belongsTo(DanhMuc::class,'idDanhMuc');
+        return $this->belongsTo(DanhMuc::class,'idDanhMuc', 'idDanhMuc');
     }
     
     public function nhasanxuats(){
@@ -29,5 +28,9 @@ class SanPham extends Model
 
     public function sanphams(){
         return $this->belongsTo(SanPham::class,'maSP','maSP');
+    }
+
+    public function getProductDetails($id){
+        return self::find($id);
     }
 }
