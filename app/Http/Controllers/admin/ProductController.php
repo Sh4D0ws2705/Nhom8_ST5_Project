@@ -13,7 +13,7 @@ class ProductController extends Controller
 {
     public function updateProduct(Request $request)
     {
-        // dd($request->all());
+        // dd($request -> all());
         // Thực hiện validation
         $validator = Validator::make($request->all(), [
             'maSP' => 'required',
@@ -27,6 +27,8 @@ class ProductController extends Controller
             'soLuongTrongKho' => 'required',
             'thongSoKyThuat' => 'required',
             'moTa' => 'required',
+            // 'anhDaiDien' => 'required|image|mimes:png,jpg,jpeg,webp',
+            // 'anhChiTiet' => 'required|image|mimes:png,jpg,jpeg,webp'
         ], config('custom_messages.validation'));
         // Kiểm tra nếu validation thất bại
         if ($validator->fails()) {
@@ -51,6 +53,7 @@ class ProductController extends Controller
         }
 
         $product = SanPham::find($request->maSP);
+        
         // Loại bỏ _token từ dữ liệu request
         $data = $request->except('_token');
          // Đặt các thuộc tính cho sản phẩm
@@ -63,11 +66,11 @@ class ProductController extends Controller
          $product->soLuongTrongKho = $data['soLuongTrongKho'];
          $product->thongSoKyThuat = $data['thongSoKyThuat'];
          $product->moTa = $data['moTa'];
-         $product->MaTrangThai = $data['MaTrangThai'];
+         $product->MaTrangThai = $data['MaTrangThai'];  
          $product->anhDaiDien = $data['anhDaiDien'];
-         $productImgs = implode('*',$data['anhChiTiet']);
-         $product->anhChiTiet = $productImgs; 
-
+         $productImgs = implode('*', $data['anhChiTiet']);
+         $product->anhChiTiet = $productImgs;
+        // dd( $product->anhChiTiet);
         // Lưu sản phẩm vào cơ sở dữ liệu
         $product->save();
         // Hiển thị thông báo thành công
@@ -80,6 +83,7 @@ class ProductController extends Controller
     public function editProduct(Request $request)
     {
         $product = SanPham::find($request->maSP);
+        // dd($product);
         // dd($product -> tenSP);
         $categories = DB::table('danhmuc')->get(); // Lấy tất cả các danh mục từ cơ sở dữ liệu
         $nhaSX = DB::table('nhasanxuat')->get(); // Lấy tất cả các nsx từ cơ sở dữ liệu
@@ -109,7 +113,7 @@ class ProductController extends Controller
     public function listProduct()
     {
         // $products = DB::table('sanpham')->get()->paginate(5);//phân trang
-        $products = DB::table('sanpham')->get();
+        $products = SanPham::all();
 
         // Lấy danh sách trạng thái
         $statuses = DB::table('trangthaisp')->pluck('TrangThai', 'MaTrangThai'); // Thay 'status_table' bằng tên bảng chứa trạng thái
@@ -144,8 +148,8 @@ class ProductController extends Controller
             'soLuongTrongKho' => 'required',
             'thongSoKyThuat' => 'required',
             'moTa' => 'required',
-            'anhDaiDien' => 'required',
-            'anhChiTiet' => 'required'
+            'anhDaiDien' => 'required|image|mimes:png,jpg,jpeg,webp',
+            'anhChiTiet' => 'required|image|mimes:png,jpg,jpeg,webp'
         ], config('custom_messages.validation'));
 
         // Kiểm tra nếu validation thất bại
@@ -188,8 +192,8 @@ class ProductController extends Controller
         $product->moTa = $data['moTa'];
         $product->MaTrangThai = $data['MaTrangThai'];
         $product->anhDaiDien = $data['anhDaiDien'];
-        $productImgs = implode('*',$data['anhChiTiet']);
-        $product->anhDaiDien = $productImgs; 
+        $productImgs = implode('*', $data['anhChiTiet']);
+        $product->anhChiTiet = $productImgs;
 
 
         // Lưu sản phẩm vào cơ sở dữ liệu

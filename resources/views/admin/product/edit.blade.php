@@ -4,7 +4,7 @@
         <h1 class="h3 mb-0 text-gray-800">Sửa Sản Phẩm</h1>
     </div>
     <!-- Page Heading -->
-    <form action="{{ route('updateProduct', ['maSP' => $product->maSP]) }}" enctype="multipart/form-data" method="post">
+    <form action="" enctype="multipart/form-data" method="post">
         @csrf
         <!-- Begin Add Product -->
         <div class="input-group main-content">
@@ -83,7 +83,7 @@
                     <input id="files" type="file" multiple>
                     <div class="imgs-show" id="input-file-imgs">
                         @php
-                        $product_imgs = explode("*", $product -> anhChiTiet )
+                        $product_imgs = explode("*", $product -> anhChiTiet );
                         @endphp
                         @foreach ($product_imgs as $imgs)
                             <img src="{{ asset($imgs) }}" alt="">

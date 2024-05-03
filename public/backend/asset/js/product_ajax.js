@@ -9,7 +9,7 @@ $.ajaxSetup({
 /**xử lý sự kiện khi người dùng chọn một tệp tin từ một phần tử input có id là "file" */
 //Sự kiện này sẽ được kích hoạt khi người dùng chọn một file.
 
-$("#file").on("change", () => {
+$("#file").on("change", ()=>{
     // Khi người dùng chọn một file
     var formData = new FormData(); // Tạo một đối tượng FormData để chứa dữ liệu
     var file = $("#file")[0].files[0]; // Lấy ra file đã chọn
@@ -25,7 +25,7 @@ $("#file").on("change", () => {
             // Xử lý kết quả trả về từ máy chủ
             if (result.success == true) {
                 // Nếu yêu cầu thành công
-                html = ""; // Tạo biến để hiển thị hình ảnh
+                html = ''; // Tạo biến để hiển thị hình ảnh
                 html += '<img src="' + result.path + '" alt="">'; // Tạo thẻ img để hiển thị hình ảnh
                 $("#input-file-img").html(html); // Hiển thị hình ảnh trên giao diện
                 $("#input-file-img-hiden").val(result.path); // Lưu đường dẫn hình ảnh vào một input ẩn
@@ -35,7 +35,7 @@ $("#file").on("change", () => {
 });
 
 // Bắt sự kiện thay đổi của input file với id 'files'
-$("#files").on("change", () => {
+$("#files").on("change", ()=>{
     var formData = new FormData(); // Khởi tạo đối tượng FormData
     var files = $("#files")[0].files; // Lấy danh sách files người dùng đã chọn
     // Duyệt qua từng file và thêm vào formData
@@ -56,14 +56,10 @@ $("#files").on("change", () => {
             if (result.success == true) {
                 // Kiểm tra nếu thành công
                 {
-                    html = "";
+                    html = '';
                     for (let index = 0; index < result.paths.length; index++) {
                         html +=
-                            '<img src="' +
-                            result.paths[index] +
-                            '" alt=""><input type="hidden" value="' +
-                            result.paths[index] +
-                            '" class="product-images" name="anhChiTiet[]">';
+                            '<img src="' + result.paths[index] + '" alt=""><input type="hidden" value="' + result.paths[index] +'" class="product-images" name="anhChiTiet[]">';
                     }
                     $("#input-file-imgs").html(html); // Thêm các thẻ img vào DOM
                     $("#input-file-imgs-hiden").val(result.path); // Lưu đường dẫn hình ảnh vào một input ẩn

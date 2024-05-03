@@ -10,7 +10,11 @@ return [
         'mauSP.required' => 'Vui lòng nhập màu sắc.',
         'soLuongTrongKho.required' => 'Vui lòng nhập số lượng trong kho.',
         'anhDaiDien.required' => 'Vui lòng chọn ảnh đại diện cho sản phẩm.',
+        'anhDaiDien.image' => 'Ảnh không hợp lệ vui lòng chọn ảnh',
+        'anhDaiDien.mimes' => 'Ảnh phải có dịnh dạng png,jpg,jpeg,webp',
         'anhChiTiet.required' => 'Vui lòng chọn ít nhất một ảnh chi tiết cho sản phẩm.',
+        'anhChiTiet.image' => 'Ảnh không hợp lệ vui lòng chọn ảnh',
+        'anhChiTiet.mimes' => 'Ảnh phải có dịnh dạng png,jpg,jpeg,webp',
     ],
 
     'success' => [
