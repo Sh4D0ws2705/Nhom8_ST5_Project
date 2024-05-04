@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
+
     public function updateProduct(Request $request)
     {
         // dd($request -> all());
@@ -53,23 +54,23 @@ class ProductController extends Controller
         }
 
         $product = SanPham::find($request->maSP);
-        
+
         // Loại bỏ _token từ dữ liệu request
         $data = $request->except('_token');
-         // Đặt các thuộc tính cho sản phẩm
-         $product->tenSP = $data['tenSP'];
-         $product->idDanhMuc = $data['idDanhMuc'];
-         $product->maNhaSX = $data['maNhaSX'];
-         $product->giaBan = $data['giaBan'];
-         $product->giaGiam = $data['giaGiam'];
-         $product->mauSP = $data['mauSP'];
-         $product->soLuongTrongKho = $data['soLuongTrongKho'];
-         $product->thongSoKyThuat = $data['thongSoKyThuat'];
-         $product->moTa = $data['moTa'];
-         $product->MaTrangThai = $data['MaTrangThai'];  
-         $product->anhDaiDien = $data['anhDaiDien'];
-         $productImgs = implode('*', $data['anhChiTiet']);
-         $product->anhChiTiet = $productImgs;
+        // Đặt các thuộc tính cho sản phẩm
+        $product->tenSP = $data['tenSP'];
+        $product->idDanhMuc = $data['idDanhMuc'];
+        $product->maNhaSX = $data['maNhaSX'];
+        $product->giaBan = $data['giaBan'];
+        $product->giaGiam = $data['giaGiam'];
+        $product->mauSP = $data['mauSP'];
+        $product->soLuongTrongKho = $data['soLuongTrongKho'];
+        $product->thongSoKyThuat = $data['thongSoKyThuat'];
+        $product->moTa = $data['moTa'];
+        $product->MaTrangThai = $data['MaTrangThai'];
+        $product->anhDaiDien = $data['anhDaiDien'];
+        $productImgs = implode('*', $data['anhChiTiet']);
+        $product->anhChiTiet = $productImgs;
         // dd( $product->anhChiTiet);
         // Lưu sản phẩm vào cơ sở dữ liệu
         $product->save();

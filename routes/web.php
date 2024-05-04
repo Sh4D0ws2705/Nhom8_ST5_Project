@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\AdminPageController;
+use App\Http\Controllers\admin\MenuController;
 use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\UploadController;
 use Illuminate\Support\Facades\Route;
@@ -41,12 +42,16 @@ Route::get('/admin/index',function () {
 });
 
 //route product
+Route::get('/admin/product/list', [ProductController::class, 'listProduct'])->name('listProduct');
 Route::post('/admin/product/add', [ProductController::class, 'insertProduct'])->name('insertProduct');
 Route::get('/admin/product/create', [ProductController::class, 'addProduct']);
-Route::get('/admin/product/list', [ProductController::class, 'listProduct'])->name('listProduct');
 Route::get('/admin/product/delete', [ProductController::class, 'deleteProduct']);
 Route::get('/admin/product/edit/{maSP}', [ProductController::class, 'editProduct'])->name('editProduct');
 Route::post('/admin/product/edit/{maSP}', [ProductController::class, 'updateProduct'])->name('updateProduct');
+
+//route menu
+Route::get('/admin/category/create', [MenuController::class, 'addCategories']);
+Route::post('/admin/category/add', [MenuController::class, 'insertCategories'])->name('insertMenu');
 
 
 
