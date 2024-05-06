@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('danhmuc', function (Blueprint $table) {
             $table->increments('idDanhMuc');
-            $table->string('tenDanhMuc');
+            $table->string('tenDanhMuc')->unique();
             $table->longText('moTa');
             $table->integer('active');
         });

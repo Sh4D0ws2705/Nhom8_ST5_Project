@@ -138,7 +138,6 @@ class ProductController extends Controller
     {
         // Thực hiện validation
         $validator = Validator::make($request->all(), [
-            'maSP' => 'required',
             'tenSP' => 'required',
             'idDanhMuc' => 'required',
             'maNhaSX' => 'required',
@@ -166,12 +165,11 @@ class ProductController extends Controller
                     $errorMessages[] = config('custom_messages.validation.' . $key);
                 }
             }
-
             // Xây dựng thông báo chi tiết về các trường nhập thiếu
-            $errorMessage = implode('<br>', $errors);
+            $errorMessages = implode('<br>', $errors);
 
             // Hiển thị thông báo lỗi
-            toastr()->warning($errorMessage);
+            toastr()->warning($errorMessages);
             return redirect()->back()->withInput();
         }
 
