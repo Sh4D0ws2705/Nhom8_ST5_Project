@@ -84,4 +84,20 @@ function removeRow(maSP,url) {
         })
     }
 }
+function removeRowCate(idDanhMuc,url) {
+    if (confirm('Are You Sure')) {
+        console.log(idDanhMuc,url);
+        $.ajax({
+            url:  url,
+            data: {idDanhMuc},
+            method: 'GET',
+            dataType: 'JSON',
+            success: function(res) {
+                if (res.success == true) {
+                    location.reload();
+                }
+            }
+        })
+    }
+}
 

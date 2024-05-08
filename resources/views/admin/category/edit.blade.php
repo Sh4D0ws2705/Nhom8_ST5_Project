@@ -1,16 +1,16 @@
 @extends('admin.app')
 @section('content')
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Thêm Danh Mục</h1>
+        <h1 class="h3 mb-0 text-gray-800">Sửa Danh Mục</h1>
     </div>
     <!-- Page Heading -->
-    <form action="{{ route('insertMenu') }}" enctype="multipart/form-data" method="post">
+    <form action="" enctype="multipart/form-data" method="post">
         @csrf
         <!-- Begin Add Product -->
         <div class="input-group main-content">
-            <div class="admin-content col-lg-9">
-                <input type="text" placeholder="Tên Danh Mục" name="tenDanhMuc" class="form-control mr-4 mb-4" value="{{ old('tenDanhMuc') }}">
-                <textarea name="moTa" class="editor2 form-control" cols="25" rows="20" placeholder="Mô tả" value="{{ old('moTa') }}"></textarea>
+            <div class="admin-content col-lg-9">  
+                <input type="text" placeholder="Tên Danh Mục" name="tenDanhMuc" class="form-control mr-4 mb-4" value="{{ $categories->tenDanhMuc }}">
+                <textarea name="moTa" class="editor2 form-control" cols="25" rows="20" placeholder="Mô tả" value="{{ $categories->moTa }}"></textarea>
                 <div class="check-box mt-4">
                     <h4>Kích Hoạt</h4>
                     <div class="form-check ">

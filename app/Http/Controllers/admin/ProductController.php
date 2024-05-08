@@ -73,9 +73,15 @@ class ProductController extends Controller
         $product->anhChiTiet = $productImgs;
         // dd( $product->anhChiTiet);
         // Lưu sản phẩm vào cơ sở dữ liệu
-        $product->save();
-        // Hiển thị thông báo thành công
-        toastr()->success(config('custom_messages.success.updated', ['timeOut' => 5000]));
+        $result = $product->save();
+        if ($result == true) {
+            // Hiển thị thông báo thành công
+            toastr()->success(config('custom_messages.success.updated', ['timeOut' => 5000]));
+        }
+        else {
+            toastr()->success(config('custom_messages.success.generic3', ['timeOut' => 5000]));
+        }
+
 
         // Redirect về trang danh sách sản phẩm
         return redirect('/admin/product/list');

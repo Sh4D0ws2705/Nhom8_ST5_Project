@@ -51,6 +51,10 @@ Route::post('/admin/product/edit/{maSP}', [ProductController::class, 'updateProd
 
 //route menu
 Route::get('/admin/category/create', [MenuController::class, 'addCategories']);
+Route::get('/admin/category/delete', [MenuController::class, 'deleteCategories']);
+Route::get('/admin/category/edit/{idDanhMuc}', [MenuController::class, 'editCategories'])->name('editCategory');
+Route::post('/admin/category/edit/{idDanhMuc}', [MenuController::class, 'updateCategories'])->name('updateCategory');
+Route::get('/admin/category/list', [MenuController::class, 'listCategories'])->name('listCategory');
 Route::post('/admin/category/add', [MenuController::class, 'insertCategories'])->name('insertMenu');
 
 

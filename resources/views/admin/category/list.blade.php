@@ -2,7 +2,7 @@
 @section('content')
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Danh Sách Danh Muc</h1>
+        <h1 class="h3 mb-0 text-gray-800">Danh Sách Danh Mục</h1>
     </div>
     <!-- Table product -->
     <div class="card shadow mb-4">
@@ -13,35 +13,31 @@
                         <tr>
                             <th>ID</th>
                             <th>Tên Danh Muc</th>
-                            <th>Mô Tả</th>
                             <th>Active</th>                          
+                            <th>Tùy Chỉnh</th>                          
                         </tr>
                     </thead>
                     <tfoot class="bg-primary">
                         <tr>
                             <th>ID</th>
                             <th>Tên Danh Muc</th>
-                            <th>Mô Tả</th>
                             <th>Active</th>   
+                            <th>Tùy Chỉnh</th>   
                         </tr>
                     </tfoot>
                     <tbody>
-                        {{-- @foreach ($products as $product)
+                         @foreach ($categories as $cate)
                             <tr>
-                                <td>{{ $product->maSP }}</td>
-                                <td><img style="width: 70px;" src='{{ asset($product->anhDaiDien) }}' alt=""></td>
-                                <td>{{ $product->tenSP }}</td>
-                                <td>{{ number_format($product->giaBan) }}</td>
-                                <td>{{ number_format($product->giaGiam) }}</td>
-                                <td>{{ $product->mauSP }}</td>
-                                <td>{{ $statuses[$product->MaTrangThai] }}</td>
+                                <td>{{ $cate-> idDanhMuc }}</td>
+                                <td>{{ $cate->tenDanhMuc }}</td>
+                                <td>{{ $cate->active }}</td>
                                 <td>
                                     <!-- dẫn đường dẫn tới trang sửa sp -->
-                                    <a class="action-link edit-link" href="/admin/product/edit/{{ $product->maSP }}">Sửa</a>
-                                    <a onclick="removeRow('{{ $product->maSP }}', '/admin/product/delete')" class="action-link del-link" href="#">Xóa</a>
+                                    <a class="action-link edit-link" href="/admin/category/edit/{{ $cate->idDanhMuc }}">Sửa</a>
+                                    <a onclick="removeRowCate('{{ $cate->idDanhMuc }}', '/admin/category/delete')" class="action-link del-link" href="#">Xóa</a>
                                 </td>
                             </tr>
-                        @endforeach --}}
+                        @endforeach 
                     </tbody>
                 </table>
             </div>
