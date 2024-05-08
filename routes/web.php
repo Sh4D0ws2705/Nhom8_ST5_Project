@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\SignUp;
 use App\Http\Controllers\PageControl;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,8 +55,16 @@ Route::post('/admin/product/edit/{maSP}', [ProductController::class, 'updateProd
 Route::post('/upload', [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
 Route::post('/uploads', [UploadController::class, 'uploadImages']); //lấy nhiều ảnh sp
 
-Route::post("/detail",[
-    'as' => 'detail',
-    'uses' => 'PageControl@getvalue'
-]);
+Route::get('/detail/{maSP}', [PageControl::class, 'showDetail'])->name('detail');
+Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
 
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
+Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('login', [AuthController::class, 'login']);
+Route::get('register', [AuthController::class, 'showRegisterForm'])->name('register');
+Route::post('register', [AuthController::class, 'register']);
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/category/{idDanhMuc}', [PageControl::class, 'getProductByCategory'])->name('category.products');

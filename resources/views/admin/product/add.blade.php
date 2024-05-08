@@ -62,7 +62,6 @@
                 <!-- thêm 2 cái id từ cái product_ajax.js để hiển thị hình -->
                 <input type="hidden" name="anhDaiDien" id="input-file-img-hiden"> <!-- Lưu đường dẫn hình ảnh vào một input ẩn -->
                 <div class="img-show" id="input-file-img"><!-- Hiển thị hình ảnh trên giao diện-->
-
                 </div>
             </div>
             <div class="admin-content-images ml-5 mt-4">

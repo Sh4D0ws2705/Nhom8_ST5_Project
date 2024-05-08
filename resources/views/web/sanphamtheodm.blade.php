@@ -365,7 +365,6 @@
             </div>
         </div>
     </section>
-
     <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
         <div class="container">
             <div class="row">
@@ -375,10 +374,10 @@
                         <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
                     </div>
                 </div>
-                <div class="swiper product-swiper" method="post">
+                <div class="swiper product-swiper swiper-initialized swiper-horizontal swiper-backface-hidden" method="post">
                     <div class="swiper-wrapper product">
                         <div class="row g-4">
-                            @foreach($data as $row)
+                            @foreach($sanPhams as $row)
                             <!-- 1 -->
                             <div class="col-lg-4 col-md-6 ">
                                 <div class="swiper-slide product-list">
@@ -459,8 +458,22 @@
     </div>
     <div class="swiper-pagination position-absolute text-center"></div>
     </section>
-    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge"
+    <!-- <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge"
         style="background-image: url('frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
+        <div class="row d-flex flex-wrap align-items-center">
+            <div class="col-md-6 col-sm-12">
+                <div class="text-content offset-4 padding-medium">
+                    <h3>10% off</h3>
+                    <h2 class="display-2 pb-5 text-uppercase text-dark">New year sale</h2>
+                    <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Sale</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+
+            </div>
+        </div>
+    </section> -->
+    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('../frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
         <div class="row d-flex flex-wrap align-items-center">
             <div class="col-md-6 col-sm-12">
                 <div class="text-content offset-4 padding-medium">
@@ -487,7 +500,7 @@
                     <div class="col-lg-4 col-sm-12">
                         <div class="card border-none me-3">
                             <div class="card-image">
-                                <img src="frontend/images/post-item1.jpg" alt="" class="img-fluid">
+                                <img src="../frontend/images/post-item1.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="card-body text-uppercase">
@@ -503,7 +516,7 @@
                     <div class="col-lg-3 col-sm-4">
                         <div class="card border-none me-3">
                             <div class="card-image">
-                                <img src="frontend/images/post-item2.jpg" alt="" class="img-fluid">
+                                <img src="../frontend/images/post-item2.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="card-body text-uppercase">
@@ -519,7 +532,7 @@
                     <div class="col-lg-4 col-sm-12">
                         <div class="card border-none me-3">
                             <div class="card-image">
-                                <img src="frontend/images/post-item3.jpg" alt="" class="img-fluid">
+                                <img src="../frontend/images/post-item3.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                         <div class="card-body text-uppercase">
@@ -649,32 +662,12 @@
         <div class="container">
             <div class="row">
                 <div class="display-header text-uppercase text-dark text-center pb-3">
-                    <h2 class="display-7">Shop Our Instagram</h2>
+                    <h2 class="display-7">Shop Our Insta</h2>
                 </div>
                 <div class="d-flex flex-wrap">
                     <figure class="instagram-item pe-2">
-                        <a href="" class="image-link position-relative">
-                            <img src="frontend/images/insta-item1.jpg" alt="instagram" class="insta-image">
-                            <div class="icon-overlay position-absolute d-flex justify-content-center">
-                                <svg class="instagram">
-                                    <use xlink:href="#instagram"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </figure>
-                    <figure class="instagram-item pe-2">
-                        <a href="" class="image-link position-relative">
-                            <img src="frontend/images/insta-item2.jpg" alt="instagram" class="insta-image">
-                            <div class="icon-overlay position-absolute d-flex justify-content-center">
-                                <svg class="instagram">
-                                    <use xlink:href="#instagram"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </figure>
-                    <figure class="instagram-item pe-2">
-                        <a href="" class="image-link position-relative">
-                            <img src="frontend/images/insta-item3.jpg" alt="instagram" class="insta-image">
+                        <a href="https://templatesjungle.com/" class="image-link position-relative">
+                            <img src="../frontend/images/insta-item1.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
                                     <use xlink:href="#instagram"></use>
@@ -684,7 +677,7 @@
                     </figure>
                     <figure class="instagram-item pe-2">
                         <a href="https://templatesjungle.com/" class="image-link position-relative">
-                            <img src="frontend/images/insta-item4.jpg" alt="instagram" class="insta-image">
+                            <img src="../frontend/images/insta-item2.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
                                     <use xlink:href="#instagram"></use>
@@ -694,7 +687,27 @@
                     </figure>
                     <figure class="instagram-item pe-2">
                         <a href="https://templatesjungle.com/" class="image-link position-relative">
-                            <img src="frontend/images/insta-item5.jpg" alt="instagram" class="insta-image">
+                            <img src="../images/insta-item3.jpg" alt="instagram" class="insta-image">
+                            <div class="icon-overlay position-absolute d-flex justify-content-center">
+                                <svg class="instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2">
+                        <a href="https://templatesjungle.com/" class="image-link position-relative">
+                            <img src="../frontend/images/insta-item4.jpg" alt="instagram" class="insta-image">
+                            <div class="icon-overlay position-absolute d-flex justify-content-center">
+                                <svg class="instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2">
+                        <a href="https://templatesjungle.com/" class="image-link position-relative">
+                            <img src="../frontend/images/insta-item5.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
                                     <use xlink:href="#instagram"></use>
@@ -709,9 +722,9 @@
     
     <script src="frontend/js/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="frontend/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="frontend/js/plugins.js"></script>
-    <script type="text/javascript" src="frontend/js/script.js"></script>
+    <script type="text/javascript" src="../frontend/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../frontend/js/plugins.js"></script>
+    <script type="text/javascript" src="../frontend/js/script.js"></script>
     <script>
     !function(e) {
     var t = {};
