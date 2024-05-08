@@ -48,7 +48,7 @@
                 <div class='decription'>{!! $product->moTa !!}</div>
                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="margin: 20px;">Chi tiết mô tả</button>
                 <div class="modal fade" id="myModal">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                             <!-- Modal Header -->
                             <div class="modal-header">
@@ -57,10 +57,7 @@
                             </div>
                             <!-- Modal body -->
                             <div class="modal-body">
-                                <h1>MÔ TẢ SẢN PHẨM</h1>
-                                <img src="{{ asset($product->anhDaiDien) }}" style="width: 100%; height: auto;">
                                  {!! $product->moTa !!}
-                                 
                             </div>
 
                             <!-- Modal footer -->
@@ -76,7 +73,7 @@
                 <div class='decription'>{!! $product->thongSoKyThuat !!}</div>
                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#detail" style="margin: 20px;">Thông số kỹ thuật</button>
                 <div class="modal fade" id="detail">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <!-- Modal Header -->
                             <div class="modal-header">

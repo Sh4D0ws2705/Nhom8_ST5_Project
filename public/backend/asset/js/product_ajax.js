@@ -96,6 +96,9 @@ function removeRowCate(idDanhMuc,url) {
                 if (res.success == true) {
                     location.reload();
                 }
+                else{
+                    location.reload();
+                }
             }
         })
     }
