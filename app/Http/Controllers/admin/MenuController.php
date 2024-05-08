@@ -13,14 +13,11 @@ class MenuController extends Controller
 {
     public function insertCategories(Request $request)
     {
-        $categoryId = $danhmuc ? $danhmuc->idDanhMuc : null;
-
-        $validator = Validator::make($request->all(), [
-            'tenDanhMuc' => [
-                'required',
-                Rule::unique('danhmuc')->ignore($categoryId),
-            ],
+         // Thực hiện validation
+         $validator = Validator::make($request->all(), [
+            'tenDanhMuc' => 'required',
         ], config('custom_messages.validation'));
+
         // Kiểm tra nếu validation thất bại
         if ($validator->fails()) {
             // Lấy danh sách các lỗi
@@ -68,47 +65,45 @@ class MenuController extends Controller
     }
     public function updateCategories(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'tenDanhMuc' => 'required|unique:danhmuc',
-        ], config('custom_messages.validation'));
-
-        // Kiểm tra nếu validation thất bại
-        if ($validator->fails()) {
-            // Lấy danh sách các lỗi
-            $errors = $validator->errors()->all();
-
-            // Tìm các thông báo lỗi tương ứng trong cấu trúc config
-            $errorMessages = [];
-            foreach ($errors as $error) {
-                $key = strtolower($error) . '.required'; // Chuyển đổi lỗi thành key trong cấu trúc config
-                if (array_key_exists($key, config('custom_messages.validation'))) {
-                    $errorMessages[] = config('custom_messages.validation.' . $key);
-                }
+        // Lấy tên danh mục mới và cũ từ dữ liệu đầu vào
+        $tenDanhMucNew = $request->input('tenDanhMuc');
+        $tenDanhMucOld = $request->input('tenDanhMucOld');
+    
+        // Kiểm tra xem trường 'tenDanhMuc' có thay đổi không
+        if ($tenDanhMucNew !== $tenDanhMucOld) {
+            // Nếu tên danh mục thay đổi, thực hiện kiểm tra unique
+            $validator = Validator::make($request->all(), [
+                'tenDanhMuc' => 'required|unique:danhmuc',
+            ], config('custom_messages.validation'));
+    
+            // Kiểm tra nếu validation thất bại
+            if ($validator->fails()) {
+                // Hiển thị thông báo lỗi và redirect quay lại form
+                toastr()->warning($validator->errors()->first('tenDanhMuc'));
+                return redirect()->back()->withInput();
             }
-            // Xây dựng thông báo chi tiết về các trường nhập thiếu
-            $errorMessages = implode('<br>', $errors);
-
-            // Hiển thị thông báo lỗi
-            toastr()->warning($errorMessages);
-            return redirect()->back()->withInput();
         }
+    
         // Loại bỏ _token từ dữ liệu request
         $data = $request->except('_token');
         $category = DanhMuc::find($request->idDanhMuc);
-
+    
+        // Cập nhật các trường dữ liệu
         $category->tenDanhMuc = $data['tenDanhMuc'];
         $category->moTa = $data['moTa'];
         $category->active = $data['active'];
-
+    
         // Lưu sản phẩm vào cơ sở dữ liệu
         $result = $category->save();
-        if ($result == true) {
-            // Hiển thị thông báo thành công
+    
+        // Kiểm tra kết quả của việc lưu trữ và hiển thị thông báo tương ứng
+        if ($result) {
             toastr()->success(config('custom_messages.success.updatedMenu', ['timeOut' => 5000]));
         } else {
-            toastr()->success(config('custom_messages.success.generic5', ['timeOut' => 5000]));
+            toastr()->error(config('custom_messages.error.generic5'));
         }
-        // Redirect về trang trước
+    
+        // Redirect về trang danh sách danh mục
         return redirect('/admin/category/list');
     }
     public function listCategories()
