@@ -67,7 +67,7 @@ body {
 }
 p {
   font-size: 1.2em;
-  color: var(--gray-color-500);
+  color: black;
 }
 ul.inner-list li {
    font-size: 1.2em;
@@ -738,7 +738,7 @@ h3.cart-title {
 #testimonials .swiper-arrow svg {
     width: 45px;
     height: 45px;
-    fill: var(--light-gray-color);
+    fill: var(--gray-color-800);
 }
 .review-content .swiper-arrow {
     top: 0;
@@ -748,9 +748,9 @@ h3.cart-title {
 .review-content .swiper-arrow.swiper-arrow-next {
     right: 0;
 }
-.review-content .quotation svg.quote {
-    color: var(--light-blue-color);
-}
+/* .review-content .quotation svg.quote {
+    color: gray;
+} */
 
 @media only screen and (max-width: 767px) {
   #testimonials blockquote {
@@ -790,7 +790,7 @@ figure.instagram-item img.insta-image {
     left: 0;
     width: 100%;
     height: auto;
-    color: var(--light-color);
+    color: var(--white-color);
     opacity: 0;
     transition: 0.9s ease-out;
 }
@@ -19339,15 +19339,15 @@ html.no-js .section-highlights [data-component-list*=HighlightsGallery] .media-g
   }
 }
 
-/* .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.endframe {
+.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.endframe {
   background-size: 526px 488px;
   background-repeat: no-repeat;
   background-image: url(/v/iphone-15/c/images/overview/highlights/video/highlights_dynamic_island_endframe__b6spnbuvcq5e_large.jpg);
   --hlts-glry-media-ele-width: 526px;
   --hlts-glry-media-ele-height: 488px
-} */
-
-/* @media (min-resolution: 144dpi),only screen and (min-resolution:1.5dppx) {
+}
+/* CMT */
+@media (min-resolution: 144dpi),only screen and (min-resolution:1.5dppx) {
   .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.endframe {
       background-image:url(/v/iphone-15/c/images/overview/highlights/video/highlights_dynamic_island_endframe__b6spnbuvcq5e_large_2x.jpg)
   }
@@ -19403,7 +19403,7 @@ html.no-js .section-highlights [data-component-list*=HighlightsGallery] .media-g
   .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.endframe {
       --hlts-glry-media-ele-height:366px
   }
-} */
+} 
 
 .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .positioned-media-element.media {
   --hlts-glry-media-ele-width: 526px;
@@ -19454,7 +19454,7 @@ html.no-js .section-highlights [data-component-list*=HighlightsGallery] .media-g
   top: unset;
   bottom: 0
 }
-
+/* CMT */
 /* .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.endframe,.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.media,.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure .positioned-media-element.startframe {
   border-radius: 73px 73px 0 0;
   background-color: #000
@@ -19471,14 +19471,17 @@ html.no-js .section-highlights [data-component-list*=HighlightsGallery] .media-g
       border-radius:45px 45px 0 0
   }
 } */
+/* ---------------------------------- */
 
 .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure.static-fallback-only .positioned-media-element.static {
   display: none
 }
 
+/* CMT */
 /* .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure.static-fallback-only .positioned-media-element.endframe,.section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-dynamic-island .gallery-figure.static-fallback-only .positioned-media-element.hardware {
   display: block
 } */
+/* --------------------------------- */
 
 .section-highlights [data-component-list*=HighlightsGallery] .media-gallery .item-container .media-gallery-item-camera .gallery-figure {
   background: var(--global-section-background-color-alt);
@@ -23792,7 +23795,7 @@ html.text-zoom .page-overview .trade-in-ribbon-avail {
   -webkit-text-fill-color: #000;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 #giaban{
@@ -23816,6 +23819,7 @@ html.text-zoom .page-overview .trade-in-ribbon-avail {
 .bi-tags{
   font-size: 30px;
   color: red;
+  margin-left: -20px;
 }
 
 #giasp{

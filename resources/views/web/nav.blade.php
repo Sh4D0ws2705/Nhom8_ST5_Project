@@ -110,8 +110,7 @@
                         aria-label="Close" data-bs-target="#bdNavbar"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul id="navbar"
-                        class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
+                    <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
 
                         <li class="nav-item">
                             <a class="nav-link me-4 active" href="#billboard">Home</a>

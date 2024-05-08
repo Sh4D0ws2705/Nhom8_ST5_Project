@@ -24,12 +24,12 @@
     <script src="{{asset('frontend/js/modernizr.js')}}"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px" data-bs-smooth-scroll="true"
     tabindex="0">
     @extends('web.nav')
     @section('navbar')
     
-    <section class="section section-highlights" data-anim-scroll-group="Highlights"
+    <section class=" container section section-highlights" data-anim-scroll-group="Highlights"
         data-analytics-section-engagement="name:highlights">
         <div class="responsive-content">
             <div class="responsive-content-viewport-content">
@@ -288,7 +288,7 @@
         </div>
     </section> -->
     <section id="company-services" class="padding-large">
-        <div class="container">
+        <div>
             <div class="row">
                 <div class="col-lg-4 col-md-3 pb-5 cart">
                     <div class="icon-box d-flex">
@@ -375,7 +375,6 @@
                         <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
                     </div>
                 </div>
-
                 <div class="swiper product-swiper" method="post">
                     <div class="swiper-wrapper product">
                         <div class="row g-4">
@@ -433,11 +432,11 @@
 
                                         <div>
                                             @if(isset($row->trangthaisps->MaTrangThai))
-                                                @if($row->MaTrangThai == 'NB01')
+                                                @if($row->MaTrangThai == '3')
                                                     <div class="st_nb">
                                                         {{ $row->trangthaisps->TrangThai}}
                                                     </div>
-                                                @elseif($row->MaTrangThai == 'HH01')
+                                                @elseif($row->MaTrangThai == '2')
                                                     <div class="st_hh">
                                                         {{ $row->trangthaisps->TrangThai}}
                                                     </div>
@@ -457,9 +456,8 @@
                 </div>
             </div>
         </div>
-
-        </div>
-        <div class="swiper-pagination position-absolute text-center"></div>
+    </div>
+    <div class="swiper-pagination position-absolute text-center"></div>
     </section>
     <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge"
         style="background-image: url('frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
@@ -651,11 +649,11 @@
         <div class="container">
             <div class="row">
                 <div class="display-header text-uppercase text-dark text-center pb-3">
-                    <h2 class="display-7">Shop Our Insta</h2>
+                    <h2 class="display-7">Shop Our Instagram</h2>
                 </div>
                 <div class="d-flex flex-wrap">
                     <figure class="instagram-item pe-2">
-                        <a href="https://templatesjungle.com/" class="image-link position-relative">
+                        <a href="" class="image-link position-relative">
                             <img src="frontend/images/insta-item1.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
@@ -665,7 +663,7 @@
                         </a>
                     </figure>
                     <figure class="instagram-item pe-2">
-                        <a href="https://templatesjungle.com/" class="image-link position-relative">
+                        <a href="" class="image-link position-relative">
                             <img src="frontend/images/insta-item2.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
@@ -675,8 +673,8 @@
                         </a>
                     </figure>
                     <figure class="instagram-item pe-2">
-                        <a href="https://templatesjungle.com/" class="image-link position-relative">
-                            <img src="images/insta-item3.jpg" alt="instagram" class="insta-image">
+                        <a href="" class="image-link position-relative">
+                            <img src="frontend/images/insta-item3.jpg" alt="instagram" class="insta-image">
                             <div class="icon-overlay position-absolute d-flex justify-content-center">
                                 <svg class="instagram">
                                     <use xlink:href="#instagram"></use>
