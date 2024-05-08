@@ -7,6 +7,8 @@
     <title>Detail Product</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/detail.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         
     </style>
@@ -14,15 +16,15 @@
 
 <body>
     <section class="py-5">
-        <div class="container px-3 px-lg-2 my-1">
+        <div class="container px-3 px-lg-2 my-1" style="max-height: 700px; overflow:hidden;">
             <div class="row gx-4 gx-lg-4 align-items-center">
-                <div class="col-md-6" style="max-width: 900px;">
+                <div class="col-md-4" style="max-width: 900px;">
                     <img src="{{ asset($product->anhDaiDien) }}"
                         style="width: 100%; height: auto;">
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-4'>
                     <div class='tenSP'>{{ $product->tenSP }}</div>
-                    <div class='decription'>{{ $product->moTa }}</div>
+                    <!-- <div class='decription'>{{ $product->moTa }}</div> -->
                     <div class='fs-5 mb-5 background'>
                         <span class='text-decoration-line-through giagiam'>{{ $product->giaGiam }}</span>|
                         <span class="giaban">{{ $product->giaBan }}</span>
@@ -40,7 +42,62 @@
         </div>
     </section>
     <!-- Related items section-->
-    <section class="py-5 bg-light">
+    <section class="bg-light">
+        <div class="row detail">
+            <div class="col-sm-7">
+                <div class='decription'>{!! $product->moTa !!}</div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myModal" style="margin: 20px;">Chi tiết mô tả</button>
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">{{ $product->tenSP }}</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h1>MÔ TẢ SẢN PHẨM</h1>
+                                <img src="{{ asset($product->anhDaiDien) }}" style="width: 100%; height: auto;">
+                                 {!! $product->moTa !!}
+                                 
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class='decription'>{!! $product->thongSoKyThuat !!}</div>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#detail" style="margin: 20px;">Thông số kỹ thuật</button>
+                <div class="modal fade" id="detail">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">{{ $product->tenSP }}</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                 {!! $product->thongSoKyThuat !!}
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
         <div class="container px-4 px-lg-5 mt-5">
             <h2 class="fw-bolder mb-4">Related products</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">

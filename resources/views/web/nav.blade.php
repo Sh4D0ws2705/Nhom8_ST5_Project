@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <title>Search</title>
         <path fill="currentColor"
@@ -87,7 +93,8 @@
             d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
     </symbol>
 </svg>
-
+</head>
+<body>
 <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
     <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
         <div class="container-fluid">
@@ -172,13 +179,16 @@
                             <div class="user-items ps-5">
                                 <ul class="d-flex justify-content-end list-unstyled">
                                     <li class="search-item pe-3">
-                                        <a href="#" class="search-button">
-                                            <svg class="search">
+                                        <span>
+                                            <form action="" id="search-form">
+                                                <input type="text" name="keyword" id="keyword" placeholder="Your name.." style="font-size:20px">
+                                                <svg class="search">
                                                 <use xlink:href="#search"></use>
                                             </svg>
-                                        </a>
+                                            </form>
+                                            
+                                        </span>
                                     </li>
-
                                     @if (Auth::check())
                                     <!-- Nếu người dùng đã đăng nhập, hiển thị nút Logout -->
                                     <form method="POST" action="{{ route('logout') }}" class="pe-3">
@@ -354,3 +364,12 @@
             </div>
         </div>
     </div>
+</body>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const search = document.getElementByID('')
+    });
+</script> -->
+</html>
+
+
