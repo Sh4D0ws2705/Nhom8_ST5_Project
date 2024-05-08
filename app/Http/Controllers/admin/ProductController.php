@@ -154,8 +154,8 @@ class ProductController extends Controller
             'soLuongTrongKho' => 'required',
             'thongSoKyThuat' => 'required',
             'moTa' => 'required',
-            'anhDaiDien' => 'required|image|mimes:png,jpg,jpeg,webp',
-            'anhChiTiet' => 'required|image|mimes:png,jpg,jpeg,webp'
+            // 'anhDaiDien' => 'required|image|mimes:png,jpg,jpeg,webp',
+            // 'anhChiTiet' => 'required|image|mimes:png,jpg,jpeg,webp'
         ], config('custom_messages.validation'));
 
         // Kiểm tra nếu validation thất bại
