@@ -116,18 +116,29 @@ class MenuController extends Controller
     }
     public function deleteCategories(Request $request)
     {
-        $result = DanhMuc::find($request->idDanhMuc)->delete();
-        // Xác định kết quả và đặt thông báo 
-        if ($result) {
-            // Xóa sản phẩm thành công
-            toastr()->success(config('custom_messages.success.deletedMenu', ['timeOut' => 5000]));
-        } else {
-            // Xóa sản phẩm thất bại
-            toastr()->error(config('custom_messages.success.generic6', ['timeOut' => 5000]));
+        // Kiểm tra xem danh mục có chứa sản phẩm nào không
+        $category = DanhMuc::find($request->idDanhMuc);
+        $products = $category->sanphams;
+    
+        if ($products->isNotEmpty()) {
+            // Nếu có sản phẩm, không thực hiện xóa và hiển thị thông báo lỗi
+            toastr()->error('Không thể xóa danh mục vì nó chứa sản phẩm.');
+            return response()->json(['success' => false]);
         }
-
-        // Trả về kết quả dưới dạng JSON
-        return response()->json(['success' => true]);
+    
+        // Nếu không có sản phẩm, thực hiện xóa danh mục
+        $result = $category->delete();
+    
+        // Xác định kết quả và đặt thông báo
+        if ($result) {
+            // Xóa danh mục thành công
+            toastr()->success(config('custom_messages.success.deletedMenu', ['timeOut' => 5000]));
+            return response()->json(['success' => true]);
+        } else {
+            // Xóa danh mục thất bại
+            toastr()->error(config('custom_messages.success.generic6', ['timeOut' => 5000]));
+            return response()->json(['success' => false]);
+        }
     }
 
     public function addCategories()
