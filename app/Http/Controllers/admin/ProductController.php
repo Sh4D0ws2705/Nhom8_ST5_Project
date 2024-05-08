@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Validator;
 
 class ProductController extends Controller
 {
+
     public function updateProduct(Request $request)
     {
         // dd($request -> all());
@@ -53,28 +54,34 @@ class ProductController extends Controller
         }
 
         $product = SanPham::find($request->maSP);
-        
+
         // Loại bỏ _token từ dữ liệu request
         $data = $request->except('_token');
-         // Đặt các thuộc tính cho sản phẩm
-         $product->tenSP = $data['tenSP'];
-         $product->idDanhMuc = $data['idDanhMuc'];
-         $product->maNhaSX = $data['maNhaSX'];
-         $product->giaBan = $data['giaBan'];
-         $product->giaGiam = $data['giaGiam'];
-         $product->mauSP = $data['mauSP'];
-         $product->soLuongTrongKho = $data['soLuongTrongKho'];
-         $product->thongSoKyThuat = $data['thongSoKyThuat'];
-         $product->moTa = $data['moTa'];
-         $product->MaTrangThai = $data['MaTrangThai'];  
-         $product->anhDaiDien = $data['anhDaiDien'];
-         $productImgs = implode('*', $data['anhChiTiet']);
-         $product->anhChiTiet = $productImgs;
+        // Đặt các thuộc tính cho sản phẩm
+        $product->tenSP = $data['tenSP'];
+        $product->idDanhMuc = $data['idDanhMuc'];
+        $product->maNhaSX = $data['maNhaSX'];
+        $product->giaBan = $data['giaBan'];
+        $product->giaGiam = $data['giaGiam'];
+        $product->mauSP = $data['mauSP'];
+        $product->soLuongTrongKho = $data['soLuongTrongKho'];
+        $product->thongSoKyThuat = $data['thongSoKyThuat'];
+        $product->moTa = $data['moTa'];
+        $product->MaTrangThai = $data['MaTrangThai'];
+        $product->anhDaiDien = $data['anhDaiDien'];
+        $productImgs = implode('*', $data['anhChiTiet']);
+        $product->anhChiTiet = $productImgs;
         // dd( $product->anhChiTiet);
         // Lưu sản phẩm vào cơ sở dữ liệu
-        $product->save();
-        // Hiển thị thông báo thành công
-        toastr()->success(config('custom_messages.success.updated', ['timeOut' => 5000]));
+        $result = $product->save();
+        if ($result == true) {
+            // Hiển thị thông báo thành công
+            toastr()->success(config('custom_messages.success.updated', ['timeOut' => 5000]));
+        }
+        else {
+            toastr()->success(config('custom_messages.success.generic3', ['timeOut' => 5000]));
+        }
+
 
         // Redirect về trang danh sách sản phẩm
         return redirect('/admin/product/list');
@@ -137,7 +144,6 @@ class ProductController extends Controller
     {
         // Thực hiện validation
         $validator = Validator::make($request->all(), [
-            'maSP' => 'required',
             'tenSP' => 'required',
             'idDanhMuc' => 'required',
             'maNhaSX' => 'required',
@@ -148,8 +154,8 @@ class ProductController extends Controller
             'soLuongTrongKho' => 'required',
             'thongSoKyThuat' => 'required',
             'moTa' => 'required',
-            'anhDaiDien' => 'required|image|mimes:png,jpg,jpeg,webp',
-            'anhChiTiet' => 'required|image|mimes:png,jpg,jpeg,webp'
+            // 'anhDaiDien' => 'required|image|mimes:png,jpg,jpeg,webp',
+            // 'anhChiTiet' => 'required|image|mimes:png,jpg,jpeg,webp'
         ], config('custom_messages.validation'));
 
         // Kiểm tra nếu validation thất bại
@@ -165,12 +171,11 @@ class ProductController extends Controller
                     $errorMessages[] = config('custom_messages.validation.' . $key);
                 }
             }
-
             // Xây dựng thông báo chi tiết về các trường nhập thiếu
-            $errorMessage = implode('<br>', $errors);
+            $errorMessages = implode('<br>', $errors);
 
             // Hiển thị thông báo lỗi
-            toastr()->warning($errorMessage);
+            toastr()->warning($errorMessages);
             return redirect()->back()->withInput();
         }
 
