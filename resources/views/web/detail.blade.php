@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Product</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/detail.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -14,9 +16,13 @@
     </style>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px" data-bs-smooth-scroll="true"
+    tabindex="0">
+    @extends('web.nav')
+    @section('navbar')
+
     <section class="py-5">
-        <div class="container px-3 px-lg-2 my-1" style="max-height: 700px; overflow:hidden;">
+        <div class="container mt-5 px-3 px-lg-2 my-1" style="max-height: 700px; overflow:hidden;">
             <div class="row gx-4 gx-lg-4 align-items-center">
                 <div class="col-md-4" style="max-width: 900px;">
                     <img src="{{ asset($product->anhDaiDien) }}"
@@ -161,6 +167,7 @@
             @endforelse
         </div>
     </section>
+    @endsection
 </body>
 
 </html>
