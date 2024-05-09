@@ -22,12 +22,12 @@
                     <img src="{{ asset($product->anhDaiDien) }}"
                         style="width: 100%; height: auto;">
                 </div>
-                <div class='col-md-4'>
+                <div class='col-md-8'>
                     <div class='tenSP'>{{ $product->tenSP }}</div>
                     <!-- <div class='decription'>{{ $product->moTa }}</div> -->
                     <div class='fs-5 mb-5 background'>
-                        <span class='text-decoration-line-through giagiam'>{{ $product->giaGiam }}</span>|
-                        <span class="giaban">{{ $product->giaBan }}</span>
+                        <span class='text-decoration-line-through giagiam'>{{ number_format($product->giaGiam) }}</span>|
+                        <span class="giaban">{{ number_format($product->giaBan) }}</span>
                     </div>
                     <div class='d-flex'>
                         <input class='form-control text-center me-3' id='inputQuantity' type='num' value='1'
@@ -113,7 +113,7 @@
                             </div>
 
                             <div class="price">
-                                {{ $relatedProduct->giaGiam }}
+                                {{ number_format($relatedProduct->giaGiam) }}
                             </div>
                         </div>
                         <!-- Product actions-->
