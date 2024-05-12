@@ -22,6 +22,10 @@
                     <img src="{{ asset($product->anhDaiDien) }}"
                         style="width: 100%; height: auto;">
                 </div>
+                <div class="col-md-4">
+                    <img src="{{ asset($product->anhDaiDien) }}" style="width:100px; height: 100px;">
+                    <img src="{{ asset($product->anhDaiDien) }}" style="width:100px; height: 100px;">
+                </div>
                 <div class='col-md-4'>
                     <div class='tenSP'>{{ $product->tenSP }}</div>
                     <!-- <div class='decription'>{{ $product->moTa }}</div> -->
@@ -100,7 +104,7 @@
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             @forelse ($relatedProducts as $relatedProduct)
                 <div class="col mb-5">
-                    <div class="card h-100" style="width: 400px; margin: ">
+                    <div class="card h-100" style="width: 400px;">
                         <!-- Product image-->
                         <div class="card">
                             <img src="{{ asset( $relatedProduct -> anhDaiDien) }}" alt="{{ $relatedProduct->tenSP }}" />
