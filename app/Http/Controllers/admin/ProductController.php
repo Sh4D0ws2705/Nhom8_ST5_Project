@@ -68,6 +68,7 @@ class ProductController extends Controller
         $product->thongSoKyThuat = $data['thongSoKyThuat'];
         $product->moTa = $data['moTa'];
         $product->MaTrangThai = $data['MaTrangThai'];
+        $product->active = $data['active'];
         $product->anhDaiDien = $data['anhDaiDien'];
         $productImgs = implode('*', $data['anhChiTiet']);
         $product->anhChiTiet = $productImgs;
@@ -197,6 +198,7 @@ class ProductController extends Controller
         $product->moTa = $data['moTa'];
         $product->MaTrangThai = $data['MaTrangThai'];
         $product->anhDaiDien = $data['anhDaiDien'];
+        $product->active = $data['active'];
         $productImgs = implode('*', $data['anhChiTiet']);
         $product->anhChiTiet = $productImgs;
 

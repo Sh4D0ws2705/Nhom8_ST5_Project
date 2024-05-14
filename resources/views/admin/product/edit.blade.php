@@ -63,6 +63,17 @@
                         placeholder="Thông Số Kĩ Thuật" value="">{{ $product->thongSoKyThuat }}</textarea>
                 </div>
                 <textarea name="moTa" class="editor2 form-control" cols="25" rows="20" placeholder="Mô tả" value="">{{ $product->moTa }}</textarea>
+                <div class="check-box mt-4">
+                    <h4>Kích Hoạt</h4>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" value="2" name="active" id="active" checked>
+                        <label class="form-check-label" for="active">Có</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="1" name="active" id="noactive">
+                        <label class="form-check-label" for="noactive">Không</label>
+                    </div>
+                </div>
                 <button class="btn btn-primary mt-4" type="submit">Sửa Sản Phẩm</button>
             </div>
             <!-- Begin add img -->

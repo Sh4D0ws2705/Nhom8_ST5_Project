@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('sanpham', function (Blueprint $table) {
             $table->increments('maSP');
             $table->string('tenSP')->unique();
-            $table->string('giaBan');
-            $table->string('giaGiam')->nullable();
+            $table->integer('giaBan');
+            $table->integer('giaGiam')->nullable();
             $table->string('anhDaiDien');
             $table->string('anhChiTiet');
             $table->string('mauSP');
@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('MaTrangThai');
             $table->longText('thongSoKyThuat');
             $table->string('soLuongTrongKho');    
+            $table->string('active');    
             $table->foreign('MaTrangThai')->references('MaTrangThai')->on('trangthaisp')->onDelete('cascade');
         });
     }

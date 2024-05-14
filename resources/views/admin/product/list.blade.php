@@ -17,6 +17,7 @@
                             <th>Giá Bán</th>
                             <th>Giá Giảm</th>
                             <th>Màu</th>
+                            <th>Active</th>
                             <th>Trạng Thái</th>
                             <th>Tùy Chỉnh</th>
                         </tr>
@@ -29,6 +30,7 @@
                             <th>Giá Bán</th>
                             <th>Giá Giảm</th>
                             <th>Màu</th>
+                            <th>Active</th>
                             <th>Trạng Thái</th>
                             <th>Tùy Chỉnh</th>
                         </tr>
@@ -42,6 +44,7 @@
                                 <td>{{ number_format($product->giaBan) }}</td>
                                 <td>{{ number_format($product->giaGiam) }}</td>
                                 <td>{{ $product->mauSP }}</td>
+                                <td>{{ $product->active }}</td>
                                 <td>{{ $statuses[$product->MaTrangThai] }}</td>
                                 <td>
                                     <!-- dẫn đường dẫn tới trang sửa sp -->
