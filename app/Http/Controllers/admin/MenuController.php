@@ -108,7 +108,7 @@ class MenuController extends Controller
     }
     public function listCategories()
     {
-        $categories = DanhMuc::all();
+        $categories = DanhMuc::orderBy('idDanhMuc', 'desc')->get();
         // Lặp qua mỗi danh mục và đếm số lượng sản phẩm tương ứng
         foreach ($categories as $category) {
             $soLuongSP = $category->sanPhams()->count(); // Đếm số lượng sản phẩm của danh mục

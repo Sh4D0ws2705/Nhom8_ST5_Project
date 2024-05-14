@@ -66,11 +66,11 @@
                 <div class="check-box mt-4">
                     <h4>Kích Hoạt</h4>
                     <div class="form-check ">
-                        <input class="form-check-input" type="radio" value="2" name="active" id="active" checked>
+                        <input class="form-check-input" type="radio" value="1" name="active" id="active" checked>
                         <label class="form-check-label" for="active">Có</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" value="1" name="active" id="noactive">
+                        <input class="form-check-input" type="radio" value="0" name="active" id="noactive">
                         <label class="form-check-label" for="noactive">Không</label>
                     </div>
                 </div>

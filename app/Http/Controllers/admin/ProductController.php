@@ -52,6 +52,11 @@ class ProductController extends Controller
             toastr()->warning($errorMessage);
             return redirect()->back()->withInput();
         }
+        // Kiểm tra giá giảm không lớn hơn giá bán
+        if ($request->input('giaGiam') >= $request->input('giaBan')) {
+            toastr()->warning('Giá giảm không được lớn hơn hoặc bằng giá bán');
+            return redirect()->back()->withInput();
+        }
 
         $product = SanPham::find($request->maSP);
 
@@ -78,8 +83,7 @@ class ProductController extends Controller
         if ($result == true) {
             // Hiển thị thông báo thành công
             toastr()->success(config('custom_messages.success.updated', ['timeOut' => 5000]));
-        }
-        else {
+        } else {
             toastr()->success(config('custom_messages.success.generic3', ['timeOut' => 5000]));
         }
 
@@ -121,7 +125,7 @@ class ProductController extends Controller
     public function listProduct()
     {
         // $products = DB::table('sanpham')->get()->paginate(5);//phân trang
-        $products = SanPham::all();
+        $products = SanPham::orderBy('maSP', 'desc')->get();
 
         // Lấy danh sách trạng thái
         $statuses = DB::table('trangthaisp')->pluck('TrangThai', 'MaTrangThai'); // Thay 'status_table' bằng tên bảng chứa trạng thái
@@ -179,6 +183,11 @@ class ProductController extends Controller
             toastr()->warning($errorMessages);
             return redirect()->back()->withInput();
         }
+        // Kiểm tra giá giảm không lớn hơn giá bán
+        if ($request->input('giaGiam') >= $request->input('giaBan')) {
+            toastr()->warning('Giá giảm không được lớn hơn hoặc bằng giá bán');
+            return redirect()->back()->withInput();
+        }
 
         // Loại bỏ _token từ dữ liệu request
         $data = $request->except('_token');
@@ -202,9 +211,12 @@ class ProductController extends Controller
         $productImgs = implode('*', $data['anhChiTiet']);
         $product->anhChiTiet = $productImgs;
 
+        // $products = SanPham::orderBy('maSP', 'desc')->get();
 
         // Lưu sản phẩm vào cơ sở dữ liệu
         $product->save();
+        // Sắp xếp lại các sản phẩm theo thứ tự id giảm dần
+        $product = SanPham::orderBy('id', 'desc')->get();
 
         // Hiển thị thông báo thành công
         toastr()->success(config('custom_messages.success.added', ['timeOut' => 5000]));

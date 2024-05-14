@@ -37,6 +37,7 @@ class ComposerStaticInit65e85f9f959c0b087110331754d451cf
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
         '101b35f72e0ccb1b5ef72aa86bba3ef9' => __DIR__ . '/..' . '/yoeunes/toastr/src/helpers.php',
+        '2678778370ecbdd62f0e4fc70eb072ea' => __DIR__ . '/../..' . '/app/Helper/Helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -556,9 +557,12 @@ class ComposerStaticInit65e85f9f959c0b087110331754d451cf
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Helper\\Helper' => __DIR__ . '/../..' . '/app/Helper/Helper.php',
+        'App\\Http\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AuthController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\PageControl' => __DIR__ . '/../..' . '/app/Http/Controllers/PageControl.php',
         'App\\Http\\Controllers\\admin\\AdminPageController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/AdminPageController.php',
+        'App\\Http\\Controllers\\admin\\MenuController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/MenuController.php',
         'App\\Http\\Controllers\\admin\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/ProductController.php',
         'App\\Http\\Controllers\\admin\\UploadController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/UploadController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',

@@ -33,7 +33,7 @@
                                 <td>{{ $cate->idDanhMuc }}</td>
                                 <td>{{ $cate->tenDanhMuc }}</td>
                                 <td>{{ $cate->soLuongSP }}</td>
-                                <td>{{ $cate->active }}</td>
+                                <td>{!! \App\Helper\Helper::active($cate->active) !!}</td>
                                 <td>
                                     <!-- dẫn đường dẫn tới trang sửa sp -->
                                     <a class="action-link edit-link" href="/admin/category/edit/{{ $cate->idDanhMuc }}">Sửa</a>
