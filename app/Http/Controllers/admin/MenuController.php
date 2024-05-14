@@ -13,8 +13,8 @@ class MenuController extends Controller
 {
     public function insertCategories(Request $request)
     {
-         // Thực hiện validation
-         $validator = Validator::make($request->all(), [
+        // Thực hiện validation
+        $validator = Validator::make($request->all(), [
             'tenDanhMuc' => 'required',
         ], config('custom_messages.validation'));
 
@@ -68,14 +68,14 @@ class MenuController extends Controller
         // Lấy tên danh mục mới và cũ từ dữ liệu đầu vào
         $tenDanhMucNew = $request->input('tenDanhMuc');
         $tenDanhMucOld = $request->input('tenDanhMucOld');
-    
+
         // Kiểm tra xem trường 'tenDanhMuc' có thay đổi không
         if ($tenDanhMucNew !== $tenDanhMucOld) {
             // Nếu tên danh mục thay đổi, thực hiện kiểm tra unique
             $validator = Validator::make($request->all(), [
                 'tenDanhMuc' => 'required|unique:danhmuc',
             ], config('custom_messages.validation'));
-    
+
             // Kiểm tra nếu validation thất bại
             if ($validator->fails()) {
                 // Hiển thị thông báo lỗi và redirect quay lại form
@@ -83,52 +83,55 @@ class MenuController extends Controller
                 return redirect()->back()->withInput();
             }
         }
-    
+
         // Loại bỏ _token từ dữ liệu request
         $data = $request->except('_token');
         $category = DanhMuc::find($request->idDanhMuc);
-    
+
         // Cập nhật các trường dữ liệu
         $category->tenDanhMuc = $data['tenDanhMuc'];
         $category->moTa = $data['moTa'];
         $category->active = $data['active'];
-    
+
         // Lưu sản phẩm vào cơ sở dữ liệu
         $result = $category->save();
-    
+
         // Kiểm tra kết quả của việc lưu trữ và hiển thị thông báo tương ứng
         if ($result) {
             toastr()->success(config('custom_messages.success.updatedMenu', ['timeOut' => 5000]));
         } else {
             toastr()->error(config('custom_messages.error.generic5'));
         }
-    
+
         // Redirect về trang danh sách danh mục
         return redirect('/admin/category/list');
     }
     public function listCategories()
     {
         $categories = DanhMuc::all();
+        // Lặp qua mỗi danh mục và đếm số lượng sản phẩm tương ứng
+        foreach ($categories as $category) {
+            $soLuongSP = $category->sanPhams()->count(); // Đếm số lượng sản phẩm của danh mục
+            $category->soLuongSP = $soLuongSP; // Gán số lượng sản phẩm vào thuộc tính của danh mục
+        }
         // $categories = DB::table('danhmuc')->get()->paginate(5);//phân trang
-        return view('admin.category.list', [
-            'categories'  => $categories,
-        ]);
+        return view('admin.category.list', compact('categories'));
     }
     public function deleteCategories(Request $request)
     {
         // Kiểm tra xem danh mục có chứa sản phẩm nào không
         $category = DanhMuc::find($request->idDanhMuc);
         $products = $category->sanphams;
-    
+
         if ($products->isNotEmpty()) {
             // Nếu có sản phẩm, không thực hiện xóa và hiển thị thông báo lỗi
             toastr()->error('Không thể xóa danh mục vì nó chứa sản phẩm.');
             return response()->json(['success' => false]);
         }
-    
+
         // Nếu không có sản phẩm, thực hiện xóa danh mục
         $result = $category->delete();
-    
+
         // Xác định kết quả và đặt thông báo
         if ($result) {
             // Xóa danh mục thành công

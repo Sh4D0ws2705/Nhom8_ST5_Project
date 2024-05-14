@@ -13,6 +13,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Tên Danh Muc</th>
+                            <th>Số Lượng SP</th>
                             <th>Active</th>                          
                             <th>Tùy Chỉnh</th>                          
                         </tr>
@@ -21,6 +22,7 @@
                         <tr>
                             <th>ID</th>
                             <th>Tên Danh Muc</th>
+                            <th>Số Lượng SP</th>
                             <th>Active</th>   
                             <th>Tùy Chỉnh</th>   
                         </tr>
@@ -28,8 +30,9 @@
                     <tbody>
                          @foreach ($categories as $cate)
                             <tr>
-                                <td>{{ $cate-> idDanhMuc }}</td>
+                                <td>{{ $cate->idDanhMuc }}</td>
                                 <td>{{ $cate->tenDanhMuc }}</td>
+                                <td>{{ $cate->soLuongSP }}</td>
                                 <td>{{ $cate->active }}</td>
                                 <td>
                                     <!-- dẫn đường dẫn tới trang sửa sp -->
