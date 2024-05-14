@@ -7,7 +7,7 @@
     <form action="" enctype="multipart/form-data" method="post">
         @csrf
         <!-- Begin Add Product -->
-        <div class="input-group main-content">
+        <div class="input-group main-content">  
             <div class="admin-content col-lg-9">  
                   <!-- Trường ẩn để lưu trữ giá trị của 'tenDanhMuc' hiện tại -->
                 <input type="hidden" name="tenDanhMucOld" value="{{ $categories->tenDanhMuc }}">

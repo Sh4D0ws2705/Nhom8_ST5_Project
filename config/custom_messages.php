@@ -21,7 +21,7 @@ return [
     'success' => [
         'added' => 'Bạn đã thêm sản phẩm thành công.',
         'deleted' => 'Bạn đã xóa sản phẩm thành công',
-        'updated' => 'Bạn đã sửa sản phẩm thành công',
+        'updated' => 'Bạn đã cập nhật sản phẩm thành công',
         'addedMenu' => 'Bạn đã thêm danh mục thành công.',
         'deletedMenu' => 'Bạn đã xóa danh mục thành công',
         'updatedMenu' => 'Bạn đã sửa danh mục thành công'

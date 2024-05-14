@@ -23,7 +23,6 @@ class ProductController extends Controller
             'maNhaSX' => 'required',
             'MaTrangThai' => 'required',
             'giaBan' => 'required',
-            'giaGiam' => 'required',
             'mauSP' => 'required',
             'soLuongTrongKho' => 'required',
             'thongSoKyThuat' => 'required',
@@ -215,12 +214,13 @@ class ProductController extends Controller
 
         // Lưu sản phẩm vào cơ sở dữ liệu
         $product->save();
-        // Sắp xếp lại các sản phẩm theo thứ tự id giảm dần
-        $product = SanPham::orderBy('id', 'desc')->get();
+        // // Sắp xếp lại các sản phẩm theo thứ tự id giảm dần
+        // $product = SanPham::orderBy('maSP', 'desc')->get();
 
         // Hiển thị thông báo thành công
         toastr()->success(config('custom_messages.success.added', ['timeOut' => 5000]));
         // Redirect về trang trước
         return redirect()->back();
+
     }
 }

@@ -6,7 +6,7 @@
 </div>
 <!-- Page Heading -->
 <form action="{{ route('insertProduct') }}" enctype="multipart/form-data" method="post">
-    @csrf   
+    @csrf
     <!-- Begin Add Product -->
     <div class="input-group main-content">
         <div class="admin-content-left col-lg-9">
