@@ -44,7 +44,6 @@
                         @php
                             $product_images = explode('*', $product -> anhChiTiet);
                         @endphp
-
                         @foreach($product_images as $key => $product_image)
                             <img src="{{ asset($product_image) }}" style="width: 70px; height: 70px; margin-bottom: 10px; border-radius: 10px, border: 1px solid gray;" 
                             onclick="showImage({{ $key }})" class="thumbnail-image" id="thumbnail-{{ $key }}">
@@ -182,7 +181,7 @@
             var product_images = @json($product_images); // Convert PHP array to JavaScript array
             var mainImage = document.getElementById('mainImage');
             var currentIndex = 0;
-            var intervalTime = 3000; // Change image every 3000 milliseconds (3 seconds)
+            var intervalTime = 5000; // Change image every 3000 milliseconds (3 seconds)
             var intervalId;
 
             function showImage(index) {
