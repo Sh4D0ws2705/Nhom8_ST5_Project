@@ -382,19 +382,16 @@
 
         <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
             <div class="container">
-                <div class="row">
+                <div class="row" style="width: 1531px; transform: translate(-109px, 0px);">
                     <div class="display-header d-flex justify-content-between pb-3">
-                        <h2 class="display-7 text-dark text-uppercase">Mobile Products</h2>
-                        <div class="btn-right">
-                            <a href="shop.html" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
-                        </div>
+                        <h2 class="display-7 text-dark text-uppercase">Our Products</h2>
                     </div>
                     <div class="swiper product-swiper" method="post">
                         <div class="swiper-wrapper product">
                             <div class="row g-4">
                                 @foreach ($data as $row)
                                     @if ($row->active == 1)
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4">
                                             <div class="swiper-slide product-list">
                                                 <div class="image-holder">
                                                     <a href="{{ route('detail', ['maSP' => $row->sanphams->maSP]) }}">

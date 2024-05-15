@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\DanhMuc;
+use App\Models\SanPham;
 use Illuminate\Validation\Rule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -64,48 +65,86 @@ class MenuController extends Controller
         ]);
     }
     public function updateCategories(Request $request)
-    {
-        // Lấy tên danh mục mới và cũ từ dữ liệu đầu vào
-        $tenDanhMucNew = $request->input('tenDanhMuc');
-        $tenDanhMucOld = $request->input('tenDanhMucOld');
+{
+    // Lấy tên danh mục mới và cũ từ dữ liệu đầu vào
+    $tenDanhMucNew = $request->input('tenDanhMuc');
+    $tenDanhMucOld = $request->input('tenDanhMucOld');
 
-        // Kiểm tra xem trường 'tenDanhMuc' có thay đổi không
-        if ($tenDanhMucNew !== $tenDanhMucOld) {
-            // Nếu tên danh mục thay đổi, thực hiện kiểm tra unique
-            $validator = Validator::make($request->all(), [
-                'tenDanhMuc' => 'required|unique:danhmuc',
-            ], config('custom_messages.validation'));
+    // Kiểm tra xem trường 'tenDanhMuc' có thay đổi không
+    if ($tenDanhMucNew !== $tenDanhMucOld) {
+        // Nếu tên danh mục thay đổi, thực hiện kiểm tra unique
+        $validator = Validator::make($request->all(), [
+            'tenDanhMuc' => 'required|unique:danhmuc',
+        ], config('custom_messages.validation'));
 
-            // Kiểm tra nếu validation thất bại
-            if ($validator->fails()) {
-                // Hiển thị thông báo lỗi và redirect quay lại form
-                toastr()->warning($validator->errors()->first('tenDanhMuc'));
-                return redirect()->back()->withInput();
-            }
+        // Kiểm tra nếu validation thất bại
+        if ($validator->fails()) {
+            // Hiển thị thông báo lỗi và redirect quay lại form
+            toastr()->warning($validator->errors()->first('tenDanhMuc'));
+            return redirect()->back()->withInput();
         }
-
-        // Loại bỏ _token từ dữ liệu request
-        $data = $request->except('_token');
-        $category = DanhMuc::find($request->idDanhMuc);
-
-        // Cập nhật các trường dữ liệu
-        $category->tenDanhMuc = $data['tenDanhMuc'];
-        $category->moTa = $data['moTa'];
-        $category->active = $data['active'];
-
-        // Lưu sản phẩm vào cơ sở dữ liệu
-        $result = $category->save();
-
-        // Kiểm tra kết quả của việc lưu trữ và hiển thị thông báo tương ứng
-        if ($result) {
-            toastr()->success(config('custom_messages.success.updatedMenu', ['timeOut' => 5000]));
-        } else {
-            toastr()->error(config('custom_messages.error.generic5'));
-        }
-
-        // Redirect về trang danh sách danh mục
-        return redirect('/admin/category/list');
     }
+
+    // Lấy danh mục từ id
+    $category = DanhMuc::find($request->idDanhMuc);
+
+    // Lấy trạng thái active từ dữ liệu đầu vào
+    $active = $request->input('active');
+
+    // Lấy tất cả các sản phẩm thuộc danh mục này
+    $products = SanPham::where('idDanhMuc', $category->idDanhMuc)->get();
+
+    // Nếu trạng thái active là 0, ẩn cả danh mục và các sản phẩm thuộc danh mục đó
+    if ($active == 0) {
+        // Ẩn danh mục
+        $category->active = 0;
+        $category->save();
+
+        // Ẩn các sản phẩm
+        foreach ($products as $product) {
+            $product->active = 0;
+            $product->save();
+        }
+    } else {
+        // Nếu trạng thái active là 1
+        // Kiểm tra xem danh mục đã từng bị ẩn không
+        if ($category->active == 0) {
+            // Nếu danh mục từng bị ẩn, active lại danh mục và các sản phẩm thuộc danh mục đó
+            $category->active = 1;
+            $category->save();
+
+            // Active lại các sản phẩm
+            foreach ($products as $product) {
+                $product->active = 1;
+                $product->save();
+            }
+        } else {
+            // Nếu danh mục không bị ẩn trước đó, chỉ cập nhật trạng thái danh mục
+            $category->save();
+        }
+    }
+
+    // Loại bỏ _token từ dữ liệu request
+    $data = $request->except('_token');
+
+    // Cập nhật các trường dữ liệu
+    $category->tenDanhMuc = $data['tenDanhMuc'];
+    $category->moTa = $data['moTa'];
+
+    // Lưu sản phẩm vào cơ sở dữ liệu
+    $result = $category->save();
+
+    // Kiểm tra kết quả của việc lưu trữ và hiển thị thông báo tương ứng
+    if ($result) {
+        toastr()->success(config('custom_messages.success.updatedMenu', ['timeOut' => 5000]));
+    } else {
+        toastr()->error(config('custom_messages.error.generic5'));
+    }
+
+    // Redirect về trang danh sách danh mục
+    return redirect('/admin/category/list');
+}
+    
     public function listCategories()
     {
         $categories = DanhMuc::orderBy('idDanhMuc', 'desc')->get();

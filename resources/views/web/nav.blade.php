@@ -120,7 +120,7 @@
                     <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
 
                         <li class="nav-item">
-                            <a class="nav-link me-4 active" href="#billboard">Home</a>
+                            <a class="nav-link me-4 active" href="{{ route('show.page',['page'=>'home']) }}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link me-4" href="#company-services">Services</a>
@@ -158,12 +158,14 @@
 
                                 <!-- so danh muc len dropdown -->
                                 @foreach($datadm as $row)
-                                <li>
-                                <a href="{{ route('category.products', ['idDanhMuc' => $row->idDanhMuc]) }}" class="dropdown-item">
-                                        {{ $row->tenDanhMuc }}
-                                    </a>
-                                </li>
-                                @endforeach
+                                @if($row->active == 1)
+                                    <li>
+                                        <a href="{{ route('category.products', ['idDanhMuc' => $row->idDanhMuc]) }}" class="dropdown-item">
+                                            {{ $row->tenDanhMuc }}
+                                        </a>
+                                    </li>
+                                @endif
+                            @endforeach
                                 <!-- <li>
                                     <a href="single-post.html" class="dropdown-item">Single Post</a>
                                 </li>

@@ -24,7 +24,7 @@
                         <label class="form-check-label" for="noactive">Không</label>
                     </div>
                 </div>
-                <button class="btn btn-primary mt-4" type="submit">Sửa Danh Mục</button>
+                <button class="btn btn-primary mt-4" type="submit">Cập Nhật Danh Mục</button>
             </div>
         </div>
     </form>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Models\SanPham;
 use App\Http\Controllers\Controller;
+use App\Models\DanhMuc;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
@@ -27,7 +28,7 @@ class ProductController extends Controller
             'soLuongTrongKho' => 'required',
             'thongSoKyThuat' => 'required',
             'moTa' => 'required',
-            // 'anhDaiDien' => 'required|image|mimes:png,jpg,jpeg,webp',
+            'anhDaiDien' => 'required',
             // 'anhChiTiet' => 'required|image|mimes:png,jpg,jpeg,webp'
         ], config('custom_messages.validation'));
         // Kiểm tra nếu validation thất bại
@@ -56,11 +57,18 @@ class ProductController extends Controller
             toastr()->warning('Giá giảm không được lớn hơn hoặc bằng giá bán');
             return redirect()->back()->withInput();
         }
-
         $product = SanPham::find($request->maSP);
-
         // Loại bỏ _token từ dữ liệu request
         $data = $request->except('_token');
+        // Kiểm tra trạng thái của danh mục của sản phẩm
+        $category = DanhMuc::find($product->idDanhMuc);
+
+        if ($category->active == 0 && $data['active'] == 1) {
+            toastr()->error("Không thể active sản phẩm khi danh mục của nó đang bị ẩn.");
+            return redirect('/admin/product/list');
+        }
+
+
         // Đặt các thuộc tính cho sản phẩm
         $product->tenSP = $data['tenSP'];
         $product->idDanhMuc = $data['idDanhMuc'];
@@ -158,7 +166,7 @@ class ProductController extends Controller
             'soLuongTrongKho' => 'required',
             'thongSoKyThuat' => 'required',
             'moTa' => 'required',
-            // 'anhDaiDien' => 'required|image|mimes:png,jpg,jpeg,webp',
+            'anhDaiDien' => 'required',
             // 'anhChiTiet' => 'required|image|mimes:png,jpg,jpeg,webp'
         ], config('custom_messages.validation'));
 
@@ -221,6 +229,5 @@ class ProductController extends Controller
         toastr()->success(config('custom_messages.success.added', ['timeOut' => 5000]));
         // Redirect về trang trước
         return redirect()->back();
-
     }
 }

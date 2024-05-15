@@ -6,7 +6,6 @@
     <!-- Page Heading -->
     <form action="" enctype="multipart/form-data" method="post">
         @csrf
-        <input type="hidden" name="action" value="update">
         <!-- Begin Add Product -->
         <div class="input-group main-content">
             <div class="admin-content-left col-lg-9">
