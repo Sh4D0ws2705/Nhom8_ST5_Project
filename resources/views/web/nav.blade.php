@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <title>Search</title>
@@ -93,6 +94,46 @@
             d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
     </symbol>
 </svg>
+<style>
+    .container-1{
+        width: 300px;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+    }
+
+    .container-1 input#search{
+        width: 300px;
+        height: 50px;
+        background: #2b303b;
+        border: none;
+        font-size: 20px;
+        float: left;
+        color: #63717f;
+        padding-left: 45px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+    .container-1 input#search::-webkit-input-placeholder {
+        color: #65737e;
+    }
+    .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+        color: #65737e;  
+    }
+    .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+        color: #65737e;  
+    }
+    .container-1 input#search:-ms-input-placeholder {  
+        color: #65737e;  
+    }
+
+    .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+        outline:none;
+        background: #ffffff;
+    }
+</style>
 </head>
 <body>
 <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
@@ -180,12 +221,15 @@
                                 <ul class="d-flex justify-content-end list-unstyled">
                                     <li class="search-item pe-3">
                                         <span>
-                                            <form action="" id="search-form">
+                                            <!-- <form action="" id="search-form">
                                                 <input type="text" name="keyword" id="keyword" placeholder="Your name.." style="font-size:20px">
-                                                <svg class="search">
-                                                <use xlink:href="#search"></use>
-                                            </svg>
-                                            </form>
+                                                <svg class="search"><use xlink:href="#search"></use></svg>
+                                            </form> -->
+                                            <div class="box">
+                                                <div class="container-1">
+                                                    <input type="search" id="search" placeholder="Search..." />
+                                                </div>
+                                            </div>
                                             
                                         </span>
                                     </li>
