@@ -61,6 +61,15 @@ Route::get('/admin/category/list', [MenuController::class, 'listCategories'])->n
 Route::post('/admin/category/add', [MenuController::class, 'insertCategories'])->name('insertMenu');
 
 
+//route order
+Route::get('/admin/order',function () {
+    return view('admin.orderList');
+});
+Route::get('/admin/orderDetail',function () {
+    return view('admin.orderDetails');
+});
+
+
 
 // route lấy đường dẫn hình
 Route::post('/upload', [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
@@ -81,7 +90,12 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/category/{idDanhMuc}', [PageControl::class, 'getProductByCategory'])->name('category.products');
 
 //gio hang  
+Route::get('/order/success', function () {
+    return view('web.confirm');
+})->name('home');
 Route::get('/shop/cart',[CartController::class,"showCart"]);
 Route::get('/cart/delete/{maSP}',[CartController::class,"deleteCart"]);
 Route::post('/cart/update',[CartController::class,"updateCart"]);
+Route::post('/cart/send',[CartController::class,"sendCart"]);
 Route::post('/cart/add',[CartController::class, 'addCart'])->name('addCart');
+

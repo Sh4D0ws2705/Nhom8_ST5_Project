@@ -15,7 +15,7 @@
 
 <body>
     <div class="card">
-        <form action="" method="POST">
+        <form action="/cart/send" method="POST">
             <div class="row">
                 <div class="col-md-8 cart" style="max-height: 700px; overflow: scroll;">
                     <div class="title">
@@ -81,12 +81,12 @@
                         <h5><b>Thông Tin Giao Hàng</b></h5>
                     </div>
                     <hr>
-                    <input type="text" placeholder="Tên" name="" class="form-control mb-2" value="">
-                    <input type="tel" placeholder="Số Điện Thoại" name="" class="form-control mb-2"
+                    <input type="text" placeholder="Tên" name="tenKhachHang" class="form-control mb-2" value="">
+                    <input type="tel" placeholder="Số Điện Thoại" name="sdt" class="form-control mb-2"
                         value="">
-                    <input type="email" placeholder="Email" name="" class="form-control mb-2" value="">
-                    <input type="text" placeholder="Địa chỉ" name="" class="form-control mb-2" value="">
-                    <input type="text" placeholder="Ghi Chú" name="" class="form-control mb-2" value="">
+                    <input type="email" placeholder="Email" name="email" class="form-control mb-2" value="">
+                    <input type="text" placeholder="Địa chỉ" name="diaChi" class="form-control mb-2" value="">
+                    <input type="text" placeholder="Ghi Chú" name="ghiChu" class="form-control mb-2" value="">
                     <button type="submit" class="btn">Gửi Đơn Hàng</button>
                 </div>
             </div>

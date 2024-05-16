@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\donhang;
 use App\Models\SanPham;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Session;
 
 class CartController extends Controller
@@ -53,4 +55,19 @@ class CartController extends Controller
       Session::put('cart',$cart);
       return redirect('/shop/cart');
     }
+    public function sendCart(Request $request) {
+        //tao token
+        $token = Str::random(12);
+        $order = new donhang();
+        $order->tenKhachHang = $request -> input('tenKhachHang');
+        $order->email = $request -> input('email');
+        $order->diaChi = $request -> input('diaChi');
+        $order->ghiChu = $request -> input('ghiChu');
+        $order->sdt = $request -> input('sdt');
+        $order->token = $request -> $token;
+        $order_details = json_encode($request -> input('product_id')) ;
+        $order->orderDetails = $order_details;
+        $order -> save();
+        return redirect('/order/success');
+    } 
 }

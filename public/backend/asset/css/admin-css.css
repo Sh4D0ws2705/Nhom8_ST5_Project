@@ -72,6 +72,9 @@ tr th {
 .confirm-link {
     background: green;
 }
+.noconfirm-link {
+    background: red;
+}
 tr td img {
     width: 70px;
 }
