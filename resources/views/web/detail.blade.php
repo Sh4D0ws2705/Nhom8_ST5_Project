@@ -37,45 +37,51 @@
     tabindex="0">
     @extends('web.nav')
     @section('navbar')
-        <section class="py-5 product-detail">
-            <div class="container mt-5 px-3 px-lg-2 my-1" style="max-height: 700px; overflow:hidden;">
-                <div class="row gx-4 gx-lg-4 align-items-center">
-                    <div class="col-md-4" id="mainImageContainer" style="max-width: 900px;">
-                        <img id="mainImage" src="{{ asset($product->anhDaiDien) }}" style="width: 100%; height: auto;">
-                    </div>
-                    {{-- img slider --}}
-                    <div class="col-md-2" id="img-slider" style="max-width: 900px;">
-                        @php
-                            $product_images = explode('*', $product->anhChiTiet);
-                        @endphp
-                        @foreach ($product_images as $key => $product_image)
-                            <img src="{{ asset($product_image) }}"
-                                style="width: 70px; height: 70px; margin-bottom: 10px; border-radius: 10px, border: 1px solid gray;"
-                                onclick="showImage({{ $key }})" class="thumbnail-image"
-                                id="thumbnail-{{ $key }}">
-                            <br>
-                        @endforeach
-                    </div>
-                    <div class='col-md-6'>
-                        <div class='tenSP'>{{ $product->tenSP }}</div>
-                        <!-- <div class='decription'>{{ $product->moTa }}</div> -->
-                        <div class='fs-5 mb-5 background align-items-center'>
-                            <span class='text-decoration-line-through giagiam'>{{ number_format($product->giaBan) }}</span>|
-                            <span class="giaban">{{ number_format($product->giaGiam) }}</span>
+        <form action="/cart/add" method="post">
+            <section class="py-5 product-detail">
+                <div class="container mt-5 px-3 px-lg-2 my-1" style="max-height: 700px; overflow:hidden;">
+                    <div class="row gx-4 gx-lg-4 align-items-center">
+                        <div class="col-md-4" id="mainImageContainer" style="max-width: 900px;">
+                            <img id="mainImage" src="{{ asset($product->anhDaiDien) }}" style="width: 100%; height: auto;">
                         </div>
-                        <div class='d-flex'>
-                            <div class="product-qty">
-                                <input class='form-control text-center me-3' style='max-width: 4rem' type="number" value="1" min="0">
+                        {{-- img slider --}}
+                        <div class="col-md-2" id="img-slider" style="max-width: 900px;">
+                            @php
+                                $product_images = explode('*', $product->anhChiTiet);
+                            @endphp
+                            @foreach ($product_images as $key => $product_image)
+                                <img src="{{ asset($product_image) }}"
+                                    style="width: 70px; height: 70px; margin-bottom: 10px; border-radius: 10px, border: 1px solid gray;"
+                                    onclick="showImage({{ $key }})" class="thumbnail-image"
+                                    id="thumbnail-{{ $key }}">
+                                <br>
+                            @endforeach
+                        </div>
+                        <div class='col-md-6'>
+                            <div class='tenSP'>{{ $product->tenSP }}</div>
+                            <!-- <div class='decription'>{{ $product->moTa }}</div> -->
+                            <div class='fs-5 mb-5 background align-items-center'>
+                                <span
+                                    class='text-decoration-line-through giagiam'>{{ number_format($product->giaBan) }}</span>|
+                                <span class="giaban">{{ number_format($product->giaGiam) }}</span>
                             </div>
-                            <button class='btn btn-outline-dark flex-shrink-0' type='button'>
-                                <i class='bi-cart-fill me-1'></i>
-                                Add to cart
-                            </button></a>
+                            <div class='d-flex'>
+                                <div class="product-qty">
+                                    <input class='form-control text-center me-3' name="product_qty" style='max-width: 4rem' type="number"
+                                        value="1" min="1">
+                                    <input name="product_id" value="{{ $product->maSP }}" type="hidden">
+                                </div>
+                                <button href="/shop/cart" type="submit" class='btn btn-outline-dark flex-shrink-0'>
+                                    <i class='bi-cart-fill me-1'></i>
+                                    Add to cart
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                @csrf   
         </section>
+    </form>
         <!-- Related items section-->
         <section class="bg-light">
             <div class="row detail">

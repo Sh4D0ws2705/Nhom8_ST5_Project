@@ -9,6 +9,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\SignUp;
 use App\Http\Controllers\PageControl;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CartController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,7 +40,7 @@ use App\Http\Controllers\AuthController;
 Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');
 //route cho trang admin
 // Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');
-Route::get('/admin/index',function () {
+Route::get('/admin/index', function () {
     return view('admin.index');
 });
 
@@ -77,3 +79,9 @@ Route::get('register', [AuthController::class, 'showRegisterForm'])->name('regis
 Route::post('register', [AuthController::class, 'register']);
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/category/{idDanhMuc}', [PageControl::class, 'getProductByCategory'])->name('category.products');
+
+//gio hang  
+Route::get('/shop/cart',[CartController::class,"showCart"]);
+Route::get('/cart/delete/{maSP}',[CartController::class,"deleteCart"]);
+Route::post('/cart/update',[CartController::class,"updateCart"]);
+Route::post('/cart/add',[CartController::class, 'addCart'])->name('addCart');
