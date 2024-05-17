@@ -48,12 +48,12 @@
     <div class="container mt-5">
         <div class="card p-5">
             <div class="card-body">
-                <h5 class="card-title text-center mb-4">Xác nhận đơn hàng <span><b>#11</b></span>-<span><b>Nguyen A</b></span></h5>
+                <h5 class="card-title text-center mb-4">Xác nhận đơn hàng <span><b>#11-Thành Công</b></span></h5>
                 <p class="text-center order-id">ID Đơn hàng: <span>11</span></p>
-                <p class="text-center mb-4">Đơn hàng của bạn đã gửi thành công !</p>
-                <p class="text-center mb-4">Bạn vui lòng check <b>Email</b> để xác nhận đơn hàng !</p>
+                <p class="text-center mb-4">Đơn hàng của bạn đã được xác nhận thành công !</p>
+                <p class="text-center mb-4">Chúng tôi sẽ <b>Giao Hàng</b> trong thời gian tối đa 3 ngày làm việc !</p>
                 <div class="text-center mt-4">
-                    <a href="{{ url('/home') }}" class="btn btn-primary">Tiếp Tục Mua Hàng</a>
+                    <a href="{{ url('/home') }}" class="btn btn-primary">Quay lại cửa hàng</a>
                 </div>
             </div>
         </div>

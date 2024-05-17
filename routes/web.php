@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\AdminPageController;
 use App\Http\Controllers\admin\MenuController;
+use App\Http\Controllers\admin\OrderController as AdminOrderController;
 use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\UploadController;
 use Illuminate\Support\Facades\Route;
@@ -10,6 +11,7 @@ use App\Http\Controllers\SignUp;
 use App\Http\Controllers\PageControl;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,12 +64,10 @@ Route::post('/admin/category/add', [MenuController::class, 'insertCategories'])-
 
 
 //route order
-Route::get('/admin/order',function () {
-    return view('admin.orderList');
-});
-Route::get('/admin/orderDetail',function () {
-    return view('admin.orderDetails');
-});
+Route::get('/admin/order/list', [AdminOrderController::class,'orderList']);
+Route::get('/admin/order/delete', [AdminOrderController::class, 'orderDelete']);
+Route::get('/admin/order/detail/{order_detail}', [AdminOrderController::class,'orderDetail']);
+
 
 
 
@@ -90,7 +90,7 @@ Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/category/{idDanhMuc}', [PageControl::class, 'getProductByCategory'])->name('category.products');
 
 //gio hang  
-Route::get('/order/success', function () {
+Route::get('/order/confirm', function () {
     return view('web.confirm');
 })->name('home');
 Route::get('/shop/cart',[CartController::class,"showCart"]);

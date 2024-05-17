@@ -81,12 +81,12 @@
                         <h5><b>Thông Tin Giao Hàng</b></h5>
                     </div>
                     <hr>
-                    <input type="text" placeholder="Tên" name="tenKhachHang" class="form-control mb-2" value="">
+                    <input type="text" placeholder="Tên" name="tenKhachHang" class="form-control mb-2" value="" required>
                     <input type="tel" placeholder="Số Điện Thoại" name="sdt" class="form-control mb-2"
-                        value="">
-                    <input type="email" placeholder="Email" name="email" class="form-control mb-2" value="">
-                    <input type="text" placeholder="Địa chỉ" name="diaChi" class="form-control mb-2" value="">
-                    <input type="text" placeholder="Ghi Chú" name="ghiChu" class="form-control mb-2" value="">
+                        value="" pattern="[0-9]{10}" required >
+                    <input type="email" placeholder="Email" name="email" class="form-control mb-2" value="" required>
+                    <input type="text" placeholder="Địa chỉ" name="diaChi" class="form-control mb-2" value="" required>
+                    <input type="text" placeholder="Ghi Chú" name="ghiChu" class="form-control mb-2" value="" required>
                     <button type="submit" class="btn">Gửi Đơn Hàng</button>
                 </div>
             </div>

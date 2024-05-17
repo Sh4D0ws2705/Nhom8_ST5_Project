@@ -41,35 +41,23 @@
                         </tr>
                     </tfoot>
                     <tbody>
+                        @foreach($orders as $order)
                         <tr>
-                            <td>1</td>
-                            <td>Nguyen Van A</td>
-                            <td>09090922202</td>
-                            <td>22211tt@mail.com</td>
-                            <td>420a Nơ trang long,F13 Bình Thạnh</td>
-                            <td>Giao Hỏa Tốc</td>
+                            <td>{{$order->maDonHang}}</td>
+                            <td>{{$order->tenKhachHang}}</td>
+                            <td>{{$order->sdt}}</td>
+                            <td>{{$order->email}}</td>
+                            <td>{{$order->diaChi}}</td>
+                            <td>{{$order->ghiChu}}</td>
                             <!-- xem chi tiết hóa đơn -->
-                            <td><a class="action-link edit-link" href="/admin/orderDetail">Xem</a></td>
+                            <td><a class="action-link edit-link" href="/admin/order/detail/{{($order->orderDetails)}}">Xem</a></td>
                             <td>7/4/2024</td>
-                            <td><a class="action-link confirm-link" href="">Đã Xác Nhận</a></td>
-                            <td>
-                                <a class="action-link del-link" href="">Xóa</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Nguyen Van B</td>
-                            <td>09090922202</td>
-                            <td>nguyenvanB@mail.com</td>
-                            <td>420 Phạm Văn Đồng,Thủ Đức</td>
-                            <td>Giao Nhanh</td>
-                            <td><a class="action-link edit-link" href="/admin/orderDetail">Xem</a></td>
-                            <td>17/4/2024</td>
                             <td><a class="action-link noconfirm-link" href="">Chưa Xác Nhận</a></td>
                             <td>
-                                <a class="action-link del-link" href="">Xóa</a>
+                                <a onclick="removeRowOrder('{{ $order->maDonHang }}', '/admin/order/delete')" class="action-link del-link" href="#">Xóa</a>
                             </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

@@ -68,6 +68,6 @@ class CartController extends Controller
         $order_details = json_encode($request -> input('product_id')) ;
         $order->orderDetails = $order_details;
         $order -> save();
-        return redirect('/order/success');
+        return redirect('/order/confirm');
     } 
 }

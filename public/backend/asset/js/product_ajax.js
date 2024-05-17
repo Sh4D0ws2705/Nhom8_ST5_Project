@@ -104,5 +104,22 @@ function removeRowCate(idDanhMuc,url) {
     }
 }
 
-
+function removeRowOrder(maDonHang,url) {
+    if (confirm('Are You Sure')) {
+        $.ajax({
+            url:  url,
+            data: {maDonHang},
+            method: 'GET',
+            dataType: 'JSON',
+            success: function(res) {
+                if (res.success == true) {
+                    location.reload();
+                }
+                else{
+                    location.reload();
+                }
+            }
+        })
+    }
+}
 

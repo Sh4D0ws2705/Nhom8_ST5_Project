@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class donhang extends Model
 {
-    use HasFactory;
+    protected $table = 'donhangs'; // Tên bảng
+    protected $primaryKey = 'maDonHang'; // Khóa chính
 }
