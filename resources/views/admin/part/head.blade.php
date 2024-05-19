@@ -9,7 +9,7 @@
 <!-- cdn ajax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-<title>SB Admin 2 </title>
+<title>Mini Store Admin</title>
 
 <!-- Custom fonts for this template-->
 <link href="{{ asset('backend/asset/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
