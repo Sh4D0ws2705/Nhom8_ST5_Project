@@ -48,8 +48,7 @@
     <div class="container mt-5">
         <div class="card p-5">
             <div class="card-body">
-                <h5 class="card-title text-center mb-4">Xác nhận đơn hàng <span><b>#11</b></span>-<span><b>Nguyen A</b></span></h5>
-                <p class="text-center order-id">ID Đơn hàng: <span>11</span></p>
+                <h3 class="card-title text-center mb-4">Xác nhận đơn hàng</h3>
                 <p class="text-center mb-4">Đơn hàng của bạn đã gửi thành công !</p>
                 <p class="text-center mb-4">Bạn vui lòng check <b>Email</b> để xác nhận đơn hàng !</p>
                 <div class="text-center mt-4">

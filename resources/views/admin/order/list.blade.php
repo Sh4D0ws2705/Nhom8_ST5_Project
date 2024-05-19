@@ -51,7 +51,7 @@
                             <td>{{$order->ghiChu}}</td>
                             <!-- xem chi tiết hóa đơn -->
                             <td><a class="action-link edit-link" href="/admin/order/detail/{{($order->orderDetails)}}">Xem</a></td>
-                            <td>7/4/2024</td>
+                            <td>{{$order->created_at}}</td>
                             <td><a class="action-link noconfirm-link" href="">Chưa Xác Nhận</a></td>
                             <td>
                                 <a onclick="removeRowOrder('{{ $order->maDonHang }}', '/admin/order/delete')" class="action-link del-link" href="#">Xóa</a>

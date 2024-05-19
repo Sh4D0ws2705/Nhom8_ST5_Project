@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class OrderController extends Controller
 {
     public function orderList() {
-        $order = donhang::all();
+        $order = donhang::orderBy('maDonHang','desc')->get();
         return view('admin.order.list',[
             'orders' => $order
         ]);
