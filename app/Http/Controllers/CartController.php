@@ -111,16 +111,19 @@ class CartController extends Controller
         $order_details = json_encode($request->input('product_id'));
         $order->orderDetails = $order_details;
         $order->save();
-        //lay ten va email khach hang
+        //lay info khach hang
         $mailInfo = $order->email;
         $nameInfo = $order->tenKhachHang;
+        $sdtInfo = $order->sdt;
+        $diachiInfo = $order->diaChi;
+        $orderDetails = json_decode($order->orderDetails, true);
         // Gửi thông báo đơn hàng cho admin
         Notification::route('mail', 'ministorelaravel@gmail.com')
             ->notify(new EmailNotification($order));
         //gui mai confirm đơn hàng cho user
-        Mail::to($mailInfo)->send(new OrderConfirm($nameInfo));
+        Mail::to($mailInfo)->send(new OrderConfirm($nameInfo, $sdtInfo, $diachiInfo, $orderDetails, $token));
         // Xóa giỏ hàng khỏi session
-        session()->flush('cart');
+        session()->forget('cart');
         return redirect('/order/confirm')->with('orders', [$order]);
     }
 }

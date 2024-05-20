@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\AdminPageController;
+use App\Http\Controllers\admin\AdminSearchController;
 use App\Http\Controllers\admin\MenuController;
 use App\Http\Controllers\admin\OrderController as AdminOrderController;
 use App\Http\Controllers\admin\ProductController;
@@ -53,7 +54,8 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/index', function () {
         return view('admin.index');
     });
-
+    //Route search admin
+    Route::get('/search',[AdminSearchController::class,'search'])->name('search');
     // route product
     Route::get('/product/list', [ProductController::class, 'listProduct'])->name('listProduct');
     Route::post('/product/add', [ProductController::class, 'insertProduct'])->name('insertProduct');
@@ -101,6 +103,7 @@ Route::get('/category/{idDanhMuc}', [PageControl::class, 'getProductByCategory']
 Route::get('/order/confirm', function () {
     return view('web.confirm');
 })->name('home');
+Route::get('/order/confirm/{token}', [AdminOrderController::class, 'confirmOrder'])->name('order.confirm');
 Route::get('/shop/cart', [CartController::class, "showCart"]);
 Route::get('/cart/delete/{maSP}', [CartController::class, "deleteCart"]);
 Route::post('/cart/update', [CartController::class, "updateCart"]);

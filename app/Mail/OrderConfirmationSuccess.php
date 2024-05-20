@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class OrderConfirm extends Mailable
+class OrderConfirmationSuccess extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -18,9 +18,9 @@ class OrderConfirm extends Mailable
      *
      * @return void
      */
-    public function __construct(public $nameInfo, public $sdtInfo , public $diachiInfo, public $orderDetails, public $token)
+    public function __construct()
     {
-        
+        //
     }
 
     /**
@@ -31,7 +31,7 @@ class OrderConfirm extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Xác Nhận Đơn Hàng',   
+            subject: 'Xác Nhận Đơn Hàng Thành Công',
         );
     }
 
@@ -43,7 +43,7 @@ class OrderConfirm extends Mailable
     public function content()
     {
         return new Content(
-            view: 'admin.orderConfirm',
+            view: 'admin.orderConfirmSuccess',
         );
     }
 
