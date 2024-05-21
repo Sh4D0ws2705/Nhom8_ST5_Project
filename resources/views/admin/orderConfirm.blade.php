@@ -19,21 +19,21 @@
         </thead>
         <tbody>
             @foreach ($orderDetails as $productId => $quantity)
-            @php
-                $product = App\Models\SanPham::find($productId);
-            @endphp
-            <tr>
-                <td style="border: 1px solid #dddddd; padding: 8px;">{{ $product->tenSP }}</td>
-                <td style="border: 1px solid #dddddd; padding: 8px;">{{ $quantity }}</td>
-                <td style="border: 1px solid #dddddd; padding: 8px;">{{ number_format($product->giaGiam) }} VND</td>
-            </tr>
-        @endforeach
-        
+                @php
+                    $product = App\Models\SanPham::find($productId);
+                @endphp
+                <tr>
+                    <td style="border: 1px solid #dddddd; padding: 8px;">{{ $product->tenSP }}</td>
+                    <td style="border: 1px solid #dddddd; padding: 8px;">{{ $quantity }}</td>
+                    <td style="border: 1px solid #dddddd; padding: 8px;">{{ number_format($product->giaGiam) }} VND</td>
+                </tr>
+            @endforeach
+
         </tbody>
     </table>
+    <p style="margin-top: 30px">
+        <a href="{{ route('order.confirm', ['token' => $token]) }}"
+            style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block;">Xác
+            Nhận Đơn Hàng</a>
+    </p>
 </div>
-<p>
-    <a href="{{ route('order.confirm', ['token' => $token]) }}"
-        style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block;">Xác
-        Nhận Đơn Hàng</a>
-</p>

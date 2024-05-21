@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\AdminDashboardController;
 use App\Http\Controllers\admin\AdminLoginController;
 use App\Http\Controllers\admin\AdminPageController;
 use App\Http\Controllers\admin\AdminSearchController;
@@ -51,9 +52,8 @@ Route::post('/admin/checkLogin', [AdminLoginController::class, 'checkLogin'])->n
 Route::post('/admin/logout', [AdminLoginController::class, 'logout'])->name('logoutAdmin');
 //admin
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
-    Route::get('/index', function () {
-        return view('admin.index');
-    });
+    //Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('/index', [AdminDashboardController::class,'index'])->name('admin.dashboard');
     //Route search admin
     Route::get('/search',[AdminSearchController::class,'search'])->name('search');
     // route product
