@@ -201,17 +201,9 @@
                                     </li>
                                 @endif
                             @endforeach
-                                <!-- <li>
-                                    <a href="single-post.html" class="dropdown-item">Single Post</a>
-                                </li>
-                                <li>
-                                    <a href="single-product.html" class="dropdown-item">Single Product</a>
-                                </li> -->
-                                <!-- <li>
-                                    <a href="#" class="dropdown-item">Contact</a>
-                                </li> -->
                             </ul>
                         </li>
+
                         <li class="nav-item">
                             <div class="user-items ps-5">
                                 <ul class="d-flex justify-content-end list-unstyled">
@@ -229,14 +221,34 @@
                                             
                                         </span>
                                     </li>
-                                    @if (Auth::check())
-                                    <!-- Nếu người dùng đã đăng nhập, hiển thị nút Logout -->
-                                    <form method="POST" action="{{ route('logout') }}" class="pe-3">
-                                        @csrf
-                                        <button type=" submit" class="btn btn-danger">Logout</button>
-                                    </form>
-                                    @else
-                                    <!-- Nếu người dùng chưa đăng nhập, hiển thị nút Login hoặc Register -->
+                                </ul>
+                            </div>
+                        </li>
+
+                                    
+                        @if (Auth::check())
+                        <!-- Nếu người dùng đã đăng nhập, hiển thị nút Logout -->
+                        <li class="nav-item dropdown has-arrow new-user-menus"> 
+                            <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#"
+                    role="button" aria-expanded="false">{{ auth()->user()->name }}</a>                                    
+                            <div class="dropdown-menu">                                           
+                                <a class="dropdown-item" href="{{ route('profile') }}">My Profile</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                            </div>
+                        </li>
+
+                        @else
+                        <!-- Nếu người dùng chưa đăng nhập, hiển thị nút Login hoặc Register -->
+                        <li class="nav-item">
+                            <div class="user-items">
+                                <ul class="d-flex list-unstyled">
                                     <li class="pe-3">
                                         <a href="{{ route('show.page',['page'=>'login']) }}">
                                             <svg class="user">
@@ -244,9 +256,15 @@
                                             </svg>
                                         </a>
                                     </li>
+                                </ul>
+                            </div>
+                        </li>
+                        @endif
 
-                                    @endif
-                                    <li>
+                        <li class="nav-item">
+                            <div class="user-items">
+                                <ul class="d-flex list-unstyled">
+                                    <li class="pe-3">
                                         <a href="/shop/cart">
                                             <svg class="cart">
                                                 <use xlink:href="#cart"></use>
@@ -256,13 +274,16 @@
                                 </ul>
                             </div>
                         </li>
+
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 </header>
+
 @yield('navbar')
+
 <footer id="footer" class="overflow-hidden">
     <div class="container">
         <div class="row">
