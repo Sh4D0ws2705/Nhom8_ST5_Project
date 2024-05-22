@@ -20,33 +20,32 @@
                             <th>Giá</th>
                             <th>Số Lượng</th>
                             <th>Thành Tiền</th>
-                            <th>Tùy Chỉnh</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @php
+                        $total = 0;
+                        @endphp
+                        @foreach($products as $product)
+                        @php
+                        $price = $product->giaGiam * $order_detail[$product->maSP];
+                        $total += $price;
+                        @endphp
+                        @endphp
                         <tr>
-                            <td>1</td>
-                            <td><img src="{{ asset('backend/asset/img/ip14.jpg') }}" alt=""></td>
-                            <td>Iphone 14</td>
-                            <td>15.500.000 vnd</td>
-                            <td>1</td>
-                            <td>15.500.000 vnd</td>
-                            <td><a class="action-link del-link" href="">Xóa</a></td>
+                            <td>{{$product->maSP}}</td>
+                            <td><img src="{{ asset($product->anhDaiDien) }}" alt=""></td>
+                            <td>{{$product->tenSP}}</td>
+                            <td>{{number_format($product->giaGiam)}}</td>
+                            <td>{{$order_detail[$product->maSP]}}</td>
+                            <td>{{number_format($price)}} VND</td>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><img src="{{ asset('backend/asset/img/ip14.jpg') }}" alt=""></td>
-                            <td>Iphone 14</td>
-                            <td>15.500.000 vnd</td>
-                            <td>1</td>
-                            <td>15.500.000 vnd</td>
-                            <td><a class="action-link del-link" href="">Xóa</a></td>
-                        </tr>
+                        @endforeach
                     </tbody>
                     <tfoot class="bg-white">
                         <tr>
                             <th class="total" colspan="5">Tổng Tiền</th>
-                            <th class="total" colspan="2">31.000.000 vnd</th>
+                            <th class="total" colspan="2">{{number_format($total)}} VND</th>
                         </tr>
                     </tfoot>
                 </table>

@@ -27,8 +27,8 @@ class PageControl extends Controller
         // Kiểm tra xem view có tồn tại không
         if (view()->exists("web.$page")) {
             // Lấy dữ liệu từ cơ sở dữ liệu
-            $products  = SanPham::orderBy('maSP')->get();
-            $danhmucs = DanhMuc::orderBy('idDanhMuc')->get();
+            $products  = SanPham::orderBy('maSP','desc')->get();
+            $danhmucs = DanhMuc::orderBy('idDanhMuc','desc')->get();
             $nhasanxuats = NhaSanXuat::orderBy('maNhaSX')->get();
             $trangthaisps = TrangThaiSP::orderBy('MaTrangThai')->get();
 

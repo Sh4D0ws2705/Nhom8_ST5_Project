@@ -17,6 +17,14 @@ return [
         'anhChiTiet.mimes' => 'Ảnh phải có dịnh dạng png,jpg,jpeg,webp',    
         'tenDanhMuc.required' => 'Vui lòng nhập Tên Danh Mục',
         'tenDanhMuc.unique' => 'Tên Danh Mục Đã Tồn Tại',
+        'email.required' => 'Vui Lòng Nhập Email',
+        'email.email' => 'Vui Lòng Nhập Email hợp lệ, email hợp lệ phải có @',
+        'tenKhachHang.required' => 'Vui Lòng Nhập Tên Khách Hàng',
+        'diaChi.required' => 'Vui Lòng Nhập Địa Chỉ Giao Hàng',
+        'sdt.required' => 'Vui Lòng Nhập Số Điện Thoại Giao Hàng',
+        'sdt.digits' => 'Vui Lòng Nhập Số Điện Thoại Hợp Lệ, sdt hợp lệ phải có 10 số',
+        'ghiChu.max'=> 'Chỉ được nhập tối đa 255 kí tự '
+
     ],
     'success' => [
         'added' => 'Bạn đã thêm sản phẩm thành công.',

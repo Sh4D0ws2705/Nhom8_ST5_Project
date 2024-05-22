@@ -191,12 +191,6 @@
                                 <!-- <li>
                                     <a href="shop.html" class="dropdown-item">Shop</a>
                                 </li> -->
-                                <li>
-
-                                    <a href="{{ route('show.page',['page'=>'shopping_cart']) }}"
-                                        class="dropdown-item">Cart</a>
-                                </li>
-
                                 <!-- so danh muc len dropdown -->
                                 @foreach($datadm as $row)
                                 @if($row->active == 1)
@@ -253,7 +247,7 @@
 
                                     @endif
                                     <li>
-                                        <a href="{{ route('show.page',['page'=>'shopping_cart']) }}">
+                                        <a href="/shop/cart">
                                             <svg class="cart">
                                                 <use xlink:href="#cart"></use>
                                             </svg>
