@@ -20,6 +20,8 @@ use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\ResetPasswordWithOtpController;
 use App\Http\Controllers\SubscribeController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\Api;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +49,9 @@ use App\Http\Controllers\SubscribeController;
 // });
 
 //route cho web nguoi dung
+Route::get('/search', [SearchController::class, 'index'])->name('find');
+Route::get('/nhasanxuat/{maNhaSX}', [PageControl::class, 'getSPNhaSX']);
+
 Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');
 //route cho trang admin
 // Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');

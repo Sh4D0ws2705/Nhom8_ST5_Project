@@ -116,12 +116,14 @@
 
 })(jQuery);
 
-// //click product image detail
-// const imgsAll = document.querySelectorAll('#img-slider img')
-// for (let index = 0; index < imgsAll.length; index++) {
-//   imgsAll[index].addEventListener('click', () => {
-//     const src = imgsAll[index].getAttribute('src');
-//     console.log(src);
-//   })
-
-// }
+$('.dm-filter').click(function () {
+  var nhaSX = [], tempArray = [];
+  $.each($("[data-filters='nhasx']:checked"),function () {
+    tempArray.push($(this).val());
+  });
+  tempArray.reverse();
+  if(tempArray.length !== 0){
+    nhaSX += '/nhasanxuat/'+tempArray.toString();
+  }
+  window.location.href = nhaSX;
+})

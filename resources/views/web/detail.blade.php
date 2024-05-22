@@ -71,10 +71,21 @@
                                         value="1" min="1">
                                     <input name="product_id" value="{{ $product->maSP }}" type="hidden">
                                 </div>
+                                @if ($product->trangthaisps->MaTrangThai == '1')
                                 <button href="/shop/cart" type="submit" class='btn btn-outline-dark flex-shrink-0'>
-                                    <i class='bi-cart-fill me-1'></i>
+                                    <i class='bi-cart-fill me-1'></i>                                   
                                     Add to cart
                                 </button>
+                                @elseif ($product->trangthaisps->MaTrangThai == '2')
+                                <div>
+                                    <p><b>Sản phẩm hết hàng</b></p>
+                                </div>
+                                @elseif ($product->trangthaisps->MaTrangThai == '3')
+                                <div>
+                                    <p><b>Sản phẩm ngừng bán</b></p>
+                                </div>
+                                @endif
+
                             </div>
                         </div>
                     </div>
