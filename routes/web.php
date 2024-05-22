@@ -18,6 +18,8 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ForgotPasswordController;
 use App\Http\Controllers\ResetPasswordController;
+use App\Http\Controllers\ResetPasswordWithOtpController;
+use App\Http\Controllers\SubscribeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -128,3 +130,20 @@ Route::get('reset-password/{token}', [ResetPasswordController::class, 'showReset
 Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
 //Add map
 Route::get('/googlemap', 'App\Http\Controllers\MapController@googlemap')->name('googlemap');
+//Reset password
+// Route để hiển thị form nhập email để gửi OTP
+Route::get('password/reset/withotp', [ResetPasswordWithOtpController::class, 'showRequestForm'])->name('password.reset.withotp');
+
+// Route để xử lý gửi OTP
+Route::post('password/reset/withotp/send', [ResetPasswordWithOtpController::class, 'sendOtp'])->name('password.reset.withotp.send');
+
+// Route để hiển thị form xác minh OTP
+Route::get('password/reset/withotp/verify', [ResetPasswordWithOtpController::class, 'showVerifyForm'])->name('password.reset.withotp.verify');
+
+// Route để xử lý xác minh OTP và reset mật khẩu
+Route::post('password/reset/withotp/verify', [ResetPasswordWithOtpController::class, 'verifyOtp'])->name('password.reset.withotp.verifyOtp');
+// Route cho đăng ký
+Route::post('/subscribe', [SubscribeController::class, 'subscribe'])->name('subscribe');
+
+// Route cho thông báo sản phẩm mới
+Route::get('/send-product-notification/{productName}', [SubscribeController::class, 'sendProductNotification'])->name('send.product.notification');
