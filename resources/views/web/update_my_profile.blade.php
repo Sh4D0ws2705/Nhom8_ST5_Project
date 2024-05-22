@@ -17,7 +17,7 @@
     <script src="{{asset('frontend/js/modernizr.js')}}"></script>
 
     <style type="text/css">
-        body { margin-top: 20px; color: #9b9ca1; }
+        body { margin-top: 20px; color: #a9a9ad; }
         .bg-secondary-soft { background-color: rgba(208, 212, 217, 0.1) !important; }
         .rounded { border-radius: 5px !important; }
         .py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
