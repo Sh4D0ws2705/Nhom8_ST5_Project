@@ -33,7 +33,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect()->route('home'); // Đảm bảo route 'home' tồn tại
+        return redirect()->route('login')->with('success', 'Bạn đã đăng ký thành công!'); // Đảm bảo route 'home' tồn tại
     }
 
     // Hiển thị form đăng nhập
@@ -43,6 +43,22 @@ class AuthController extends Controller
     }
 
     // Xử lý đăng nhập
+    // public function login(Request $request)
+    // {
+    //     $credentials = $request->validate([
+    //         'email' => 'required|email',
+    //         'password' => 'required',
+    //     ]);
+
+    //     if (Auth::attempt($credentials)) {
+    //         $request->session()->regenerate();
+    //         return redirect()->intended('home'); // Đảm bảo route 'home' tồn tại
+    //     }
+
+    //     return back()->withErrors([
+    //         'email' => 'The provided credentials do not match our records.',
+    //     ]);
+    // }
     public function login(Request $request)
     {
         $credentials = $request->validate([
@@ -52,12 +68,16 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('home'); // Đảm bảo route 'home' tồn tại
+            return redirect()->intended('home')->with('success', 'Login successful!');
         }
 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ]);
+        $user = \App\Models\User::where('email', $request->email)->first();
+
+        if (!$user) {
+            return redirect()->route('login')->with('error', 'Thông tin đăng nhập không khớp với hồ sơ của chúng tôi.')->withInput();
+        }
+
+        return redirect()->route('login')->with('error', 'Mật khẩu không chính xác.')->withInput();
     }
 
     // Đăng xuất

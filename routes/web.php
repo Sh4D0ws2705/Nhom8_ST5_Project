@@ -16,6 +16,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ForgotPasswordController;
+use App\Http\Controllers\ResetPasswordController;
 
 /*
 |--------------------------------------------------------------------------
@@ -118,3 +120,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('update_my_profile/{id}/delete', [ProfileController::class, 'destroyProfile'])->name('destroy_profile');
     Route::post('change_password', [ProfileController::class, 'changePassword'])->name('change_password');
 });
+
+//Route để change password
+Route::get('forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+Route::post('forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
+Route::get('reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
+//Add map
+Route::get('/googlemap', 'App\Http\Controllers\MapController@googlemap')->name('googlemap');
