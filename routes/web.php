@@ -76,7 +76,7 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
     Route::get('/order/list', [AdminOrderController::class, 'orderList']);
     Route::get('/order/delete', [AdminOrderController::class, 'orderDelete']);
     Route::get('/order/detail/{order_detail}', [AdminOrderController::class, 'orderDetail']);
-});
+}); 
 
 // route lấy đường dẫn hình
 Route::post('/upload', [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
