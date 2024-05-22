@@ -15,6 +15,7 @@ use App\Http\Controllers\PageControl;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,7 +90,7 @@ Route::get('/detail/{maSP}', [PageControl::class, 'showDetail'])->name('detail')
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
 
 Route::get('/home', function () {
-    return view('home');
+    return view('web.home');
 })->name('home');
 
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
@@ -102,10 +103,18 @@ Route::get('/category/{idDanhMuc}', [PageControl::class, 'getProductByCategory']
 //gio hang  
 Route::get('/order/confirm', function () {
     return view('web.confirm');
-})->name('home');
+});
 Route::get('/order/confirm/{token}', [AdminOrderController::class, 'confirmOrder'])->name('order.confirm');
 Route::get('/shop/cart', [CartController::class, "showCart"]);
 Route::get('/cart/delete/{maSP}', [CartController::class, "deleteCart"]);
 Route::post('/cart/update', [CartController::class, "updateCart"]);
 Route::post('/cart/send', [CartController::class, "sendCart"]);
 Route::post('/cart/add', [CartController::class, 'addCart'])->name('addCart');
+
+Route::middleware('auth')->group(function () {
+    // -------Profile-----------
+    Route::get('update_my_profile', [ProfileController::class, 'show'])->name('profile');
+    Route::post('update_my_profile/{id}', [ProfileController::class, 'updateProfile'])->name('update_profile');
+    Route::delete('update_my_profile/{id}/delete', [ProfileController::class, 'destroyProfile'])->name('destroy_profile');
+    Route::post('change_password', [ProfileController::class, 'changePassword'])->name('change_password');
+});
