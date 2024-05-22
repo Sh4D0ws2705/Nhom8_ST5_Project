@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\SignUp;
 use App\Http\Controllers\PageControl;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
@@ -39,7 +38,7 @@ use App\Http\Controllers\AuthController;
 Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');
 //route cho trang admin
 // Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');
-Route::get('/admin/index', function () {
+Route::get('/admin/index',function () {
     return view('admin.index');
 });
 
@@ -78,11 +77,3 @@ Route::get('register', [AuthController::class, 'showRegisterForm'])->name('regis
 Route::post('register', [AuthController::class, 'register']);
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/category/{idDanhMuc}', [PageControl::class, 'getProductByCategory'])->name('category.products');
-
-Route::middleware('auth')->group(function () {
-    // -------Profile-----------
-    Route::get('update_my_profile', [ProfileController::class, 'show'])->name('profile');
-    Route::post('update_my_profile/{id}', [ProfileController::class, 'updateProfile'])->name('update_profile');
-    Route::delete('update_my_profile/{id}/delete', [ProfileController::class, 'destroyProfile'])->name('destroy_profile');
-    Route::post('change_password', [ProfileController::class, 'changePassword'])->name('change_password');
-});
