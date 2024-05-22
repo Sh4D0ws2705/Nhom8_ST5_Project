@@ -78,6 +78,7 @@ class CartController extends Controller
             'tenKhachHang' => 'required',
             'diaChi' => 'required',
             'sdt' => 'required|digits:10',
+            'ghiChu' => 'max:255',
         ], config('custom_messages.validation'));
         // Kiểm tra nếu validation thất bại
         if ($validator->fails()) {

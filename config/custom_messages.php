@@ -23,6 +23,7 @@ return [
         'diaChi.required' => 'Vui Lòng Nhập Địa Chỉ Giao Hàng',
         'sdt.required' => 'Vui Lòng Nhập Số Điện Thoại Giao Hàng',
         'sdt.digits' => 'Vui Lòng Nhập Số Điện Thoại Hợp Lệ, sdt hợp lệ phải có 10 số',
+        'ghiChu.max'=> 'Chỉ được nhập tối đa 255 kí tự '
 
     ],
     'success' => [
