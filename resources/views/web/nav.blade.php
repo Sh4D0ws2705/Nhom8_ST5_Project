@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+    <style>
+        .list-group-item{
+            background-color: white;
+            border: 0.5px solid gray;
+           
+        }
+        #item{
+            text-decoration: none;
+            color: black;
+        }
+        .highlight{
+            background-color: whitesmoke;
+            color: red;
+        }
+    </style>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
         <title>Search</title>
@@ -182,17 +198,7 @@
                             <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#"
                                 role="button" aria-expanded="false">Pages</a>
                             <ul class="dropdown-menu">
-                                <!-- <li>
-                                    <a href="about.html" class="dropdown-item">About</a>
-                                </li>
                                 <li>
-                                    <a href="blog.html" class="dropdown-item">Blog</a>
-                                </li> -->
-                                <!-- <li>
-                                    <a href="shop.html" class="dropdown-item">Shop</a>
-                                </li> -->
-                                <li>
-
                                     <a href="{{ route('show.page',['page'=>'shopping_cart']) }}"
                                         class="dropdown-item">Cart</a>
                                 </li>
@@ -208,9 +214,7 @@
                                 @endif
                             @endforeach
                                 <!-- <li>
-                                    <a href="single-post.html" class="dropdown-item">Single Post</a>
-                                </li>
-                                <li>
+                                    <a href="single-post.html" class="dropdown-item">Single Post</a> 
                                     <a href="single-product.html" class="dropdown-item">Single Product</a>
                                 </li> -->
                                 <!-- <li>
@@ -221,17 +225,17 @@
                         <li class="nav-item">
                             <div class="user-items ps-5">
                                 <ul class="d-flex justify-content-end list-unstyled">
-                                    <li class="search-item pe-3">
+                                    <li class="search-item pe-3" >
                                         <span>
-                                            <!-- <form action="" id="search-form">
-                                                <input type="text" name="keyword" id="keyword" placeholder="Your name.." style="font-size:20px">
-                                                <svg class="search"><use xlink:href="#search"></use></svg>
-                                            </form> -->
-                                            <div class="box">
-                                                <div class="container-1">
-                                                    <input type="search" id="search" placeholder="Search..." />
+                                            <form action="{{ route('search')}}" method="GET" class="d-flex position-relative" role="search" id="searchForm">
+                                                <div class="box">
+                                                    <div class="container-1">
+                                                        <input class="form-control me-2 input-search" name="query" type="search" id="search" placeholder="Search..." aria-label="Search"/>
+                                                        <ul class="list-group position-absolute list-item" style="inset: 0; top: 50px; z-index: 1" id="searchResults">
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </form>
                                             
                                         </span>
                                     </li>
@@ -244,24 +248,23 @@
                                     @else
                                     <!-- Nếu người dùng chưa đăng nhập, hiển thị nút Login hoặc Register -->
                                     <li class="pe-3">
-                                        <a href="{{ route('show.page',['page'=>'login']) }}">
+                                        <!-- <a href="{{ route('show.page',['page'=>'login']) }}">
                                             <svg class="user">
                                                 <use xlink:href="#user"></use>
                                             </svg>
-                                        </a>
+                                        </a> -->
                                     </li>
 
                                     @endif
                                     <li>
-                                        <a href="{{ route('show.page',['page'=>'shopping_cart']) }}">
+                                        <!-- <a href="{{ route('show.page',['page'=>'shopping_cart']) }}">
                                             <svg class="cart">
                                                 <use xlink:href="#cart"></use>
                                             </svg>
-                                        </a>
+                                        </a> -->
                                     </li>
                                 </ul>
                             </div>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -411,11 +414,38 @@
         </div>
     </div>
 </body>
-<!-- <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const search = document.getElementByID('')
-    });
-</script> -->
+<script>
+    $('.input-search').keyup(function () {
+        var _text = $(this).val();
+        $.ajax({
+            url: "{{route('ajax-search-product')}}?key=" + _text,
+            type: 'GET',
+            success: function (res) {
+                console.table(res)
+                var _html ='';
+
+                    if (_text.trim() != '') {
+                        for (var pro of res) {
+                        var slugName = slug(pro.tenSP);
+                            var highlightedName = pro.tenSP.replace(new RegExp(_text, 'gi'), function(match) {
+                            return '<span class="highlight">' + match + '</span>';  
+                            });
+                        _html += '<li class="list-group-item"><a id="item" href="http://127.0.0.1:8000/detail/'+pro.maSP+'">'+highlightedName+'</a></li>';
+                        }
+                        $('.list-item').html(_html);
+                    }
+                    else{
+                        $('.list-item').empty();
+                    }
+            }
+        });
+    }); 
+    function slug(str) {
+        return String(str)
+        .normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[đĐ]/g, 'd') //Xóa dấu
+        .trim().toLowerCase() //Cắt khoảng trắng đầu, cuối và chuyển chữ thường
+        .replace(/[^a-z0-9\s-]/g, '') //Xóa ký tự đặc biệt
+        .replace(/[\s-]+/g, '-') //Thay khoảng trắng bằng dấu -, ko cho 2 -- liên tục
+    }
+</script>
 </html>
-
-

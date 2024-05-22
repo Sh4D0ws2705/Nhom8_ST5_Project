@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\SignUp;
 use App\Http\Controllers\PageControl;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\Api;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,9 +38,11 @@ use App\Http\Controllers\AuthController;
 // });
 
 //route cho web nguoi dung
-Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');
+
+Route::get('/search', [SearchController::class, 'index'])->name('search');
+Route::get('/nhasanxuat/{maNhaSX}', [PageControl::class, 'getSPNhaSX']);
+
 //route cho trang admin
-// Route::get("/admin/{page?}", [AdminPageController::class, 'showPageAdmin'])->name('show.pageAdmin');
 Route::get('/admin/index',function () {
     return view('admin.index');
 });
@@ -59,17 +64,15 @@ Route::get('/admin/category/list', [MenuController::class, 'listCategories'])->n
 Route::post('/admin/category/add', [MenuController::class, 'insertCategories'])->name('insertMenu');
 
 
-
 // route lấy đường dẫn hình
 Route::post('/upload', [UploadController::class, 'uploadImage']); //lấy 1 ảnh đại diện
 Route::post('/uploads', [UploadController::class, 'uploadImages']); //lấy nhiều ảnh sp
 
+//Sản Phẩm của người dùng
 Route::get('/detail/{maSP}', [PageControl::class, 'showDetail'])->name('detail');
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+
 
 Route::get('login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
@@ -77,3 +80,4 @@ Route::get('register', [AuthController::class, 'showRegisterForm'])->name('regis
 Route::post('register', [AuthController::class, 'register']);
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/category/{idDanhMuc}', [PageControl::class, 'getProductByCategory'])->name('category.products');
+Route::get("/{page?}", [PageControl::class, 'showPage'])->name('show.page');

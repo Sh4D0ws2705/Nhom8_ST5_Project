@@ -30,7 +30,6 @@
     tabindex="0">
     @extends('web.nav')
     @section('navbar')
-
         <section class=" container section section-highlights" data-anim-scroll-group="Highlights"
             data-analytics-section-engagement="name:highlights">
             <div class="responsive-content">

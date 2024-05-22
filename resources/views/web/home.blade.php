@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Ministore</title>
     <meta charset="utf-8">
@@ -15,9 +14,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
@@ -32,8 +32,7 @@
     tabindex="0">
     @extends('web.nav')
     @section('navbar')
-
-        <section class=" container section section-highlights" data-anim-scroll-group="Highlights"
+    <section class=" container section section-highlights" data-anim-scroll-group="Highlights"
             data-analytics-section-engagement="name:highlights">
             <div class="responsive-content">
                 <div class="responsive-content-viewport-content">
@@ -43,16 +42,6 @@
                             <h2 class="section-header-headline typography-site-headline"
                                 class="large-show medium-inline small-hide"><b>MiniStore</b></h2>
                         </div>
-                        <!-- <div class="section-header-cta-list-wrapper">
-                                <ul class="section-header-cta-list typography-site-section-header-link column">
-                                    <li class="section-header-cta-item section-header-cta-item-film" data-textanim-2=""
-                                        style="transform: translateY(0px); opacity: 1; pointer-events: auto;">
-                                    </li>
-                                    <li class="section-header-cta-item section-header-cta-item-event" data-textanim-3=""
-                                        style="transform: translateY(0px); opacity: 1; pointer-events: auto;">
-                                    </li>
-                                </ul>
-                            </div> -->
                     </header>
                 </div>
             </div>
@@ -244,59 +233,6 @@
             </div>
             </div>
         </section>
-        <!-- <section id="billboard" class="position-relative overflow-hidden bg-light-blue">
-                <div class="swiper main-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="container">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-md-6">
-                                        <div class="banner-content">
-                                            <h1 class="display-2 text-uppercase text-dark pb-5">Your Products Are Great.</h1>
-                                            <a href="shop.html"
-                                                class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="image-holder">
-                                            <img src="frontend/images/banner-image.png" alt="banner">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="container">
-                                <div class="row d-flex flex-wrap align-items-center">
-                                    <div class="col-md-6">
-                                        <div class="banner-content">
-                                            <h1 class="display-2 text-uppercase text-dark pb-5">Technology Hack You Won't Get
-                                            </h1>
-                                            <a href="shop.html"
-                                                class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="image-holder">
-                                            <img src="frontend/images/banner-image.png" alt="banner">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-icon swiper-arrow swiper-arrow-prev">
-                    <svg class="chevron-left">
-                        <use xlink:href="#chevron-left" />
-                    </svg>
-                </div>
-                <div class="swiper-icon swiper-arrow swiper-arrow-next">
-                    <svg class="chevron-right">
-                        <use xlink:href="#chevron-right" />
-                    </svg>
-                </div>
-            </section> -->
         <section id="company-services" class="padding-large">
             <div>
                 <div class="row">
@@ -378,86 +314,99 @@
                     </div>
                 </div>
             </div>
+        </section>  
+        <section class="fill-nhasx">
+            @foreach($datansx as $fill)
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type ="checkbox" class="btn-check dm-filter" name="dm-filter" id="btncheck{{$fill->maNhaSX}}" value="{{$fill->maNhaSX}}" data-filters="nhasx">
+                <label class="btn btn-outline-primary" for="btncheck{{$fill->maNhaSX}}">{{$fill->tenNhaSX}}</label>
+            </div>
+            @endforeach
         </section>
-
         <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
             <div class="container">
                 <div class="row" style="width: 1531px; transform: translate(-109px, 0px);">
                     <div class="display-header d-flex justify-content-between pb-3">
                         <h2 class="display-7 text-dark text-uppercase">Our Products</h2>
                     </div>
-                    <div class="swiper product-swiper" method="post">
+                    <div class="swiper product-swiper swiper-initialized swiper-horizontal swiper-backface-hidden" method="post">
                         <div class="swiper-wrapper product">
                             <div class="row g-4">
                                 @foreach ($data as $row)
                                     @if ($row->active == 1)
-                                        <div class="col-lg-4 col-md-4">
-                                            <div class="swiper-slide product-list">
-                                                <div class="image-holder">
-                                                    <a href="{{ route('detail', ['maSP' => $row->sanphams->maSP]) }}">
-                                                        <img src="{{ asset($row->anhDaiDien) }}" alt="product-item"
-                                                            class="img-fluid">
-                                                    </a>
-                                                </div>
-                                                <div class="product-card position-relative">
-                                                    <div class="cart-concern position-absolute">
-                                                        <div>
-                                                            <a href="#" class="btn btn-medium btn-black">
-                                                                Add to Cart
-                                                                <svg class="cart-outline">
-                                                                    <use xlink:href="#cart-outline"></use>
-                                                                </svg>
-                                                            </a>
+                                            <div class="col-lg-4 col-md-4">
+                                                <div class="swiper-slide product-list">
+                                                    <div class="image-holder">
+                                                        <a href="{{ route('detail', ['maSP' => $row->sanphams->maSP]) }}">
+                                                            <img src="{{ asset($row->anhDaiDien) }}" alt="product-item"
+                                                                class="img-fluid">
+                                                        </a>
+                                                    </div>
+                                                    <div class="product-card position-relative">
+                                                        <div class="cart-concern position-absolute">
+                                                            <div>
+                                                                <!-- <a href="#" class="btn btn-medium btn-black">
+                                                                    Add to Cart
+                                                                    <svg class="cart-outline">
+                                                                        <use xlink:href="#cart-outline"></use>
+                                                                    </svg>
+                                                                </a> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3 class="card-title text-uppercase tendm">
+                                                                <a href="{{ route('show.page', ['page' => 'detail']) }}">
+                                                                    <h4 id="tendm"></h4>
+                                                                </a>
+                                                            </h3>
+                                                            <h3 class="card-title text-uppercase tennsx"></h3>
+                                                            <div id="tensp">
+                                                                <h8>
+                                                                    <p>{{ $row->tenSP }}</p>
+                                                                </h8>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="info">
-                                                        <h3 class="card-title text-uppercase tendm">
-                                                            <a href="{{ route('show.page', ['page' => 'detail']) }}">
-                                                                <h4 id="tendm"></h4>
-                                                            </a>
-                                                        </h3>
-                                                        <h3 class="card-title text-uppercase tennsx"></h3>
-                                                        <div id="tensp">
-                                                            <h8>
-                                                                <p>{{ $row->tenSP }}</p>
-                                                            </h8>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    @if (!empty($row->giaBan))
-                                                        @if (!empty($row->giaGiam))
-                                                            <h6>
-                                                                <span><i class="bi bi-tags"></i><strike
-                                                                        id="giaban">{{ number_format($row->giaBan) }}
-                                                                        đ</strike></span>
-                                                            </h6>
-                                                            <div id="giasp" style="">
-                                                                {{ number_format($row->giaGiam) }} đ</div>
-                                                        @else
-                                                            <h6>
-                                                                <div id="giasp">{{ number_format($row->giaBan) }} đ
-                                                                </div>
-                                                            </h6>
-                                                        @endif
-                                                    @endif
                                                     <div>
-                                                        @if (isset($row->trangthaisps->MaTrangThai))
-                                                            @if ($row->MaTrangThai == '3')
-                                                                <div class="st_nb">{{ $row->trangthaisps->TrangThai }}
-                                                                </div>
-                                                            @elseif($row->MaTrangThai == '2')
-                                                                <div class="st_hh">{{ $row->trangthaisps->TrangThai }}
+                                                        @if (!empty($row->giaBan))
+                                                            @if (!empty($row->giaGiam))
+                                                                <h6>
+                                                                    <span><i class="bi bi-tags"></i><strike
+                                                                            id="giaban">{{ number_format($row->giaBan) }}
+                                                                            đ</strike>
+                                                                    </span>
+                                                                </h6>
+                                                                <div id="giasp" style="">
+                                                                    {{ number_format($row->giaGiam) }} đ
                                                                 </div>
                                                             @else
-                                                                <div class="st_ch">{{ $row->trangthaisps->TrangThai }}
-                                                                </div>
+                                                                <h6>
+                                                                    <div id="giasp">
+                                                                        {{ number_format($row->giaBan) }} đ
+                                                                    </div>
+                                                                </h6>
                                                             @endif
                                                         @endif
+                                                        <div>
+                                                            @if (isset($row->trangthaisps->MaTrangThai))
+                                                                @if ($row->MaTrangThai == '3')
+                                                                    <div class="st_nb">
+                                                                        {{ $row->trangthaisps->TrangThai }}
+                                                                    </div>
+                                                                @elseif($row->MaTrangThai == '2')
+                                                                    <div class="st_hh">
+                                                                        {{ $row->trangthaisps->TrangThai }}
+                                                                    </div>
+                                                                @else
+                                                                    <div class="st_ch">
+                                                                        {{ $row->trangthaisps->TrangThai }}
+                                                                    </div>
+                                                                @endif
+                                                            @endif
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                     @endif
                                 @endforeach
                             </div>
@@ -724,6 +673,17 @@
         <script type="text/javascript" src="frontend/js/plugins.js"></script>
         <script type="text/javascript" src="frontend/js/script.js"></script>
         <script>
+            $('.input-search').keyup(function(){
+        var _text = $(this).val();
+
+        $.ajax({
+            url: 'http://127.0.0.1:8000/api/ajax-search-product?key=256GB',
+            type: 'GET',
+            success: function (res) {
+                console.log(res)
+            }
+        });
+    });
             ! function(e) {
                 var t = {};
 

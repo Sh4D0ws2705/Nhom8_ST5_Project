@@ -23873,3 +23873,23 @@ html.text-zoom .page-overview .trade-in-ribbon-avail {
   text-align: center;
   color: green;
 }
+
+.fill-danhmuc{
+  border-radius: 1px;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+.btn{
+  width: 100px;
+}
+.btn-group{
+  margin-left: 100px;
+  text-align: center;
+}
+
+.btn-outline-primary{
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}

@@ -15,4 +15,5 @@ class NhaSanXuat extends Model
     public function sanphams(){
         return $this->hasMany(SanPham::class, 'maNhaSX', 'maNhaSX');
     }
+
 }

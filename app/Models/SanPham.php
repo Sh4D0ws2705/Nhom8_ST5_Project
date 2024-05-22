@@ -33,4 +33,12 @@ class SanPham extends Model
     public function getProductDetails($id){
         return self::find($id);
     }
+
+    public function scopeSearch($query){
+        if (request('key')) {
+            $key = request('key');
+            $query = $query->where('tenSP','like','%'.$key.'%');
+        }
+        return $query;
+    }
 }

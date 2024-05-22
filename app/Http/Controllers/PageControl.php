@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\SearchController;
 use App\Models\DanhMuc;
 use App\Models\SanPham;
 use App\Models\NhaSanXuat;
@@ -12,15 +13,6 @@ use Illuminate\Http\Request;
 
 class PageControl extends Controller
 {
-    // public function page($name = 'index')
-    // {
-    //     $products  = SanPham::orderBy('maSP')->get();
-    //     $danhmucs = DanhMuc::orderBy('idDanhMuc')->get();
-    //     $nhasanxuats = NhaSanXuat::orderBy('maNhaSX')->get();
-    //     $trangthaisps = TrangThaiSP::orderBy('MaTrangThai')->get();
-    //     return view(@$name, ['data' => $products, 'datadm' => $danhmucs, 'datansx' => $nhasanxuats, 'data_trangthai' => $trangthaisps]);
-    // }
-
     //Controller cho web nguoi dung
     public function showPage($page = 'home')
     {
@@ -59,6 +51,7 @@ class PageControl extends Controller
             'relatedProducts' => $relatedProducts
         ]);
     }
+
     
     public function getProductByCategory($idDanhMuc)
     {
@@ -71,19 +64,22 @@ class PageControl extends Controller
         return view('web.sanphamtheodm', [
             'danhMuc' => $danhMuc,
             'sanPhams' => $danhMuc->sanphams
+        ]); 
+    }
+
+    public function getSPNhaSX($maNhaSX)
+    {
+        $nhaSanXuat = NhaSanXuat::with('sanphams')->find($maNhaSX);
+
+        if (!$nhaSanXuat) {
+            return redirect()->back()->withErrors(['error' => 'Nhà sản xuất không tồn tại!']);
+        }
+
+        return view('web.home', [
+            'nhaSanXuat' => $nhaSanXuat,
+            'datansx' => $nhaSanXuat->sanphams,
+            'data' => $nhaSanXuat->sanphams,
         ]);
     }
 }
 
-    // public function show($maSP)
-    // {
-    //     $product = SanPham::with('danhMuc.sanPhams')->findOrFail($maSP);
-
-    //     // Get other products in the same category
-    //     $relatedProducts = $product->danhMuc->sanPhams->where('maSP', '!=', $maSP);
-
-    //     return view('products.show', [
-    //         'product' => $product,
-    //         'relatedProducts' => $relatedProducts
-    //     ]);
-    // }
