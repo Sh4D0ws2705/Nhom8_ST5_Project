@@ -28,22 +28,21 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px" data-bs-smooth-scroll="true"
-    tabindex="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px" data-bs-smooth-scroll="true" tabindex="0">
     @extends('web.nav')
     @section('navbar')
 
-        <section class=" container section section-highlights" data-anim-scroll-group="Highlights"
-            data-analytics-section-engagement="name:highlights">
-            <div class="responsive-content">
-                <div class="responsive-content-viewport-content">
-                    <header class="section-header">
-                        <div class="section-header-headline-wrapper" data-textanim-1=""
-                            style="transform: translateY(0px) text-align:center; margin-left: 500px; opacity: 1; pointer-events: auto;">
-                            <h2 class="section-header-headline typography-site-headline"
-                                class="large-show medium-inline small-hide"><b>MiniStore</b></h2>
-                        </div>
-                        <!-- <div class="section-header-cta-list-wrapper">
+    <section class=" container section section-highlights" data-anim-scroll-group="Highlights"
+        data-analytics-section-engagement="name:highlights">
+        <div class="responsive-content">
+            <div class="responsive-content-viewport-content">
+                <header class="section-header">
+                    <div class="section-header-headline-wrapper" data-textanim-1=""
+                        style="transform: translateY(0px) text-align:center; margin-left: 500px; opacity: 1; pointer-events: auto;">
+                        <h2 class="section-header-headline typography-site-headline"
+                            class="large-show medium-inline small-hide"><b>MiniStore</b></h2>
+                    </div>
+                    <!-- <div class="section-header-cta-list-wrapper">
                                         <ul class="section-header-cta-list typography-site-section-header-link column">
                                             <li class="section-header-cta-item section-header-cta-item-film" data-textanim-2=""
                                                 style="transform: translateY(0px); opacity: 1; pointer-events: auto;">
@@ -53,198 +52,196 @@
                                             </li>
                                         </ul>
                                     </div> -->
-                    </header>
-                </div>
+                </header>
             </div>
-            <div class="highlights-content ended will-change" data-component-list="HighlightsGallery WillChange"
-                id="highlights-gallery" data-analytics-gallery-id="highlights-gallery">
-                <div class="all-access-pass__container">
-                    <div class="all-access-pass aap-highlights" id="aap-highlights" data-aap-type="highlights"
-                        data-aap-level="1"
-                        data-aap-kf="{&quot;start&quot;: &quot;a0t - 100vh + 60a0h&quot;, &quot;end&quot;: &quot;a0b - 75vh&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;]}"
-                        style="">
-                        <div class="all-access-pass__background" style="height: auto; transform: none;">
-                            <div class="tablist-wrapper" style="">
-                                <div data-analytics-gallery-interaction-type="dotnav" class="dotnav">
-                                    <ul role="tablist" class="dotnav-items">
-                                        <li role="presentation" class="dotnav-item">
-                                            <a id="media-gallery-item-1-trigger"
-                                                data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
-                                                data-focus-enabled-when="enhanced" class="dotnav-link"
-                                                data-ac-gallery-trigger="media-gallery-item-1" href="#media-gallery-item-1"
-                                                role="tab" aria-controls="media-gallery-item-1" tabindex="-1"
-                                                aria-selected="false">
-                                                <span class="visuallyhidden">Item 1</span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="dotnav-item">
-                                            <a id="media-gallery-item-2-trigger"
-                                                data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
-                                                data-focus-enabled-when="enhanced" class="dotnav-link"
-                                                data-ac-gallery-trigger="media-gallery-item-2" href="#media-gallery-item-2"
-                                                role="tab" aria-controls="media-gallery-item-2" tabindex="-1"
-                                                aria-selected="false">
-                                                <span class="visuallyhidden">Item 2</span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="dotnav-item current">
-                                            <a id="media-gallery-item-3-trigger"
-                                                data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
-                                                data-focus-enabled-when="enhanced" class="dotnav-link current"
-                                                data-ac-gallery-trigger="media-gallery-item-3"
-                                                href="#media-gallery-item-3" role="tab"
-                                                aria-controls="media-gallery-item-3" tabindex="0" aria-selected="true">
-                                                <span class="visuallyhidden">Item 3</span>
-                                            </a>
-                                        </li>
-                                        <li role="presentation" class="dotnav-item">
-                                            <a id="media-gallery-item-4-trigger"
-                                                data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
-                                                data-focus-enabled-when="enhanced" class="dotnav-link"
-                                                data-ac-gallery-trigger="media-gallery-item-4"
-                                                href="#media-gallery-item-4" role="tab"
-                                                aria-controls="media-gallery-item-4" tabindex="-1"
-                                                aria-selected="false">
-                                                <span class="visuallyhidden">Item 4</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+        </div>
+        <div class="highlights-content ended will-change" data-component-list="HighlightsGallery WillChange"
+            id="highlights-gallery" data-analytics-gallery-id="highlights-gallery">
+            <div class="all-access-pass__container">
+                <div class="all-access-pass aap-highlights" id="aap-highlights" data-aap-type="highlights"
+                    data-aap-level="1"
+                    data-aap-kf="{&quot;start&quot;: &quot;a0t - 100vh + 60a0h&quot;, &quot;end&quot;: &quot;a0b - 75vh&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;]}"
+                    style="">
+                    <div class="all-access-pass__background" style="height: auto; transform: none;">
+                        <div class="tablist-wrapper" style="">
+                            <div data-analytics-gallery-interaction-type="dotnav" class="dotnav">
+                                <ul role="tablist" class="dotnav-items">
+                                    <li role="presentation" class="dotnav-item">
+                                        <a id="media-gallery-item-1-trigger"
+                                            data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
+                                            data-focus-enabled-when="enhanced" class="dotnav-link"
+                                            data-ac-gallery-trigger="media-gallery-item-1" href="#media-gallery-item-1"
+                                            role="tab" aria-controls="media-gallery-item-1" tabindex="-1"
+                                            aria-selected="false">
+                                            <span class="visuallyhidden">Item 1</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="dotnav-item">
+                                        <a id="media-gallery-item-2-trigger"
+                                            data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
+                                            data-focus-enabled-when="enhanced" class="dotnav-link"
+                                            data-ac-gallery-trigger="media-gallery-item-2" href="#media-gallery-item-2"
+                                            role="tab" aria-controls="media-gallery-item-2" tabindex="-1"
+                                            aria-selected="false">
+                                            <span class="visuallyhidden">Item 2</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="dotnav-item current">
+                                        <a id="media-gallery-item-3-trigger"
+                                            data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
+                                            data-focus-enabled-when="enhanced" class="dotnav-link current"
+                                            data-ac-gallery-trigger="media-gallery-item-3" href="#media-gallery-item-3"
+                                            role="tab" aria-controls="media-gallery-item-3" tabindex="0"
+                                            aria-selected="true">
+                                            <span class="visuallyhidden">Item 3</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="dotnav-item">
+                                        <a id="media-gallery-item-4-trigger"
+                                            data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
+                                            data-focus-enabled-when="enhanced" class="dotnav-link"
+                                            data-ac-gallery-trigger="media-gallery-item-4" href="#media-gallery-item-4"
+                                            role="tab" aria-controls="media-gallery-item-4" tabindex="-1"
+                                            aria-selected="false">
+                                            <span class="visuallyhidden">Item 4</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="all-access-pass__background play-pause-button-wrapper"
-                            style="position: relative; transform: none;">
-                            <button class="play-pause-button all-access-pass__play-pause-button"
-                                data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
-                                data-focus-enabled-when="enhanced" data-analytics-intrapage-link=""
-                                data-analytics-title-pause="pause highlights gallery"
-                                data-analytics-click-pause="prop3:pause highlights gallery"
-                                data-aria-pause="Pause iPhone 15 highlights gallery"
-                                data-analytics-title-play="play highlights gallery"
-                                data-analytics-click-play="prop3:play highlights gallery"
-                                data-aria-play="Play iPhone 15 highlights gallery"
-                                data-analytics-title-replay="replay highlights gallery"
-                                data-analytics-click-replay="prop3:replay highlights gallery"
-                                data-aria-replay="Replay iPhone 15 highlights gallery"
-                                aria-label="Replay iPhone 15 highlights gallery" fdprocessedid="ck7hvu" tabindex="0"
-                                data-analytics-title="replay highlights gallery"
-                                data-analytics-click="prop3:replay highlights gallery">
-                                <span class="icons" style="">
-                                    <svg class="svg-icon play-icon" viewBox="0 0 56 56">
-                                        <path
-                                            d="M20.8,36V20c0-1.6,1-2.5,2.3-2.5c0.7,0,1.1,0.1,1.7,0.5l13.4,7.7c1.2,0.7,1.8,1.2,1.8,2.3 c0,1.1-0.6,1.6-1.8,2.3L24.8,38c-0.6,0.4-1,0.5-1.7,0.5C21.8,38.5,20.8,37.6,20.8,36">
-                                        </path>
-                                    </svg>
-                                    <svg class="svg-icon pause-icon" viewBox="0 0 56 56">
-                                        <path
-                                            d="M23.9,38.5h-2.3c-1.3,0-2.3-1-2.3-2.2V19.7c0-1.3,1.1-2.3,2.3-2.2h2.3c1.3,0,2.3,1,2.3,2.2v16.5 C26.2,37.5,25.2,38.5,23.9,38.5 M34.4,38.5c1.3,0,2.3-1,2.3-2.2V19.7c0-1.3-1.1-2.3-2.3-2.2h-2.3c-1.3,0-2.3,1-2.3,2.2v16.5 c0,1.3,1.1,2.3,2.3,2.2H34.4z">
-                                        </path>
-                                    </svg>
-                                    <svg class="svg-icon replay-icon" viewBox="0 0 56 56">
-                                        <path
-                                            d="M37.3,26.7c-1,0.1-1.8,1-1.8,2c0,4.1-3.4,7.4-7.5,7.4c-4.1,0-7.4-3.4-7.4-7.5c0-4.1,3.3-7.4,7.5-7.4l0.1,0l0.2,0l0.5,0 l-2.2,2.2c-0.8,0.8-0.8,2.1,0,2.9c0.7,0.7,1.9,0.8,2.7,0.2l0.2-0.2l5.3-5.3c0.7-0.7,0.8-1.9,0.2-2.7l-0.2-0.2l-5.3-5.3 c-0.8-0.8-2.1-0.8-2.8,0c0,0,0,0,0,0c-0.7,0.7-0.8,1.9-0.1,2.7l0.1,0.2l1.4,1.4l-0.5,0c-6.4,0.2-11.3,5.6-11.1,11.9 S22,40.5,28.4,40.2c6.2-0.2,11.1-5.3,11.1-11.5c0-1-0.8-1.9-1.8-2l-0.2,0L37.3,26.7z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </button>
-                        </div>
+                    </div>
+                    <div class="all-access-pass__background play-pause-button-wrapper"
+                        style="position: relative; transform: none;">
+                        <button class="play-pause-button all-access-pass__play-pause-button"
+                            data-focus-expression="{&quot;expression&quot;: &quot;a0t - ((100vh - 100a0h) / 2)&quot;, &quot;anchors&quot;: [&quot;.section-highlights&quot;], &quot;tabindex&quot;: &quot;0&quot;}"
+                            data-focus-enabled-when="enhanced" data-analytics-intrapage-link=""
+                            data-analytics-title-pause="pause highlights gallery"
+                            data-analytics-click-pause="prop3:pause highlights gallery"
+                            data-aria-pause="Pause iPhone 15 highlights gallery"
+                            data-analytics-title-play="play highlights gallery"
+                            data-analytics-click-play="prop3:play highlights gallery"
+                            data-aria-play="Play iPhone 15 highlights gallery"
+                            data-analytics-title-replay="replay highlights gallery"
+                            data-analytics-click-replay="prop3:replay highlights gallery"
+                            data-aria-replay="Replay iPhone 15 highlights gallery"
+                            aria-label="Replay iPhone 15 highlights gallery" fdprocessedid="ck7hvu" tabindex="0"
+                            data-analytics-title="replay highlights gallery"
+                            data-analytics-click="prop3:replay highlights gallery">
+                            <span class="icons" style="">
+                                <svg class="svg-icon play-icon" viewBox="0 0 56 56">
+                                    <path
+                                        d="M20.8,36V20c0-1.6,1-2.5,2.3-2.5c0.7,0,1.1,0.1,1.7,0.5l13.4,7.7c1.2,0.7,1.8,1.2,1.8,2.3 c0,1.1-0.6,1.6-1.8,2.3L24.8,38c-0.6,0.4-1,0.5-1.7,0.5C21.8,38.5,20.8,37.6,20.8,36">
+                                    </path>
+                                </svg>
+                                <svg class="svg-icon pause-icon" viewBox="0 0 56 56">
+                                    <path
+                                        d="M23.9,38.5h-2.3c-1.3,0-2.3-1-2.3-2.2V19.7c0-1.3,1.1-2.3,2.3-2.2h2.3c1.3,0,2.3,1,2.3,2.2v16.5 C26.2,37.5,25.2,38.5,23.9,38.5 M34.4,38.5c1.3,0,2.3-1,2.3-2.2V19.7c0-1.3-1.1-2.3-2.3-2.2h-2.3c-1.3,0-2.3,1-2.3,2.2v16.5 c0,1.3,1.1,2.3,2.3,2.2H34.4z">
+                                    </path>
+                                </svg>
+                                <svg class="svg-icon replay-icon" viewBox="0 0 56 56">
+                                    <path
+                                        d="M37.3,26.7c-1,0.1-1.8,1-1.8,2c0,4.1-3.4,7.4-7.5,7.4c-4.1,0-7.4-3.4-7.4-7.5c0-4.1,3.3-7.4,7.5-7.4l0.1,0l0.2,0l0.5,0 l-2.2,2.2c-0.8,0.8-0.8,2.1,0,2.9c0.7,0.7,1.9,0.8,2.7,0.2l0.2-0.2l5.3-5.3c0.7-0.7,0.8-1.9,0.2-2.7l-0.2-0.2l-5.3-5.3 c-0.8-0.8-2.1-0.8-2.8,0c0,0,0,0,0,0c-0.7,0.7-0.8,1.9-0.1,2.7l0.1,0.2l1.4,1.4l-0.5,0c-6.4,0.2-11.3,5.6-11.1,11.9 S22,40.5,28.4,40.2c6.2-0.2,11.1-5.3,11.1-11.5c0-1-0.8-1.9-1.8-2l-0.2,0L37.3,26.7z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
-                <div class="media-gallery-wrapper ">
-                    <div class="media-gallery-limiter">
-                        <div id="media-gallery" class="gallery media-gallery media-gallery-initialized"
-                            data-preload-strategy="keyframe, prior-section" aria-label="media-gallery">
-                            <div class="item-container">
-                                <div id="media-gallery-item-1"
-                                    class="gallery-item media-gallery-item-1 media-gallery-item-dynamic-island"
-                                    data-media-handler="video"
-                                    data-media-argument="/105/media/us/iphone-15/2023/434c1226-dcdc-47be-ae28-6cb67a3a5a7c/anim/highlights-dynamic-island/"
-                                    data-media-excluded-viewports="xlarge" data-analytics-gallery-item-id="dymanic island"
-                                    data-ac-gallery-item="dynamic-island" role="tabpanel"
-                                    aria-labelledby="media-gallery-item-1-trigger"
-                                    style="--progress: -2; z-index: 0; opacity: 1; transform: translate(0px, 0px);"
-                                    data-original-aria-hidden="" aria-hidden="true">
-                                    <figure role="img" class="gallery-figure loaded paused static-fallback-only"
-                                        aria-label="Dynamic Island showing AirPods battery level.">
-                                        <div class="positioned-media-element static"
-                                            data-download-area-keyframe="{&quot;anchors&quot;:[&quot;#media-gallery&quot;], &quot;start&quot;: &quot;a0t - 120vh&quot;, &quot;end&quot;: &quot;a0b&quot;}"
-                                            data-anim-lazy-image-download-complete=""></div>
-                                        <img class="positioned-media-element media" id="media-gallery-video-1"
-                                            preload="none" alt="banner" alt="Banner" playsinline=""
-                                            muted=""></img>
-                                        <div class="positioned-media-element endframe"></div>
-                                        <div class="positioned-media-element startframe hide"></div>
-                                        <div class="positioned-media-element hardware"></div>
-                                    </figure>
-                                </div>
+            </div>
+            <div class="media-gallery-wrapper ">
+                <div class="media-gallery-limiter">
+                    <div id="media-gallery" class="gallery media-gallery media-gallery-initialized"
+                        data-preload-strategy="keyframe, prior-section" aria-label="media-gallery">
+                        <div class="item-container">
+                            <div id="media-gallery-item-1"
+                                class="gallery-item media-gallery-item-1 media-gallery-item-dynamic-island"
+                                data-media-handler="video"
+                                data-media-argument="/105/media/us/iphone-15/2023/434c1226-dcdc-47be-ae28-6cb67a3a5a7c/anim/highlights-dynamic-island/"
+                                data-media-excluded-viewports="xlarge" data-analytics-gallery-item-id="dymanic island"
+                                data-ac-gallery-item="dynamic-island" role="tabpanel"
+                                aria-labelledby="media-gallery-item-1-trigger"
+                                style="--progress: -2; z-index: 0; opacity: 1; transform: translate(0px, 0px);"
+                                data-original-aria-hidden="" aria-hidden="true">
+                                <figure role="img" class="gallery-figure loaded paused static-fallback-only"
+                                    aria-label="Dynamic Island showing AirPods battery level.">
+                                    <div class="positioned-media-element static"
+                                        data-download-area-keyframe="{&quot;anchors&quot;:[&quot;#media-gallery&quot;], &quot;start&quot;: &quot;a0t - 120vh&quot;, &quot;end&quot;: &quot;a0b&quot;}"
+                                        data-anim-lazy-image-download-complete=""></div>
+                                    <img class="positioned-media-element media" id="media-gallery-video-1"
+                                        preload="none" alt="banner" alt="Banner" playsinline="" muted=""></img>
+                                    <div class="positioned-media-element endframe"></div>
+                                    <div class="positioned-media-element startframe hide"></div>
+                                    <div class="positioned-media-element hardware"></div>
+                                </figure>
+                            </div>
 
-                                <div id="media-gallery-item-2"
-                                    class="gallery-item media-gallery-item-2 media-gallery-item-camera"
-                                    data-media-handler="animation" data-media-argument="animation-start"
-                                    data-analytics-gallery-item-id="camera" data-ac-gallery-item="camera" role="tabpanel"
-                                    aria-labelledby="media-gallery-item-2-trigger" data-original-aria-hidden=""
-                                    aria-hidden="true">
-                                    <p class="caption typography-site-highlights-headline"
-                                        style="color: black; margin-left: 500px; margin-top: 100px; line-height: 80px; text-align: center;">
-                                        SMART WATCH <br>
-                                        Apple Watch: <em>Designed and sold by Apple.</em><br>
-                                        <em>Cảm biến mạnh mẽ, tính năng sức khỏe tiên tiến.</em>
-                                    </p>
-                                    <figure role="img"
-                                        class="gallery-figure animation-pause animation-start animation-static-end"
-                                        aria-label="Super-high-resolution photo of a woman wearing a yellow dress taken with iPhone 15.">
-                                        <div class="positioned-media-element camera"></div>
-                                        <div class="scrim scrim-s"></div>
-                                    </figure>
-                                </div>
-                                <div id="media-gallery-item-3"
-                                    class="gallery-item media-gallery-item-3 media-gallery-item-design current"
-                                    data-media-handler="video"
-                                    data-media-argument="/105/media/us/iphone-15/2023/434c1226-dcdc-47be-ae28-6cb67a3a5a7c/anim/highlights-glass/"
-                                    data-media-excluded-viewports="xlarge"
-                                    data-analytics-gallery-item-id="glass durability" data-ac-gallery-item="design"
-                                    role="tabpanel" aria-labelledby="media-gallery-item-3-trigger"
-                                    style="--progress: 0; z-index: 2; opacity: 1; transform: translate(2700px, 0px);">
-                                    <p class="caption typography-site-highlights-headline">SAM SUNG GALAXY S</p>
-                                    <figure role="img" class="gallery-figure loaded paused static-fallback-only"
-                                        aria-label="Color-infused back glass of iPhone 15 in Blue.">
-                                        <div class="positioned-media-element static"
-                                            data-download-area-keyframe="{&quot;anchors&quot;:[&quot;#media-gallery&quot;], &quot;start&quot;: &quot;a0t - 120vh&quot;, &quot;end&quot;: &quot;a0b&quot;}"
-                                            data-anim-lazy-image-download-complete=""></div>
+                            <div id="media-gallery-item-2"
+                                class="gallery-item media-gallery-item-2 media-gallery-item-camera"
+                                data-media-handler="animation" data-media-argument="animation-start"
+                                data-analytics-gallery-item-id="camera" data-ac-gallery-item="camera" role="tabpanel"
+                                aria-labelledby="media-gallery-item-2-trigger" data-original-aria-hidden=""
+                                aria-hidden="true">
+                                <p class="caption typography-site-highlights-headline"
+                                    style="color: black; margin-left: 500px; margin-top: 100px; line-height: 80px; text-align: center;">
+                                    SMART WATCH <br>
+                                    Apple Watch: <em>Designed and sold by Apple.</em><br>
+                                    <em>Cảm biến mạnh mẽ, tính năng sức khỏe tiên tiến.</em>
+                                </p>
+                                <figure role="img"
+                                    class="gallery-figure animation-pause animation-start animation-static-end"
+                                    aria-label="Super-high-resolution photo of a woman wearing a yellow dress taken with iPhone 15.">
+                                    <div class="positioned-media-element camera"></div>
+                                    <div class="scrim scrim-s"></div>
+                                </figure>
+                            </div>
+                            <div id="media-gallery-item-3"
+                                class="gallery-item media-gallery-item-3 media-gallery-item-design current"
+                                data-media-handler="video"
+                                data-media-argument="/105/media/us/iphone-15/2023/434c1226-dcdc-47be-ae28-6cb67a3a5a7c/anim/highlights-glass/"
+                                data-media-excluded-viewports="xlarge" data-analytics-gallery-item-id="glass durability"
+                                data-ac-gallery-item="design" role="tabpanel"
+                                aria-labelledby="media-gallery-item-3-trigger"
+                                style="--progress: 0; z-index: 2; opacity: 1; transform: translate(2700px, 0px);">
+                                <p class="caption typography-site-highlights-headline">SAM SUNG GALAXY S</p>
+                                <figure role="img" class="gallery-figure loaded paused static-fallback-only"
+                                    aria-label="Color-infused back glass of iPhone 15 in Blue.">
+                                    <div class="positioned-media-element static"
+                                        data-download-area-keyframe="{&quot;anchors&quot;:[&quot;#media-gallery&quot;], &quot;start&quot;: &quot;a0t - 120vh&quot;, &quot;end&quot;: &quot;a0b&quot;}"
+                                        data-anim-lazy-image-download-complete=""></div>
 
-                                        <video class="positioned-media-element media" id="media-gallery-video-3"
-                                            preload="none" playsinline="" muted="" src=""></video>
-                                        <div class="positioned-media-element endframe hide"
-                                            data-download-area-keyframe="{&quot;anchors&quot;:[&quot;#media-gallery&quot;], &quot;start&quot;: &quot;a0t - 120vh&quot;, &quot;end&quot;: &quot;a0b&quot;}"
-                                            data-anim-lazy-image-download-complete=""></div>
-                                        <div class="positioned-media-element startframe"
-                                            data-download-area-keyframe="{&quot;anchors&quot;:[&quot;#media-gallery&quot;], &quot;start&quot;: &quot;a0t - 120vh&quot;, &quot;end&quot;: &quot;a0b&quot;}"
-                                            data-anim-lazy-image-download-complete=""></div>
-                                    </figure>
-                                </div>
-                                <div id="media-gallery-item-4"
-                                    class="gallery-item media-gallery-item-4 media-gallery-item-usb-c"
-                                    data-media-handler="animation" data-media-argument="animation-start"
-                                    data-analytics-gallery-item-id="usb-c" data-ac-gallery-item="usb-c" role="tabpanel"
-                                    aria-labelledby="media-gallery-item-4-trigger"
-                                    style="--progress: 1; z-index: 1; opacity: 1; transform: translate(4050px, 0px);"
-                                    data-original-aria-hidden="" aria-hidden="true">
-                                    <p class="caption typography-site-highlights-headline">ASUS Brand All-time high
-                                    </p>
-                                    <figure role="img"
-                                        class="gallery-figure animation-pause animation-start animation-static-end"
-                                        aria-label="Back view of AirPods, iPhone 15 with USB-C connector, and iPad.">
-                                        <div class="positioned-media-element usbc"></div>
-                                    </figure>
-                                </div>
+                                    <video class="positioned-media-element media" id="media-gallery-video-3"
+                                        preload="none" playsinline="" muted="" src=""></video>
+                                    <div class="positioned-media-element endframe hide"
+                                        data-download-area-keyframe="{&quot;anchors&quot;:[&quot;#media-gallery&quot;], &quot;start&quot;: &quot;a0t - 120vh&quot;, &quot;end&quot;: &quot;a0b&quot;}"
+                                        data-anim-lazy-image-download-complete=""></div>
+                                    <div class="positioned-media-element startframe"
+                                        data-download-area-keyframe="{&quot;anchors&quot;:[&quot;#media-gallery&quot;], &quot;start&quot;: &quot;a0t - 120vh&quot;, &quot;end&quot;: &quot;a0b&quot;}"
+                                        data-anim-lazy-image-download-complete=""></div>
+                                </figure>
+                            </div>
+                            <div id="media-gallery-item-4"
+                                class="gallery-item media-gallery-item-4 media-gallery-item-usb-c"
+                                data-media-handler="animation" data-media-argument="animation-start"
+                                data-analytics-gallery-item-id="usb-c" data-ac-gallery-item="usb-c" role="tabpanel"
+                                aria-labelledby="media-gallery-item-4-trigger"
+                                style="--progress: 1; z-index: 1; opacity: 1; transform: translate(4050px, 0px);"
+                                data-original-aria-hidden="" aria-hidden="true">
+                                <p class="caption typography-site-highlights-headline">ASUS Brand All-time high
+                                </p>
+                                <figure role="img"
+                                    class="gallery-figure animation-pause animation-start animation-static-end"
+                                    aria-label="Back view of AirPods, iPhone 15 with USB-C connector, and iPad.">
+                                    <div class="positioned-media-element usbc"></div>
+                                </figure>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
-        <!-- <section id="billboard" class="position-relative overflow-hidden bg-light-blue">
+        </div>
+        </div>
+    </section>
+    <!-- <section id="billboard" class="position-relative overflow-hidden bg-light-blue">
                         <div class="swiper main-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -297,3681 +294,3680 @@
                             </svg>
                         </div>
                     </section> -->
-        <section id="company-services" class="padding-large">
-            <div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-3 pb-5 cart">
-                        <div class="icon-box d-flex">
-                            <div class="icon-box-icon pe-3 pb-3">
-                                <svg class="cart-outline" style="Width: 100px; height: 100px" alt="Cart Outline">
-                                    <use xlink:href="#cart-outline" />
-                                </svg>
-                            </div>
-                            <div class="icon-box-content">
-                                <h2 class="card-title text-uppercase text-dark">Free delivery</h2>
-                                <div class="overlay">
-                                    🎉 Free iPhone delivery <br>
-                                    🎉 Free shipping on iPhone <br>
-                                    🎉 Complimentary iPhone delivery <br>
-                                    🎉 iPhone with free shipping
-                                </div>
+    <section id="company-services" class="padding-large">
+        <div>
+            <div class="row">
+                <div class="col-lg-4 col-md-3 pb-5 cart">
+                    <div class="icon-box d-flex">
+                        <div class="icon-box-icon pe-3 pb-3">
+                            <svg class="cart-outline" style="Width: 100px; height: 100px" alt="Cart Outline">
+                                <use xlink:href="#cart-outline" />
+                            </svg>
+                        </div>
+                        <div class="icon-box-content">
+                            <h2 class="card-title text-uppercase text-dark">Free delivery</h2>
+                            <div class="overlay">
+                                🎉 Free iPhone delivery <br>
+                                🎉 Free shipping on iPhone <br>
+                                🎉 Complimentary iPhone delivery <br>
+                                🎉 iPhone with free shipping
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-3 pb-5 quality">
-                        <div class="icon-box d-flex">
-                            <div class="icon-box-icon pe-3 pb-3">
-                                <svg class="quality" style="Width: 100px; height: 100px" alt="Quality">
-                                    <use xlink:href="#quality" />
-                                </svg>
-                            </div>
-                            <div class="icon-box-content">
-                                <h2 class="card-title text-uppercase text-dark">Quality guarantee</h2>
-                                <div class="overlay">
-                                    <strong>🎯 1 Year:</strong> for all hardware parts of the iPhone and included
-                                    accessories, starting from the date the device is activated. <br>
-                                    <strong>🎯 First 3 months:</strong> phone support warranty. <br>
-                                    <strong>🎯 Remaining 9 months:</strong> warranty at Apple Authorized Service Centers in
-                                    Vietnam.
-                                </div>
+                </div>
+                <div class="col-lg-4 col-md-3 pb-5 quality">
+                    <div class="icon-box d-flex">
+                        <div class="icon-box-icon pe-3 pb-3">
+                            <svg class="quality" style="Width: 100px; height: 100px" alt="Quality">
+                                <use xlink:href="#quality" />
+                            </svg>
+                        </div>
+                        <div class="icon-box-content">
+                            <h2 class="card-title text-uppercase text-dark">Quality guarantee</h2>
+                            <div class="overlay">
+                                <strong>🎯 1 Year:</strong> for all hardware parts of the iPhone and included
+                                accessories, starting from the date the device is activated. <br>
+                                <strong>🎯 First 3 months:</strong> phone support warranty. <br>
+                                <strong>🎯 Remaining 9 months:</strong> warranty at Apple Authorized Service Centers in
+                                Vietnam.
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-3 pb-5 price">
-                        <div class="icon-box d-flex">
-                            <div class="icon-box-icon pe-3 pb-3">
-                                <svg class="price-tag" style="Width: 100px; height: 100px" alt="Price tag">
-                                    <use xlink:href="#price-tag" />
-                                </svg>
-                            </div>
-                            <div class="icon-box-content">
-                                <h2 class="card-title text-uppercase text-dark">Daily offers</h2>
-                                <div class="overlay">
-                                    <strong>🌏 Available in mobile stores worldwide </strong><br>
-                                    <a href="https://fptshop.com.vn/dien-thoai/apple-iphone" style="font-size: 30px">FPT
-                                        Shop</a><br>
-                                    <a href="https://fptshop.com.vn/dien-thoai/apple-iphone"
-                                        style="font-size: 30px">Thegioididong</a><br>
-                                    <b style="font-size: 30px">...</b>
-                                </div>
+                </div>
+                <div class="col-lg-4 col-md-3 pb-5 price">
+                    <div class="icon-box d-flex">
+                        <div class="icon-box-icon pe-3 pb-3">
+                            <svg class="price-tag" style="Width: 100px; height: 100px" alt="Price tag">
+                                <use xlink:href="#price-tag" />
+                            </svg>
+                        </div>
+                        <div class="icon-box-content">
+                            <h2 class="card-title text-uppercase text-dark">Daily offers</h2>
+                            <div class="overlay">
+                                <strong>🌏 Available in mobile stores worldwide </strong><br>
+                                <a href="https://fptshop.com.vn/dien-thoai/apple-iphone" style="font-size: 30px">FPT
+                                    Shop</a><br>
+                                <a href="https://fptshop.com.vn/dien-thoai/apple-iphone"
+                                    style="font-size: 30px">Thegioididong</a><br>
+                                <b style="font-size: 30px">...</b>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-3 pb-5 secure">
-                        <div class="icon-box d-flex">
-                            <div class="icon-box-icon pe-3 pb-3">
-                                <svg class="shield-plus" style="Width: 100px; height: 100px">
-                                    <use xlink:href="#shield-plus" />
-                                </svg>
-                            </div>
-                            <div class="icon-box-content">
-                                <h2 class="card-title text-uppercase text-dark">100% secure payment</h2>
-                                <div class="overlay">
-                                    <strong>Security properties </strong><br>
-                                    🔐Secure Enclave <br>
-                                    📱IOS <br>
-                                    <i class="bi bi-fingerprint"> Touch ID/Face ID</i><br>
-                                    <b>...</b>
-                                </div>
+                </div>
+                <div class="col-lg-4 col-md-3 pb-5 secure">
+                    <div class="icon-box d-flex">
+                        <div class="icon-box-icon pe-3 pb-3">
+                            <svg class="shield-plus" style="Width: 100px; height: 100px">
+                                <use xlink:href="#shield-plus" />
+                            </svg>
+                        </div>
+                        <div class="icon-box-content">
+                            <h2 class="card-title text-uppercase text-dark">100% secure payment</h2>
+                            <div class="overlay">
+                                <strong>Security properties </strong><br>
+                                🔐Secure Enclave <br>
+                                📱IOS <br>
+                                <i class="bi bi-fingerprint"> Touch ID/Face ID</i><br>
+                                <b>...</b>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
-            <div class="container">
-                <div class="row" style="width: 1531px; transform: translate(-109px, 0px);">
-                    <div class="display-header d-flex justify-content-between pb-3">
-                        <h2 class="display-7 text-dark text-uppercase">Our Products</h2>
-                    </div>
-                    <div class="swiper product-swiper">
-                        <div class="swiper-wrapper product">
-                                <div class="row g-4">
-                                    @foreach ($data as $row)
-                                        @if ($row->active == 1)
-                                            <div class="col-lg-4 col-md-4">
-                                                <div class="swiper-slide product-list">
-                                                    <div class="image-holder">
-                                                        <a href="{{ route('detail', ['maSP' => $row->sanphams->maSP]) }}">
-                                                            <img src="{{ asset($row->anhDaiDien) }}" alt="product-item"
-                                                                class="img-fluid">
-                                                        </a>
-                                                    </div>
-                                                    <div class="product-card position-relative">
-                                                        <div class="info">
-                                                            <h3 class="card-title text-uppercase tendm">
-                                                                <a href="{{ route('show.page', ['page' => 'detail']) }}">
-                                                                    <h4 id="tendm"></h4>
-                                                                </a>
-                                                            </h3>
-                                                            <h3 class="card-title text-uppercase tennsx"></h3>
-                                                            <div id="tensp">
-                                                                <h8>
-                                                                    <p>{{ $row->tenSP }}</p>
-                                                                </h8>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        @if (!empty($row->giaBan))
-                                                            @if (!empty($row->giaGiam))
-                                                                <h6>
-                                                                    <span><i class="bi bi-tags"></i><strike
-                                                                            id="giaban">{{ number_format($row->giaBan) }}
-                                                                            đ</strike></span>
-                                                                </h6>
-                                                                <div id="giasp" style="">
-                                                                    {{ number_format($row->giaGiam) }} đ</div>
-                                                            @else
-                                                                <h6>
-                                                                    <div id="giasp">{{ number_format($row->giaBan) }} đ
-                                                                    </div>
-                                                                </h6>
-                                                            @endif
-                                                        @endif
-                                                        <div>
-                                                            @if (isset($row->trangthaisps->MaTrangThai))
-                                                                @if ($row->MaTrangThai == '3')
-                                                                    <div class="st_nb">
-                                                                        {{ $row->trangthaisps->TrangThai }}
-                                                                    </div>
-                                                                @elseif($row->MaTrangThai == '2')
-                                                                    <div class="st_hh">
-                                                                        {{ $row->trangthaisps->TrangThai }}
-                                                                    </div>
-                                                                @else
-                                                                    <div class="st_ch">
-                                                                        {{ $row->trangthaisps->TrangThai }}
-                                                                    </div>
-                                                                @endif
-                                                            @endif
-                                                        </div>
-                                                    </div>
-                                                </div>
+    <section id="mobile-products" class="product-store position-relative padding-large no-padding-top">
+        <div class="container">
+            <div class="row" style="width: 1531px; transform: translate(-109px, 0px);">
+                <div class="display-header d-flex justify-content-between pb-3">
+                    <h2 class="display-7 text-dark text-uppercase">Our Products</h2>
+                </div>
+                <div class="swiper product-swiper">
+                    <div class="swiper-wrapper product">
+                        <div class="row g-4">
+                            @foreach ($data as $row)
+                            @if ($row->active == 1)
+                            <div class="col-lg-4 col-md-4">
+                                <div class="swiper-slide product-list">
+                                    <div class="image-holder">
+                                        <a href="{{ route('detail', ['maSP' => $row->sanphams->maSP]) }}">
+                                            <img src="{{ asset($row->anhDaiDien) }}" alt="product-item"
+                                                class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="product-card position-relative">
+                                        <div class="info">
+                                            <h3 class="card-title text-uppercase tendm">
+                                                <a href="{{ route('show.page', ['page' => 'detail']) }}">
+                                                    <h4 id="tendm"></h4>
+                                                </a>
+                                            </h3>
+                                            <h3 class="card-title text-uppercase tennsx"></h3>
+                                            <div id="tensp">
+                                                <h8>
+                                                    <p>{{ $row->tenSP }}</p>
+                                                </h8>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        @if (!empty($row->giaBan))
+                                        @if (!empty($row->giaGiam))
+                                        <h6>
+                                            <span><i class="bi bi-tags"></i><strike
+                                                    id="giaban">{{ number_format($row->giaBan) }}
+                                                    đ</strike></span>
+                                        </h6>
+                                        <div id="giasp" style="">
+                                            {{ number_format($row->giaGiam) }} đ</div>
+                                        @else
+                                        <h6>
+                                            <div id="giasp">{{ number_format($row->giaBan) }} đ
+                                            </div>
+                                        </h6>
                                         @endif
-                                    @endforeach
+                                        @endif
+                                        <div>
+                                            @if (isset($row->trangthaisps->MaTrangThai))
+                                            @if ($row->MaTrangThai == '3')
+                                            <div class="st_nb">
+                                                {{ $row->trangthaisps->TrangThai }}
+                                            </div>
+                                            @elseif($row->MaTrangThai == '2')
+                                            <div class="st_hh">
+                                                {{ $row->trangthaisps->TrangThai }}
+                                            </div>
+                                            @else
+                                            <div class="st_ch">
+                                                {{ $row->trangthaisps->TrangThai }}
+                                            </div>
+                                            @endif
+                                            @endif
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="swiper-pagination position-absolute text-center"></div>
-        </section>
-        <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge"
-            style="background-image: url('frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
-            <div class="row d-flex flex-wrap align-items-center">
-                <div class="col-md-6 col-sm-12">
-                    <div class="text-content offset-4 padding-medium">
-                        <h3>10% off</h3>
-                        <h2 class="display-2 pb-5 text-uppercase text-dark">New year sale</h2>
-                        <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Sale</a>
-                    </div>
+        </div>
+        </div>
+        <div class="swiper-pagination position-absolute text-center"></div>
+    </section>
+    <section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge"
+        style="background-image: url('frontend/images/single-image1.png');background-position: right; background-repeat: no-repeat;">
+        <div class="row d-flex flex-wrap align-items-center">
+            <div class="col-md-6 col-sm-12">
+                <div class="text-content offset-4 padding-medium">
+                    <h3>10% off</h3>
+                    <h2 class="display-2 pb-5 text-uppercase text-dark">New year sale</h2>
+                    <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Sale</a>
                 </div>
-                <div class="col-md-6 col-sm-12">
+            </div>
+            <div class="col-md-6 col-sm-12">
 
-                </div>
             </div>
-        </section>
-        <section id="latest-blog" class="padding-large">
-            <div class="container">
-                <div class="row">
-                    <div class="display-header d-flex justify-content-between pb-3">
-                        <h2 class="display-7 text-dark text-uppercase">Latest Posts</h2>
-                        <div class="btn-right">
-                            <a href="blog.html" class="btn btn-medium btn-normal text-uppercase">Read Blog</a>
-                        </div>
-                    </div>
-                    <div class="post-grid d-flex flex-wrap justify-content-between">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="card border-none me-3">
-                                <div class="card-image">
-                                    <img src="frontend/images/post-item1.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="card-body text-uppercase">
-                                <div class="card-meta text-muted">
-                                    <span class="meta-date">feb 22, 2023</span>
-                                    <span class="meta-category">- Gadgets</span>
-                                </div>
-                                <h3 class="card-title">
-                                    <a href="#">Get some cool gadgets in 2023</a>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-4">
-                            <div class="card border-none me-3">
-                                <div class="card-image">
-                                    <img src="frontend/images/post-item2.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="card-body text-uppercase">
-                                <div class="card-meta text-muted">
-                                    <span class="meta-date">feb 25, 2023</span>
-                                    <span class="meta-category">- Technology</span>
-                                </div>
-                                <h3 class="card-title">
-                                    <a href="#">Technology Hack You Won't Get</a>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="card border-none me-3">
-                                <div class="card-image">
-                                    <img src="frontend/images/post-item3.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="card-body text-uppercase">
-                                <div class="card-meta text-muted">
-                                    <span class="meta-date">feb 22, 2023</span>
-                                    <span class="meta-category">- Camera</span>
-                                </div>
-                                <h3 class="card-title">
-                                    <a href="#">Top 10 Small Camera In The World</a>
-                                </h3>
-                            </div>
-                        </div>
+        </div>
+    </section>
+    <section id="latest-blog" class="padding-large">
+        <div class="container">
+            <div class="row">
+                <div class="display-header d-flex justify-content-between pb-3">
+                    <h2 class="display-7 text-dark text-uppercase">Latest Posts</h2>
+                    <div class="btn-right">
+                        <a href="blog.html" class="btn btn-medium btn-normal text-uppercase">Read Blog</a>
                     </div>
                 </div>
+                <div class="post-grid d-flex flex-wrap justify-content-between">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="card border-none me-3">
+                            <div class="card-image">
+                                <img src="frontend/images/post-item1.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-body text-uppercase">
+                            <div class="card-meta text-muted">
+                                <span class="meta-date">feb 22, 2023</span>
+                                <span class="meta-category">- Gadgets</span>
+                            </div>
+                            <h3 class="card-title">
+                                <a href="#">Get some cool gadgets in 2023</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="card border-none me-3">
+                            <div class="card-image">
+                                <img src="frontend/images/post-item2.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-body text-uppercase">
+                            <div class="card-meta text-muted">
+                                <span class="meta-date">feb 25, 2023</span>
+                                <span class="meta-category">- Technology</span>
+                            </div>
+                            <h3 class="card-title">
+                                <a href="#">Technology Hack You Won't Get</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="card border-none me-3">
+                            <div class="card-image">
+                                <img src="frontend/images/post-item3.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card-body text-uppercase">
+                            <div class="card-meta text-muted">
+                                <span class="meta-date">feb 22, 2023</span>
+                                <span class="meta-category">- Camera</span>
+                            </div>
+                            <h3 class="card-title">
+                                <a href="#">Top 10 Small Camera In The World</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section id="testimonials" class="position-relative">
-            <div class="container">
-                <div class="row">
-                    <div class="review-content position-relative">
-                        <div
-                            class="swiper-icon swiper-arrow swiper-arrow-prev position-absolute d-flex align-items-center">
-                            <svg class="chevron-left">
-                                <use xlink:href="#chevron-left" />
+        </div>
+    </section>
+    <section id="testimonials" class="position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="review-content position-relative">
+                    <div class="swiper-icon swiper-arrow swiper-arrow-prev position-absolute d-flex align-items-center">
+                        <svg class="chevron-left">
+                            <use xlink:href="#chevron-left" />
+                        </svg>
+                    </div>
+                    <div class="swiper testimonial-swiper">
+                        <div class="quotation text-center">
+                            <svg class="quote">
+                                <use xlink:href="#quote" />
                             </svg>
                         </div>
-                        <div class="swiper testimonial-swiper">
-                            <div class="quotation text-center">
-                                <svg class="quote">
-                                    <use xlink:href="#quote" />
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide text-center d-flex justify-content-center">
+                                <div class="review-item col-md-10">
+                                    <i class="icon icon-review"></i>
+                                    <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
+                                        sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise
+                                        sagittis lorem habi tasse morbi.”</blockquote>
+                                    <div class="rating">
+                                        <svg class="star star-fill">
+                                            <use xlink:href="#star-fill"></use>
+                                        </svg>
+                                        <svg class="star star-fill">
+                                            <use xlink:href="#star-fill"></use>
+                                        </svg>
+                                        <svg class="star star-fill">
+                                            <use xlink:href="#star-fill"></use>
+                                        </svg>
+                                        <svg class="star star-half">
+                                            <use xlink:href="#star-half"></use>
+                                        </svg>
+                                        <svg class="star star-empty">
+                                            <use xlink:href="#star-empty"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="author-detail">
+                                        <div class="name text-dark text-uppercase pt-2">Emma Chamberlin</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide text-center d-flex justify-content-center">
+                                <div class="review-item col-md-10">
+                                    <i class="icon icon-review"></i>
+                                    <blockquote>“A blog is a digital publication that can complement a website or exist
+                                        independently. A blog may include articles, short posts, listicles,
+                                        infographics, videos, and other digital content.”</blockquote>
+                                    <div class="rating">
+                                        <svg class="star star-fill">
+                                            <use xlink:href="#star-fill"></use>
+                                        </svg>
+                                        <svg class="star star-fill">
+                                            <use xlink:href="#star-fill"></use>
+                                        </svg>
+                                        <svg class="star star-fill">
+                                            <use xlink:href="#star-fill"></use>
+                                        </svg>
+                                        <svg class="star star-half">
+                                            <use xlink:href="#star-half"></use>
+                                        </svg>
+                                        <svg class="star star-empty">
+                                            <use xlink:href="#star-empty"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="author-detail">
+                                        <div class="name text-dark text-uppercase pt-2">Jennie Rose</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-icon swiper-arrow swiper-arrow-next position-absolute d-flex align-items-center">
+                        <svg class="chevron-right">
+                            <use xlink:href="#chevron-right" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <section id="subscribe" class="container-grid padding-large position-relative overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="subscribe-content bg-dark d-flex flex-wrap justify-content-center align-items-center padding-medium">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="display-header pe-3">
+                            <h2 class="display-7 text-uppercase text-light">Subscribe Us Now</h2>
+                            <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <form class="subscription-form validate" action="{{ route('subscribe') }}" method="POST">
+                            @csrf
+                            <div class="input-group flex-wrap">
+                                <input class="form-control btn-rounded-none" type="email" name="email"
+                                    placeholder="Your email address here" required="">
+                                <button class="btn btn-medium btn-primary text-uppercase btn-rounded-none" type="submit"
+                                    name="subscribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="instagram" class="padding-large overflow-hidden no-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="display-header text-uppercase text-dark text-center pb-3">
+                    <h2 class="display-7">Shop Our Instagram</h2>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <figure class="instagram-item pe-2">
+                        <a href="" class="image-link position-relative">
+                            <img src="frontend/images/insta-item1.jpg" alt="instagram" class="insta-image">
+                            <div class="icon-overlay position-absolute d-flex justify-content-center">
+                                <svg class="instagram">
+                                    <use xlink:href="#instagram"></use>
                                 </svg>
                             </div>
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide text-center d-flex justify-content-center">
-                                    <div class="review-item col-md-10">
-                                        <i class="icon icon-review"></i>
-                                        <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi
-                                            sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise
-                                            sagittis lorem habi tasse morbi.”</blockquote>
-                                        <div class="rating">
-                                            <svg class="star star-fill">
-                                                <use xlink:href="#star-fill"></use>
-                                            </svg>
-                                            <svg class="star star-fill">
-                                                <use xlink:href="#star-fill"></use>
-                                            </svg>
-                                            <svg class="star star-fill">
-                                                <use xlink:href="#star-fill"></use>
-                                            </svg>
-                                            <svg class="star star-half">
-                                                <use xlink:href="#star-half"></use>
-                                            </svg>
-                                            <svg class="star star-empty">
-                                                <use xlink:href="#star-empty"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="author-detail">
-                                            <div class="name text-dark text-uppercase pt-2">Emma Chamberlin</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide text-center d-flex justify-content-center">
-                                    <div class="review-item col-md-10">
-                                        <i class="icon icon-review"></i>
-                                        <blockquote>“A blog is a digital publication that can complement a website or exist
-                                            independently. A blog may include articles, short posts, listicles,
-                                            infographics, videos, and other digital content.”</blockquote>
-                                        <div class="rating">
-                                            <svg class="star star-fill">
-                                                <use xlink:href="#star-fill"></use>
-                                            </svg>
-                                            <svg class="star star-fill">
-                                                <use xlink:href="#star-fill"></use>
-                                            </svg>
-                                            <svg class="star star-fill">
-                                                <use xlink:href="#star-fill"></use>
-                                            </svg>
-                                            <svg class="star star-half">
-                                                <use xlink:href="#star-half"></use>
-                                            </svg>
-                                            <svg class="star star-empty">
-                                                <use xlink:href="#star-empty"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="author-detail">
-                                            <div class="name text-dark text-uppercase pt-2">Jennie Rose</div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2">
+                        <a href="" class="image-link position-relative">
+                            <img src="frontend/images/insta-item2.jpg" alt="instagram" class="insta-image">
+                            <div class="icon-overlay position-absolute d-flex justify-content-center">
+                                <svg class="instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
                             </div>
-                        </div>
-                        <div
-                            class="swiper-icon swiper-arrow swiper-arrow-next position-absolute d-flex align-items-center">
-                            <svg class="chevron-right">
-                                <use xlink:href="#chevron-right" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </section>
-        <section id="subscribe" class="container-grid padding-large position-relative overflow-hidden">
-            <div class="container">
-                <div class="row">
-                    <div
-                        class="subscribe-content bg-dark d-flex flex-wrap justify-content-center align-items-center padding-medium">
-                        <div class="col-md-6 col-sm-12">
-                            <div class="display-header pe-3">
-                                <h2 class="display-7 text-uppercase text-light">Subscribe Us Now</h2>
-                                <p>Get latest news, updates and deals directly mailed to your inbox.</p>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2">
+                        <a href="" class="image-link position-relative">
+                            <img src="frontend/images/insta-item3.jpg" alt="instagram" class="insta-image">
+                            <div class="icon-overlay position-absolute d-flex justify-content-center">
+                                <svg class="instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <form class="subscription-form validate">
-                                <div class="input-group flex-wrap">
-                                    <input class="form-control btn-rounded-none" type="email" name="EMAIL"
-                                        placeholder="Your email address here" required="">
-                                    <button class="btn btn-medium btn-primary text-uppercase btn-rounded-none"
-                                        type="submit" name="subscribe">Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2">
+                        <a href="https://templatesjungle.com/" class="image-link position-relative">
+                            <img src="frontend/images/insta-item4.jpg" alt="instagram" class="insta-image">
+                            <div class="icon-overlay position-absolute d-flex justify-content-center">
+                                <svg class="instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure class="instagram-item pe-2">
+                        <a href="https://templatesjungle.com/" class="image-link position-relative">
+                            <img src="frontend/images/insta-item5.jpg" alt="instagram" class="insta-image">
+                            <div class="icon-overlay position-absolute d-flex justify-content-center">
+                                <svg class="instagram">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </div>
+                        </a>
+                    </figure>
                 </div>
             </div>
-        </section>
-        <section id="instagram" class="padding-large overflow-hidden no-padding-top">
-            <div class="container">
-                <div class="row">
-                    <div class="display-header text-uppercase text-dark text-center pb-3">
-                        <h2 class="display-7">Shop Our Instagram</h2>
-                    </div>
-                    <div class="d-flex flex-wrap">
-                        <figure class="instagram-item pe-2">
-                            <a href="" class="image-link position-relative">
-                                <img src="frontend/images/insta-item1.jpg" alt="instagram" class="insta-image">
-                                <div class="icon-overlay position-absolute d-flex justify-content-center">
-                                    <svg class="instagram">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure class="instagram-item pe-2">
-                            <a href="" class="image-link position-relative">
-                                <img src="frontend/images/insta-item2.jpg" alt="instagram" class="insta-image">
-                                <div class="icon-overlay position-absolute d-flex justify-content-center">
-                                    <svg class="instagram">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure class="instagram-item pe-2">
-                            <a href="" class="image-link position-relative">
-                                <img src="frontend/images/insta-item3.jpg" alt="instagram" class="insta-image">
-                                <div class="icon-overlay position-absolute d-flex justify-content-center">
-                                    <svg class="instagram">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure class="instagram-item pe-2">
-                            <a href="https://templatesjungle.com/" class="image-link position-relative">
-                                <img src="frontend/images/insta-item4.jpg" alt="instagram" class="insta-image">
-                                <div class="icon-overlay position-absolute d-flex justify-content-center">
-                                    <svg class="instagram">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </figure>
-                        <figure class="instagram-item pe-2">
-                            <a href="https://templatesjungle.com/" class="image-link position-relative">
-                                <img src="frontend/images/insta-item5.jpg" alt="instagram" class="insta-image">
-                                <div class="icon-overlay position-absolute d-flex justify-content-center">
-                                    <svg class="instagram">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <script src="frontend/js/jquery-1.11.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        <script type="text/javascript" src="frontend/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="frontend/js/plugins.js"></script>
-        <script type="text/javascript" src="frontend/js/script.js"></script>
-        <script>
-            ! function(e) {
-                var t = {};
+    <script src="frontend/js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="frontend/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="frontend/js/plugins.js"></script>
+    <script type="text/javascript" src="frontend/js/script.js"></script>
+    <script>
+    ! function(e) {
+        var t = {};
 
-                function i(s) {
-                    if (t[s])
-                        return t[s].exports;
-                    var n = t[s] = {
-                        i: s,
-                        l: !1,
-                        exports: {}
+        function i(s) {
+            if (t[s])
+                return t[s].exports;
+            var n = t[s] = {
+                i: s,
+                l: !1,
+                exports: {}
+            };
+            return e[s].call(n.exports, n, n.exports, i),
+                n.l = !0,
+                n.exports
+        }
+        i.m = e,
+            i.c = t,
+            i.d = function(e, t, s) {
+                i.o(e, t) || Object.defineProperty(e, t, {
+                    enumerable: !0,
+                    get: s
+                })
+            },
+            i.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                        value: "Module"
+                    }),
+                    Object.defineProperty(e, "__esModule", {
+                        value: !0
+                    })
+            },
+            i.t = function(e, t) {
+                if (1 & t && (e = i(e)),
+                    8 & t)
+                    return e;
+                if (4 & t && "object" == typeof e && e && e.__esModule)
+                    return e;
+                var s = Object.create(null);
+                if (i.r(s),
+                    Object.defineProperty(s, "default", {
+                        enumerable: !0,
+                        value: e
+                    }),
+                    2 & t && "string" != typeof e)
+                    for (var n in e)
+                        i.d(s, n, function(t) {
+                                return e[t]
+                            }
+                            .bind(null, n));
+                return s
+            },
+            i.n = function(e) {
+                var t = e && e.__esModule ? function() {
+                        return e.default
+                    } :
+                    function() {
+                        return e
                     };
-                    return e[s].call(n.exports, n, n.exports, i),
-                        n.l = !0,
-                        n.exports
+                return i.d(t, "a", t),
+                    t
+            },
+            i.o = function(e, t) {
+                return Object.prototype.hasOwnProperty.call(e, t)
+            },
+            i.p = "/",
+            i(i.s = 155)
+    }([function(e, t) {
+        e.exports = function(e) {
+                return e && e.__esModule ? e : {
+                    default: e
                 }
-                i.m = e,
-                    i.c = t,
-                    i.d = function(e, t, s) {
-                        i.o(e, t) || Object.defineProperty(e, t, {
-                            enumerable: !0,
-                            get: s
-                        })
+            },
+            e.exports.__esModule = !0,
+            e.exports.default = e.exports
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(15);
+        e.exports = s.requestAnimationFrame("draw")
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = function(e) {
+            var t;
+            return function() {
+                return void 0 === t && (t = e.apply(this, arguments)),
+                    t
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        const s = i(8).EventEmitterMicro,
+            n = {
+                create: i(14),
+                update: i(9),
+                draw: i(1)
+            },
+            r = () => {};
+        let a = 0;
+        e.exports = class extends s {
+            constructor(e) {
+                super(),
+                    this.el = e.el,
+                    this.gum = e.gum,
+                    this.componentName = e.componentName,
+                    this._keyframeController = null
+            }
+            destroy() {
+                this.el = null,
+                    this.gum = null,
+                    this._keyframeController = null,
+                    super.destroy()
+            }
+            addKeyframe(e) {
+                const t = e.el || this.el;
+                return (e.group || this.anim).addKeyframe(t, e)
+            }
+            addDiscreteEvent(e) {
+                e.event = e.event || "Generic-Event-Name-" + a++;
+                let t = void 0 !== e.end && e.end !== e.start;
+                const i = this.addKeyframe(e);
+                return t ? (e.onEnterOnce && i.controller.once(e.event + ":enter", e.onEnterOnce),
+                        e.onExitOnce && i.controller.once(e.event + ":exit", e.onExitOnce),
+                        e.onEnter && i.controller.on(e.event + ":enter", e.onEnter),
+                        e.onExit && i.controller.on(e.event + ":exit", e.onExit)) : (e.onEventOnce && i
+                        .controller.once(e.event, e.onEventOnce),
+                        e.onEventReverseOnce && i.controller.once(e.event + ":reverse", e
+                            .onEventReverseOnce),
+                        e.onEvent && i.controller.on(e.event, e.onEvent),
+                        e.onEventReverse && i.controller.on(e.event + ":reverse", e.onEventReverse)),
+                    i
+            }
+            addRAFLoop(e) {
+                let t = ["start", "end"];
+                if (!t.every((t => e.hasOwnProperty(t))))
+                    return void console.log(
+                        "BubbleGum.BaseComponent::addRAFLoop required options are missing: " + t
+                        .join(" "));
+                const i = new n.create;
+                i.on("update", e.onUpdate || r),
+                    i.on("draw", e.onDraw || r),
+                    i.on("draw", (() => i.run()));
+                const {
+                    onEnter: s,
+                    onExit: a
+                } = e;
+                return e.onEnter = () => {
+                        i.run(),
+                            s && s()
                     },
-                    i.r = function(e) {
-                        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
-                                value: "Module"
-                            }),
-                            Object.defineProperty(e, "__esModule", {
-                                value: !0
-                            })
+                    e.onExit = () => {
+                        i.cancel(),
+                            a && a()
                     },
-                    i.t = function(e, t) {
-                        if (1 & t && (e = i(e)),
-                            8 & t)
-                            return e;
-                        if (4 & t && "object" == typeof e && e && e.__esModule)
-                            return e;
-                        var s = Object.create(null);
-                        if (i.r(s),
-                            Object.defineProperty(s, "default", {
-                                enumerable: !0,
-                                value: e
-                            }),
-                            2 & t && "string" != typeof e)
-                            for (var n in e)
-                                i.d(s, n, function(t) {
-                                        return e[t]
-                                    }
-                                    .bind(null, n));
-                        return s
-                    },
-                    i.n = function(e) {
-                        var t = e && e.__esModule ? function() {
-                                return e.default
-                            } :
-                            function() {
-                                return e
-                            };
-                        return i.d(t, "a", t),
-                            t
-                    },
-                    i.o = function(e, t) {
-                        return Object.prototype.hasOwnProperty.call(e, t)
-                    },
-                    i.p = "/",
-                    i(i.s = 155)
-            }([function(e, t) {
-                e.exports = function(e) {
-                        return e && e.__esModule ? e : {
-                            default: e
-                        }
-                    },
-                    e.exports.__esModule = !0,
-                    e.exports.default = e.exports
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(15);
-                e.exports = s.requestAnimationFrame("draw")
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = function(e) {
-                    var t;
-                    return function() {
-                        return void 0 === t && (t = e.apply(this, arguments)),
-                            t
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                const s = i(8).EventEmitterMicro,
-                    n = {
-                        create: i(14),
-                        update: i(9),
-                        draw: i(1)
-                    },
-                    r = () => {};
-                let a = 0;
-                e.exports = class extends s {
-                    constructor(e) {
-                        super(),
-                            this.el = e.el,
-                            this.gum = e.gum,
-                            this.componentName = e.componentName,
-                            this._keyframeController = null
-                    }
-                    destroy() {
-                        this.el = null,
-                            this.gum = null,
-                            this._keyframeController = null,
-                            super.destroy()
-                    }
-                    addKeyframe(e) {
-                        const t = e.el || this.el;
-                        return (e.group || this.anim).addKeyframe(t, e)
-                    }
-                    addDiscreteEvent(e) {
-                        e.event = e.event || "Generic-Event-Name-" + a++;
-                        let t = void 0 !== e.end && e.end !== e.start;
-                        const i = this.addKeyframe(e);
-                        return t ? (e.onEnterOnce && i.controller.once(e.event + ":enter", e.onEnterOnce),
-                                e.onExitOnce && i.controller.once(e.event + ":exit", e.onExitOnce),
-                                e.onEnter && i.controller.on(e.event + ":enter", e.onEnter),
-                                e.onExit && i.controller.on(e.event + ":exit", e.onExit)) : (e.onEventOnce && i
-                                .controller.once(e.event, e.onEventOnce),
-                                e.onEventReverseOnce && i.controller.once(e.event + ":reverse", e
-                                    .onEventReverseOnce),
-                                e.onEvent && i.controller.on(e.event, e.onEvent),
-                                e.onEventReverse && i.controller.on(e.event + ":reverse", e.onEventReverse)),
-                            i
-                    }
-                    addRAFLoop(e) {
-                        let t = ["start", "end"];
-                        if (!t.every((t => e.hasOwnProperty(t))))
-                            return void console.log(
-                                "BubbleGum.BaseComponent::addRAFLoop required options are missing: " + t
-                                .join(" "));
-                        const i = new n.create;
-                        i.on("update", e.onUpdate || r),
-                            i.on("draw", e.onDraw || r),
-                            i.on("draw", (() => i.run()));
-                        const {
-                            onEnter: s,
-                            onExit: a
-                        } = e;
-                        return e.onEnter = () => {
-                                i.run(),
-                                    s && s()
-                            },
-                            e.onExit = () => {
-                                i.cancel(),
-                                    a && a()
-                            },
-                            this.addDiscreteEvent(e)
-                    }
-                    addContinuousEvent(e) {
-                        e.onDraw || console.log(
-                                "BubbleGum.BaseComponent::addContinuousEvent required option `onDraw` is missing. Consider using a regular keyframe if you do not need a callback"
-                            ),
-                            e.event = e.event || "Generic-Event-Name-" + a++;
-                        let t = this.addKeyframe(e);
-                        return t.controller.on(e.event, e.onDraw),
-                            t
-                    }
-                    mounted() {}
-                    onResizeImmediate(e) {}
-                    onResizeDebounced(e) {}
-                    onBreakpointChange(e) {}
-                    get anim() {
-                        return this.gum.anim
-                    }
-                    get keyframeController() {
-                        return this._keyframeController || (this._keyframeController = this.anim
-                            .getControllerForTarget(this.el))
-                    }
-                    get pageMetrics() {
-                        return this.anim.model.pageMetrics
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.USE_ANIM_LIFECYCLE_ATTRIB = t.THEME_DEFAULT = t.THEME_CLASSNAME_NAMESPACE = t.THEME_ATTRIB = t
-                    .SOSUMI_FOOTNOTE_LINK_SELECTOR = t.SECTION_ENGAGEMENT_TIME = t.SECTION_ENGAGEMENT_ATTRIB = t
-                    .SCROLLBAR_BUFFER_CSS_VAR = t.SCRIM = t.MODAL_SELECTOR = t.MODAL_LABELLEDBY_ATTRIB = t
-                    .MODAL_L2_CLASSNAME = t.MODAL_ID_ATTRIB = t.MODAL_CUSTOM_CLASSNAME_ATTRIB = t
-                    .MODAL_COMPONENT_REF_ATTRIB = t.LIFECYCLE_EVTS = t.GUM_COMPONENT_NAME = t.CONTENT_WRAPPER_ATTRIB = t
-                    .BTN_OPEN_ATTRIB = t.BTN_CLOSE_ATTRIB = t.ANIM_SCROLLGROUP_NAME_ATTRIB = t.ANIMATION_EVTS = t
-                    .ANALYTICS_REGION_ID_ATTRIB = void 0;
-                var n = s(i(112));
-                t.ANALYTICS_REGION_ID_ATTRIB = "data-analytics-activitymap-region-id",
-                    t.ANIMATION_EVTS = {
-                        WILLOPEN: n.default.Events.WILLOPEN,
-                        OPEN: n.default.Events.OPEN,
-                        OPEN_COMPLETE: "open:complete",
-                        WILLCLOSE: n.default.Events.WILLCLOSE,
-                        CLOSE: n.default.Events.CLOSE,
-                        CLOSE_COMPLETE: "close:complete"
-                    },
-                    t.ANIM_SCROLLGROUP_NAME_ATTRIB = "data-modal-scroll-group-name",
-                    t.BTN_OPEN_ATTRIB = "data-modal-open",
-                    t.BTN_CLOSE_ATTRIB = "data-modal-close",
-                    t.CONTENT_WRAPPER_ATTRIB = "data-modal-content-wrapper",
-                    t.GUM_COMPONENT_NAME = "L2Modal",
-                    t.LIFECYCLE_EVTS = {
-                        CREATED: "l2modal:lifecycle:created",
-                        MOUNTED: "l2modal:lifecycle:mounted",
-                        WILLOPEN: "l2modal:lifecycle:onwillopen",
-                        OPEN: "l2modal:lifecycle:onopen",
-                        WILLCLOSE: "l2modal:lifecycle:onwillclose",
-                        CLOSE: "l2modal:lifecycle:onclose"
-                    },
-                    t.MODAL_CUSTOM_CLASSNAME_ATTRIB = "data-modal-class",
-                    t.MODAL_ID_ATTRIB = "data-modal-id";
-                const r = t.MODAL_L2_CLASSNAME = "modal-l2";
-                t.MODAL_LABELLEDBY_ATTRIB = "data-modal-dialog-labelledby",
-                    t.MODAL_COMPONENT_REF_ATTRIB = "data-modal-component-ref",
-                    t.MODAL_SELECTOR = `.${r}`,
-                    t.SCRIM = {
-                        ELEMENT_CLASSNAME: "modal-scrim",
-                        ELEMENT_ATTRIB: "data-modal-element-scrim",
-                        BLUR_ATTRIB: "data-modal-scrim-blur",
-                        BLUR_CLASSNAME: "modal-scrim-blur",
-                        CSS_VAR_BLUR: "--modal-scrim-blur",
-                        CSS_VAR_FILL: "--modal-scrim-fill"
-                    },
-                    t.SCROLLBAR_BUFFER_CSS_VAR = "--modal-scrollbar-buffer",
-                    t.SECTION_ENGAGEMENT_ATTRIB = "data-analytics-section-engagement",
-                    t.SECTION_ENGAGEMENT_TIME = 1e3,
-                    t.SOSUMI_FOOTNOTE_LINK_SELECTOR = ".footnote a",
-                    t.THEME_ATTRIB = "data-modal-theme",
-                    t.THEME_CLASSNAME_NAMESPACE = "theme",
-                    t.THEME_DEFAULT = "light",
-                    t.USE_ANIM_LIFECYCLE_ATTRIB = "data-modal-anim-lifecycle"
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    getWindow: function() {
-                        return window
-                    },
-                    getDocument: function() {
-                        return document
-                    },
-                    getNavigator: function() {
-                        return navigator
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
+                    this.addDiscreteEvent(e)
+            }
+            addContinuousEvent(e) {
+                e.onDraw || console.log(
+                        "BubbleGum.BaseComponent::addContinuousEvent required option `onDraw` is missing. Consider using a regular keyframe if you do not need a callback"
+                    ),
+                    e.event = e.event || "Generic-Event-Name-" + a++;
+                let t = this.addKeyframe(e);
+                return t.controller.on(e.event, e.onDraw),
+                    t
+            }
+            mounted() {}
+            onResizeImmediate(e) {}
+            onResizeDebounced(e) {}
+            onBreakpointChange(e) {}
+            get anim() {
+                return this.gum.anim
+            }
+            get keyframeController() {
+                return this._keyframeController || (this._keyframeController = this.anim
+                    .getControllerForTarget(this.el))
+            }
+            get pageMetrics() {
+                return this.anim.model.pageMetrics
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.USE_ANIM_LIFECYCLE_ATTRIB = t.THEME_DEFAULT = t.THEME_CLASSNAME_NAMESPACE = t.THEME_ATTRIB = t
+            .SOSUMI_FOOTNOTE_LINK_SELECTOR = t.SECTION_ENGAGEMENT_TIME = t.SECTION_ENGAGEMENT_ATTRIB = t
+            .SCROLLBAR_BUFFER_CSS_VAR = t.SCRIM = t.MODAL_SELECTOR = t.MODAL_LABELLEDBY_ATTRIB = t
+            .MODAL_L2_CLASSNAME = t.MODAL_ID_ATTRIB = t.MODAL_CUSTOM_CLASSNAME_ATTRIB = t
+            .MODAL_COMPONENT_REF_ATTRIB = t.LIFECYCLE_EVTS = t.GUM_COMPONENT_NAME = t.CONTENT_WRAPPER_ATTRIB = t
+            .BTN_OPEN_ATTRIB = t.BTN_CLOSE_ATTRIB = t.ANIM_SCROLLGROUP_NAME_ATTRIB = t.ANIMATION_EVTS = t
+            .ANALYTICS_REGION_ID_ATTRIB = void 0;
+        var n = s(i(112));
+        t.ANALYTICS_REGION_ID_ATTRIB = "data-analytics-activitymap-region-id",
+            t.ANIMATION_EVTS = {
+                WILLOPEN: n.default.Events.WILLOPEN,
+                OPEN: n.default.Events.OPEN,
+                OPEN_COMPLETE: "open:complete",
+                WILLCLOSE: n.default.Events.WILLCLOSE,
+                CLOSE: n.default.Events.CLOSE,
+                CLOSE_COMPLETE: "close:complete"
+            },
+            t.ANIM_SCROLLGROUP_NAME_ATTRIB = "data-modal-scroll-group-name",
+            t.BTN_OPEN_ATTRIB = "data-modal-open",
+            t.BTN_CLOSE_ATTRIB = "data-modal-close",
+            t.CONTENT_WRAPPER_ATTRIB = "data-modal-content-wrapper",
+            t.GUM_COMPONENT_NAME = "L2Modal",
+            t.LIFECYCLE_EVTS = {
+                CREATED: "l2modal:lifecycle:created",
+                MOUNTED: "l2modal:lifecycle:mounted",
+                WILLOPEN: "l2modal:lifecycle:onwillopen",
+                OPEN: "l2modal:lifecycle:onopen",
+                WILLCLOSE: "l2modal:lifecycle:onwillclose",
+                CLOSE: "l2modal:lifecycle:onclose"
+            },
+            t.MODAL_CUSTOM_CLASSNAME_ATTRIB = "data-modal-class",
+            t.MODAL_ID_ATTRIB = "data-modal-id";
+        const r = t.MODAL_L2_CLASSNAME = "modal-l2";
+        t.MODAL_LABELLEDBY_ATTRIB = "data-modal-dialog-labelledby",
+            t.MODAL_COMPONENT_REF_ATTRIB = "data-modal-component-ref",
+            t.MODAL_SELECTOR = `.${r}`,
+            t.SCRIM = {
+                ELEMENT_CLASSNAME: "modal-scrim",
+                ELEMENT_ATTRIB: "data-modal-element-scrim",
+                BLUR_ATTRIB: "data-modal-scrim-blur",
+                BLUR_CLASSNAME: "modal-scrim-blur",
+                CSS_VAR_BLUR: "--modal-scrim-blur",
+                CSS_VAR_FILL: "--modal-scrim-fill"
+            },
+            t.SCROLLBAR_BUFFER_CSS_VAR = "--modal-scrollbar-buffer",
+            t.SECTION_ENGAGEMENT_ATTRIB = "data-analytics-section-engagement",
+            t.SECTION_ENGAGEMENT_TIME = 1e3,
+            t.SOSUMI_FOOTNOTE_LINK_SELECTOR = ".footnote a",
+            t.THEME_ATTRIB = "data-modal-theme",
+            t.THEME_CLASSNAME_NAMESPACE = "theme",
+            t.THEME_DEFAULT = "light",
+            t.USE_ANIM_LIFECYCLE_ATTRIB = "data-modal-anim-lifecycle"
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            getWindow: function() {
+                return window
+            },
+            getDocument: function() {
+                return document
+            },
+            getNavigator: function() {
+                return navigator
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
 
-                function s() {
-                    this._events = {}
+        function s() {
+            this._events = {}
+        }
+        let n = s.prototype;
+        n.on = function(e, t) {
+                return this._events[e] = this._events[e] || [],
+                    this._events[e].unshift(t),
+                    t
+            },
+            n.once = function(e, t) {
+                let i = this;
+                return this.on(e, (function s(n) {
+                    i.off(e, s),
+                        void 0 !== n ? t(n) : t()
+                }))
+            },
+            n.off = function(e, t) {
+                if (!this.has(e))
+                    return;
+                if (1 === arguments.length)
+                    return this._events[e] = null,
+                        void delete this._events[e];
+                let i = this._events[e].indexOf(t); -
+                1 !== i && this._events[e].splice(i, 1)
+            },
+            n.trigger = function(e, t) {
+                if (this.has(e))
+                    for (let i = this._events[e].length - 1; i >= 0; i--)
+                        void 0 !== t ? this._events[e][i](t) : this._events[e][i]()
+            },
+            n.has = function(e) {
+                return e in this._events != !1 && 0 !== this._events[e].length
+            },
+            n.destroy = function() {
+                for (let e in this._events)
+                    this._events[e] = null;
+                this._events = null
+            },
+            e.exports = s
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.FEATURE_ENHANCED = t.EVT_UNENHANCE_FEATURE = t.EVT_UNENHANCE = t.EVT_TEXT_ZOOM = void 0;
+        t.EVT_UNENHANCE = "pagexp:unenhance",
+            t.EVT_UNENHANCE_FEATURE = "pagexp:unenhance:feature",
+            t.EVT_TEXT_ZOOM = "text-zoom:engaged",
+            t.FEATURE_ENHANCED = "enhanced"
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            EventEmitterMicro: i(6)
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(15);
+        e.exports = s.requestAnimationFrame("update")
+    }, function(e, t, i) {
+        "use strict";
+        const s = {
+            GUI_INSTANCE: null,
+            ANIM_INSTANCE: null,
+            VIEWPORT_EMITTER_ELEMENT: void 0,
+            LOCAL_STORAGE_KEYS: {
+                GuiPosition: "anim-ui.position",
+                GroupCollapsedStates: "anim-ui.group-collapsed-states",
+                scrollY: "anim-ui.scrollY-position",
+                path: "anim-ui.path"
+            },
+            RESIZE_TIMEOUT: -1,
+            BREAKPOINTS: [{
+                name: "S",
+                mediaQuery: "only screen and (max-width: 734px)"
+            }, {
+                name: "M",
+                mediaQuery: "only screen and (max-width: 1068px)"
+            }, {
+                name: "L",
+                mediaQuery: "only screen and (min-width: 1069px)"
+            }],
+            getBreakpoint: function() {
+                for (let e = 0; e < s.BREAKPOINTS.length; e++) {
+                    let t = s.BREAKPOINTS[e];
+                    if (window.matchMedia(t.mediaQuery).matches)
+                        return t.name
                 }
-                let n = s.prototype;
-                n.on = function(e, t) {
-                        return this._events[e] = this._events[e] || [],
-                            this._events[e].unshift(t),
-                            t
-                    },
-                    n.once = function(e, t) {
-                        let i = this;
-                        return this.on(e, (function s(n) {
-                            i.off(e, s),
-                                void 0 !== n ? t(n) : t()
-                        }))
-                    },
-                    n.off = function(e, t) {
-                        if (!this.has(e))
-                            return;
-                        if (1 === arguments.length)
-                            return this._events[e] = null,
-                                void delete this._events[e];
-                        let i = this._events[e].indexOf(t); -
-                        1 !== i && this._events[e].splice(i, 1)
-                    },
-                    n.trigger = function(e, t) {
-                        if (this.has(e))
-                            for (let i = this._events[e].length - 1; i >= 0; i--)
-                                void 0 !== t ? this._events[e][i](t) : this._events[e][i]()
-                    },
-                    n.has = function(e) {
-                        return e in this._events != !1 && 0 !== this._events[e].length
-                    },
-                    n.destroy = function() {
-                        for (let e in this._events)
-                            this._events[e] = null;
-                        this._events = null
-                    },
-                    e.exports = s
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.FEATURE_ENHANCED = t.EVT_UNENHANCE_FEATURE = t.EVT_UNENHANCE = t.EVT_TEXT_ZOOM = void 0;
-                t.EVT_UNENHANCE = "pagexp:unenhance",
-                    t.EVT_UNENHANCE_FEATURE = "pagexp:unenhance:feature",
-                    t.EVT_TEXT_ZOOM = "text-zoom:engaged",
-                    t.FEATURE_ENHANCED = "enhanced"
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    EventEmitterMicro: i(6)
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(15);
-                e.exports = s.requestAnimationFrame("update")
-            }, function(e, t, i) {
-                "use strict";
-                const s = {
-                    GUI_INSTANCE: null,
-                    ANIM_INSTANCE: null,
-                    VIEWPORT_EMITTER_ELEMENT: void 0,
-                    LOCAL_STORAGE_KEYS: {
-                        GuiPosition: "anim-ui.position",
-                        GroupCollapsedStates: "anim-ui.group-collapsed-states",
-                        scrollY: "anim-ui.scrollY-position",
-                        path: "anim-ui.path"
-                    },
-                    RESIZE_TIMEOUT: -1,
-                    BREAKPOINTS: [{
-                        name: "S",
-                        mediaQuery: "only screen and (max-width: 734px)"
-                    }, {
-                        name: "M",
-                        mediaQuery: "only screen and (max-width: 1068px)"
-                    }, {
-                        name: "L",
-                        mediaQuery: "only screen and (min-width: 1069px)"
-                    }],
-                    getBreakpoint: function() {
-                        for (let e = 0; e < s.BREAKPOINTS.length; e++) {
-                            let t = s.BREAKPOINTS[e];
-                            if (window.matchMedia(t.mediaQuery).matches)
-                                return t.name
-                        }
-                    },
-                    KeyframeDefaults: {
-                        ease: 1,
-                        epsilon: .05,
-                        preserveState: !1,
-                        easeFunctionString: "linear",
-                        easeFunction: "linear",
-                        hold: !1,
-                        snapAtCreation: !1,
-                        toggle: !1,
-                        breakpointMask: "SMLX",
-                        event: "",
-                        disabledWhen: [],
-                        cssClass: ""
-                    },
-                    KeyframeTypes: {
-                        Interpolation: 0,
-                        InterpolationForward: 1,
-                        CSSClass: 2,
-                        Event: 3
-                    },
-                    EVENTS: {
-                        ON_DOM_KEYFRAMES_CREATED: "ON_DOM_KEYFRAMES_CREATED",
-                        ON_DOM_GROUPS_CREATED: "ON_DOM_GROUPS_CREATED",
-                        ON_GROUP_CREATED: "ON_GROUP_CREATED",
-                        ON_KEYFRAME_UPDATED: "ON_KEYFRAME_UPDATED",
-                        ON_TIMELINE_START: "ON_TIMELINE_START",
-                        ON_TIMELINE_UPDATE: "ON_TIMELINE_UPDATE",
-                        ON_TIMELINE_COMPLETE: "ON_TIMELINE_COMPLETE",
-                        ON_CHAPTER_INITIATED: "ON_CHAPTER_INITIATED",
-                        ON_CHAPTER_OCCURRED: "ON_CHAPTER_OCCURRED",
-                        ON_CHAPTER_COMPLETED: "ON_CHAPTER_COMPLETED"
-                    },
-                    PageEvents: {
-                        ON_SCROLL: "ON_SCROLL",
-                        ON_RESIZE_IMMEDIATE: "ON_RESIZE_IMMEDIATE",
-                        ON_RESIZE_DEBOUNCED: "ON_RESIZE_DEBOUNCED",
-                        ON_BREAKPOINT_CHANGE: "ON_BREAKPOINT_CHANGE"
-                    },
-                    KeyframeJSONReservedWords: ["event", "cssClass", "style", "anchors", "start", "end", "epsilon",
-                        "easeFunction", "ease", "breakpointMask", "disabledWhen"
-                    ],
-                    TweenProps: i(98),
-                    TargetValue: i(22),
-                    CSSTargetValue: i(72),
-                    pageMetrics: new function() {
-                        this.scrollX = 0,
-                            this.scrollY = 0,
-                            this.windowWidth = 0,
-                            this.windowHeight = 0,
-                            this.documentOffsetX = 0,
-                            this.documentOffsetY = 0,
-                            this.previousBreakpoint = "",
-                            this.breakpoint = ""
-                    },
-                    KeyframeComparison: function(e, t) {
-                        return e.start < t.start ? -1 : e.start > t.start ? 1 : 0
-                    }
-                };
-                e.exports = s
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = void 0;
-                var n = s(i(12));
-                t.default = class {
-                    constructor(e) {
-                        this.options = e,
-                            this.media = e.media,
-                            this.mounted = this.mounted.bind(this),
-                            this.media.on(n.default.MOUNTED, this.mounted)
-                    }
-                    mounted() {}
-                    static get isSupported() {
-                        return !0
-                    }
-                    destroy() {}
-                }
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = void 0;
-                t.default = {
-                    MOUNTED: "MOUNTED",
-                    MEDIA_LOAD_START: "MEDIA_LOAD_START",
-                    MEDIA_LOAD_COMPLETE: "MEDIA_LOAD_COMPLETE",
-                    MEDIA_LOAD_ERROR: "MEDIA_LOAD_ERROR",
-                    PLAYBACK_STATE_CHANGE: "PLAYBACK_STATE_CHANGE",
-                    LOADING_STATE_CHANGE: "LOADING_STATE_CHANGE"
-                }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    PICTURE_DATA_DOWNLOAD_AREA_KEYFRAME: "data-download-area-keyframe",
-                    PICTURE_DATA_LAZY: "data-lazy",
-                    PICTURE_DATA_EMPTY_SOURCE: "data-empty",
-                    PICTURE_DATA_LOADED: "data-picture-loaded",
-                    PICTURE_CLASS_LOADED: "loaded"
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s, n = i(8).EventEmitterMicro,
-                    r = i(47),
-                    a = i(65);
+            },
+            KeyframeDefaults: {
+                ease: 1,
+                epsilon: .05,
+                preserveState: !1,
+                easeFunctionString: "linear",
+                easeFunction: "linear",
+                hold: !1,
+                snapAtCreation: !1,
+                toggle: !1,
+                breakpointMask: "SMLX",
+                event: "",
+                disabledWhen: [],
+                cssClass: ""
+            },
+            KeyframeTypes: {
+                Interpolation: 0,
+                InterpolationForward: 1,
+                CSSClass: 2,
+                Event: 3
+            },
+            EVENTS: {
+                ON_DOM_KEYFRAMES_CREATED: "ON_DOM_KEYFRAMES_CREATED",
+                ON_DOM_GROUPS_CREATED: "ON_DOM_GROUPS_CREATED",
+                ON_GROUP_CREATED: "ON_GROUP_CREATED",
+                ON_KEYFRAME_UPDATED: "ON_KEYFRAME_UPDATED",
+                ON_TIMELINE_START: "ON_TIMELINE_START",
+                ON_TIMELINE_UPDATE: "ON_TIMELINE_UPDATE",
+                ON_TIMELINE_COMPLETE: "ON_TIMELINE_COMPLETE",
+                ON_CHAPTER_INITIATED: "ON_CHAPTER_INITIATED",
+                ON_CHAPTER_OCCURRED: "ON_CHAPTER_OCCURRED",
+                ON_CHAPTER_COMPLETED: "ON_CHAPTER_COMPLETED"
+            },
+            PageEvents: {
+                ON_SCROLL: "ON_SCROLL",
+                ON_RESIZE_IMMEDIATE: "ON_RESIZE_IMMEDIATE",
+                ON_RESIZE_DEBOUNCED: "ON_RESIZE_DEBOUNCED",
+                ON_BREAKPOINT_CHANGE: "ON_BREAKPOINT_CHANGE"
+            },
+            KeyframeJSONReservedWords: ["event", "cssClass", "style", "anchors", "start", "end", "epsilon",
+                "easeFunction", "ease", "breakpointMask", "disabledWhen"
+            ],
+            TweenProps: i(98),
+            TargetValue: i(22),
+            CSSTargetValue: i(72),
+            pageMetrics: new function() {
+                this.scrollX = 0,
+                    this.scrollY = 0,
+                    this.windowWidth = 0,
+                    this.windowHeight = 0,
+                    this.documentOffsetX = 0,
+                    this.documentOffsetY = 0,
+                    this.previousBreakpoint = "",
+                    this.breakpoint = ""
+            },
+            KeyframeComparison: function(e, t) {
+                return e.start < t.start ? -1 : e.start > t.start ? 1 : 0
+            }
+        };
+        e.exports = s
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = void 0;
+        var n = s(i(12));
+        t.default = class {
+            constructor(e) {
+                this.options = e,
+                    this.media = e.media,
+                    this.mounted = this.mounted.bind(this),
+                    this.media.on(n.default.MOUNTED, this.mounted)
+            }
+            mounted() {}
+            static get isSupported() {
+                return !0
+            }
+            destroy() {}
+        }
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = void 0;
+        t.default = {
+            MOUNTED: "MOUNTED",
+            MEDIA_LOAD_START: "MEDIA_LOAD_START",
+            MEDIA_LOAD_COMPLETE: "MEDIA_LOAD_COMPLETE",
+            MEDIA_LOAD_ERROR: "MEDIA_LOAD_ERROR",
+            PLAYBACK_STATE_CHANGE: "PLAYBACK_STATE_CHANGE",
+            LOADING_STATE_CHANGE: "LOADING_STATE_CHANGE"
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            PICTURE_DATA_DOWNLOAD_AREA_KEYFRAME: "data-download-area-keyframe",
+            PICTURE_DATA_LAZY: "data-lazy",
+            PICTURE_DATA_EMPTY_SOURCE: "data-empty",
+            PICTURE_DATA_LOADED: "data-picture-loaded",
+            PICTURE_CLASS_LOADED: "loaded"
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s, n = i(8).EventEmitterMicro,
+            r = i(47),
+            a = i(65);
 
-                function o(e) {
-                    e = e || {},
-                        n.call(this),
-                        this.id = a.getNewID(),
-                        this.executor = e.executor || r,
-                        this._reset(),
-                        this._willRun = !1,
-                        this._didDestroy = !1
-                }
-                (s = o.prototype = Object.create(n.prototype)).run = function() {
-                        return this._willRun || (this._willRun = !0),
-                            this._subscribe()
-                    },
-                    s.cancel = function() {
-                        this._unsubscribe(),
-                            this._willRun && (this._willRun = !1),
-                            this._reset()
-                    },
-                    s.destroy = function() {
-                        var e = this.willRun();
-                        return this.cancel(),
-                            this.executor = null,
-                            n.prototype.destroy.call(this),
-                            this._didDestroy = !0,
-                            e
-                    },
-                    s.willRun = function() {
-                        return this._willRun
-                    },
-                    s.isRunning = function() {
-                        return this._isRunning
-                    },
-                    s._subscribe = function() {
-                        return this.executor.subscribe(this)
-                    },
-                    s._unsubscribe = function() {
-                        return this.executor.unsubscribe(this)
-                    },
-                    s._onAnimationFrameStart = function(e) {
-                        this._isRunning = !0,
-                            this._willRun = !1,
-                            this._didEmitFrameData || (this._didEmitFrameData = !0,
-                                this.trigger("start", e))
-                    },
-                    s._onAnimationFrameEnd = function(e) {
-                        this._willRun || (this.trigger("stop", e),
-                            this._reset())
-                    },
-                    s._reset = function() {
-                        this._didEmitFrameData = !1,
-                            this._isRunning = !1
-                    },
-                    e.exports = o
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(62),
-                    n = function() {
-                        this.events = {}
-                    },
-                    r = n.prototype;
-                r.requestAnimationFrame = function(e) {
-                        return this.events[e] || (this.events[e] = new s(e)),
-                            this.events[e].requestAnimationFrame
-                    },
-                    r.cancelAnimationFrame = function(e) {
-                        return this.events[e] || (this.events[e] = new s(e)),
-                            this.events[e].cancelAnimationFrame
-                    },
-                    e.exports = new n
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.Logger = t.DevLogger = void 0;
-                const n = s(i(17)).default.browser.safari,
-                    r = {
-                        sep: "%s",
-                        reset: "[0m",
-                        bold: "[1m",
-                        dim: "[2m",
-                        cursive: "[3m",
-                        underscore: "[4m",
-                        blink: "[5m",
-                        reverse: "[7m",
-                        hidden: "[8m",
-                        black: "[30m",
-                        red: "[31m",
-                        green: "[32m",
-                        yellow: "[33m",
-                        blue: "[34m",
-                        magenta: "[35m",
-                        cyan: "[36m",
-                        white: "[37m",
-                        BGblack: "[40m",
-                        BGred: "[41m",
-                        BGgreen: "[42m",
-                        BGyellow: "[43m",
-                        BGblue: "[44m",
-                        BGmagenta: "[45m",
-                        BGcyan: "[46m",
-                        BGwhite: "[47m"
-                    },
-                    a = e => `${r[e]}${r.sep}${r.reset}`,
-                    o = a("cyan"),
-                    l = a("green"),
-                    h = a("yellow"),
-                    d = a("red");
-                class c {
-                    static get log() {
-                        return n ? console.log : console.log.bind(console, o)
-                    }
-                    static get info() {
-                        return n ? console.log : console.log.bind(console, l)
-                    }
-                    static get warn() {
-                        return n ? console.log : console.log.bind(console, h)
-                    }
-                    static get error() {
-                        return n ? console.log : console.log.bind(console, d)
-                    }
-                }
-                t.Logger = c;
-                t.DevLogger = class extends c {
-                    static get log() {
-                        return () => {}
-                    }
-                    static get info() {
-                        return () => {}
-                    }
-                    static get warn() {
-                        return () => {}
-                    }
-                    static get error() {
-                        return () => {}
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = {
-                    ua: window.navigator.userAgent,
-                    platform: window.navigator.platform,
-                    vendor: window.navigator.vendor
-                };
-                e.exports = i(68)(s)
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.RT_VIEWER_FEATURE_DETECT = t.EVT_RT_VIEWER_TRIGGER_LOAD = t.EVT_RT_VIEWER_TRIGGER_DESTROY = t
-                    .EVT_RT_VIEWER_READY = t.EVT_RT_VIEWER_QL_TRIGGERED = t.EVT_RT_VIEWER_ESCAPE = t
-                    .EVT_RT_VIEWER_ANIMATION_UPDATE = t.EVT_RT_VIEWER_ANIMATION_START = t
-                    .EVT_RT_VIEWER_ANIMATION_ENDED = t.EVT_RT_VIEWER_AAP_TRIGGER = t.EVT_RT_VIEWER_AAP_ENABLE = t
-                    .EVT_RT_VIEWER_AAP_DISABLE = t.EVT_RT_BASE_INDEX_CHANGED = t.EVT_AAP_SIZE_CHANGED = t
-                    .EVT_AAP_COLOR_CHANGED = void 0;
-                t.EVT_AAP_COLOR_CHANGED = "aap:color-changed",
-                    t.EVT_AAP_SIZE_CHANGED = "aap:size-changed",
-                    t.EVT_RT_BASE_INDEX_CHANGED = "rt-viewer-base:index-changed",
-                    t.EVT_RT_VIEWER_ESCAPE = "rt-viewer:escape",
-                    t.EVT_RT_VIEWER_READY = "rt-viewer:ready",
-                    t.EVT_RT_VIEWER_TRIGGER_LOAD = "rt-viewer:trigger-load",
-                    t.EVT_RT_VIEWER_TRIGGER_DESTROY = "rt-viewer:trigger-destroy",
-                    t.EVT_RT_VIEWER_ANIMATION_START = "rt-viewer:animation:start",
-                    t.EVT_RT_VIEWER_ANIMATION_UPDATE = "rt-viewer:animation:update",
-                    t.EVT_RT_VIEWER_ANIMATION_ENDED = "rt-viewer:animation:ended",
-                    t.EVT_RT_VIEWER_AAP_DISABLE = "rt-viewer:aap:disable",
-                    t.EVT_RT_VIEWER_AAP_ENABLE = "rt-viewer:aap:enable",
-                    t.EVT_RT_VIEWER_AAP_TRIGGER = "rt-viewer:aap:trigger",
-                    t.EVT_RT_VIEWER_QL_TRIGGERED = "rt-viewer:ql:triggered",
-                    t.RT_VIEWER_FEATURE_DETECT = "enhanced-rt"
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {}
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(5),
-                    n = i(2);
+        function o(e) {
+            e = e || {},
+                n.call(this),
+                this.id = a.getNewID(),
+                this.executor = e.executor || r,
+                this._reset(),
+                this._willRun = !1,
+                this._didDestroy = !1
+        }
+        (s = o.prototype = Object.create(n.prototype)).run = function() {
+                return this._willRun || (this._willRun = !0),
+                    this._subscribe()
+            },
+            s.cancel = function() {
+                this._unsubscribe(),
+                    this._willRun && (this._willRun = !1),
+                    this._reset()
+            },
+            s.destroy = function() {
+                var e = this.willRun();
+                return this.cancel(),
+                    this.executor = null,
+                    n.prototype.destroy.call(this),
+                    this._didDestroy = !0,
+                    e
+            },
+            s.willRun = function() {
+                return this._willRun
+            },
+            s.isRunning = function() {
+                return this._isRunning
+            },
+            s._subscribe = function() {
+                return this.executor.subscribe(this)
+            },
+            s._unsubscribe = function() {
+                return this.executor.unsubscribe(this)
+            },
+            s._onAnimationFrameStart = function(e) {
+                this._isRunning = !0,
+                    this._willRun = !1,
+                    this._didEmitFrameData || (this._didEmitFrameData = !0,
+                        this.trigger("start", e))
+            },
+            s._onAnimationFrameEnd = function(e) {
+                this._willRun || (this.trigger("stop", e),
+                    this._reset())
+            },
+            s._reset = function() {
+                this._didEmitFrameData = !1,
+                    this._isRunning = !1
+            },
+            e.exports = o
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(62),
+            n = function() {
+                this.events = {}
+            },
+            r = n.prototype;
+        r.requestAnimationFrame = function(e) {
+                return this.events[e] || (this.events[e] = new s(e)),
+                    this.events[e].requestAnimationFrame
+            },
+            r.cancelAnimationFrame = function(e) {
+                return this.events[e] || (this.events[e] = new s(e)),
+                    this.events[e].cancelAnimationFrame
+            },
+            e.exports = new n
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.Logger = t.DevLogger = void 0;
+        const n = s(i(17)).default.browser.safari,
+            r = {
+                sep: "%s",
+                reset: "[0m",
+                bold: "[1m",
+                dim: "[2m",
+                cursive: "[3m",
+                underscore: "[4m",
+                blink: "[5m",
+                reverse: "[7m",
+                hidden: "[8m",
+                black: "[30m",
+                red: "[31m",
+                green: "[32m",
+                yellow: "[33m",
+                blue: "[34m",
+                magenta: "[35m",
+                cyan: "[36m",
+                white: "[37m",
+                BGblack: "[40m",
+                BGred: "[41m",
+                BGgreen: "[42m",
+                BGyellow: "[43m",
+                BGblue: "[44m",
+                BGmagenta: "[45m",
+                BGcyan: "[46m",
+                BGwhite: "[47m"
+            },
+            a = e => `${r[e]}${r.sep}${r.reset}`,
+            o = a("cyan"),
+            l = a("green"),
+            h = a("yellow"),
+            d = a("red");
+        class c {
+            static get log() {
+                return n ? console.log : console.log.bind(console, o)
+            }
+            static get info() {
+                return n ? console.log : console.log.bind(console, l)
+            }
+            static get warn() {
+                return n ? console.log : console.log.bind(console, h)
+            }
+            static get error() {
+                return n ? console.log : console.log.bind(console, d)
+            }
+        }
+        t.Logger = c;
+        t.DevLogger = class extends c {
+            static get log() {
+                return () => {}
+            }
+            static get info() {
+                return () => {}
+            }
+            static get warn() {
+                return () => {}
+            }
+            static get error() {
+                return () => {}
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = {
+            ua: window.navigator.userAgent,
+            platform: window.navigator.platform,
+            vendor: window.navigator.vendor
+        };
+        e.exports = i(68)(s)
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.RT_VIEWER_FEATURE_DETECT = t.EVT_RT_VIEWER_TRIGGER_LOAD = t.EVT_RT_VIEWER_TRIGGER_DESTROY = t
+            .EVT_RT_VIEWER_READY = t.EVT_RT_VIEWER_QL_TRIGGERED = t.EVT_RT_VIEWER_ESCAPE = t
+            .EVT_RT_VIEWER_ANIMATION_UPDATE = t.EVT_RT_VIEWER_ANIMATION_START = t
+            .EVT_RT_VIEWER_ANIMATION_ENDED = t.EVT_RT_VIEWER_AAP_TRIGGER = t.EVT_RT_VIEWER_AAP_ENABLE = t
+            .EVT_RT_VIEWER_AAP_DISABLE = t.EVT_RT_BASE_INDEX_CHANGED = t.EVT_AAP_SIZE_CHANGED = t
+            .EVT_AAP_COLOR_CHANGED = void 0;
+        t.EVT_AAP_COLOR_CHANGED = "aap:color-changed",
+            t.EVT_AAP_SIZE_CHANGED = "aap:size-changed",
+            t.EVT_RT_BASE_INDEX_CHANGED = "rt-viewer-base:index-changed",
+            t.EVT_RT_VIEWER_ESCAPE = "rt-viewer:escape",
+            t.EVT_RT_VIEWER_READY = "rt-viewer:ready",
+            t.EVT_RT_VIEWER_TRIGGER_LOAD = "rt-viewer:trigger-load",
+            t.EVT_RT_VIEWER_TRIGGER_DESTROY = "rt-viewer:trigger-destroy",
+            t.EVT_RT_VIEWER_ANIMATION_START = "rt-viewer:animation:start",
+            t.EVT_RT_VIEWER_ANIMATION_UPDATE = "rt-viewer:animation:update",
+            t.EVT_RT_VIEWER_ANIMATION_ENDED = "rt-viewer:animation:ended",
+            t.EVT_RT_VIEWER_AAP_DISABLE = "rt-viewer:aap:disable",
+            t.EVT_RT_VIEWER_AAP_ENABLE = "rt-viewer:aap:enable",
+            t.EVT_RT_VIEWER_AAP_TRIGGER = "rt-viewer:aap:trigger",
+            t.EVT_RT_VIEWER_QL_TRIGGERED = "rt-viewer:ql:triggered",
+            t.RT_VIEWER_FEATURE_DETECT = "enhanced-rt"
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {}
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(5),
+            n = i(2);
 
-                function r() {
-                    var e = s.getWindow(),
-                        t = s.getDocument(),
-                        i = s.getNavigator();
-                    return !!("ontouchstart" in e || e.DocumentTouch && t instanceof e.DocumentTouch || i
-                        .maxTouchPoints > 0 || i.msMaxTouchPoints > 0)
-                }
-                e.exports = n(r),
-                    e.exports.original = r
-            }, function(e, t, i) {
-                "use strict";
-                let s, n;
-                try {
-                    s = i(39),
-                        n = s.observer.Event
-                } catch (e) {}
-                e.exports = {
-                    trackPageState: function() {
-                        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "enhanced";
-                        if (s && s.passiveTracker) {
-                            let t = {
-                                eVar70: "enhanced"
-                            };
-                            document.documentElement.classList.contains(e) || (t = {
-                                    eVar70: "base",
-                                    eVar153: document.documentElement.causeForBase
-                                }),
-                                s.passiveTracker(t)
-                        }
-                    },
-                    trackViewerState: function() {
-                        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "enhanced-rt";
-                        if (s && s.passiveTracker) {
-                            let t = {
-                                eVar158: "realtime viewer - enhanced"
-                            };
-                            document.documentElement.classList.contains(e) || (t = {
-                                    eVar158: "realtime viewer - base",
-                                    eVar152: document.documentElement.causeForViewerBase || document
-                                        .documentElement.causeForBase
-                                }),
-                                s.passiveTracker(t)
-                        }
-                    },
-                    trackCustomEvent: function(e, t) {
-                        if (n) {
-                            if (!["events", "title"].every((e => Object.keys(t).includes(e))))
-                                throw new Error(`trackCustomEvent(): invalid options: ${t}`);
-                            const i = {
-                                    interactionEvents: [t.eventKey]
-                                },
-                                s = new n(e, i);
-                            return e.trigger(t.eventKey, {
-                                    title: t.title,
-                                    events: t.events
-                                }),
-                                s
-                        }
-                        return null
-                    },
-                    setCauseForBase: function(e) {
-                        document.documentElement.causeForBase || (document.documentElement.causeForBase = e)
-                    },
-                    setCauseForViewerBase: function(e) {
-                        document.documentElement.causeForViewerBase || (document.documentElement
-                            .causeForViewerBase = e)
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = class {
-                    constructor(e, t, i, s) {
-                        let n = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
-                            r = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : void 0;
-                        this.epsilon = parseFloat(t),
-                            this.snapAtCreation = i,
-                            this.initialValue = e,
-                            this.target = e,
-                            this.current = e,
-                            this.previousValue = e,
-                            this.isActive = !1,
-                            this.key = s,
-                            this.round = n,
-                            this.suffix = r
-                    }
-                    update(e, t, i) {
-                        this.target = e[0] + t * (e[1] - e[0]),
-                            this.previousValue = this.current,
-                            this.current += (this.target - this.current) * i;
-                        let s = this.delta(this.current, this.target);
-                        return s < this.epsilon && (this.current = this.target,
-                                s = 0),
-                            s > this.epsilon || 0 === s && this.previousValue !== this.current
-                    }
-                    reconcile(e, t) {
-                        return this.initialValue = e[0],
-                            this.update(e, t, 1)
-                    }
-                    needsUpdate() {
-                        return this.delta(this.current, this.target) > this.epsilon
-                    }
-                    delta(e, t) {
-                        return Math.abs(e - t)
-                    }
-                    calculateEpsilon(e, t) {
-                        if (e.epsilon)
-                            return void(this.epsilon = e.epsilon);
-                        let i = this.delta(t[0], t[1]),
-                            s = Math.min(.001 * i, this.epsilon, .05);
-                        this.epsilon = Math.max(s, .001)
-                    }
-                    set(e) {
-                        let t = this.current;
-                        this.round && (t = Math.round(t)),
-                            this.suffix && (t += this.suffix),
-                            e[this.key] = t
-                    }
-                    unset(e) {}
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = void 0;
-                var n = s(i(1)),
-                    r = s(i(3)),
-                    a = i(109),
-                    o = i(16),
-                    l = i(7),
-                    h = function(e, t) {
-                        if (!t && e && e.__esModule)
-                            return e;
-                        if (null === e || "object" != typeof e && "function" != typeof e)
-                            return {
-                                default: e
-                            };
-                        var i = d(t);
-                        if (i && i.has(e))
-                            return i.get(e);
-                        var s = {
-                                __proto__: null
-                            },
-                            n = Object.defineProperty && Object.getOwnPropertyDescriptor;
-                        for (var r in e)
-                            if ("default" !== r && Object.prototype.hasOwnProperty.call(e, r)) {
-                                var a = n ? Object.getOwnPropertyDescriptor(e, r) : null;
-                                a && (a.get || a.set) ? Object.defineProperty(s, r, a) : s[r] = e[r]
-                            }
-                        return s.default = e,
-                            i && i.set(e, s),
-                            s
-                    }(i(46));
-
-                function d(e) {
-                    if ("function" != typeof WeakMap)
-                        return null;
-                    var t = new WeakMap,
-                        i = new WeakMap;
-                    return (d = function(e) {
-                        return e ? i : t
-                    })(e)
-                }
-                class c extends r.default {
-                    constructor(e) {
-                        super(e),
-                            this.unenhanceEventsOccurred = new Set,
-                            this.gum.on(a.EVENTS.DOM_COMPONENTS_MOUNTED, (() => {
-                                this.pageXp = this.gum.getComponentOfType("PageXpController", document
-                                    .body)
-                            })),
-                            this._onUnenhancePageXp = this._onUnenhancePageXp.bind(this),
-                            this._onUnenhancePageXpFeature = this._onUnenhancePageXpFeature.bind(this),
-                            this.anim.once(l.EVT_UNENHANCE, this._onUnenhancePageXp),
-                            this.anim.on(l.EVT_UNENHANCE_FEATURE, this._onUnenhancePageXpFeature)
-                    }
-                    destroy() {
-                        this.destroyed || (this.destroyed = !0,
-                            this.unenhanceFeatureClass(),
-                            this.enhancedScrollGroup && this.pageXp.scrollGroupPromises.push(this
-                                .enhancedScrollGroup.remove().catch((() => {}))),
-                            (0,
-                                n.default)((() => {
-                                this.featureDetect && this.featureDetect !== l.FEATURE_ENHANCED &&
-                                    this.gum && this.anim.forceUpdate(),
-                                    super.destroy()
-                            })))
-                    }
-                    get logger() {
-                        return o.DevLogger
-                    }
-                    _onUnenhancePageXp() {
-                        this.destroyed || this.onUnenhance()
-                    }
-                    _onUnenhancePageXpFeature(e) {
-                        this.destroyed || this.unenhanceEventsOccurred.has(e) || (this.onUnenhanceEvent(e),
-                            this.unenhanceEventsOccurred.add(e),
-                            this._onUnenhancePageXp())
-                    }
-                    onUnenhance() {
-                        this.destroy()
-                    }
-                    onUnenhanceEvent(e) {
-                        this.logger.info("onUnenhanceEvent", e, this.componentName)
-                    }
-                    async unenhanceFeatureClass() {
-                        this.featureDetect && this.featureDetect !== l.FEATURE_ENHANCED && await h
-                            .removeFeatureDetectClass(this.featureDetect),
-                            (0,
-                                n.default)((() => this.gum && this.anim.forceUpdate()))
-                    }
-                    setUnenhanceViewports() {
-                        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
-                            t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                                overwriteDefaults: !1,
-                                excludeMatches: !1
-                            };
-                        h.setupViewportTracker({
-                            viewports: e,
-                            defaultViewports: this.pageXp.defaultEnhancedViewports,
-                            onVpChanged: this._unenhanceViewportHandler,
-                            overwriteDefaults: t.overwriteDefaults,
-                            excludeMatches: t.excludeMatches
-                        }).then((() => {
-                            this.pageXp ? this._onUnenhancePageXpFeature("enhanced-xp:invalid-vp") :
-                                this.destroy(),
-                                this.logger.info("unenhanceViewports", this.componentName)
-                        }))
-                    }
-                }
-                t.default = c
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(15);
-                e.exports = s.cancelAnimationFrame("draw")
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    RAFEmitter: i(14),
-                    ThrottledRAFEmitter: i(231),
-                    update: i(9),
-                    external: i(77),
-                    draw: i(1),
-                    cancelUpdate: i(78),
-                    cancelExternal: i(232),
-                    cancelDraw: i(24),
-                    RAFExecutor: i(48),
-                    sharedRAFExecutorInstance: i(47)
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = void 0;
-                var n = s(i(1)),
-                    r = s(i(9)),
-                    a = i(7);
-                t.default = class {
-                    constructor(e, t) {
-                        let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "base",
-                            s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "true";
-                        this.aapController = e,
-                            this.anim = this.aapController.anim,
-                            this.aap = t,
-                            this.type = i,
-                            this.preload = s,
-                            this.isAnimating = !1,
-                            this.isActive = !1,
-                            this.isEnabled = !0,
-                            this.keyframeOptions = JSON.parse(this.aap.dataset.aapKf),
-                            this.introduce = this.anim.createTimeGroup(),
-                            this.dismiss = this.anim.createTimeGroup(),
-                            this.anim.on(this.anim.model.PageEvents.ON_RESIZE_DEBOUNCED, (e => {
-                                this.isEnabled && this.isEnhanced() && this.onResizeDebounced(e)
-                            }))
-                    }
-                    mounted() {
-                        this.setupEvents(),
-                            this.anim.trigger(`aap-mounted--${this.aap.id}`, this)
-                    }
-                    setupEvents() {
-                        this.anim.once("enhanced-destroy", this.destroy)
-                    }
-                    introduceTimeline() {
-                        this.aap.style.opacity = "1",
-                            this.aap.classList.remove("inactive"),
-                            this.introduce.progress(0),
-                            this.introduce.play()
-                    }
-                    dismissTimeline() {
-                        this.dismiss.progress(0),
-                            this.dismiss.play()
-                    }
-                    _setupScrollGroup() {
-                        this.resetKeyframe = this.aapController.scrollGroup.addEvent(this.aap, {
-                                start: "a0t - 100vh",
-                                end: "a0b",
-                                event: `${this.aap.id} - reset`,
-                                onExit: () => {
-                                    this.inRange = !1,
-                                        this.isAnimating = !1,
-                                        this.introduce.pause(),
-                                        this.dismiss.pause(),
-                                        this.introduce.progress(0),
-                                        this.dismiss.progress(1)
-                                },
-                                anchors: [this.aap.parentNode]
-                            }),
-                            this.keyFrame = this.aapController.scrollGroup.addEvent(this.aap, {
-                                ...this.keyframeOptions,
-                                event: `${this.aap.id} - animate`,
-                                onEnter: () => {
-                                    this.inRange = !0,
-                                        this.isAnimating || (this.isAnimating = !0,
-                                            this.introduceTimeline())
-                                },
-                                onExit: () => {
-                                    this.inRange = !1,
-                                        this.isAnimating || (this.isAnimating = !0,
-                                            this.dismissTimeline())
-                                }
-                            })
-                    }
-                    destroy() {
-                        this.aap.classList.remove("inactive"),
-                            this.aap.style.opacity = "";
-                        const e = this.introduce && this.introduce.isEnabled ? this.introduce.remove() : Promise
-                            .resolve(),
-                            t = this.dismiss && this.dismiss.isEnabled ? this.dismiss.remove() : Promise
-                            .resolve(),
-                            i = this.keyFrame && this.keyFrame.isEnabled ? this.keyFrame.remove() : Promise
-                            .resolve(),
-                            s = this.resetKeyframe && this.resetKeyframe.isEnabled ? this.resetKeyframe
-                            .remove() : Promise.resolve();
-                        return Promise.all([e, t, i, s])
-                    }
-                    onResizeDebounced(e) {
-                        if ("S" !== e.breakpoint && "S" !== e.previousBreakpoint)
-                            this.inRange && requestAnimationFrame((() => {
-                                this.dismiss.progress(0),
-                                    this.dismiss.pause(),
-                                    this.introduce.progress(1)
-                            }));
-                        else {
-                            if ("textDriven" !== this.type)
-                                return void(this.inRange && requestAnimationFrame((() => {
-                                    this.dismiss.progress(0),
-                                        this.dismiss.pause(),
-                                        this.introduce.progress(1)
-                                })));
-                            new Promise(((e, t) => {
-                                (0,
-                                    r.default)((() => {
-                                    this.aap.classList.remove("inactive"),
-                                        this._getBounds(),
-                                        (0,
-                                            n.default)((() => {
-                                            Promise.all([this.introduce.remove(),
-                                                this.dismiss.remove()
-                                            ]).then((() => {
-                                                this.introduce = this
-                                                    .anim
-                                                    .createTimeGroup(),
-                                                    this.dismiss = this
-                                                    .anim
-                                                    .createTimeGroup(),
-                                                    this
-                                                    ._setupTimeGroups(),
-                                                    e()
-                                            }))
-                                        }), !0)
-                                }), !0)
-                            })).then((() => {
-                                this.inRange ? requestAnimationFrame((() => {
-                                    this.dismiss.progress(0),
-                                        this.dismiss.pause(),
-                                        this.introduce.progress(1),
-                                        this.isAnimating = !1
-                                })) : this.isAnimating = !1
-                            }))
-                        }
-                    }
-                    isEnhanced() {
-                        return document.documentElement.classList.contains(a.FEATURE_ENHANCED)
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.AAP_EASE_FUNCTIONS = void 0,
-                    t.setDefaultDismissKeyframes = function(e, t, i) {
-                        e.addKeyframe(t, {
-                                start: .25,
-                                end: .5,
-                                width: [`${i.width}px`, "css(--aap-min-height)"],
-                                height: [`${i.height}px`, "css(--aap-min-height)"],
-                                easeFunction: s.CUBIC_BEZIER
-                            }),
-                            e.addKeyframe(t, {
-                                start: .5,
-                                end: 1,
-                                scale: [1, .01],
-                                easeFunction: s.CUBIC_BEZIER
-                            })
-                    },
-                    t.setDefaultIntroduceKeyframes = function(e, t, i) {
-                        e.addKeyframe(t, {
-                                start: 0,
-                                end: .8,
-                                y: ["100h + css(--aap-margin)", 0],
-                                easeFunction: s.SPRING
-                            }),
-                            e.addKeyframe(t, {
-                                start: .1,
-                                end: .5,
-                                "--aap-hint-opacity": [0, 1],
-                                "--aap-hint-scale": [0, 1.75],
-                                easeFunction: s.SPRING_ALT
-                            }),
-                            e.addKeyframe(t, {
-                                start: .5,
-                                end: .8,
-                                "--aap-hint-scale": [1.75, 0],
-                                easeFunction: s.CUBIC_BEZIER
-                            }),
-                            i && e.addKeyframe(i, {
-                                start: 0,
-                                end: .8,
-                                scale: [.01, 1],
-                                easeFunction: s.SPRING
-                            })
+        function r() {
+            var e = s.getWindow(),
+                t = s.getDocument(),
+                i = s.getNavigator();
+            return !!("ontouchstart" in e || e.DocumentTouch && t instanceof e.DocumentTouch || i
+                .maxTouchPoints > 0 || i.msMaxTouchPoints > 0)
+        }
+        e.exports = n(r),
+            e.exports.original = r
+    }, function(e, t, i) {
+        "use strict";
+        let s, n;
+        try {
+            s = i(39),
+                n = s.observer.Event
+        } catch (e) {}
+        e.exports = {
+            trackPageState: function() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "enhanced";
+                if (s && s.passiveTracker) {
+                    let t = {
+                        eVar70: "enhanced"
                     };
-                const s = t.AAP_EASE_FUNCTIONS = {
-                    SPRING: "spring(100, 1, 15, 0)",
-                    SPRING_ALT: "spring(100, 1, 20, 0)",
-                    CUBIC_BEZIER: "cubic-bezier(0.8, 0, 0.4, 1)"
+                    document.documentElement.classList.contains(e) || (t = {
+                            eVar70: "base",
+                            eVar153: document.documentElement.causeForBase
+                        }),
+                        s.passiveTracker(t)
                 }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(34),
-                    n = i(60),
-                    r = i(29),
-                    a = i(19),
-                    o = {},
-                    l = /(\([^\)]+\))/gi,
-                    h = /([^ ,;\(]+(\([^\)]+\))?)/gi;
-                e.exports = function(e, t) {
-                    var i;
-                    return t += "",
-                        !!(e = s(e)) && (n(e, t) ? t : (i = a[e].css,
-                            "" !== (t = (t = t.replace(h, (function(t) {
-                                var s, a, h, d;
-                                if ("#" === t[0] || !isNaN(t[0]))
-                                    return t;
-                                if (a = t.replace(l, ""),
-                                    (h = i + ":" + a) in o)
-                                    return !1 === o[h] ? "" : t.replace(a, o[h]);
-                                for (s = r.css.map((function(e) {
-                                        return e + t
-                                    })),
-                                    s = [t].concat(s),
-                                    d = 0; d < s.length; d++)
-                                    if (n(e, s[d]))
-                                        return 0 !== d && r.reduce(d - 1),
-                                            o[h] = s[d].replace(l, ""),
-                                            s[d];
-                                return o[h] = !1,
-                                    ""
-                            }))).trim()) && t))
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = ["-webkit-", "-moz-", "-ms-"],
-                    n = ["Webkit", "Moz", "ms"],
-                    r = ["webkit", "moz", "ms"],
-                    a = function() {
-                        this.initialize()
-                    },
-                    o = a.prototype;
-                o.initialize = function() {
-                        this.reduced = !1,
-                            this.css = s,
-                            this.dom = n,
-                            this.evt = r
-                    },
-                    o.reduce = function(e) {
-                        this.reduced || (this.reduced = !0,
-                            this.css = [this.css[e]],
-                            this.dom = [this.dom[e]],
-                            this.evt = [this.evt[e]])
-                    },
-                    e.exports = new a
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.SELECTOR_COMPONENT_CONTAINER = t.FEATURE_INLINE_MEDIA = t.FALLBACK_CLASSNAME = t.EVT_UNLOAD = t
-                    .EVT_TIMEOUT = void 0;
-                t.FEATURE_INLINE_MEDIA = "inline-media-component",
-                    t.SELECTOR_COMPONENT_CONTAINER = ".inline-media-component-container",
-                    t.FALLBACK_CLASSNAME = "fallback",
-                    t.EVT_TIMEOUT = "inline-media-timeout",
-                    t.EVT_UNLOAD = "inline-media-unload"
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    lerp: function(e, t, i) {
-                        return t + (i - t) * e
-                    },
-                    map: function(e, t, i, s, n) {
-                        return s + (n - s) * (e - t) / (i - t)
-                    },
-                    mapClamp: function(e, t, i, s, n) {
-                        var r = s + (n - s) * (e - t) / (i - t);
-                        return Math.max(s, Math.min(n, r))
-                    },
-                    norm: function(e, t, i) {
-                        return (e - t) / (i - t)
-                    },
-                    clamp: function(e, t, i) {
-                        return Math.max(t, Math.min(i, e))
-                    },
-                    randFloat: function(e, t) {
-                        return Math.random() * (t - e) + e
-                    },
-                    randInt: function(e, t) {
-                        return Math.floor(Math.random() * (t - e) + e)
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    AUTOCOMPLETE: "aria-autocomplete",
-                    CHECKED: "aria-checked",
-                    DISABLED: "aria-disabled",
-                    EXPANDED: "aria-expanded",
-                    HASPOPUP: "aria-haspopup",
-                    HIDDEN: "aria-hidden",
-                    INVALID: "aria-invalid",
-                    LABEL: "aria-label",
-                    LEVEL: "aria-level",
-                    MULTILINE: "aria-multiline",
-                    MULTISELECTABLE: "aria-multiselectable",
-                    ORIENTATION: "aria-orientation",
-                    PRESSED: "aria-pressed",
-                    READONLY: "aria-readonly",
-                    REQUIRED: "aria-required",
-                    SELECTED: "aria-selected",
-                    SORT: "aria-sort",
-                    VALUEMAX: "aria-valuemax",
-                    VALUEMIN: "aria-valuemin",
-                    VALUENOW: "aria-valuenow",
-                    VALUETEXT: "aria-valuetext",
-                    ATOMIC: "aria-atomic",
-                    BUSY: "aria-busy",
-                    LIVE: "aria-live",
-                    RELEVANT: "aria-relevant",
-                    DROPEFFECT: "aria-dropeffect",
-                    GRABBED: "aria-grabbed",
-                    ACTIVEDESCENDANT: "aria-activedescendant",
-                    CONTROLS: "aria-controls",
-                    DESCRIBEDBY: "aria-describedby",
-                    FLOWTO: "aria-flowto",
-                    LABELLEDBY: "aria-labelledby",
-                    OWNS: "aria-owns",
-                    POSINSET: "aria-posinset",
-                    SETSIZE: "aria-setsize"
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(114),
-                    n = function() {
-                        this.focusableSelectors = s.selectors
-                    },
-                    r = n.prototype;
-                r.isFocusableElement = function(e, t, i) {
-                        return !(t && !this._isDisplayed(e)) && (s.nodeName[e.nodeName] ? !e.disabled : !e
-                            .contentEditable || (i = i || parseFloat(e.getAttribute("tabindex")),
-                                !isNaN(i)))
-                    },
-                    r.isTabbableElement = function(e, t) {
-                        if (t && !this._isDisplayed(e))
-                            return !1;
-                        var i = e.getAttribute("tabindex");
-                        return i = parseFloat(i),
-                            isNaN(i) ? this.isFocusableElement(e, t, i) : i >= 0
-                    },
-                    r._isDisplayed = function(e) {
-                        var t = e.getBoundingClientRect();
-                        return (0 !== t.top || 0 !== t.left || 0 !== t.width || 0 !== t.height) && "hidden" !== window
-                            .getComputedStyle(e).visibility
-                    },
-                    r.getTabbableElements = function(e, t) {
-                        for (var i = e.querySelectorAll(this.focusableSelectors), s = i.length, n = [], r = 0; r <
-                            s; r++)
-                            this.isTabbableElement(i[r], t) && n.push(i[r]);
-                        return n
-                    },
-                    r.getFocusableElements = function(e, t) {
-                        for (var i = e.querySelectorAll(this.focusableSelectors), s = i.length, n = [], r = 0; r <
-                            s; r++)
-                            this.isFocusableElement(i[r], t) && n.push(i[r]);
-                        return n
-                    },
-                    e.exports = new n
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(19),
-                    n = i(35),
-                    r = i(58),
-                    a = i(59),
-                    o = i(29),
-                    l = function(e, t) {
-                        var i = r(e),
-                            n = !1 !== t && r(t);
-                        return s[e] = s[t] = s[i] = s[n] = {
-                                dom: t,
-                                css: n
-                            },
-                            t
+            },
+            trackViewerState: function() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "enhanced-rt";
+                if (s && s.passiveTracker) {
+                    let t = {
+                        eVar158: "realtime viewer - enhanced"
                     };
-                e.exports = function(e) {
-                    var t, i, r, h;
-                    if ((e += "") in s)
-                        return s[e].dom;
-                    for (r = n(),
-                        i = (e = a(e)).charAt(0).toUpperCase() + e.substring(1),
-                        t = "filter" === e ? ["WebkitFilter", "filter"] : (e + " " + o.dom.join(i + " ") + i).split(
-                            " "),
-                        h = 0; h < t.length; h++)
-                        if (void 0 !== r.style[t[h]])
-                            return 0 !== h && o.reduce(h - 1),
-                                l(e, t[h]);
-                    return l(e, !1)
+                    document.documentElement.classList.contains(e) || (t = {
+                            eVar158: "realtime viewer - base",
+                            eVar152: document.documentElement.causeForViewerBase || document
+                                .documentElement.causeForBase
+                        }),
+                        s.passiveTracker(t)
                 }
-            }, function(e, t, i) {
-                "use strict";
-                var s;
-                e.exports = function() {
-                        return s ? (s.style.cssText = "",
-                                s.removeAttribute("style")) : s = document.createElement("_"),
-                            s
-                    },
-                    e.exports.resetElement = function() {
-                        s = null
-                    }
-            }, function(e, t, i) {
-                "use strict";
-                var s = function() {
-                    var e, t = "";
-                    for (e = 0; e < arguments.length; e++)
-                        e > 0 && (t += ","),
-                        t += arguments[e];
-                    return t
-                };
-                e.exports = function(e, t) {
-                    t = t || s;
-                    var i = function() {
-                        var s = arguments,
-                            n = t.apply(this, s);
-                        return n in i.cache || (i.cache[n] = e.apply(this, s)),
-                            i.cache[n]
-                    };
-                    return i.cache = {},
-                        i
-                }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    SharedInstance: i(64)
-                }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    majorVersionNumber: "3.x"
-                }
-            }, function(e, t) {
-                e.exports = require("@marcom/ac-analytics")
-            }, function(e, t, i) {
-                "use strict";
-                const s = i(71),
-                    n = i(10),
-                    r = i(51),
-                    a = i(75),
-                    o = i(103),
-                    l = i(76),
-                    h = i(175),
-                    d = i(176),
-                    c = i(177),
-                    u = {};
-                "undefined" != typeof window && (u.update = i(9),
-                    u.cancelUpdate = i(78),
-                    u.external = i(77),
-                    u.draw = i(1));
-                let m = null;
-                class p extends s {
-                    constructor() {
-                        if (super(),
-                            m)
-                            throw "You cannot create multiple AnimSystems. You probably want to create multiple groups instead. You can have unlimited groups on a page";
-                        m = this,
-                            this.groups = [],
-                            this.scrollSystems = [],
-                            this.timeSystems = [],
-                            this.tweenGroup = null,
-                            this._forceUpdateRAFId = -1,
-                            this.initialized = !1,
-                            this.model = n,
-                            this.plugins = {
-                                keyframe: [],
-                                parser: []
-                            },
-                            this.version = c.version,
-                            this._resolveReady = () => {},
-                            this.ready = new Promise((e => this._resolveReady = e)),
-                            this.onScroll = this.onScroll.bind(this),
-                            this.onResizedDebounced = this.onResizedDebounced.bind(this),
-                            this.onResizeImmediate = this.onResizeImmediate.bind(this)
-                    }
-                    initialize() {
-                        return this.initialized || "undefined" == typeof window || (this.initialized = !0,
-                                this.timeSystems = [],
-                                this.scrollSystems = [],
-                                this.groups = [],
-                                this.setupEvents(),
-                                this.initializeResizeFilter(),
-                                this.initializeModel(),
-                                this.createDOMGroups(),
-                                this.createDOMKeyframes(),
-                                this.tweenGroup = new d(null, this),
-                                this.groups.unshift(this.tweenGroup),
-                                this._resolveReady()),
-                            this.ready
-                    }
-                    use(e, t) {
-                        e.install(this, t)
-                    }
-                    remove() {
-                        return this.initialized ? Promise.all(this.groups.map((e => e.remove()))).then((() => {
-                            this.groups = null,
-                                this.scrollSystems = null,
-                                this.timeSystems = null,
-                                window.clearTimeout(n.RESIZE_TIMEOUT),
-                                window.removeEventListener("scroll", this.onScroll),
-                                window.removeEventListener("resize", this.onResizeImmediate),
-                                this._events = {},
-                                this.initialized = !1,
-                                this.ready = new Promise((e => this._resolveReady = e))
-                        })) : (this.ready = new Promise((e => this._resolveReady = e)),
-                            Promise.resolve())
-                    }
-                    destroy() {
-                        return this.remove()
-                    }
-                    createTimeGroup(e, t) {
-                        e instanceof HTMLElement || (e = (t = e || {}).el);
-                        let i = new h(e, this);
-                        return t && t.name && (i.name = t.name),
-                            this.groups.push(i),
-                            this.timeSystems.push(i),
-                            this.trigger(n.EVENTS.ON_GROUP_CREATED, i),
-                            i
-                    }
-                    createScrollGroup(e, t) {
-                        if (!e)
-                            throw "AnimSystem scroll based groups must supply an HTMLElement";
-                        let i = new l(e, this);
-                        return (t = t || {}).name && (i.name = t.name),
-                            t.getPosition && t.getMaxPosition && (i.getPosition = t.getPosition,
-                                i.createViewableRange = () => ({
-                                    a: 0,
-                                    d: t.getMaxPosition()
-                                })),
-                            i.getPosition = t.getPosition || i.getPosition,
-                            i.getPosition = t.getPosition || i.getPosition,
-                            this.groups.push(i),
-                            this.scrollSystems.push(i),
-                            this.trigger(n.EVENTS.ON_GROUP_CREATED, i),
-                            i
-                    }
-                    removeGroup(e) {
-                        return e.destroyed || e.anim !== this ? Promise.resolve() : Promise.all(e
-                            .keyframeControllers.map((t => e.removeKeyframeController(t)))).then((() => {
-                            let t = this.groups.indexOf(e); -
-                            1 !== t && this.groups.splice(t, 1),
-                                t = this.scrollSystems.indexOf(e),
-                                -1 !== t && this.scrollSystems.splice(t, 1),
-                                t = this.timeSystems.indexOf(e),
-                                -1 !== t && this.timeSystems.splice(t, 1),
-                                e.destroyed || e.destroy()
-                        }))
-                    }
-                    createDOMGroups() {
-                        document.body.setAttribute("data-anim-scroll-group", "body"),
-                            document.querySelectorAll("[data-anim-scroll-group]").forEach((e => this
-                                .createScrollGroup(e))),
-                            document.querySelectorAll("[data-anim-time-group]").forEach((e => this.createTimeGroup(
-                                e))),
-                            this.trigger(n.EVENTS.ON_DOM_GROUPS_CREATED, this.groups)
-                    }
-                    createDOMKeyframes() {
-                        let e = [];
-                        ["data-anim-keyframe", r.DATA_ATTRIBUTE, a.DATA_ATTRIBUTE, o.DATA_ATTRIBUTE].forEach((
-                            function(t) {
-                                for (let i = 0; i < 12; i++)
-                                    e.push(t + (0 === i ? "" : "-" + (i - 1)))
-                            }
-                        ));
-                        for (let t = 0; t < e.length; t++) {
-                            let i = e[t],
-                                s = document.querySelectorAll("[" + i + "]");
-                            for (let e = 0; e < s.length; e++) {
-                                const t = s[e],
-                                    n = JSON.parse(t.getAttribute(i));
-                                this.addKeyframe(t, n)
-                            }
-                        }
-                        u.update((() => {
-                            null !== this.groups && (this.groups.forEach((e => e.onKeyframesDirty({
-                                    silent: !0
-                                }))),
-                                this.groups.forEach((e => e.trigger(n.EVENTS
-                                    .ON_DOM_KEYFRAMES_CREATED, e))),
-                                this.trigger(n.EVENTS.ON_DOM_KEYFRAMES_CREATED, this),
-                                this.groups.forEach((e => {
-                                    e.forceUpdate({
-                                            waitForNextUpdate: !1,
-                                            silent: !0
-                                        }),
-                                        e.reconcile()
-                                })),
-                                this.onScroll())
-                        }), !0)
-                    }
-                    initializeResizeFilter() {
-                        if (n.cssDimensionsTracker)
-                            return;
-                        const e = document.querySelector(".cssDimensionsTracker") || document.createElement("div");
-                        e.setAttribute("cssDimensionsTracker", "true"),
-                            e.style.position = "fixed",
-                            e.style.top = "0",
-                            e.style.width = "100%",
-                            e.style.height = "100vh",
-                            e.style.pointerEvents = "none",
-                            e.style.visibility = "hidden",
-                            e.style.zIndex = "-1",
-                            document.documentElement.appendChild(e),
-                            n.cssDimensionsTracker = e
-                    }
-                    initializeModel() {
-                        n.pageMetrics.windowHeight = n.cssDimensionsTracker.clientHeight,
-                            n.pageMetrics.windowWidth = n.cssDimensionsTracker.clientWidth,
-                            n.pageMetrics.scrollY = window.scrollY || window.pageYOffset,
-                            n.pageMetrics.scrollX = window.scrollX || window.pageXOffset,
-                            n.pageMetrics.breakpoint = n.getBreakpoint();
-                        let e = document.documentElement.getBoundingClientRect();
-                        n.pageMetrics.documentOffsetX = e.left + n.pageMetrics.scrollX,
-                            n.pageMetrics.documentOffsetY = e.top + n.pageMetrics.scrollY
-                    }
-                    setupEvents() {
-                        window.removeEventListener("scroll", this.onScroll),
-                            window.addEventListener("scroll", this.onScroll),
-                            window.removeEventListener("resize", this.onResizeImmediate),
-                            window.addEventListener("resize", this.onResizeImmediate)
-                    }
-                    onScroll() {
-                        n.pageMetrics.scrollY = window.scrollY || window.pageYOffset,
-                            n.pageMetrics.scrollX = window.scrollX || window.pageXOffset;
-                        for (let e = 0, t = this.scrollSystems.length; e < t; e++)
-                            this.scrollSystems[e].updateTimeline();
-                        this.trigger(n.PageEvents.ON_SCROLL, n.pageMetrics)
-                    }
-                    onResizeImmediate() {
-                        let e = n.cssDimensionsTracker.clientWidth,
-                            t = n.cssDimensionsTracker.clientHeight;
-                        if (e === n.pageMetrics.windowWidth && t === n.pageMetrics.windowHeight)
-                            return;
-                        n.pageMetrics.windowWidth = e,
-                            n.pageMetrics.windowHeight = t,
-                            n.pageMetrics.scrollY = window.scrollY || window.pageYOffset,
-                            n.pageMetrics.scrollX = window.scrollX || window.pageXOffset;
-                        let i = document.documentElement.getBoundingClientRect();
-                        n.pageMetrics.documentOffsetX = i.left + n.pageMetrics.scrollX,
-                            n.pageMetrics.documentOffsetY = i.top + n.pageMetrics.scrollY,
-                            window.clearTimeout(n.RESIZE_TIMEOUT),
-                            n.RESIZE_TIMEOUT = window.setTimeout(this.onResizedDebounced, 250),
-                            this.trigger(n.PageEvents.ON_RESIZE_IMMEDIATE, n.pageMetrics)
-                    }
-                    onResizedDebounced() {
-                        u.update((() => {
-                            let e = n.pageMetrics.breakpoint,
-                                t = n.getBreakpoint();
-                            if (t !== e) {
-                                n.pageMetrics.previousBreakpoint = e,
-                                    n.pageMetrics.breakpoint = t;
-                                for (let e = 0, t = this.groups.length; e < t; e++)
-                                    this.groups[e]._onBreakpointChange();
-                                this.trigger(n.PageEvents.ON_BREAKPOINT_CHANGE, n.pageMetrics)
-                            }
-                            for (let e = 0, t = this.groups.length; e < t; e++)
-                                this.groups[e].forceUpdate({
-                                    waitForNextUpdate: !1
-                                });
-                            this.trigger(n.PageEvents.ON_RESIZE_DEBOUNCED, n.pageMetrics)
-                        }), !0)
-                    }
-                    forceUpdate() {
-                        let {
-                            waitForNextUpdate: e = !0,
-                            silent: t = !1
-                        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}; -
-                        1 !== this._forceUpdateRAFId && u.cancelUpdate(this._forceUpdateRAFId);
-                        let i = () => {
-                            for (let e = 0, i = this.groups.length; e < i; e++) {
-                                this.groups[e].forceUpdate({
-                                    waitForNextUpdate: !1,
-                                    silent: t
-                                })
-                            }
-                            return -1
-                        };
-                        this._forceUpdateRAFId = e ? u.update(i, !0) : i()
-                    }
-                    addKeyframe(e, t) {
-                        let i = this.getGroupForTarget(e);
-                        return i = i || this.getGroupForTarget(document.body),
-                            i.addKeyframe(e, t)
-                    }
-                    addEvent(e, t) {
-                        let i = this.getGroupForTarget(e);
-                        return i = i || this.getGroupForTarget(document.body),
-                            i.addEvent(e, t)
-                    }
-                    getTimeGroupForTarget(e) {
-                        return this._getGroupForTarget(e, (e => e instanceof h))
-                    }
-                    getScrollGroupForTarget(e) {
-                        return this._getGroupForTarget(e, (e => !(e instanceof h)))
-                    }
-                    getGroupForTarget(e) {
-                        return this._getGroupForTarget(e, (() => !0))
-                    }
-                    getGroupByName(e) {
-                        return this.groups.find((t => t.name === e))
-                    }
-                    _getGroupForTarget(e, t) {
-                        if (e._animInfo && e._animInfo.group && t(e._animInfo.group))
-                            return e._animInfo.group;
-                        let i = e;
-                        for (; i;) {
-                            if (i._animInfo && i._animInfo.isGroup && t(i._animInfo.group))
-                                return i._animInfo.group;
-                            i = i.parentElement
-                        }
-                    }
-                    getControllerForTarget(e) {
-                        return e._animInfo && e._animInfo.controller ? e._animInfo.controller : null
-                    }
-                    addTween(e, t) {
-                        return this.tweenGroup.addKeyframe(e, t)
-                    }
-                }
-                e.exports = "undefined" == typeof window ? new p : window.AC.SharedInstance.share("AnimSystem", c.major,
-                        p),
-                    e.exports.default = e.exports
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = function(e, t, i, n) {
-                        const r = i[0].toUpperCase() + i.slice(1),
-                            a = e[s + r];
-                        if (void 0 !== a)
-                            switch (typeof n) {
-                                case "boolean":
-                                    return "false" !== a;
-                                case "object":
-                                    return JSON.parse(a);
-                                case "number":
-                                    return Number(a);
-                                default:
-                                    return a
-                            }
-                        else if (void 0 !== t[i]) {
-                            const e = t[i];
-                            return "boolean" != typeof n || "false" !== e && "true" !== e ? e : "false" !== e
-                        }
-                        return n
-                    };
-                const s = "inlineMedia"
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = void 0;
-                t.default = {
-                    EMPTY: "loading-empty",
-                    LOADING: "loading",
-                    LOADED: "loaded",
-                    ERROR: "loading-error",
-                    DISABLED: "loading-disabled"
-                }
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = void 0;
-                t.default = {
-                    IDLE: "idle",
-                    PLAYING: "playing",
-                    PAUSED: "paused",
-                    ENDED: "ended"
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    Object.defineProperty(t, "createCustomAnimScrollGroup", {
-                        enumerable: !0,
-                        get: function() {
-                            return n.default
-                        }
-                    }),
-                    Object.defineProperty(t, "getFriendlyName", {
-                        enumerable: !0,
-                        get: function() {
-                            return r.default
-                        }
-                    }),
-                    Object.defineProperty(t, "getModalComponentRef", {
-                        enumerable: !0,
-                        get: function() {
-                            return a.default
-                        }
-                    });
-                var n = s(i(233)),
-                    r = s(i(234)),
-                    a = s(i(235))
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    Object.defineProperty(t, "Close", {
-                        enumerable: !0,
-                        get: function() {
-                            return n.default
-                        }
-                    }),
-                    Object.defineProperty(t, "CloseBundle", {
-                        enumerable: !0,
-                        get: function() {
-                            return u.default
-                        }
-                    }),
-                    Object.defineProperty(t, "CloseButton", {
-                        enumerable: !0,
-                        get: function() {
-                            return r.default
-                        }
-                    }),
-                    Object.defineProperty(t, "Focus", {
-                        enumerable: !0,
-                        get: function() {
-                            return a.default
-                        }
-                    }),
-                    Object.defineProperty(t, "FullBleed", {
-                        enumerable: !0,
-                        get: function() {
-                            return o.default
-                        }
-                    }),
-                    Object.defineProperty(t, "FullBleedBundle", {
-                        enumerable: !0,
-                        get: function() {
-                            return m.default
-                        }
-                    }),
-                    Object.defineProperty(t, "Keyboard", {
-                        enumerable: !0,
-                        get: function() {
-                            return l.default
-                        }
-                    }),
-                    Object.defineProperty(t, "Open", {
-                        enumerable: !0,
-                        get: function() {
-                            return h.default
-                        }
-                    }),
-                    Object.defineProperty(t, "PageOverlay", {
-                        enumerable: !0,
-                        get: function() {
-                            return d.default
-                        }
-                    }),
-                    Object.defineProperty(t, "PageOverlayBundle", {
-                        enumerable: !0,
-                        get: function() {
-                            return p.default
-                        }
-                    }),
-                    Object.defineProperty(t, "ScrollPosition", {
-                        enumerable: !0,
-                        get: function() {
-                            return c.default
-                        }
-                    });
-                var n = s(i(243)),
-                    r = s(i(244)),
-                    a = s(i(245)),
-                    o = s(i(246)),
-                    l = s(i(247)),
-                    h = s(i(252)),
-                    d = s(i(253)),
-                    c = s(i(254)),
-                    u = s(i(255)),
-                    m = s(i(256)),
-                    p = s(i(257))
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.setupViewportTracker = t.removeFeatureDetectClass = t.isSmallOnDesktop = t.detectTextZoom = t
-                    .checkEnhancedFeatures = t.addFeatureDetectClass = void 0;
-                var n = s(i(1)),
-                    r = s(i(20)),
-                    a = function(e, t) {
-                        if (!t && e && e.__esModule)
-                            return e;
-                        if (null === e || "object" != typeof e && "function" != typeof e)
-                            return {
-                                default: e
-                            };
-                        var i = l(t);
-                        if (i && i.has(e))
-                            return i.get(e);
-                        var s = {
-                                __proto__: null
-                            },
-                            n = Object.defineProperty && Object.getOwnPropertyDescriptor;
-                        for (var r in e)
-                            if ("default" !== r && Object.prototype.hasOwnProperty.call(e, r)) {
-                                var a = n ? Object.getOwnPropertyDescriptor(e, r) : null;
-                                a && (a.get || a.set) ? Object.defineProperty(s, r, a) : s[r] = e[r]
-                            }
-                        return s.default = e,
-                            i && i.set(e, s),
-                            s
-                    }(i(66)),
-                    o = i(49);
-
-                function l(e) {
-                    if ("function" != typeof WeakMap)
-                        return null;
-                    var t = new WeakMap,
-                        i = new WeakMap;
-                    return (l = function(e) {
-                        return e ? i : t
-                    })(e)
-                }
-                t.addFeatureDetectClass = e => new Promise(((t, i) => {
-                    (0,
-                        n.default)((() => {
-                        document.documentElement.classList.add(e),
-                            document.documentElement.classList.remove(`no-${e}`),
-                            t()
-                    }))
-                }));
-                t.removeFeatureDetectClass = e => new Promise(((t, i) => {
-                    (0,
-                        n.default)((() => {
-                        document.documentElement.classList.remove(e),
-                            document.documentElement.classList.add(`no-${e}`),
-                            t()
-                    }))
-                }));
-                t.setupViewportTracker = e => {
-                    const t = {
-                        ...!(e = {
-                            viewports: {},
-                            defaultViewports: {},
-                            onVpChanged: () => {},
-                            overwriteDefaults: !1,
-                            excludeMatches: !1,
-                            ...e
-                        }).overwriteDefaults && !e.excludeMatches && e.defaultViewports,
-                        ...e.viewports
-                    };
-                    let i = null;
-                    const s = new Promise(((e, t) => {
-                            i = e
-                        })),
-                        n = t => {
-                            !!t && t.isMatch || (i(),
-                                    t && t.destroy()),
-                                e.onVpChanged && e.onVpChanged()
+            },
+            trackCustomEvent: function(e, t) {
+                if (n) {
+                    if (!["events", "title"].every((e => Object.keys(t).includes(e))))
+                        throw new Error(`trackCustomEvent(): invalid options: ${t}`);
+                    const i = {
+                            interactionEvents: [t.eventKey]
                         },
-                        r = new a.default(t, {
-                            excludeMatches: e.excludeMatches
-                        });
-                    return r.on(a.EVT_VIEWPORT_GROUP_CHANGED, n),
-                        n(r),
+                        s = new n(e, i);
+                    return e.trigger(t.eventKey, {
+                            title: t.title,
+                            events: t.events
+                        }),
                         s
-                };
-                const h = () => !(0,
-                    r.default)() && window.matchMedia("(max-width: 734px)").matches;
-                t.isSmallOnDesktop = h;
-                const d = () => parseFloat(window.getComputedStyle(document.documentElement)["font-size"]) > 17;
-                t.detectTextZoom = d;
-                t.checkEnhancedFeatures = () => {
-                    const e = new a.default(o.ENHANCED_VIEWPORTS),
-                        t = {
-                            "text-zoom": d(),
-                            "small-desktop": h(),
-                            "invalid-viewport": !e.isMatch
-                        };
-                    for (const e in t)
-                        if (!0 === t[e])
-                            return {
-                                enhanced: !1,
-                                feature: e
-                            };
+                }
+                return null
+            },
+            setCauseForBase: function(e) {
+                document.documentElement.causeForBase || (document.documentElement.causeForBase = e)
+            },
+            setCauseForViewerBase: function(e) {
+                document.documentElement.causeForViewerBase || (document.documentElement
+                    .causeForViewerBase = e)
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = class {
+            constructor(e, t, i, s) {
+                let n = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
+                    r = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : void 0;
+                this.epsilon = parseFloat(t),
+                    this.snapAtCreation = i,
+                    this.initialValue = e,
+                    this.target = e,
+                    this.current = e,
+                    this.previousValue = e,
+                    this.isActive = !1,
+                    this.key = s,
+                    this.round = n,
+                    this.suffix = r
+            }
+            update(e, t, i) {
+                this.target = e[0] + t * (e[1] - e[0]),
+                    this.previousValue = this.current,
+                    this.current += (this.target - this.current) * i;
+                let s = this.delta(this.current, this.target);
+                return s < this.epsilon && (this.current = this.target,
+                        s = 0),
+                    s > this.epsilon || 0 === s && this.previousValue !== this.current
+            }
+            reconcile(e, t) {
+                return this.initialValue = e[0],
+                    this.update(e, t, 1)
+            }
+            needsUpdate() {
+                return this.delta(this.current, this.target) > this.epsilon
+            }
+            delta(e, t) {
+                return Math.abs(e - t)
+            }
+            calculateEpsilon(e, t) {
+                if (e.epsilon)
+                    return void(this.epsilon = e.epsilon);
+                let i = this.delta(t[0], t[1]),
+                    s = Math.min(.001 * i, this.epsilon, .05);
+                this.epsilon = Math.max(s, .001)
+            }
+            set(e) {
+                let t = this.current;
+                this.round && (t = Math.round(t)),
+                    this.suffix && (t += this.suffix),
+                    e[this.key] = t
+            }
+            unset(e) {}
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = void 0;
+        var n = s(i(1)),
+            r = s(i(3)),
+            a = i(109),
+            o = i(16),
+            l = i(7),
+            h = function(e, t) {
+                if (!t && e && e.__esModule)
+                    return e;
+                if (null === e || "object" != typeof e && "function" != typeof e)
                     return {
-                        enhanced: !0
+                        default: e
+                    };
+                var i = d(t);
+                if (i && i.has(e))
+                    return i.get(e);
+                var s = {
+                        __proto__: null
+                    },
+                    n = Object.defineProperty && Object.getOwnPropertyDescriptor;
+                for (var r in e)
+                    if ("default" !== r && Object.prototype.hasOwnProperty.call(e, r)) {
+                        var a = n ? Object.getOwnPropertyDescriptor(e, r) : null;
+                        a && (a.get || a.set) ? Object.defineProperty(s, r, a) : s[r] = e[r]
                     }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(37).SharedInstance,
-                    n = i(38).majorVersionNumber,
-                    r = i(48);
-                e.exports = s.share("@marcom/ac-raf-emitter/sharedRAFExecutorInstance", n, r)
-            }, function(e, t, i) {
-                "use strict";
-                var s, n = i(6);
+                return s.default = e,
+                    i && i.set(e, s),
+                    s
+            }(i(46));
 
-                function r(e) {
-                    e = e || {},
-                        this._reset(),
-                        this.updatePhases(),
-                        this.eventEmitter = new n,
-                        this._willRun = !1,
-                        this._totalSubscribeCount = -1;
-                    var t = null,
-                        i = null;
-                    "undefined" != typeof window ? (t = window.requestAnimationFrame,
-                            i = window.cancelAnimationFrame) : t = i = function() {},
-                        this._requestAnimationFrame = t,
-                        this._cancelAnimationFrame = i,
-                        this._boundOnAnimationFrame = this._onAnimationFrame.bind(this),
-                        this._boundOnExternalAnimationFrame = this._onExternalAnimationFrame.bind(this)
-                }
-                (s = r.prototype).frameRequestedPhase = "requested",
-                    s.startPhase = "start",
-                    s.runPhases = ["update", "external", "draw"],
-                    s.endPhase = "end",
-                    s.disabledPhase = "disabled",
-                    s.beforePhaseEventPrefix = "before:",
-                    s.afterPhaseEventPrefix = "after:",
-                    s.subscribe = function(e, t) {
-                        return this._totalSubscribeCount++,
-                            this._nextFrameSubscribers[e.id] || (t ? this._nextFrameSubscribersOrder.unshift(e.id) :
-                                this._nextFrameSubscribersOrder.push(e.id),
-                                this._nextFrameSubscribers[e.id] = e,
-                                this._nextFrameSubscriberArrayLength++,
-                                this._nextFrameSubscriberCount++,
-                                this._run()),
-                            this._totalSubscribeCount
-                    },
-                    s.subscribeImmediate = function(e, t) {
-                        return this._totalSubscribeCount++,
-                            this._subscribers[e.id] || (t ? this._subscribersOrder.splice(this._currentSubscriberIndex +
-                                    1, 0, e.id) : this._subscribersOrder.unshift(e.id),
-                                this._subscribers[e.id] = e,
-                                this._subscriberArrayLength++,
-                                this._subscriberCount++),
-                            this._totalSubscribeCount
-                    },
-                    s.unsubscribe = function(e) {
-                        return !!this._nextFrameSubscribers[e.id] && (this._nextFrameSubscribers[e.id] = null,
-                            this._nextFrameSubscriberCount--,
-                            0 === this._nextFrameSubscriberCount && this._cancel(),
-                            !0)
-                    },
-                    s.getSubscribeID = function() {
-                        return this._totalSubscribeCount += 1
-                    },
-                    s.destroy = function() {
-                        var e = this._cancel();
-                        return this.eventEmitter.destroy(),
-                            this.eventEmitter = null,
-                            this.phases = null,
-                            this._subscribers = null,
-                            this._subscribersOrder = null,
-                            this._nextFrameSubscribers = null,
-                            this._nextFrameSubscribersOrder = null,
-                            this._rafData = null,
-                            this._boundOnAnimationFrame = null,
-                            this._onExternalAnimationFrame = null,
-                            e
-                    },
-                    s.useExternalAnimationFrame = function(e) {
-                        if ("boolean" == typeof e) {
-                            var t = this._isUsingExternalAnimationFrame;
-                            return e && this._animationFrame && (this._cancelAnimationFrame.call(window, this
-                                        ._animationFrame),
-                                    this._animationFrame = null),
-                                !this._willRun || e || this._animationFrame || (this._animationFrame = this
-                                    ._requestAnimationFrame.call(window, this._boundOnAnimationFrame)),
-                                this._isUsingExternalAnimationFrame = e,
-                                e ? this._boundOnExternalAnimationFrame : t || !1
-                        }
-                    },
-                    s.updatePhases = function() {
-                        this.phases || (this.phases = []),
-                            this.phases.length = 0,
-                            this.phases.push(this.frameRequestedPhase),
-                            this.phases.push(this.startPhase),
-                            Array.prototype.push.apply(this.phases, this.runPhases),
-                            this.phases.push(this.endPhase),
-                            this._runPhasesLength = this.runPhases.length,
-                            this._phasesLength = this.phases.length
-                    },
-                    s._run = function() {
-                        if (!this._willRun)
-                            return this._willRun = !0,
-                                0 === this.lastFrameTime && (this.lastFrameTime = performance.now()),
-                                this._animationFrameActive = !0,
-                                this._isUsingExternalAnimationFrame || (this._animationFrame = this
-                                    ._requestAnimationFrame.call(window, this._boundOnAnimationFrame)),
-                                this.phase === this.disabledPhase && (this.phaseIndex = 0,
-                                    this.phase = this.phases[this.phaseIndex]),
-                                !0
-                    },
-                    s._cancel = function() {
-                        var e = !1;
-                        return this._animationFrameActive && (this._animationFrame && (this._cancelAnimationFrame.call(
-                                        window, this._animationFrame),
-                                    this._animationFrame = null),
-                                this._animationFrameActive = !1,
-                                this._willRun = !1,
-                                e = !0),
-                            this._isRunning || this._reset(),
-                            e
-                    },
-                    s._onAnimationFrame = function(e) {
-                        for (this._subscribers = this._nextFrameSubscribers,
-                            this._subscribersOrder = this._nextFrameSubscribersOrder,
-                            this._subscriberArrayLength = this._nextFrameSubscriberArrayLength,
-                            this._subscriberCount = this._nextFrameSubscriberCount,
-                            this._nextFrameSubscribers = {},
-                            this._nextFrameSubscribersOrder = [],
-                            this._nextFrameSubscriberArrayLength = 0,
-                            this._nextFrameSubscriberCount = 0,
-                            this.phaseIndex = 0,
-                            this.phase = this.phases[this.phaseIndex],
-                            this._isRunning = !0,
-                            this._willRun = !1,
-                            this._didRequestNextRAF = !1,
-                            this._rafData.delta = e - this.lastFrameTime,
-                            this.lastFrameTime = e,
-                            this._rafData.fps = 0,
-                            this._rafData.delta >= 1e3 && (this._rafData.delta = 0),
-                            0 !== this._rafData.delta && (this._rafData.fps = 1e3 / this._rafData.delta),
-                            this._rafData.time = e,
-                            this._rafData.naturalFps = this._rafData.fps,
-                            this._rafData.timeNow = Date.now(),
-                            this.phaseIndex++,
-                            this.phase = this.phases[this.phaseIndex],
-                            this.eventEmitter.trigger(this.beforePhaseEventPrefix + this.phase),
-                            this._currentSubscriberIndex = 0; this._currentSubscriberIndex < this
-                            ._subscriberArrayLength; this._currentSubscriberIndex++)
-                            null !== this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]] && !1 ===
-                            this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]._didDestroy && this
-                            ._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]._onAnimationFrameStart(
-                                this._rafData);
-                        for (this.eventEmitter.trigger(this.afterPhaseEventPrefix + this.phase),
-                            this._runPhaseIndex = 0; this._runPhaseIndex < this._runPhasesLength; this._runPhaseIndex++
-                        ) {
-                            for (this.phaseIndex++,
-                                this.phase = this.phases[this.phaseIndex],
-                                this.eventEmitter.trigger(this.beforePhaseEventPrefix + this.phase),
-                                this._currentSubscriberIndex = 0; this._currentSubscriberIndex < this
-                                ._subscriberArrayLength; this._currentSubscriberIndex++)
-                                null !== this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]] && !
-                                1 === this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]
-                                ._didDestroy && this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]
-                                .trigger(this.phase, this._rafData);
-                            this.eventEmitter.trigger(this.afterPhaseEventPrefix + this.phase)
-                        }
-                        for (this.phaseIndex++,
-                            this.phase = this.phases[this.phaseIndex],
-                            this.eventEmitter.trigger(this.beforePhaseEventPrefix + this.phase),
-                            this._currentSubscriberIndex = 0; this._currentSubscriberIndex < this
-                            ._subscriberArrayLength; this._currentSubscriberIndex++)
-                            null !== this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]] && !1 ===
-                            this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]._didDestroy && this
-                            ._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]._onAnimationFrameEnd(
-                                this._rafData);
-                        this.eventEmitter.trigger(this.afterPhaseEventPrefix + this.phase),
-                            this._willRun ? (this.phaseIndex = 0,
-                                this.phaseIndex = this.phases[this.phaseIndex]) : this._reset()
-                    },
-                    s._onExternalAnimationFrame = function(e) {
-                        this._isUsingExternalAnimationFrame && this._onAnimationFrame(e)
-                    },
-                    s._reset = function() {
-                        this._rafData || (this._rafData = {}),
-                            this._rafData.time = 0,
-                            this._rafData.delta = 0,
-                            this._rafData.fps = 0,
-                            this._rafData.naturalFps = 0,
-                            this._rafData.timeNow = 0,
-                            this._subscribers = {},
-                            this._subscribersOrder = [],
-                            this._currentSubscriberIndex = -1,
-                            this._subscriberArrayLength = 0,
-                            this._subscriberCount = 0,
-                            this._nextFrameSubscribers = {},
-                            this._nextFrameSubscribersOrder = [],
-                            this._nextFrameSubscriberArrayLength = 0,
-                            this._nextFrameSubscriberCount = 0,
-                            this._didEmitFrameData = !1,
-                            this._animationFrame = null,
-                            this._animationFrameActive = !1,
-                            this._isRunning = !1,
-                            this._shouldReset = !1,
-                            this.lastFrameTime = 0,
-                            this._runPhaseIndex = -1,
-                            this.phaseIndex = -1,
-                            this.phase = this.disabledPhase
-                    },
-                    e.exports = r
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
+        function d(e) {
+            if ("function" != typeof WeakMap)
+                return null;
+            var t = new WeakMap,
+                i = new WeakMap;
+            return (d = function(e) {
+                return e ? i : t
+            })(e)
+        }
+        class c extends r.default {
+            constructor(e) {
+                super(e),
+                    this.unenhanceEventsOccurred = new Set,
+                    this.gum.on(a.EVENTS.DOM_COMPONENTS_MOUNTED, (() => {
+                        this.pageXp = this.gum.getComponentOfType("PageXpController", document
+                            .body)
+                    })),
+                    this._onUnenhancePageXp = this._onUnenhancePageXp.bind(this),
+                    this._onUnenhancePageXpFeature = this._onUnenhancePageXpFeature.bind(this),
+                    this.anim.once(l.EVT_UNENHANCE, this._onUnenhancePageXp),
+                    this.anim.on(l.EVT_UNENHANCE_FEATURE, this._onUnenhancePageXpFeature)
+            }
+            destroy() {
+                this.destroyed || (this.destroyed = !0,
+                    this.unenhanceFeatureClass(),
+                    this.enhancedScrollGroup && this.pageXp.scrollGroupPromises.push(this
+                        .enhancedScrollGroup.remove().catch((() => {}))),
+                    (0,
+                        n.default)((() => {
+                        this.featureDetect && this.featureDetect !== l.FEATURE_ENHANCED &&
+                            this.gum && this.anim.forceUpdate(),
+                            super.destroy()
+                    })))
+            }
+            get logger() {
+                return o.DevLogger
+            }
+            _onUnenhancePageXp() {
+                this.destroyed || this.onUnenhance()
+            }
+            _onUnenhancePageXpFeature(e) {
+                this.destroyed || this.unenhanceEventsOccurred.has(e) || (this.onUnenhanceEvent(e),
+                    this.unenhanceEventsOccurred.add(e),
+                    this._onUnenhancePageXp())
+            }
+            onUnenhance() {
+                this.destroy()
+            }
+            onUnenhanceEvent(e) {
+                this.logger.info("onUnenhanceEvent", e, this.componentName)
+            }
+            async unenhanceFeatureClass() {
+                this.featureDetect && this.featureDetect !== l.FEATURE_ENHANCED && await h
+                    .removeFeatureDetectClass(this.featureDetect),
+                    (0,
+                        n.default)((() => this.gum && this.anim.forceUpdate()))
+            }
+            setUnenhanceViewports() {
+                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+                    t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+                        overwriteDefaults: !1,
+                        excludeMatches: !1
+                    };
+                h.setupViewportTracker({
+                    viewports: e,
+                    defaultViewports: this.pageXp.defaultEnhancedViewports,
+                    onVpChanged: this._unenhanceViewportHandler,
+                    overwriteDefaults: t.overwriteDefaults,
+                    excludeMatches: t.excludeMatches
+                }).then((() => {
+                    this.pageXp ? this._onUnenhancePageXpFeature("enhanced-xp:invalid-vp") :
+                        this.destroy(),
+                        this.logger.info("unenhanceViewports", this.componentName)
+                }))
+            }
+        }
+        t.default = c
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(15);
+        e.exports = s.cancelAnimationFrame("draw")
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            RAFEmitter: i(14),
+            ThrottledRAFEmitter: i(231),
+            update: i(9),
+            external: i(77),
+            draw: i(1),
+            cancelUpdate: i(78),
+            cancelExternal: i(232),
+            cancelDraw: i(24),
+            RAFExecutor: i(48),
+            sharedRAFExecutorInstance: i(47)
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = void 0;
+        var n = s(i(1)),
+            r = s(i(9)),
+            a = i(7);
+        t.default = class {
+            constructor(e, t) {
+                let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "base",
+                    s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "true";
+                this.aapController = e,
+                    this.anim = this.aapController.anim,
+                    this.aap = t,
+                    this.type = i,
+                    this.preload = s,
+                    this.isAnimating = !1,
+                    this.isActive = !1,
+                    this.isEnabled = !0,
+                    this.keyframeOptions = JSON.parse(this.aap.dataset.aapKf),
+                    this.introduce = this.anim.createTimeGroup(),
+                    this.dismiss = this.anim.createTimeGroup(),
+                    this.anim.on(this.anim.model.PageEvents.ON_RESIZE_DEBOUNCED, (e => {
+                        this.isEnabled && this.isEnhanced() && this.onResizeDebounced(e)
+                    }))
+            }
+            mounted() {
+                this.setupEvents(),
+                    this.anim.trigger(`aap-mounted--${this.aap.id}`, this)
+            }
+            setupEvents() {
+                this.anim.once("enhanced-destroy", this.destroy)
+            }
+            introduceTimeline() {
+                this.aap.style.opacity = "1",
+                    this.aap.classList.remove("inactive"),
+                    this.introduce.progress(0),
+                    this.introduce.play()
+            }
+            dismissTimeline() {
+                this.dismiss.progress(0),
+                    this.dismiss.play()
+            }
+            _setupScrollGroup() {
+                this.resetKeyframe = this.aapController.scrollGroup.addEvent(this.aap, {
+                        start: "a0t - 100vh",
+                        end: "a0b",
+                        event: `${this.aap.id} - reset`,
+                        onExit: () => {
+                            this.inRange = !1,
+                                this.isAnimating = !1,
+                                this.introduce.pause(),
+                                this.dismiss.pause(),
+                                this.introduce.progress(0),
+                                this.dismiss.progress(1)
+                        },
+                        anchors: [this.aap.parentNode]
                     }),
-                    t.ENHANCED_VIEWPORTS = void 0;
-                t.ENHANCED_VIEWPORTS = {
-                    S: {
-                        alias: "small",
-                        width: [315, 734],
-                        height: [480, 850]
+                    this.keyFrame = this.aapController.scrollGroup.addEvent(this.aap, {
+                        ...this.keyframeOptions,
+                        event: `${this.aap.id} - animate`,
+                        onEnter: () => {
+                            this.inRange = !0,
+                                this.isAnimating || (this.isAnimating = !0,
+                                    this.introduceTimeline())
+                        },
+                        onExit: () => {
+                            this.inRange = !1,
+                                this.isAnimating || (this.isAnimating = !0,
+                                    this.dismissTimeline())
+                        }
+                    })
+            }
+            destroy() {
+                this.aap.classList.remove("inactive"),
+                    this.aap.style.opacity = "";
+                const e = this.introduce && this.introduce.isEnabled ? this.introduce.remove() : Promise
+                    .resolve(),
+                    t = this.dismiss && this.dismiss.isEnabled ? this.dismiss.remove() : Promise
+                    .resolve(),
+                    i = this.keyFrame && this.keyFrame.isEnabled ? this.keyFrame.remove() : Promise
+                    .resolve(),
+                    s = this.resetKeyframe && this.resetKeyframe.isEnabled ? this.resetKeyframe
+                    .remove() : Promise.resolve();
+                return Promise.all([e, t, i, s])
+            }
+            onResizeDebounced(e) {
+                if ("S" !== e.breakpoint && "S" !== e.previousBreakpoint)
+                    this.inRange && requestAnimationFrame((() => {
+                        this.dismiss.progress(0),
+                            this.dismiss.pause(),
+                            this.introduce.progress(1)
+                    }));
+                else {
+                    if ("textDriven" !== this.type)
+                        return void(this.inRange && requestAnimationFrame((() => {
+                            this.dismiss.progress(0),
+                                this.dismiss.pause(),
+                                this.introduce.progress(1)
+                        })));
+                    new Promise(((e, t) => {
+                        (0,
+                            r.default)((() => {
+                            this.aap.classList.remove("inactive"),
+                                this._getBounds(),
+                                (0,
+                                    n.default)((() => {
+                                    Promise.all([this.introduce.remove(),
+                                        this.dismiss.remove()
+                                    ]).then((() => {
+                                        this.introduce = this
+                                            .anim
+                                            .createTimeGroup(),
+                                            this.dismiss = this
+                                            .anim
+                                            .createTimeGroup(),
+                                            this
+                                            ._setupTimeGroups(),
+                                            e()
+                                    }))
+                                }), !0)
+                        }), !0)
+                    })).then((() => {
+                        this.inRange ? requestAnimationFrame((() => {
+                            this.dismiss.progress(0),
+                                this.dismiss.pause(),
+                                this.introduce.progress(1),
+                                this.isAnimating = !1
+                        })) : this.isAnimating = !1
+                    }))
+                }
+            }
+            isEnhanced() {
+                return document.documentElement.classList.contains(a.FEATURE_ENHANCED)
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.AAP_EASE_FUNCTIONS = void 0,
+            t.setDefaultDismissKeyframes = function(e, t, i) {
+                e.addKeyframe(t, {
+                        start: .25,
+                        end: .5,
+                        width: [`${i.width}px`, "css(--aap-min-height)"],
+                        height: [`${i.height}px`, "css(--aap-min-height)"],
+                        easeFunction: s.CUBIC_BEZIER
+                    }),
+                    e.addKeyframe(t, {
+                        start: .5,
+                        end: 1,
+                        scale: [1, .01],
+                        easeFunction: s.CUBIC_BEZIER
+                    })
+            },
+            t.setDefaultIntroduceKeyframes = function(e, t, i) {
+                e.addKeyframe(t, {
+                        start: 0,
+                        end: .8,
+                        y: ["100h + css(--aap-margin)", 0],
+                        easeFunction: s.SPRING
+                    }),
+                    e.addKeyframe(t, {
+                        start: .1,
+                        end: .5,
+                        "--aap-hint-opacity": [0, 1],
+                        "--aap-hint-scale": [0, 1.75],
+                        easeFunction: s.SPRING_ALT
+                    }),
+                    e.addKeyframe(t, {
+                        start: .5,
+                        end: .8,
+                        "--aap-hint-scale": [1.75, 0],
+                        easeFunction: s.CUBIC_BEZIER
+                    }),
+                    i && e.addKeyframe(i, {
+                        start: 0,
+                        end: .8,
+                        scale: [.01, 1],
+                        easeFunction: s.SPRING
+                    })
+            };
+        const s = t.AAP_EASE_FUNCTIONS = {
+            SPRING: "spring(100, 1, 15, 0)",
+            SPRING_ALT: "spring(100, 1, 20, 0)",
+            CUBIC_BEZIER: "cubic-bezier(0.8, 0, 0.4, 1)"
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(34),
+            n = i(60),
+            r = i(29),
+            a = i(19),
+            o = {},
+            l = /(\([^\)]+\))/gi,
+            h = /([^ ,;\(]+(\([^\)]+\))?)/gi;
+        e.exports = function(e, t) {
+            var i;
+            return t += "",
+                !!(e = s(e)) && (n(e, t) ? t : (i = a[e].css,
+                    "" !== (t = (t = t.replace(h, (function(t) {
+                        var s, a, h, d;
+                        if ("#" === t[0] || !isNaN(t[0]))
+                            return t;
+                        if (a = t.replace(l, ""),
+                            (h = i + ":" + a) in o)
+                            return !1 === o[h] ? "" : t.replace(a, o[h]);
+                        for (s = r.css.map((function(e) {
+                                return e + t
+                            })),
+                            s = [t].concat(s),
+                            d = 0; d < s.length; d++)
+                            if (n(e, s[d]))
+                                return 0 !== d && r.reduce(d - 1),
+                                    o[h] = s[d].replace(l, ""),
+                                    s[d];
+                        return o[h] = !1,
+                            ""
+                    }))).trim()) && t))
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = ["-webkit-", "-moz-", "-ms-"],
+            n = ["Webkit", "Moz", "ms"],
+            r = ["webkit", "moz", "ms"],
+            a = function() {
+                this.initialize()
+            },
+            o = a.prototype;
+        o.initialize = function() {
+                this.reduced = !1,
+                    this.css = s,
+                    this.dom = n,
+                    this.evt = r
+            },
+            o.reduce = function(e) {
+                this.reduced || (this.reduced = !0,
+                    this.css = [this.css[e]],
+                    this.dom = [this.dom[e]],
+                    this.evt = [this.evt[e]])
+            },
+            e.exports = new a
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.SELECTOR_COMPONENT_CONTAINER = t.FEATURE_INLINE_MEDIA = t.FALLBACK_CLASSNAME = t.EVT_UNLOAD = t
+            .EVT_TIMEOUT = void 0;
+        t.FEATURE_INLINE_MEDIA = "inline-media-component",
+            t.SELECTOR_COMPONENT_CONTAINER = ".inline-media-component-container",
+            t.FALLBACK_CLASSNAME = "fallback",
+            t.EVT_TIMEOUT = "inline-media-timeout",
+            t.EVT_UNLOAD = "inline-media-unload"
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            lerp: function(e, t, i) {
+                return t + (i - t) * e
+            },
+            map: function(e, t, i, s, n) {
+                return s + (n - s) * (e - t) / (i - t)
+            },
+            mapClamp: function(e, t, i, s, n) {
+                var r = s + (n - s) * (e - t) / (i - t);
+                return Math.max(s, Math.min(n, r))
+            },
+            norm: function(e, t, i) {
+                return (e - t) / (i - t)
+            },
+            clamp: function(e, t, i) {
+                return Math.max(t, Math.min(i, e))
+            },
+            randFloat: function(e, t) {
+                return Math.random() * (t - e) + e
+            },
+            randInt: function(e, t) {
+                return Math.floor(Math.random() * (t - e) + e)
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            AUTOCOMPLETE: "aria-autocomplete",
+            CHECKED: "aria-checked",
+            DISABLED: "aria-disabled",
+            EXPANDED: "aria-expanded",
+            HASPOPUP: "aria-haspopup",
+            HIDDEN: "aria-hidden",
+            INVALID: "aria-invalid",
+            LABEL: "aria-label",
+            LEVEL: "aria-level",
+            MULTILINE: "aria-multiline",
+            MULTISELECTABLE: "aria-multiselectable",
+            ORIENTATION: "aria-orientation",
+            PRESSED: "aria-pressed",
+            READONLY: "aria-readonly",
+            REQUIRED: "aria-required",
+            SELECTED: "aria-selected",
+            SORT: "aria-sort",
+            VALUEMAX: "aria-valuemax",
+            VALUEMIN: "aria-valuemin",
+            VALUENOW: "aria-valuenow",
+            VALUETEXT: "aria-valuetext",
+            ATOMIC: "aria-atomic",
+            BUSY: "aria-busy",
+            LIVE: "aria-live",
+            RELEVANT: "aria-relevant",
+            DROPEFFECT: "aria-dropeffect",
+            GRABBED: "aria-grabbed",
+            ACTIVEDESCENDANT: "aria-activedescendant",
+            CONTROLS: "aria-controls",
+            DESCRIBEDBY: "aria-describedby",
+            FLOWTO: "aria-flowto",
+            LABELLEDBY: "aria-labelledby",
+            OWNS: "aria-owns",
+            POSINSET: "aria-posinset",
+            SETSIZE: "aria-setsize"
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(114),
+            n = function() {
+                this.focusableSelectors = s.selectors
+            },
+            r = n.prototype;
+        r.isFocusableElement = function(e, t, i) {
+                return !(t && !this._isDisplayed(e)) && (s.nodeName[e.nodeName] ? !e.disabled : !e
+                    .contentEditable || (i = i || parseFloat(e.getAttribute("tabindex")),
+                        !isNaN(i)))
+            },
+            r.isTabbableElement = function(e, t) {
+                if (t && !this._isDisplayed(e))
+                    return !1;
+                var i = e.getAttribute("tabindex");
+                return i = parseFloat(i),
+                    isNaN(i) ? this.isFocusableElement(e, t, i) : i >= 0
+            },
+            r._isDisplayed = function(e) {
+                var t = e.getBoundingClientRect();
+                return (0 !== t.top || 0 !== t.left || 0 !== t.width || 0 !== t.height) && "hidden" !== window
+                    .getComputedStyle(e).visibility
+            },
+            r.getTabbableElements = function(e, t) {
+                for (var i = e.querySelectorAll(this.focusableSelectors), s = i.length, n = [], r = 0; r <
+                    s; r++)
+                    this.isTabbableElement(i[r], t) && n.push(i[r]);
+                return n
+            },
+            r.getFocusableElements = function(e, t) {
+                for (var i = e.querySelectorAll(this.focusableSelectors), s = i.length, n = [], r = 0; r <
+                    s; r++)
+                    this.isFocusableElement(i[r], t) && n.push(i[r]);
+                return n
+            },
+            e.exports = new n
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(19),
+            n = i(35),
+            r = i(58),
+            a = i(59),
+            o = i(29),
+            l = function(e, t) {
+                var i = r(e),
+                    n = !1 !== t && r(t);
+                return s[e] = s[t] = s[i] = s[n] = {
+                        dom: t,
+                        css: n
                     },
-                    M: {
-                        alias: "medium",
-                        width: [735, 1068],
-                        height: [550, 1500]
+                    t
+            };
+        e.exports = function(e) {
+            var t, i, r, h;
+            if ((e += "") in s)
+                return s[e].dom;
+            for (r = n(),
+                i = (e = a(e)).charAt(0).toUpperCase() + e.substring(1),
+                t = "filter" === e ? ["WebkitFilter", "filter"] : (e + " " + o.dom.join(i + " ") + i).split(
+                    " "),
+                h = 0; h < t.length; h++)
+                if (void 0 !== r.style[t[h]])
+                    return 0 !== h && o.reduce(h - 1),
+                        l(e, t[h]);
+            return l(e, !1)
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s;
+        e.exports = function() {
+                return s ? (s.style.cssText = "",
+                        s.removeAttribute("style")) : s = document.createElement("_"),
+                    s
+            },
+            e.exports.resetElement = function() {
+                s = null
+            }
+    }, function(e, t, i) {
+        "use strict";
+        var s = function() {
+            var e, t = "";
+            for (e = 0; e < arguments.length; e++)
+                e > 0 && (t += ","),
+                t += arguments[e];
+            return t
+        };
+        e.exports = function(e, t) {
+            t = t || s;
+            var i = function() {
+                var s = arguments,
+                    n = t.apply(this, s);
+                return n in i.cache || (i.cache[n] = e.apply(this, s)),
+                    i.cache[n]
+            };
+            return i.cache = {},
+                i
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            SharedInstance: i(64)
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            majorVersionNumber: "3.x"
+        }
+    }, function(e, t) {
+        e.exports = require("@marcom/ac-analytics")
+    }, function(e, t, i) {
+        "use strict";
+        const s = i(71),
+            n = i(10),
+            r = i(51),
+            a = i(75),
+            o = i(103),
+            l = i(76),
+            h = i(175),
+            d = i(176),
+            c = i(177),
+            u = {};
+        "undefined" != typeof window && (u.update = i(9),
+            u.cancelUpdate = i(78),
+            u.external = i(77),
+            u.draw = i(1));
+        let m = null;
+        class p extends s {
+            constructor() {
+                if (super(),
+                    m)
+                    throw "You cannot create multiple AnimSystems. You probably want to create multiple groups instead. You can have unlimited groups on a page";
+                m = this,
+                    this.groups = [],
+                    this.scrollSystems = [],
+                    this.timeSystems = [],
+                    this.tweenGroup = null,
+                    this._forceUpdateRAFId = -1,
+                    this.initialized = !1,
+                    this.model = n,
+                    this.plugins = {
+                        keyframe: [],
+                        parser: []
                     },
-                    L: {
-                        alias: "large",
-                        width: [1069, 1440],
-                        height: [550, 2880]
-                    },
-                    X: {
-                        alias: "xlarge",
-                        width: [1441, 5120],
-                        height: [550, 2880]
+                    this.version = c.version,
+                    this._resolveReady = () => {},
+                    this.ready = new Promise((e => this._resolveReady = e)),
+                    this.onScroll = this.onScroll.bind(this),
+                    this.onResizedDebounced = this.onResizedDebounced.bind(this),
+                    this.onResizeImmediate = this.onResizeImmediate.bind(this)
+            }
+            initialize() {
+                return this.initialized || "undefined" == typeof window || (this.initialized = !0,
+                        this.timeSystems = [],
+                        this.scrollSystems = [],
+                        this.groups = [],
+                        this.setupEvents(),
+                        this.initializeResizeFilter(),
+                        this.initializeModel(),
+                        this.createDOMGroups(),
+                        this.createDOMKeyframes(),
+                        this.tweenGroup = new d(null, this),
+                        this.groups.unshift(this.tweenGroup),
+                        this._resolveReady()),
+                    this.ready
+            }
+            use(e, t) {
+                e.install(this, t)
+            }
+            remove() {
+                return this.initialized ? Promise.all(this.groups.map((e => e.remove()))).then((() => {
+                    this.groups = null,
+                        this.scrollSystems = null,
+                        this.timeSystems = null,
+                        window.clearTimeout(n.RESIZE_TIMEOUT),
+                        window.removeEventListener("scroll", this.onScroll),
+                        window.removeEventListener("resize", this.onResizeImmediate),
+                        this._events = {},
+                        this.initialized = !1,
+                        this.ready = new Promise((e => this._resolveReady = e))
+                })) : (this.ready = new Promise((e => this._resolveReady = e)),
+                    Promise.resolve())
+            }
+            destroy() {
+                return this.remove()
+            }
+            createTimeGroup(e, t) {
+                e instanceof HTMLElement || (e = (t = e || {}).el);
+                let i = new h(e, this);
+                return t && t.name && (i.name = t.name),
+                    this.groups.push(i),
+                    this.timeSystems.push(i),
+                    this.trigger(n.EVENTS.ON_GROUP_CREATED, i),
+                    i
+            }
+            createScrollGroup(e, t) {
+                if (!e)
+                    throw "AnimSystem scroll based groups must supply an HTMLElement";
+                let i = new l(e, this);
+                return (t = t || {}).name && (i.name = t.name),
+                    t.getPosition && t.getMaxPosition && (i.getPosition = t.getPosition,
+                        i.createViewableRange = () => ({
+                            a: 0,
+                            d: t.getMaxPosition()
+                        })),
+                    i.getPosition = t.getPosition || i.getPosition,
+                    i.getPosition = t.getPosition || i.getPosition,
+                    this.groups.push(i),
+                    this.scrollSystems.push(i),
+                    this.trigger(n.EVENTS.ON_GROUP_CREATED, i),
+                    i
+            }
+            removeGroup(e) {
+                return e.destroyed || e.anim !== this ? Promise.resolve() : Promise.all(e
+                    .keyframeControllers.map((t => e.removeKeyframeController(t)))).then((() => {
+                    let t = this.groups.indexOf(e); -
+                    1 !== t && this.groups.splice(t, 1),
+                        t = this.scrollSystems.indexOf(e),
+                        -1 !== t && this.scrollSystems.splice(t, 1),
+                        t = this.timeSystems.indexOf(e),
+                        -1 !== t && this.timeSystems.splice(t, 1),
+                        e.destroyed || e.destroy()
+                }))
+            }
+            createDOMGroups() {
+                document.body.setAttribute("data-anim-scroll-group", "body"),
+                    document.querySelectorAll("[data-anim-scroll-group]").forEach((e => this
+                        .createScrollGroup(e))),
+                    document.querySelectorAll("[data-anim-time-group]").forEach((e => this.createTimeGroup(
+                        e))),
+                    this.trigger(n.EVENTS.ON_DOM_GROUPS_CREATED, this.groups)
+            }
+            createDOMKeyframes() {
+                let e = [];
+                ["data-anim-keyframe", r.DATA_ATTRIBUTE, a.DATA_ATTRIBUTE, o.DATA_ATTRIBUTE].forEach((
+                    function(t) {
+                        for (let i = 0; i < 12; i++)
+                            e.push(t + (0 === i ? "" : "-" + (i - 1)))
+                    }
+                ));
+                for (let t = 0; t < e.length; t++) {
+                    let i = e[t],
+                        s = document.querySelectorAll("[" + i + "]");
+                    for (let e = 0; e < s.length; e++) {
+                        const t = s[e],
+                            n = JSON.parse(t.getAttribute(i));
+                        this.addKeyframe(t, n)
                     }
                 }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = t.CLASS_HIDE_LOCALNAV = void 0;
-                var n = s(i(3));
-                const r = t.CLASS_HIDE_LOCALNAV = "hide-localnav",
-                    a = "150px";
-                class o extends n.default {
-                    constructor(e) {
-                        super(e),
-                            this._els = {
-                                htmlEl: document.documentElement,
-                                el: e.el,
-                                lockup: e.el.querySelector(".welcome__lockup")
-                            },
-                            this.enhancedScrollGroup = this.anim.createScrollGroup(this.el)
+                u.update((() => {
+                    null !== this.groups && (this.groups.forEach((e => e.onKeyframesDirty({
+                            silent: !0
+                        }))),
+                        this.groups.forEach((e => e.trigger(n.EVENTS
+                            .ON_DOM_KEYFRAMES_CREATED, e))),
+                        this.trigger(n.EVENTS.ON_DOM_KEYFRAMES_CREATED, this),
+                        this.groups.forEach((e => {
+                            e.forceUpdate({
+                                    waitForNextUpdate: !1,
+                                    silent: !0
+                                }),
+                                e.reconcile()
+                        })),
+                        this.onScroll())
+                }), !0)
+            }
+            initializeResizeFilter() {
+                if (n.cssDimensionsTracker)
+                    return;
+                const e = document.querySelector(".cssDimensionsTracker") || document.createElement("div");
+                e.setAttribute("cssDimensionsTracker", "true"),
+                    e.style.position = "fixed",
+                    e.style.top = "0",
+                    e.style.width = "100%",
+                    e.style.height = "100vh",
+                    e.style.pointerEvents = "none",
+                    e.style.visibility = "hidden",
+                    e.style.zIndex = "-1",
+                    document.documentElement.appendChild(e),
+                    n.cssDimensionsTracker = e
+            }
+            initializeModel() {
+                n.pageMetrics.windowHeight = n.cssDimensionsTracker.clientHeight,
+                    n.pageMetrics.windowWidth = n.cssDimensionsTracker.clientWidth,
+                    n.pageMetrics.scrollY = window.scrollY || window.pageYOffset,
+                    n.pageMetrics.scrollX = window.scrollX || window.pageXOffset,
+                    n.pageMetrics.breakpoint = n.getBreakpoint();
+                let e = document.documentElement.getBoundingClientRect();
+                n.pageMetrics.documentOffsetX = e.left + n.pageMetrics.scrollX,
+                    n.pageMetrics.documentOffsetY = e.top + n.pageMetrics.scrollY
+            }
+            setupEvents() {
+                window.removeEventListener("scroll", this.onScroll),
+                    window.addEventListener("scroll", this.onScroll),
+                    window.removeEventListener("resize", this.onResizeImmediate),
+                    window.addEventListener("resize", this.onResizeImmediate)
+            }
+            onScroll() {
+                n.pageMetrics.scrollY = window.scrollY || window.pageYOffset,
+                    n.pageMetrics.scrollX = window.scrollX || window.pageXOffset;
+                for (let e = 0, t = this.scrollSystems.length; e < t; e++)
+                    this.scrollSystems[e].updateTimeline();
+                this.trigger(n.PageEvents.ON_SCROLL, n.pageMetrics)
+            }
+            onResizeImmediate() {
+                let e = n.cssDimensionsTracker.clientWidth,
+                    t = n.cssDimensionsTracker.clientHeight;
+                if (e === n.pageMetrics.windowWidth && t === n.pageMetrics.windowHeight)
+                    return;
+                n.pageMetrics.windowWidth = e,
+                    n.pageMetrics.windowHeight = t,
+                    n.pageMetrics.scrollY = window.scrollY || window.pageYOffset,
+                    n.pageMetrics.scrollX = window.scrollX || window.pageXOffset;
+                let i = document.documentElement.getBoundingClientRect();
+                n.pageMetrics.documentOffsetX = i.left + n.pageMetrics.scrollX,
+                    n.pageMetrics.documentOffsetY = i.top + n.pageMetrics.scrollY,
+                    window.clearTimeout(n.RESIZE_TIMEOUT),
+                    n.RESIZE_TIMEOUT = window.setTimeout(this.onResizedDebounced, 250),
+                    this.trigger(n.PageEvents.ON_RESIZE_IMMEDIATE, n.pageMetrics)
+            }
+            onResizedDebounced() {
+                u.update((() => {
+                    let e = n.pageMetrics.breakpoint,
+                        t = n.getBreakpoint();
+                    if (t !== e) {
+                        n.pageMetrics.previousBreakpoint = e,
+                            n.pageMetrics.breakpoint = t;
+                        for (let e = 0, t = this.groups.length; e < t; e++)
+                            this.groups[e]._onBreakpointChange();
+                        this.trigger(n.PageEvents.ON_BREAKPOINT_CHANGE, n.pageMetrics)
                     }
-                    mounted() {
-                        this._setupLocalnavAnimation()
-                    }
-                    _setupLocalnavAnimation() {
-                        this._els.lockup ? this.enhancedScrollGroup.addKeyframe(this._els.htmlEl, {
-                            start: "t - 150vh",
-                            end: `a0t - ${a}`,
-                            cssClass: r,
-                            anchors: [this._els.lockup],
-                            toggle: !0
-                        }) : this.enhancedScrollGroup.addKeyframe(this._els.htmlEl, {
-                            start: "t - 150vh",
-                            end: `a0b - ${a}`,
-                            cssClass: r,
-                            anchors: [this._els.el],
-                            toggle: !0
+                    for (let e = 0, t = this.groups.length; e < t; e++)
+                        this.groups[e].forceUpdate({
+                            waitForNextUpdate: !1
+                        });
+                    this.trigger(n.PageEvents.ON_RESIZE_DEBOUNCED, n.pageMetrics)
+                }), !0)
+            }
+            forceUpdate() {
+                let {
+                    waitForNextUpdate: e = !0,
+                    silent: t = !1
+                } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}; -
+                1 !== this._forceUpdateRAFId && u.cancelUpdate(this._forceUpdateRAFId);
+                let i = () => {
+                    for (let e = 0, i = this.groups.length; e < i; e++) {
+                        this.groups[e].forceUpdate({
+                            waitForNextUpdate: !1,
+                            silent: t
                         })
                     }
-                    static IS_SUPPORTED() {
-                        return !0
+                    return -1
+                };
+                this._forceUpdateRAFId = e ? u.update(i, !0) : i()
+            }
+            addKeyframe(e, t) {
+                let i = this.getGroupForTarget(e);
+                return i = i || this.getGroupForTarget(document.body),
+                    i.addKeyframe(e, t)
+            }
+            addEvent(e, t) {
+                let i = this.getGroupForTarget(e);
+                return i = i || this.getGroupForTarget(document.body),
+                    i.addEvent(e, t)
+            }
+            getTimeGroupForTarget(e) {
+                return this._getGroupForTarget(e, (e => e instanceof h))
+            }
+            getScrollGroupForTarget(e) {
+                return this._getGroupForTarget(e, (e => !(e instanceof h)))
+            }
+            getGroupForTarget(e) {
+                return this._getGroupForTarget(e, (() => !0))
+            }
+            getGroupByName(e) {
+                return this.groups.find((t => t.name === e))
+            }
+            _getGroupForTarget(e, t) {
+                if (e._animInfo && e._animInfo.group && t(e._animInfo.group))
+                    return e._animInfo.group;
+                let i = e;
+                for (; i;) {
+                    if (i._animInfo && i._animInfo.isGroup && t(i._animInfo.group))
+                        return i._animInfo.group;
+                    i = i.parentElement
+                }
+            }
+            getControllerForTarget(e) {
+                return e._animInfo && e._animInfo.controller ? e._animInfo.controller : null
+            }
+            addTween(e, t) {
+                return this.tweenGroup.addKeyframe(e, t)
+            }
+        }
+        e.exports = "undefined" == typeof window ? new p : window.AC.SharedInstance.share("AnimSystem", c.major,
+                p),
+            e.exports.default = e.exports
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = function(e, t, i, n) {
+                const r = i[0].toUpperCase() + i.slice(1),
+                    a = e[s + r];
+                if (void 0 !== a)
+                    switch (typeof n) {
+                        case "boolean":
+                            return "false" !== a;
+                        case "object":
+                            return JSON.parse(a);
+                        case "number":
+                            return Number(a);
+                        default:
+                            return a
+                    }
+                else if (void 0 !== t[i]) {
+                    const e = t[i];
+                    return "boolean" != typeof n || "false" !== e && "true" !== e ? e : "false" !== e
+                }
+                return n
+            };
+        const s = "inlineMedia"
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = void 0;
+        t.default = {
+            EMPTY: "loading-empty",
+            LOADING: "loading",
+            LOADED: "loaded",
+            ERROR: "loading-error",
+            DISABLED: "loading-disabled"
+        }
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = void 0;
+        t.default = {
+            IDLE: "idle",
+            PLAYING: "playing",
+            PAUSED: "paused",
+            ENDED: "ended"
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            Object.defineProperty(t, "createCustomAnimScrollGroup", {
+                enumerable: !0,
+                get: function() {
+                    return n.default
+                }
+            }),
+            Object.defineProperty(t, "getFriendlyName", {
+                enumerable: !0,
+                get: function() {
+                    return r.default
+                }
+            }),
+            Object.defineProperty(t, "getModalComponentRef", {
+                enumerable: !0,
+                get: function() {
+                    return a.default
+                }
+            });
+        var n = s(i(233)),
+            r = s(i(234)),
+            a = s(i(235))
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            Object.defineProperty(t, "Close", {
+                enumerable: !0,
+                get: function() {
+                    return n.default
+                }
+            }),
+            Object.defineProperty(t, "CloseBundle", {
+                enumerable: !0,
+                get: function() {
+                    return u.default
+                }
+            }),
+            Object.defineProperty(t, "CloseButton", {
+                enumerable: !0,
+                get: function() {
+                    return r.default
+                }
+            }),
+            Object.defineProperty(t, "Focus", {
+                enumerable: !0,
+                get: function() {
+                    return a.default
+                }
+            }),
+            Object.defineProperty(t, "FullBleed", {
+                enumerable: !0,
+                get: function() {
+                    return o.default
+                }
+            }),
+            Object.defineProperty(t, "FullBleedBundle", {
+                enumerable: !0,
+                get: function() {
+                    return m.default
+                }
+            }),
+            Object.defineProperty(t, "Keyboard", {
+                enumerable: !0,
+                get: function() {
+                    return l.default
+                }
+            }),
+            Object.defineProperty(t, "Open", {
+                enumerable: !0,
+                get: function() {
+                    return h.default
+                }
+            }),
+            Object.defineProperty(t, "PageOverlay", {
+                enumerable: !0,
+                get: function() {
+                    return d.default
+                }
+            }),
+            Object.defineProperty(t, "PageOverlayBundle", {
+                enumerable: !0,
+                get: function() {
+                    return p.default
+                }
+            }),
+            Object.defineProperty(t, "ScrollPosition", {
+                enumerable: !0,
+                get: function() {
+                    return c.default
+                }
+            });
+        var n = s(i(243)),
+            r = s(i(244)),
+            a = s(i(245)),
+            o = s(i(246)),
+            l = s(i(247)),
+            h = s(i(252)),
+            d = s(i(253)),
+            c = s(i(254)),
+            u = s(i(255)),
+            m = s(i(256)),
+            p = s(i(257))
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.setupViewportTracker = t.removeFeatureDetectClass = t.isSmallOnDesktop = t.detectTextZoom = t
+            .checkEnhancedFeatures = t.addFeatureDetectClass = void 0;
+        var n = s(i(1)),
+            r = s(i(20)),
+            a = function(e, t) {
+                if (!t && e && e.__esModule)
+                    return e;
+                if (null === e || "object" != typeof e && "function" != typeof e)
+                    return {
+                        default: e
+                    };
+                var i = l(t);
+                if (i && i.has(e))
+                    return i.get(e);
+                var s = {
+                        __proto__: null
+                    },
+                    n = Object.defineProperty && Object.getOwnPropertyDescriptor;
+                for (var r in e)
+                    if ("default" !== r && Object.prototype.hasOwnProperty.call(e, r)) {
+                        var a = n ? Object.getOwnPropertyDescriptor(e, r) : null;
+                        a && (a.get || a.set) ? Object.defineProperty(s, r, a) : s[r] = e[r]
+                    }
+                return s.default = e,
+                    i && i.set(e, s),
+                    s
+            }(i(66)),
+            o = i(49);
+
+        function l(e) {
+            if ("function" != typeof WeakMap)
+                return null;
+            var t = new WeakMap,
+                i = new WeakMap;
+            return (l = function(e) {
+                return e ? i : t
+            })(e)
+        }
+        t.addFeatureDetectClass = e => new Promise(((t, i) => {
+            (0,
+                n.default)((() => {
+                document.documentElement.classList.add(e),
+                    document.documentElement.classList.remove(`no-${e}`),
+                    t()
+            }))
+        }));
+        t.removeFeatureDetectClass = e => new Promise(((t, i) => {
+            (0,
+                n.default)((() => {
+                document.documentElement.classList.remove(e),
+                    document.documentElement.classList.add(`no-${e}`),
+                    t()
+            }))
+        }));
+        t.setupViewportTracker = e => {
+            const t = {
+                ...!(e = {
+                    viewports: {},
+                    defaultViewports: {},
+                    onVpChanged: () => {},
+                    overwriteDefaults: !1,
+                    excludeMatches: !1,
+                    ...e
+                }).overwriteDefaults && !e.excludeMatches && e.defaultViewports,
+                ...e.viewports
+            };
+            let i = null;
+            const s = new Promise(((e, t) => {
+                    i = e
+                })),
+                n = t => {
+                    !!t && t.isMatch || (i(),
+                            t && t.destroy()),
+                        e.onVpChanged && e.onVpChanged()
+                },
+                r = new a.default(t, {
+                    excludeMatches: e.excludeMatches
+                });
+            return r.on(a.EVT_VIEWPORT_GROUP_CHANGED, n),
+                n(r),
+                s
+        };
+        const h = () => !(0,
+            r.default)() && window.matchMedia("(max-width: 734px)").matches;
+        t.isSmallOnDesktop = h;
+        const d = () => parseFloat(window.getComputedStyle(document.documentElement)["font-size"]) > 17;
+        t.detectTextZoom = d;
+        t.checkEnhancedFeatures = () => {
+            const e = new a.default(o.ENHANCED_VIEWPORTS),
+                t = {
+                    "text-zoom": d(),
+                    "small-desktop": h(),
+                    "invalid-viewport": !e.isMatch
+                };
+            for (const e in t)
+                if (!0 === t[e])
+                    return {
+                        enhanced: !1,
+                        feature: e
+                    };
+            return {
+                enhanced: !0
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(37).SharedInstance,
+            n = i(38).majorVersionNumber,
+            r = i(48);
+        e.exports = s.share("@marcom/ac-raf-emitter/sharedRAFExecutorInstance", n, r)
+    }, function(e, t, i) {
+        "use strict";
+        var s, n = i(6);
+
+        function r(e) {
+            e = e || {},
+                this._reset(),
+                this.updatePhases(),
+                this.eventEmitter = new n,
+                this._willRun = !1,
+                this._totalSubscribeCount = -1;
+            var t = null,
+                i = null;
+            "undefined" != typeof window ? (t = window.requestAnimationFrame,
+                    i = window.cancelAnimationFrame) : t = i = function() {},
+                this._requestAnimationFrame = t,
+                this._cancelAnimationFrame = i,
+                this._boundOnAnimationFrame = this._onAnimationFrame.bind(this),
+                this._boundOnExternalAnimationFrame = this._onExternalAnimationFrame.bind(this)
+        }
+        (s = r.prototype).frameRequestedPhase = "requested",
+            s.startPhase = "start",
+            s.runPhases = ["update", "external", "draw"],
+            s.endPhase = "end",
+            s.disabledPhase = "disabled",
+            s.beforePhaseEventPrefix = "before:",
+            s.afterPhaseEventPrefix = "after:",
+            s.subscribe = function(e, t) {
+                return this._totalSubscribeCount++,
+                    this._nextFrameSubscribers[e.id] || (t ? this._nextFrameSubscribersOrder.unshift(e.id) :
+                        this._nextFrameSubscribersOrder.push(e.id),
+                        this._nextFrameSubscribers[e.id] = e,
+                        this._nextFrameSubscriberArrayLength++,
+                        this._nextFrameSubscriberCount++,
+                        this._run()),
+                    this._totalSubscribeCount
+            },
+            s.subscribeImmediate = function(e, t) {
+                return this._totalSubscribeCount++,
+                    this._subscribers[e.id] || (t ? this._subscribersOrder.splice(this._currentSubscriberIndex +
+                            1, 0, e.id) : this._subscribersOrder.unshift(e.id),
+                        this._subscribers[e.id] = e,
+                        this._subscriberArrayLength++,
+                        this._subscriberCount++),
+                    this._totalSubscribeCount
+            },
+            s.unsubscribe = function(e) {
+                return !!this._nextFrameSubscribers[e.id] && (this._nextFrameSubscribers[e.id] = null,
+                    this._nextFrameSubscriberCount--,
+                    0 === this._nextFrameSubscriberCount && this._cancel(),
+                    !0)
+            },
+            s.getSubscribeID = function() {
+                return this._totalSubscribeCount += 1
+            },
+            s.destroy = function() {
+                var e = this._cancel();
+                return this.eventEmitter.destroy(),
+                    this.eventEmitter = null,
+                    this.phases = null,
+                    this._subscribers = null,
+                    this._subscribersOrder = null,
+                    this._nextFrameSubscribers = null,
+                    this._nextFrameSubscribersOrder = null,
+                    this._rafData = null,
+                    this._boundOnAnimationFrame = null,
+                    this._onExternalAnimationFrame = null,
+                    e
+            },
+            s.useExternalAnimationFrame = function(e) {
+                if ("boolean" == typeof e) {
+                    var t = this._isUsingExternalAnimationFrame;
+                    return e && this._animationFrame && (this._cancelAnimationFrame.call(window, this
+                                ._animationFrame),
+                            this._animationFrame = null),
+                        !this._willRun || e || this._animationFrame || (this._animationFrame = this
+                            ._requestAnimationFrame.call(window, this._boundOnAnimationFrame)),
+                        this._isUsingExternalAnimationFrame = e,
+                        e ? this._boundOnExternalAnimationFrame : t || !1
+                }
+            },
+            s.updatePhases = function() {
+                this.phases || (this.phases = []),
+                    this.phases.length = 0,
+                    this.phases.push(this.frameRequestedPhase),
+                    this.phases.push(this.startPhase),
+                    Array.prototype.push.apply(this.phases, this.runPhases),
+                    this.phases.push(this.endPhase),
+                    this._runPhasesLength = this.runPhases.length,
+                    this._phasesLength = this.phases.length
+            },
+            s._run = function() {
+                if (!this._willRun)
+                    return this._willRun = !0,
+                        0 === this.lastFrameTime && (this.lastFrameTime = performance.now()),
+                        this._animationFrameActive = !0,
+                        this._isUsingExternalAnimationFrame || (this._animationFrame = this
+                            ._requestAnimationFrame.call(window, this._boundOnAnimationFrame)),
+                        this.phase === this.disabledPhase && (this.phaseIndex = 0,
+                            this.phase = this.phases[this.phaseIndex]),
+                        !0
+            },
+            s._cancel = function() {
+                var e = !1;
+                return this._animationFrameActive && (this._animationFrame && (this._cancelAnimationFrame.call(
+                                window, this._animationFrame),
+                            this._animationFrame = null),
+                        this._animationFrameActive = !1,
+                        this._willRun = !1,
+                        e = !0),
+                    this._isRunning || this._reset(),
+                    e
+            },
+            s._onAnimationFrame = function(e) {
+                for (this._subscribers = this._nextFrameSubscribers,
+                    this._subscribersOrder = this._nextFrameSubscribersOrder,
+                    this._subscriberArrayLength = this._nextFrameSubscriberArrayLength,
+                    this._subscriberCount = this._nextFrameSubscriberCount,
+                    this._nextFrameSubscribers = {},
+                    this._nextFrameSubscribersOrder = [],
+                    this._nextFrameSubscriberArrayLength = 0,
+                    this._nextFrameSubscriberCount = 0,
+                    this.phaseIndex = 0,
+                    this.phase = this.phases[this.phaseIndex],
+                    this._isRunning = !0,
+                    this._willRun = !1,
+                    this._didRequestNextRAF = !1,
+                    this._rafData.delta = e - this.lastFrameTime,
+                    this.lastFrameTime = e,
+                    this._rafData.fps = 0,
+                    this._rafData.delta >= 1e3 && (this._rafData.delta = 0),
+                    0 !== this._rafData.delta && (this._rafData.fps = 1e3 / this._rafData.delta),
+                    this._rafData.time = e,
+                    this._rafData.naturalFps = this._rafData.fps,
+                    this._rafData.timeNow = Date.now(),
+                    this.phaseIndex++,
+                    this.phase = this.phases[this.phaseIndex],
+                    this.eventEmitter.trigger(this.beforePhaseEventPrefix + this.phase),
+                    this._currentSubscriberIndex = 0; this._currentSubscriberIndex < this
+                    ._subscriberArrayLength; this._currentSubscriberIndex++)
+                    null !== this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]] && !1 ===
+                    this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]._didDestroy && this
+                    ._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]._onAnimationFrameStart(
+                        this._rafData);
+                for (this.eventEmitter.trigger(this.afterPhaseEventPrefix + this.phase),
+                    this._runPhaseIndex = 0; this._runPhaseIndex < this._runPhasesLength; this._runPhaseIndex++
+                ) {
+                    for (this.phaseIndex++,
+                        this.phase = this.phases[this.phaseIndex],
+                        this.eventEmitter.trigger(this.beforePhaseEventPrefix + this.phase),
+                        this._currentSubscriberIndex = 0; this._currentSubscriberIndex < this
+                        ._subscriberArrayLength; this._currentSubscriberIndex++)
+                        null !== this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]] && !
+                        1 === this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]
+                        ._didDestroy && this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]
+                        .trigger(this.phase, this._rafData);
+                    this.eventEmitter.trigger(this.afterPhaseEventPrefix + this.phase)
+                }
+                for (this.phaseIndex++,
+                    this.phase = this.phases[this.phaseIndex],
+                    this.eventEmitter.trigger(this.beforePhaseEventPrefix + this.phase),
+                    this._currentSubscriberIndex = 0; this._currentSubscriberIndex < this
+                    ._subscriberArrayLength; this._currentSubscriberIndex++)
+                    null !== this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]] && !1 ===
+                    this._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]._didDestroy && this
+                    ._subscribers[this._subscribersOrder[this._currentSubscriberIndex]]._onAnimationFrameEnd(
+                        this._rafData);
+                this.eventEmitter.trigger(this.afterPhaseEventPrefix + this.phase),
+                    this._willRun ? (this.phaseIndex = 0,
+                        this.phaseIndex = this.phases[this.phaseIndex]) : this._reset()
+            },
+            s._onExternalAnimationFrame = function(e) {
+                this._isUsingExternalAnimationFrame && this._onAnimationFrame(e)
+            },
+            s._reset = function() {
+                this._rafData || (this._rafData = {}),
+                    this._rafData.time = 0,
+                    this._rafData.delta = 0,
+                    this._rafData.fps = 0,
+                    this._rafData.naturalFps = 0,
+                    this._rafData.timeNow = 0,
+                    this._subscribers = {},
+                    this._subscribersOrder = [],
+                    this._currentSubscriberIndex = -1,
+                    this._subscriberArrayLength = 0,
+                    this._subscriberCount = 0,
+                    this._nextFrameSubscribers = {},
+                    this._nextFrameSubscribersOrder = [],
+                    this._nextFrameSubscriberArrayLength = 0,
+                    this._nextFrameSubscriberCount = 0,
+                    this._didEmitFrameData = !1,
+                    this._animationFrame = null,
+                    this._animationFrameActive = !1,
+                    this._isRunning = !1,
+                    this._shouldReset = !1,
+                    this.lastFrameTime = 0,
+                    this._runPhaseIndex = -1,
+                    this.phaseIndex = -1,
+                    this.phase = this.disabledPhase
+            },
+            e.exports = r
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.ENHANCED_VIEWPORTS = void 0;
+        t.ENHANCED_VIEWPORTS = {
+            S: {
+                alias: "small",
+                width: [315, 734],
+                height: [480, 850]
+            },
+            M: {
+                alias: "medium",
+                width: [735, 1068],
+                height: [550, 1500]
+            },
+            L: {
+                alias: "large",
+                width: [1069, 1440],
+                height: [550, 2880]
+            },
+            X: {
+                alias: "xlarge",
+                width: [1441, 5120],
+                height: [550, 2880]
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = t.CLASS_HIDE_LOCALNAV = void 0;
+        var n = s(i(3));
+        const r = t.CLASS_HIDE_LOCALNAV = "hide-localnav",
+            a = "150px";
+        class o extends n.default {
+            constructor(e) {
+                super(e),
+                    this._els = {
+                        htmlEl: document.documentElement,
+                        el: e.el,
+                        lockup: e.el.querySelector(".welcome__lockup")
+                    },
+                    this.enhancedScrollGroup = this.anim.createScrollGroup(this.el)
+            }
+            mounted() {
+                this._setupLocalnavAnimation()
+            }
+            _setupLocalnavAnimation() {
+                this._els.lockup ? this.enhancedScrollGroup.addKeyframe(this._els.htmlEl, {
+                    start: "t - 150vh",
+                    end: `a0t - ${a}`,
+                    cssClass: r,
+                    anchors: [this._els.lockup],
+                    toggle: !0
+                }) : this.enhancedScrollGroup.addKeyframe(this._els.htmlEl, {
+                    start: "t - 150vh",
+                    end: `a0b - ${a}`,
+                    cssClass: r,
+                    anchors: [this._els.el],
+                    toggle: !0
+                })
+            }
+            static IS_SUPPORTED() {
+                return !0
+            }
+        }
+        t.default = o
+    }, function(e, t, i) {
+        "use strict";
+        const s = i(10),
+            n = i(22),
+            r = i(72),
+            a = i(31),
+            o = i(73),
+            l = i(100),
+            h = i(157),
+            d = i(74),
+            c = i(158),
+            u = i(99),
+            m = i(101),
+            {
+                cssAttributes: p,
+                suffixFreeAttributes: f,
+                domAttributes: _
+            } = i(102);
+        class g {
+            constructor(e, t) {
+                this.controller = e,
+                    this.anchors = [],
+                    this.jsonProps = t,
+                    this.ease = e.group.defaultEase,
+                    this.easeFunction = o.linear,
+                    this.start = 0,
+                    this.end = 0,
+                    this.localT = 0,
+                    this.curvedT = 0,
+                    this.id = 0,
+                    this.event = "",
+                    this.needsEventDispatch = !1,
+                    this.snapAtCreation = !1,
+                    this.isEnabled = !1,
+                    this.animValues = {},
+                    this.breakpointMask = s.KeyframeDefaults.breakpointMask,
+                    this.disabledWhen = [],
+                    this.keyframeType = s.KeyframeTypes.Interpolation,
+                    this.hold = !1,
+                    this.preserveState = !1,
+                    this.markedForRemoval = !1;
+                let i = !1;
+                Object.defineProperty(this, "hidden", {
+                        get: () => i,
+                        set(t) {
+                            i = t,
+                                e.group.keyframesDirty = !0
+                        }
+                    }),
+                    this.uuid = m(),
+                    this.destroyed = !1
+            }
+            destroy() {
+                this.destroyed = !0,
+                    this.controller = null,
+                    this.disabledWhen = null,
+                    this.anchors = null,
+                    this.jsonProps = null,
+                    this.easeFunction = null,
+                    this.animValues = null
+            }
+            remove() {
+                return this.controller && this.controller.removeKeyframe(this)
+            }
+            parseOptions(e) {
+                this.jsonProps = e,
+                    e.relativeTo && console.error(
+                        `KeyframeError: relativeTo has been removed. Use 'anchors' property instead. Found 'relativeTo':"${e.relativeTo}"`
+                    ),
+                    void 0 === e.end && void 0 === e.duration && (e.end = e.start),
+                    "" !== e.anchors && e.anchors ? (this.anchors = [],
+                        e.anchors = Array.isArray(e.anchors) ? e.anchors : [e.anchors],
+                        e.anchors.forEach(((t, i) => {
+                            let s = c(t, this.controller.group.element);
+                            if (!s) {
+                                let s = "";
+                                return "string" == typeof t && (s =
+                                        " Provided value was a string, so a failed attempt was made to find anchor with the provided querystring in group.element, or in the document."
+                                    ),
+                                    void console.warn("Keyframe on", this.controller.element,
+                                        ` failed to find anchor at index ${i} in array`, e.anchors,
+                                        `. Anchors must be JS Object references, Elements references, or valid query selector strings. ${s}`
+                                    )
+                            }
+                            this.anchors.push(s),
+                                this.controller.group.metrics.add(s)
+                        }))) : (this.anchors = [],
+                        e.anchors = []),
+                    e.ease ? this.ease = parseFloat(e.ease) : e.ease = this.ease,
+                    e.hasOwnProperty("snapAtCreation") ? this.snapAtCreation = e.snapAtCreation : e
+                    .snapAtCreation = this.snapAtCreation,
+                    e.easeFunction || (e.easeFunction = s.KeyframeDefaults.easeFunctionString),
+                    e.breakpointMask ? this.breakpointMask = e.breakpointMask : e.breakpointMask = this
+                    .breakpointMask,
+                    e.disabledWhen ? this.disabledWhen = Array.isArray(e.disabledWhen) ? e.disabledWhen : [e
+                        .disabledWhen
+                    ] : e.disabledWhen = this.disabledWhen,
+                    e.hasOwnProperty("hold") ? this.hold = e.hold : e.hold = this.hold,
+                    e.hasOwnProperty("preserveState") ? this.preserveState = e.preserveState : e
+                    .preserveState = s.KeyframeDefaults.preserveState,
+                    this.easeFunction = o[e.easeFunction],
+                    o.hasOwnProperty(e.easeFunction) || (e.easeFunction.includes("bezier") ? this
+                        .easeFunction = l.fromCSSString(e.easeFunction) : e.easeFunction.includes(
+                            "spring") ? this.easeFunction = h.fromCSSString(e.easeFunction) : console.error(
+                            "Keyframe parseOptions cannot find 'easeFunction' named '" + e.easeFunction +
+                            "'"));
+                for (let t in e) {
+                    if (-1 !== s.KeyframeJSONReservedWords.indexOf(t))
+                        continue;
+                    let i = e[t];
+                    if (Array.isArray(i)) {
+                        if (1 === i.length && (i[1] = i[0],
+                                i[0] = null),
+                            void 0 === this.controller.tweenProps[t] || !this.controller._ownerIsElement) {
+                            let a = 0;
+                            this.controller._ownerIsElement || (a = this.controller.element[t] || 0);
+                            const o = t.startsWith("--");
+                            let l = i[2] || (o || f.includes(t) ? void 0 : "px"),
+                                h = this.controller.group.anim.plugins.keyframe.reduce(((i, s) => i || s
+                                    .parseProp.call(this, e, t)), null);
+                            if (!h && this.controller._ownerIsElement)
+                                if (o || p.includes(t)) {
+                                    let i = u(t),
+                                        n = e.round || ["zIndex"].includes(i);
+                                    a = parseFloat(this.controller.getTargetComputedStyle()
+                                            .getPropertyValue(i)),
+                                        isNaN(a) && (a = 0),
+                                        h = new r(a, s.KeyframeDefaults.epsilon, this.snapAtCreation, t, n,
+                                            l),
+                                        this.controller.cssAttributes.push(h)
+                                } else
+                                    _.includes(t) && (h = new n(a, s.KeyframeDefaults.epsilon, this
+                                            .snapAtCreation, t, e.round, l),
+                                        this.controller.domAttributes.push(h));
+                            h || (h = new n(a, s.KeyframeDefaults.epsilon, this.snapAtCreation, t, e.round,
+                                    l)),
+                                this.controller.tweenProps[t] = h
+                        }
+                        this.animValues[t] = this.controller.group.expressionParser.parseArray(this, i),
+                            this.controller.tweenProps[t].calculateEpsilon(e, this.animValues[t])
                     }
                 }
-                t.default = o
-            }, function(e, t, i) {
-                "use strict";
-                const s = i(10),
-                    n = i(22),
-                    r = i(72),
-                    a = i(31),
-                    o = i(73),
-                    l = i(100),
-                    h = i(157),
-                    d = i(74),
-                    c = i(158),
-                    u = i(99),
-                    m = i(101),
-                    {
-                        cssAttributes: p,
-                        suffixFreeAttributes: f,
-                        domAttributes: _
-                    } = i(102);
-                class g {
-                    constructor(e, t) {
-                        this.controller = e,
-                            this.anchors = [],
-                            this.jsonProps = t,
-                            this.ease = e.group.defaultEase,
-                            this.easeFunction = o.linear,
-                            this.start = 0,
-                            this.end = 0,
-                            this.localT = 0,
-                            this.curvedT = 0,
-                            this.id = 0,
-                            this.event = "",
-                            this.needsEventDispatch = !1,
-                            this.snapAtCreation = !1,
-                            this.isEnabled = !1,
-                            this.animValues = {},
-                            this.breakpointMask = s.KeyframeDefaults.breakpointMask,
-                            this.disabledWhen = [],
-                            this.keyframeType = s.KeyframeTypes.Interpolation,
-                            this.hold = !1,
-                            this.preserveState = !1,
-                            this.markedForRemoval = !1;
-                        let i = !1;
-                        Object.defineProperty(this, "hidden", {
-                                get: () => i,
-                                set(t) {
-                                    i = t,
-                                        e.group.keyframesDirty = !0
-                                }
-                            }),
-                            this.uuid = m(),
-                            this.destroyed = !1
+                this.keyframeType = this.hold ? s.KeyframeTypes.InterpolationForward : s.KeyframeTypes
+                    .Interpolation,
+                    e.event && (this.event = e.event)
+            }
+            overwriteProps(e) {
+                this.animValues = {};
+                let t = Object.assign({}, this.jsonProps, e);
+                this.controller.updateKeyframe(this, t)
+            }
+            updateLocalProgress(e) {
+                if (this.start === this.end || e < this.start || e > this.end)
+                    return this.localT = e < this.start ? this.hold ? this.localT : 0 : e > this.end ? 1 :
+                        0,
+                        void(this.curvedT = this.easeFunction(this.localT));
+                const t = (e - this.start) / (this.end - this.start),
+                    i = this.hold ? this.localT : 0;
+                this.localT = a.clamp(t, i, 1),
+                    this.curvedT = this.easeFunction(this.localT)
+            }
+            reconcile(e) {
+                this.controller.tweenProps[e].reconcile(this.animValues[e], this.curvedT) && (this
+                    .needsEventDispatch || (this.needsEventDispatch = !0,
+                        this.controller.keyframesRequiringDispatch.push(this)))
+            }
+            reset(e) {
+                this.localT = e || 0;
+                let t = this.ease;
+                this.ease = 1;
+                for (let e in this.animValues)
+                    this.reconcile(e);
+                this.ease = t
+            }
+            onDOMRead(e) {
+                let t = this.controller.tweenProps[e].update(this.animValues[e], this.curvedT, this.ease);
+                return "" === this.event || this.needsEventDispatch || t && (this.needsEventDispatch = !0,
+                        this.controller.keyframesRequiringDispatch.push(this)),
+                    t
+            }
+            isInRange(e) {
+                return e >= this.start && e <= this.end
+            }
+            setEnabled(e) {
+                e = e || d(Array.from(document.documentElement.classList));
+                let t = -1 !== this.breakpointMask.indexOf(s.pageMetrics.breakpoint),
+                    i = !1;
+                return this.disabledWhen.length > 0 && (i = this.disabledWhen.some((t => void 0 !== e[t]))),
+                    this.isEnabled = t && !i,
+                    this.isEnabled
+            }
+            evaluateConstraints() {
+                this.start = this.controller.group.expressionParser.parseTimeValue(this, this.jsonProps
+                        .start),
+                    this.end = this.controller.group.expressionParser.parseTimeValue(this, this.jsonProps
+                        .end),
+                    this.evaluateInterpolationConstraints()
+            }
+            evaluateInterpolationConstraints() {
+                for (let e in this.animValues) {
+                    let t = this.jsonProps[e];
+                    this.animValues[e] = this.controller.group.expressionParser.parseArray(this, t)
+                }
+            }
+        }
+        g.DATA_ATTRIBUTE = "data-anim-tween",
+            e.exports = g
+    }, function(e, t, i) {
+        "use strict";
+        const s = i(6),
+            n = i(191),
+            r = i(193),
+            a = i(194),
+            o = i(195),
+            l = i(196),
+            h = i(197),
+            d = i(198),
+            c = i(81),
+            u = i(84),
+            m = ["beforeCreate", "created", "beforeMount", "createItems", "itemsCreated", "mounted",
+                "animateToItem", "onItemChangeInitiated", "onItemChangeOccurred", "onItemChangeCompleted",
+                "onResizeImmediate", "onBreakpointChange", "onResizeDebounced", "destroy"
+            ];
+        class p extends s {
+            constructor(e) {
+                var t;
+                super(e),
+                    t = this,
+                    this.el = e.el,
+                    this.model = Object.assign({
+                        options: e
+                    }, JSON.parse(JSON.stringify(n))),
+                    this.model.Item.ConstructorFunction = n.Item.ConstructorFunction,
+                    this._items = [],
+                    this.currentIndex = 0,
+                    m.forEach((e => {
+                        this[e] = function() {
+                            for (var i = arguments.length, s = new Array(i), n = 0; n < i; n++)
+                                s[n] = arguments[n];
+                            t[`__${e}`] && t[`__${e}`].forEach((e => e.apply(t, s)))
+                        }
+                    }));
+                const i = this.destroy;
+                this.destroy = function() {
+                        for (var e = arguments.length, n = new Array(e), r = 0; r < e; r++)
+                            n[r] = arguments[r];
+                        i.apply(t, n),
+                            s.prototype.destroy.call(t)
+                    },
+                    this.on(n.Events.ITEM_CHANGE_INITIATED, this.onItemChangeInitiated),
+                    this.on(n.Events.ITEM_CHANGE_OCCURRED, this.onItemChangeOccurred),
+                    this.on(n.Events.ITEM_CHANGE_COMPLETED, this.onItemChangeCompleted),
+                    ["beforeCreate", "created", "beforeMount", "createItems"].forEach((t => this[t](e)))
+            }
+        }
+        p.withMixins = function() {
+                for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++)
+                    t[i] = arguments[i];
+                const s = t.findIndex((e => "excluding" in e));
+                let n = new Set;
+                s >= 0 && (t[s].excluding.forEach((e => n.add(e))),
+                    t.splice(s));
+                const f = class extends p {},
+                    _ = f.prototype;
+                let g = [r, l, o, u].filter((e => !n.has(e))),
+                    E = [h, c, a, d].filter((e => !n.has(e)));
+                return t.unshift(...g),
+                    t.push(...E),
+                    t.forEach((e => {
+                        for (const t in e)
+                            m.includes(t) ? (_[`__${t}`] = _[`__${t}`] || [],
+                                _[`__${t}`].push(e[t])) : _[t] = e[t]
+                    })),
+                    f
+            },
+            e.exports = p
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            Object.defineProperty(t, "Media", {
+                enumerable: !0,
+                get: function() {
+                    return n.default
+                }
+            }),
+            Object.defineProperty(t, "Plugin", {
+                enumerable: !0,
+                get: function() {
+                    return r.default
+                }
+            }),
+            t.autoInit = void 0,
+            Object.defineProperty(t, "default", {
+                enumerable: !0,
+                get: function() {
+                    return n.default
+                }
+            });
+        var n = s(i(121)),
+            r = s(i(11));
+        t.autoInit = n.default.autoInitialize
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            beforeCreate() {
+                this.clampedIndex = !0
+            },
+            wrappedIndex(e) {
+                return Math.max(0, Math.min(e, this._items.length - 1))
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = void 0;
+        var n = s(i(12)),
+            r = s(i(124)),
+            a = i(30);
+        class o extends r.default {
+            constructor(e) {
+                super(e),
+                    this.componentEl = e.componentEl
+            }
+            async _onPlayKeyframeEnter(e) {
+                if (this._inFrame = !0,
+                    !this._paused && (this._loaded || (await this.media.load(),
+                            this._loaded = !0),
+                        this._inFrame))
+                    try {
+                        await this.media.play()
+                    } catch (e) {
+                        this.media.el.error || this.media.el.readyState === HTMLMediaElement
+                            .HAVE_NOTHING || (this.componentEl.classList.add(a.FALLBACK_CLASSNAME),
+                                this.destroy())
                     }
-                    destroy() {
-                        this.destroyed = !0,
-                            this.controller = null,
-                            this.disabledWhen = null,
-                            this.anchors = null,
-                            this.jsonProps = null,
-                            this.easeFunction = null,
-                            this.animValues = null
-                    }
-                    remove() {
-                        return this.controller && this.controller.removeKeyframe(this)
-                    }
-                    parseOptions(e) {
-                        this.jsonProps = e,
-                            e.relativeTo && console.error(
-                                `KeyframeError: relativeTo has been removed. Use 'anchors' property instead. Found 'relativeTo':"${e.relativeTo}"`
-                            ),
-                            void 0 === e.end && void 0 === e.duration && (e.end = e.start),
-                            "" !== e.anchors && e.anchors ? (this.anchors = [],
-                                e.anchors = Array.isArray(e.anchors) ? e.anchors : [e.anchors],
-                                e.anchors.forEach(((t, i) => {
-                                    let s = c(t, this.controller.group.element);
-                                    if (!s) {
-                                        let s = "";
-                                        return "string" == typeof t && (s =
-                                                " Provided value was a string, so a failed attempt was made to find anchor with the provided querystring in group.element, or in the document."
-                                            ),
-                                            void console.warn("Keyframe on", this.controller.element,
-                                                ` failed to find anchor at index ${i} in array`, e.anchors,
-                                                `. Anchors must be JS Object references, Elements references, or valid query selector strings. ${s}`
-                                            )
-                                    }
-                                    this.anchors.push(s),
-                                        this.controller.group.metrics.add(s)
-                                }))) : (this.anchors = [],
-                                e.anchors = []),
-                            e.ease ? this.ease = parseFloat(e.ease) : e.ease = this.ease,
-                            e.hasOwnProperty("snapAtCreation") ? this.snapAtCreation = e.snapAtCreation : e
-                            .snapAtCreation = this.snapAtCreation,
-                            e.easeFunction || (e.easeFunction = s.KeyframeDefaults.easeFunctionString),
-                            e.breakpointMask ? this.breakpointMask = e.breakpointMask : e.breakpointMask = this
-                            .breakpointMask,
-                            e.disabledWhen ? this.disabledWhen = Array.isArray(e.disabledWhen) ? e.disabledWhen : [e
-                                .disabledWhen
-                            ] : e.disabledWhen = this.disabledWhen,
-                            e.hasOwnProperty("hold") ? this.hold = e.hold : e.hold = this.hold,
-                            e.hasOwnProperty("preserveState") ? this.preserveState = e.preserveState : e
-                            .preserveState = s.KeyframeDefaults.preserveState,
-                            this.easeFunction = o[e.easeFunction],
-                            o.hasOwnProperty(e.easeFunction) || (e.easeFunction.includes("bezier") ? this
-                                .easeFunction = l.fromCSSString(e.easeFunction) : e.easeFunction.includes(
-                                    "spring") ? this.easeFunction = h.fromCSSString(e.easeFunction) : console.error(
-                                    "Keyframe parseOptions cannot find 'easeFunction' named '" + e.easeFunction +
-                                    "'"));
-                        for (let t in e) {
-                            if (-1 !== s.KeyframeJSONReservedWords.indexOf(t))
-                                continue;
-                            let i = e[t];
-                            if (Array.isArray(i)) {
-                                if (1 === i.length && (i[1] = i[0],
-                                        i[0] = null),
-                                    void 0 === this.controller.tweenProps[t] || !this.controller._ownerIsElement) {
-                                    let a = 0;
-                                    this.controller._ownerIsElement || (a = this.controller.element[t] || 0);
-                                    const o = t.startsWith("--");
-                                    let l = i[2] || (o || f.includes(t) ? void 0 : "px"),
-                                        h = this.controller.group.anim.plugins.keyframe.reduce(((i, s) => i || s
-                                            .parseProp.call(this, e, t)), null);
-                                    if (!h && this.controller._ownerIsElement)
-                                        if (o || p.includes(t)) {
-                                            let i = u(t),
-                                                n = e.round || ["zIndex"].includes(i);
-                                            a = parseFloat(this.controller.getTargetComputedStyle()
-                                                    .getPropertyValue(i)),
-                                                isNaN(a) && (a = 0),
-                                                h = new r(a, s.KeyframeDefaults.epsilon, this.snapAtCreation, t, n,
-                                                    l),
-                                                this.controller.cssAttributes.push(h)
-                                        } else
-                                            _.includes(t) && (h = new n(a, s.KeyframeDefaults.epsilon, this
-                                                    .snapAtCreation, t, e.round, l),
-                                                this.controller.domAttributes.push(h));
-                                    h || (h = new n(a, s.KeyframeDefaults.epsilon, this.snapAtCreation, t, e.round,
-                                            l)),
-                                        this.controller.tweenProps[t] = h
-                                }
-                                this.animValues[t] = this.controller.group.expressionParser.parseArray(this, i),
-                                    this.controller.tweenProps[t].calculateEpsilon(e, this.animValues[t])
+            }
+            destroy() {
+                this._playKeyframe && !this._playKeyframe.destroyed && (this._playKeyframe.controller
+                        .off(`${this._playKeyframe.event}:enter`, this._onPlayKeyframeEnter),
+                        this._playKeyframe.controller.off(`${this._playKeyframe.event}:exit`, this
+                            ._onPlayKeyframeExit)),
+                    this.media.off(n.default.MEDIA_LOAD_START, this._onLoadStart)
+            }
+        }
+        t.default = o
+    }, function(e, t, i) {
+        "use strict";
+        const s = i(13).PICTURE_CLASS_LOADED,
+            n = i(13).PICTURE_DATA_LOADED,
+            r = i(13).PICTURE_DATA_EMPTY_SOURCE;
+        e.exports = (window.__pictureElementInstancesLoaded = new Map,
+            void(window.__lp = function(e) {
+                const t = e.target.parentElement;
+                t.querySelector(`[${r}]`) ? e.stopImmediatePropagation() : (t.classList.add(`${s}`),
+                    t.setAttribute(`${n}`, ""),
+                    window.__pictureElementInstancesLoaded.set(t.id, t),
+                    e.target.onload = null)
+            }))
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(28),
+            n = i(34),
+            r = i(36);
+
+        function a(e, t) {
+            return void 0 !== t ? !!s(e, t) : !!n(e)
+        }
+        e.exports = r(a),
+            e.exports.original = a
+    }, function(e, t, i) {
+        "use strict";
+        var s = /^(webkit|moz|ms)/gi;
+        e.exports = function(e) {
+            return "cssfloat" === e.toLowerCase() ? "float" : (s.test(e) && (e = "-" + e),
+                e.replace(/([A-Z]+)([A-Z][a-z])/g, "$1-$2").replace(/([a-z\d])([A-Z])/g, "$1-$2")
+                .toLowerCase())
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = /-([a-z])/g;
+        e.exports = function(e) {
+            return "float" === e.toLowerCase() ? "cssFloat" : ("Ms" === (e = e.replace(s, (function(e, t) {
+                    return t.toUpperCase()
+                }))).substr(0, 2) && (e = "ms" + e.substring(2)),
+                e)
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s, n, r = i(19),
+            a = i(35),
+            o = !1;
+        e.exports = function(e, t) {
+                var i, l;
+                if (function() {
+                        var e;
+                        if (!o) {
+                            o = !0,
+                                s = "CSS" in window && "supports" in window.CSS,
+                                n = !1,
+                                e = a();
+                            try {
+                                e.style.width = "invalid"
+                            } catch (e) {
+                                n = !0
                             }
                         }
-                        this.keyframeType = this.hold ? s.KeyframeTypes.InterpolationForward : s.KeyframeTypes
-                            .Interpolation,
-                            e.event && (this.event = e.event)
+                    }(),
+                    s)
+                    return e = r[e].css,
+                        CSS.supports(e, t);
+                if (i = (l = a()).style[e],
+                    n)
+                    try {
+                        l.style[e] = t
+                    } catch (e) {
+                        return !1
                     }
-                    overwriteProps(e) {
-                        this.animValues = {};
-                        let t = Object.assign({}, this.jsonProps, e);
-                        this.controller.updateKeyframe(this, t)
+                else
+                    l.style[e] = t;
+                return l.style[e] && l.style[e] !== i
+            },
+            e.exports.resetFlags = function() {
+                o = !1
+            }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(5);
+        e.exports = function() {
+            var e = s.getWindow().matchMedia("(prefers-reduced-motion)");
+            return !(!e || !e.matches)
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(63),
+            n = function(e) {
+                this.phase = e,
+                    this.rafEmitter = new s,
+                    this._cachePhaseIndex(),
+                    this.requestAnimationFrame = this.requestAnimationFrame.bind(this),
+                    this.cancelAnimationFrame = this.cancelAnimationFrame.bind(this),
+                    this._onBeforeRAFExecutorStart = this._onBeforeRAFExecutorStart.bind(this),
+                    this._onBeforeRAFExecutorPhase = this._onBeforeRAFExecutorPhase.bind(this),
+                    this._onAfterRAFExecutorPhase = this._onAfterRAFExecutorPhase.bind(this),
+                    this.rafEmitter.on(this.phase, this._onRAFExecuted.bind(this)),
+                    this.rafEmitter.executor.eventEmitter.on("before:start", this._onBeforeRAFExecutorStart),
+                    this.rafEmitter.executor.eventEmitter.on("before:" + this.phase, this
+                        ._onBeforeRAFExecutorPhase),
+                    this.rafEmitter.executor.eventEmitter.on("after:" + this.phase, this
+                        ._onAfterRAFExecutorPhase),
+                    this._frameCallbacks = [],
+                    this._currentFrameCallbacks = [],
+                    this._nextFrameCallbacks = [],
+                    this._phaseActive = !1,
+                    this._currentFrameID = -1,
+                    this._cancelFrameIdx = -1,
+                    this._frameCallbackLength = 0,
+                    this._currentFrameCallbacksLength = 0,
+                    this._nextFrameCallbacksLength = 0,
+                    this._frameCallbackIteration = 0
+            },
+            r = n.prototype;
+        r.requestAnimationFrame = function(e, t) {
+                return !0 === t && this.rafEmitter.executor.phaseIndex > 0 && this.rafEmitter.executor
+                    .phaseIndex <= this.phaseIndex ? this._phaseActive ? (this._currentFrameID = this.rafEmitter
+                        .executor.subscribeImmediate(this.rafEmitter, !0),
+                        this._frameCallbacks.push(this._currentFrameID, e),
+                        this._frameCallbackLength += 2) : (this._currentFrameID = this.rafEmitter.executor
+                        .subscribeImmediate(this.rafEmitter, !1),
+                        this._currentFrameCallbacks.push(this._currentFrameID, e),
+                        this._currentFrameCallbacksLength += 2) : (this._currentFrameID = this.rafEmitter.run(),
+                        this._nextFrameCallbacks.push(this._currentFrameID, e),
+                        this._nextFrameCallbacksLength += 2),
+                    this._currentFrameID
+            },
+            r.cancelAnimationFrame = function(e) {
+                this._cancelFrameIdx = this._nextFrameCallbacks.indexOf(e),
+                    this._cancelFrameIdx > -1 ? this._cancelNextAnimationFrame() : (this._cancelFrameIdx = this
+                        ._currentFrameCallbacks.indexOf(e),
+                        this._cancelFrameIdx > -1 ? this._cancelCurrentAnimationFrame() : (this
+                            ._cancelFrameIdx = this._frameCallbacks.indexOf(e),
+                            this._cancelFrameIdx > -1 && this._cancelRunningAnimationFrame()))
+            },
+            r._onRAFExecuted = function(e) {
+                for (this._frameCallbackIteration = 0; this._frameCallbackIteration < this
+                    ._frameCallbackLength; this._frameCallbackIteration += 2)
+                    this._frameCallbacks[this._frameCallbackIteration + 1](e.time, e);
+                this._frameCallbacks.length = 0,
+                    this._frameCallbackLength = 0
+            },
+            r._onBeforeRAFExecutorStart = function() {
+                Array.prototype.push.apply(this._currentFrameCallbacks, this._nextFrameCallbacks.splice(0, this
+                        ._nextFrameCallbacksLength)),
+                    this._currentFrameCallbacksLength = this._nextFrameCallbacksLength,
+                    this._nextFrameCallbacks.length = 0,
+                    this._nextFrameCallbacksLength = 0
+            },
+            r._onBeforeRAFExecutorPhase = function() {
+                this._phaseActive = !0,
+                    Array.prototype.push.apply(this._frameCallbacks, this._currentFrameCallbacks.splice(0, this
+                        ._currentFrameCallbacksLength)),
+                    this._frameCallbackLength = this._currentFrameCallbacksLength,
+                    this._currentFrameCallbacks.length = 0,
+                    this._currentFrameCallbacksLength = 0
+            },
+            r._onAfterRAFExecutorPhase = function() {
+                this._phaseActive = !1
+            },
+            r._cachePhaseIndex = function() {
+                this.phaseIndex = this.rafEmitter.executor.phases.indexOf(this.phase)
+            },
+            r._cancelRunningAnimationFrame = function() {
+                this._frameCallbacks.splice(this._cancelFrameIdx, 2),
+                    this._frameCallbackLength -= 2
+            },
+            r._cancelCurrentAnimationFrame = function() {
+                this._currentFrameCallbacks.splice(this._cancelFrameIdx, 2),
+                    this._currentFrameCallbacksLength -= 2
+            },
+            r._cancelNextAnimationFrame = function() {
+                this._nextFrameCallbacks.splice(this._cancelFrameIdx, 2),
+                    this._nextFrameCallbacksLength -= 2,
+                    0 === this._nextFrameCallbacksLength && this.rafEmitter.cancel()
+            },
+            e.exports = n
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(14),
+            n = function(e) {
+                s.call(this, e)
+            };
+        (n.prototype = Object.create(s.prototype))._subscribe = function() {
+                return this.executor.subscribe(this, !0)
+            },
+            e.exports = n
+    }, function(e, t, i) {
+        "use strict";
+        var s, n = "undefined" != typeof window ? window : {},
+            r = "SharedInstance",
+            a = n.AC,
+            o = (s = {}, {
+                get: function(e, t) {
+                    var i = null;
+                    return s[e] && s[e][t] && (i = s[e][t]),
+                        i
+                },
+                set: function(e, t, i) {
+                    return s[e] || (s[e] = {}),
+                        s[e][t] = "function" == typeof i ? new i : i,
+                        s[e][t]
+                },
+                share: function(e, t, i) {
+                    var s = this.get(e, t);
+                    return s || (s = this.set(e, t, i)),
+                        s
+                },
+                remove: function(e, t) {
+                    var i = typeof t;
+                    if ("string" !== i && "number" !== i)
+                        s[e] && (s[e] = null);
+                    else {
+                        if (!s[e] || !s[e][t])
+                            return;
+                        s[e][t] = null
                     }
-                    updateLocalProgress(e) {
-                        if (this.start === this.end || e < this.start || e > this.end)
-                            return this.localT = e < this.start ? this.hold ? this.localT : 0 : e > this.end ? 1 :
-                                0,
-                                void(this.curvedT = this.easeFunction(this.localT));
-                        const t = (e - this.start) / (this.end - this.start),
-                            i = this.hold ? this.localT : 0;
-                        this.localT = a.clamp(t, i, 1),
-                            this.curvedT = this.easeFunction(this.localT)
-                    }
-                    reconcile(e) {
-                        this.controller.tweenProps[e].reconcile(this.animValues[e], this.curvedT) && (this
-                            .needsEventDispatch || (this.needsEventDispatch = !0,
-                                this.controller.keyframesRequiringDispatch.push(this)))
-                    }
-                    reset(e) {
-                        this.localT = e || 0;
-                        let t = this.ease;
-                        this.ease = 1;
-                        for (let e in this.animValues)
-                            this.reconcile(e);
-                        this.ease = t
-                    }
-                    onDOMRead(e) {
-                        let t = this.controller.tweenProps[e].update(this.animValues[e], this.curvedT, this.ease);
-                        return "" === this.event || this.needsEventDispatch || t && (this.needsEventDispatch = !0,
-                                this.controller.keyframesRequiringDispatch.push(this)),
+                }
+            });
+        a || (a = n.AC = {}),
+            a[r] || (a[r] = o),
+            e.exports = a[r]
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(37).SharedInstance,
+            n = i(38).majorVersionNumber,
+            r = function() {
+                this._currentID = 0
+            };
+        r.prototype.getNewID = function() {
+                return this._currentID++,
+                    "raf:" + this._currentID
+            },
+            e.exports = s.share("@marcom/ac-raf-emitter/sharedRAFEmitterIDGeneratorInstance", n, r)
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = t.EVT_VIEWPORT_GROUP_EXITED = t.EVT_VIEWPORT_GROUP_ENTERED = t
+            .EVT_VIEWPORT_GROUP_CHANGED = void 0;
+        var n = s(i(6)),
+            r = i(67);
+        const a = "EVT_VIEWPORT_CHANGED";
+        class o extends n.default {
+            constructor(e) {
+                super(),
+                    this.label = e.name,
+                    this._mql = window.matchMedia(e.mediaQuery),
+                    this.active = this._mql.matches,
+                    this._onMatch = this._onMatch.bind(this),
+                    this._mql.addEventListener ? this._mql.addEventListener("change", this._onMatch) :
+                    this._mql.addListener(this._onMatch)
+            }
+            _onMatch(e) {
+                this.active = e.matches,
+                    this._events && this.trigger(a, this)
+            }
+            destroy() {
+                this._mql.removeEventListener ? this._mql.removeEventListener("change", this._onMatch) :
+                    this._mql.removeListener(this._onMatch),
+                    super.destroy()
+            }
+        }
+        const l = t.EVT_VIEWPORT_GROUP_CHANGED = "EVT_VIEWPORT_GROUP_CHANGED",
+            h = t.EVT_VIEWPORT_GROUP_EXITED = "EVT_VIEWPORT_GROUP_EXITED",
+            d = t.EVT_VIEWPORT_GROUP_ENTERED = "EVT_VIEWPORT_GROUP_ENTERED";
+        class c extends n.default {
+            constructor(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+                    excludeMatches: !1
+                };
+                super(),
+                    this._viewports = e,
+                    this._viewportQueries = (0,
+                        r.translateToMediaQuery)(e),
+                    this._excludeMatches = t.excludeMatches,
+                    this.active = new Set,
+                    this.inactive = new Set,
+                    this._onGroupMatch = this._onGroupMatch.bind(this),
+                    this._onGroupMatchDebounced = (0,
+                        r.debounce)((() => {
+                        this._safeTrigger(l, this);
+                        const e = this.isMatch ? d : h;
+                        this._safeTrigger(e, this)
+                    }), 50),
+                    this._listeners = this._viewportQueries.map((e => {
+                        const t = new o(e);
+                        t.on(a, this._onGroupMatch);
+                        return (t.active ? this.active : this.inactive).add(t.label),
                             t
-                    }
-                    isInRange(e) {
-                        return e >= this.start && e <= this.end
-                    }
-                    setEnabled(e) {
-                        e = e || d(Array.from(document.documentElement.classList));
-                        let t = -1 !== this.breakpointMask.indexOf(s.pageMetrics.breakpoint),
-                            i = !1;
-                        return this.disabledWhen.length > 0 && (i = this.disabledWhen.some((t => void 0 !== e[t]))),
-                            this.isEnabled = t && !i,
-                            this.isEnabled
-                    }
-                    evaluateConstraints() {
-                        this.start = this.controller.group.expressionParser.parseTimeValue(this, this.jsonProps
-                                .start),
-                            this.end = this.controller.group.expressionParser.parseTimeValue(this, this.jsonProps
-                                .end),
-                            this.evaluateInterpolationConstraints()
-                    }
-                    evaluateInterpolationConstraints() {
-                        for (let e in this.animValues) {
-                            let t = this.jsonProps[e];
-                            this.animValues[e] = this.controller.group.expressionParser.parseArray(this, t)
-                        }
-                    }
-                }
-                g.DATA_ATTRIBUTE = "data-anim-tween",
-                    e.exports = g
-            }, function(e, t, i) {
-                "use strict";
-                const s = i(6),
-                    n = i(191),
-                    r = i(193),
-                    a = i(194),
-                    o = i(195),
-                    l = i(196),
-                    h = i(197),
-                    d = i(198),
-                    c = i(81),
-                    u = i(84),
-                    m = ["beforeCreate", "created", "beforeMount", "createItems", "itemsCreated", "mounted",
-                        "animateToItem", "onItemChangeInitiated", "onItemChangeOccurred", "onItemChangeCompleted",
-                        "onResizeImmediate", "onBreakpointChange", "onResizeDebounced", "destroy"
-                    ];
-                class p extends s {
-                    constructor(e) {
-                        var t;
-                        super(e),
-                            t = this,
-                            this.el = e.el,
-                            this.model = Object.assign({
-                                options: e
-                            }, JSON.parse(JSON.stringify(n))),
-                            this.model.Item.ConstructorFunction = n.Item.ConstructorFunction,
-                            this._items = [],
-                            this.currentIndex = 0,
-                            m.forEach((e => {
-                                this[e] = function() {
-                                    for (var i = arguments.length, s = new Array(i), n = 0; n < i; n++)
-                                        s[n] = arguments[n];
-                                    t[`__${e}`] && t[`__${e}`].forEach((e => e.apply(t, s)))
-                                }
-                            }));
-                        const i = this.destroy;
-                        this.destroy = function() {
-                                for (var e = arguments.length, n = new Array(e), r = 0; r < e; r++)
-                                    n[r] = arguments[r];
-                                i.apply(t, n),
-                                    s.prototype.destroy.call(t)
-                            },
-                            this.on(n.Events.ITEM_CHANGE_INITIATED, this.onItemChangeInitiated),
-                            this.on(n.Events.ITEM_CHANGE_OCCURRED, this.onItemChangeOccurred),
-                            this.on(n.Events.ITEM_CHANGE_COMPLETED, this.onItemChangeCompleted),
-                            ["beforeCreate", "created", "beforeMount", "createItems"].forEach((t => this[t](e)))
-                    }
-                }
-                p.withMixins = function() {
-                        for (var e = arguments.length, t = new Array(e), i = 0; i < e; i++)
-                            t[i] = arguments[i];
-                        const s = t.findIndex((e => "excluding" in e));
-                        let n = new Set;
-                        s >= 0 && (t[s].excluding.forEach((e => n.add(e))),
-                            t.splice(s));
-                        const f = class extends p {},
-                            _ = f.prototype;
-                        let g = [r, l, o, u].filter((e => !n.has(e))),
-                            E = [h, c, a, d].filter((e => !n.has(e)));
-                        return t.unshift(...g),
-                            t.push(...E),
-                            t.forEach((e => {
-                                for (const t in e)
-                                    m.includes(t) ? (_[`__${t}`] = _[`__${t}`] || [],
-                                        _[`__${t}`].push(e[t])) : _[t] = e[t]
-                            })),
-                            f
-                    },
-                    e.exports = p
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    Object.defineProperty(t, "Media", {
-                        enumerable: !0,
-                        get: function() {
-                            return n.default
-                        }
-                    }),
-                    Object.defineProperty(t, "Plugin", {
-                        enumerable: !0,
-                        get: function() {
-                            return r.default
-                        }
-                    }),
-                    t.autoInit = void 0,
-                    Object.defineProperty(t, "default", {
-                        enumerable: !0,
-                        get: function() {
-                            return n.default
-                        }
-                    });
-                var n = s(i(121)),
-                    r = s(i(11));
-                t.autoInit = n.default.autoInitialize
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    beforeCreate() {
-                        this.clampedIndex = !0
-                    },
-                    wrappedIndex(e) {
-                        return Math.max(0, Math.min(e, this._items.length - 1))
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = void 0;
-                var n = s(i(12)),
-                    r = s(i(124)),
-                    a = i(30);
-                class o extends r.default {
-                    constructor(e) {
-                        super(e),
-                            this.componentEl = e.componentEl
-                    }
-                    async _onPlayKeyframeEnter(e) {
-                        if (this._inFrame = !0,
-                            !this._paused && (this._loaded || (await this.media.load(),
-                                    this._loaded = !0),
-                                this._inFrame))
-                            try {
-                                await this.media.play()
-                            } catch (e) {
-                                this.media.el.error || this.media.el.readyState === HTMLMediaElement
-                                    .HAVE_NOTHING || (this.componentEl.classList.add(a.FALLBACK_CLASSNAME),
-                                        this.destroy())
-                            }
-                    }
-                    destroy() {
-                        this._playKeyframe && !this._playKeyframe.destroyed && (this._playKeyframe.controller
-                                .off(`${this._playKeyframe.event}:enter`, this._onPlayKeyframeEnter),
-                                this._playKeyframe.controller.off(`${this._playKeyframe.event}:exit`, this
-                                    ._onPlayKeyframeExit)),
-                            this.media.off(n.default.MEDIA_LOAD_START, this._onLoadStart)
-                    }
-                }
-                t.default = o
-            }, function(e, t, i) {
-                "use strict";
-                const s = i(13).PICTURE_CLASS_LOADED,
-                    n = i(13).PICTURE_DATA_LOADED,
-                    r = i(13).PICTURE_DATA_EMPTY_SOURCE;
-                e.exports = (window.__pictureElementInstancesLoaded = new Map,
-                    void(window.__lp = function(e) {
-                        const t = e.target.parentElement;
-                        t.querySelector(`[${r}]`) ? e.stopImmediatePropagation() : (t.classList.add(`${s}`),
-                            t.setAttribute(`${n}`, ""),
-                            window.__pictureElementInstancesLoaded.set(t.id, t),
-                            e.target.onload = null)
                     }))
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(28),
-                    n = i(34),
-                    r = i(36);
-
-                function a(e, t) {
-                    return void 0 !== t ? !!s(e, t) : !!n(e)
-                }
-                e.exports = r(a),
-                    e.exports.original = a
-            }, function(e, t, i) {
-                "use strict";
-                var s = /^(webkit|moz|ms)/gi;
-                e.exports = function(e) {
-                    return "cssfloat" === e.toLowerCase() ? "float" : (s.test(e) && (e = "-" + e),
-                        e.replace(/([A-Z]+)([A-Z][a-z])/g, "$1-$2").replace(/([a-z\d])([A-Z])/g, "$1-$2")
-                        .toLowerCase())
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = /-([a-z])/g;
-                e.exports = function(e) {
-                    return "float" === e.toLowerCase() ? "cssFloat" : ("Ms" === (e = e.replace(s, (function(e, t) {
-                            return t.toUpperCase()
-                        }))).substr(0, 2) && (e = "ms" + e.substring(2)),
-                        e)
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s, n, r = i(19),
-                    a = i(35),
-                    o = !1;
-                e.exports = function(e, t) {
-                        var i, l;
-                        if (function() {
-                                var e;
-                                if (!o) {
-                                    o = !0,
-                                        s = "CSS" in window && "supports" in window.CSS,
-                                        n = !1,
-                                        e = a();
-                                    try {
-                                        e.style.width = "invalid"
-                                    } catch (e) {
-                                        n = !0
-                                    }
-                                }
-                            }(),
-                            s)
-                            return e = r[e].css,
-                                CSS.supports(e, t);
-                        if (i = (l = a()).style[e],
-                            n)
-                            try {
-                                l.style[e] = t
-                            } catch (e) {
-                                return !1
-                            }
-                        else
-                            l.style[e] = t;
-                        return l.style[e] && l.style[e] !== i
-                    },
-                    e.exports.resetFlags = function() {
-                        o = !1
-                    }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(5);
-                e.exports = function() {
-                    var e = s.getWindow().matchMedia("(prefers-reduced-motion)");
-                    return !(!e || !e.matches)
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(63),
-                    n = function(e) {
-                        this.phase = e,
-                            this.rafEmitter = new s,
-                            this._cachePhaseIndex(),
-                            this.requestAnimationFrame = this.requestAnimationFrame.bind(this),
-                            this.cancelAnimationFrame = this.cancelAnimationFrame.bind(this),
-                            this._onBeforeRAFExecutorStart = this._onBeforeRAFExecutorStart.bind(this),
-                            this._onBeforeRAFExecutorPhase = this._onBeforeRAFExecutorPhase.bind(this),
-                            this._onAfterRAFExecutorPhase = this._onAfterRAFExecutorPhase.bind(this),
-                            this.rafEmitter.on(this.phase, this._onRAFExecuted.bind(this)),
-                            this.rafEmitter.executor.eventEmitter.on("before:start", this._onBeforeRAFExecutorStart),
-                            this.rafEmitter.executor.eventEmitter.on("before:" + this.phase, this
-                                ._onBeforeRAFExecutorPhase),
-                            this.rafEmitter.executor.eventEmitter.on("after:" + this.phase, this
-                                ._onAfterRAFExecutorPhase),
-                            this._frameCallbacks = [],
-                            this._currentFrameCallbacks = [],
-                            this._nextFrameCallbacks = [],
-                            this._phaseActive = !1,
-                            this._currentFrameID = -1,
-                            this._cancelFrameIdx = -1,
-                            this._frameCallbackLength = 0,
-                            this._currentFrameCallbacksLength = 0,
-                            this._nextFrameCallbacksLength = 0,
-                            this._frameCallbackIteration = 0
-                    },
-                    r = n.prototype;
-                r.requestAnimationFrame = function(e, t) {
-                        return !0 === t && this.rafEmitter.executor.phaseIndex > 0 && this.rafEmitter.executor
-                            .phaseIndex <= this.phaseIndex ? this._phaseActive ? (this._currentFrameID = this.rafEmitter
-                                .executor.subscribeImmediate(this.rafEmitter, !0),
-                                this._frameCallbacks.push(this._currentFrameID, e),
-                                this._frameCallbackLength += 2) : (this._currentFrameID = this.rafEmitter.executor
-                                .subscribeImmediate(this.rafEmitter, !1),
-                                this._currentFrameCallbacks.push(this._currentFrameID, e),
-                                this._currentFrameCallbacksLength += 2) : (this._currentFrameID = this.rafEmitter.run(),
-                                this._nextFrameCallbacks.push(this._currentFrameID, e),
-                                this._nextFrameCallbacksLength += 2),
-                            this._currentFrameID
-                    },
-                    r.cancelAnimationFrame = function(e) {
-                        this._cancelFrameIdx = this._nextFrameCallbacks.indexOf(e),
-                            this._cancelFrameIdx > -1 ? this._cancelNextAnimationFrame() : (this._cancelFrameIdx = this
-                                ._currentFrameCallbacks.indexOf(e),
-                                this._cancelFrameIdx > -1 ? this._cancelCurrentAnimationFrame() : (this
-                                    ._cancelFrameIdx = this._frameCallbacks.indexOf(e),
-                                    this._cancelFrameIdx > -1 && this._cancelRunningAnimationFrame()))
-                    },
-                    r._onRAFExecuted = function(e) {
-                        for (this._frameCallbackIteration = 0; this._frameCallbackIteration < this
-                            ._frameCallbackLength; this._frameCallbackIteration += 2)
-                            this._frameCallbacks[this._frameCallbackIteration + 1](e.time, e);
-                        this._frameCallbacks.length = 0,
-                            this._frameCallbackLength = 0
-                    },
-                    r._onBeforeRAFExecutorStart = function() {
-                        Array.prototype.push.apply(this._currentFrameCallbacks, this._nextFrameCallbacks.splice(0, this
-                                ._nextFrameCallbacksLength)),
-                            this._currentFrameCallbacksLength = this._nextFrameCallbacksLength,
-                            this._nextFrameCallbacks.length = 0,
-                            this._nextFrameCallbacksLength = 0
-                    },
-                    r._onBeforeRAFExecutorPhase = function() {
-                        this._phaseActive = !0,
-                            Array.prototype.push.apply(this._frameCallbacks, this._currentFrameCallbacks.splice(0, this
-                                ._currentFrameCallbacksLength)),
-                            this._frameCallbackLength = this._currentFrameCallbacksLength,
-                            this._currentFrameCallbacks.length = 0,
-                            this._currentFrameCallbacksLength = 0
-                    },
-                    r._onAfterRAFExecutorPhase = function() {
-                        this._phaseActive = !1
-                    },
-                    r._cachePhaseIndex = function() {
-                        this.phaseIndex = this.rafEmitter.executor.phases.indexOf(this.phase)
-                    },
-                    r._cancelRunningAnimationFrame = function() {
-                        this._frameCallbacks.splice(this._cancelFrameIdx, 2),
-                            this._frameCallbackLength -= 2
-                    },
-                    r._cancelCurrentAnimationFrame = function() {
-                        this._currentFrameCallbacks.splice(this._cancelFrameIdx, 2),
-                            this._currentFrameCallbacksLength -= 2
-                    },
-                    r._cancelNextAnimationFrame = function() {
-                        this._nextFrameCallbacks.splice(this._cancelFrameIdx, 2),
-                            this._nextFrameCallbacksLength -= 2,
-                            0 === this._nextFrameCallbacksLength && this.rafEmitter.cancel()
-                    },
-                    e.exports = n
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(14),
-                    n = function(e) {
-                        s.call(this, e)
-                    };
-                (n.prototype = Object.create(s.prototype))._subscribe = function() {
-                        return this.executor.subscribe(this, !0)
-                    },
-                    e.exports = n
-            }, function(e, t, i) {
-                "use strict";
-                var s, n = "undefined" != typeof window ? window : {},
-                    r = "SharedInstance",
-                    a = n.AC,
-                    o = (s = {}, {
-                        get: function(e, t) {
-                            var i = null;
-                            return s[e] && s[e][t] && (i = s[e][t]),
-                                i
-                        },
-                        set: function(e, t, i) {
-                            return s[e] || (s[e] = {}),
-                                s[e][t] = "function" == typeof i ? new i : i,
-                                s[e][t]
-                        },
-                        share: function(e, t, i) {
-                            var s = this.get(e, t);
-                            return s || (s = this.set(e, t, i)),
-                                s
-                        },
-                        remove: function(e, t) {
-                            var i = typeof t;
-                            if ("string" !== i && "number" !== i)
-                                s[e] && (s[e] = null);
-                            else {
-                                if (!s[e] || !s[e][t])
-                                    return;
-                                s[e][t] = null
-                            }
+            }
+            get viewports() {
+                return this._viewports
+            }
+            set viewports(e) {
+                this._viewports = e
+            }
+            get excludeMatches() {
+                return this._excludeMatches
+            }
+            set excludeMatches(e) {
+                this._excludeMatches = e
+            }
+            get isMatch() {
+                return this.validateViewport()
+            }
+            get current() {
+                return [...this.active][0]
+            }
+            destroy() {
+                this._listeners.forEach((e => e.destroy())),
+                    this.active.clear(),
+                    this.inactive.clear(),
+                    this.destroyed = !0,
+                    super.destroy()
+            }
+            validateViewport(e) {
+                e || (e = Object.keys(this._viewports));
+                const t = e.filter((e => this.active.has(e))).length > 0;
+                return this.excludeMatches ? !t : t
+            }
+            _safeTrigger(e, t) {
+                this._events && !this.destroyed && this.trigger(e, t)
+            }
+            _onGroupMatch(e) {
+                const {
+                    active: t,
+                    label: i
+                } = e;
+                t ? (this.active.add(i),
+                        this.inactive.delete(i)) : (this.inactive.add(i),
+                        this.active.delete(i)),
+                    this._onGroupMatchDebounced()
+            }
+        }
+        t.default = c
+    }, function(e, t, i) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.translateToMediaQuery = t.setMediaQueryCssVars = t.debounce = t.composeMediaQuery = void 0;
+        t.debounce = (e, t) => {
+            let i;
+            return function() {
+                clearTimeout(i),
+                    i = setTimeout((() => e.apply(this, arguments)), t)
+            }
+        };
+        const s = function() {
+            let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+            if (!e)
+                return;
+            if (e.hasOwnProperty("query"))
+                return e.query;
+            const t = ["only screen"],
+                i = Object.keys(e).filter((e => "alias" !== e)).map((t => {
+                    const i = e[t],
+                        s = [];
+                    for (let e = 0; e < i.length; e++) {
+                        const n = i[e];
+                        if (n) {
+                            const i = 0 === e ? "min" : "max";
+                            s.push(`(${i}-${t}: ${n}px)`)
                         }
-                    });
-                a || (a = n.AC = {}),
-                    a[r] || (a[r] = o),
-                    e.exports = a[r]
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(37).SharedInstance,
-                    n = i(38).majorVersionNumber,
-                    r = function() {
-                        this._currentID = 0
-                    };
-                r.prototype.getNewID = function() {
-                        return this._currentID++,
-                            "raf:" + this._currentID
-                    },
-                    e.exports = s.share("@marcom/ac-raf-emitter/sharedRAFEmitterIDGeneratorInstance", n, r)
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = t.EVT_VIEWPORT_GROUP_EXITED = t.EVT_VIEWPORT_GROUP_ENTERED = t
-                    .EVT_VIEWPORT_GROUP_CHANGED = void 0;
-                var n = s(i(6)),
-                    r = i(67);
-                const a = "EVT_VIEWPORT_CHANGED";
-                class o extends n.default {
-                    constructor(e) {
-                        super(),
-                            this.label = e.name,
-                            this._mql = window.matchMedia(e.mediaQuery),
-                            this.active = this._mql.matches,
-                            this._onMatch = this._onMatch.bind(this),
-                            this._mql.addEventListener ? this._mql.addEventListener("change", this._onMatch) :
-                            this._mql.addListener(this._onMatch)
                     }
-                    _onMatch(e) {
-                        this.active = e.matches,
-                            this._events && this.trigger(a, this)
-                    }
-                    destroy() {
-                        this._mql.removeEventListener ? this._mql.removeEventListener("change", this._onMatch) :
-                            this._mql.removeListener(this._onMatch),
-                            super.destroy()
-                    }
-                }
-                const l = t.EVT_VIEWPORT_GROUP_CHANGED = "EVT_VIEWPORT_GROUP_CHANGED",
-                    h = t.EVT_VIEWPORT_GROUP_EXITED = "EVT_VIEWPORT_GROUP_EXITED",
-                    d = t.EVT_VIEWPORT_GROUP_ENTERED = "EVT_VIEWPORT_GROUP_ENTERED";
-                class c extends n.default {
-                    constructor(e) {
-                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                            excludeMatches: !1
-                        };
-                        super(),
-                            this._viewports = e,
-                            this._viewportQueries = (0,
-                                r.translateToMediaQuery)(e),
-                            this._excludeMatches = t.excludeMatches,
-                            this.active = new Set,
-                            this.inactive = new Set,
-                            this._onGroupMatch = this._onGroupMatch.bind(this),
-                            this._onGroupMatchDebounced = (0,
-                                r.debounce)((() => {
-                                this._safeTrigger(l, this);
-                                const e = this.isMatch ? d : h;
-                                this._safeTrigger(e, this)
-                            }), 50),
-                            this._listeners = this._viewportQueries.map((e => {
-                                const t = new o(e);
-                                t.on(a, this._onGroupMatch);
-                                return (t.active ? this.active : this.inactive).add(t.label),
-                                    t
-                            }))
-                    }
-                    get viewports() {
-                        return this._viewports
-                    }
-                    set viewports(e) {
-                        this._viewports = e
-                    }
-                    get excludeMatches() {
-                        return this._excludeMatches
-                    }
-                    set excludeMatches(e) {
-                        this._excludeMatches = e
-                    }
-                    get isMatch() {
-                        return this.validateViewport()
-                    }
-                    get current() {
-                        return [...this.active][0]
-                    }
-                    destroy() {
-                        this._listeners.forEach((e => e.destroy())),
-                            this.active.clear(),
-                            this.inactive.clear(),
-                            this.destroyed = !0,
-                            super.destroy()
-                    }
-                    validateViewport(e) {
-                        e || (e = Object.keys(this._viewports));
-                        const t = e.filter((e => this.active.has(e))).length > 0;
-                        return this.excludeMatches ? !t : t
-                    }
-                    _safeTrigger(e, t) {
-                        this._events && !this.destroyed && this.trigger(e, t)
-                    }
-                    _onGroupMatch(e) {
-                        const {
-                            active: t,
-                            label: i
-                        } = e;
-                        t ? (this.active.add(i),
-                                this.inactive.delete(i)) : (this.inactive.add(i),
-                                this.active.delete(i)),
-                            this._onGroupMatchDebounced()
-                    }
-                }
-                t.default = c
-            }, function(e, t, i) {
-                "use strict";
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.translateToMediaQuery = t.setMediaQueryCssVars = t.debounce = t.composeMediaQuery = void 0;
-                t.debounce = (e, t) => {
-                    let i;
-                    return function() {
-                        clearTimeout(i),
-                            i = setTimeout((() => e.apply(this, arguments)), t)
-                    }
-                };
-                const s = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    if (!e)
-                        return;
-                    if (e.hasOwnProperty("query"))
-                        return e.query;
-                    const t = ["only screen"],
-                        i = Object.keys(e).filter((e => "alias" !== e)).map((t => {
-                            const i = e[t],
-                                s = [];
-                            for (let e = 0; e < i.length; e++) {
-                                const n = i[e];
-                                if (n) {
-                                    const i = 0 === e ? "min" : "max";
-                                    s.push(`(${i}-${t}: ${n}px)`)
-                                }
-                            }
-                            return s
-                        })).flat();
-                    return t.push(i),
-                        t.flat().join(" and ")
-                };
-                t.composeMediaQuery = s;
-                t.translateToMediaQuery = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    return Object.keys(e).map((t => ({
-                        name: t,
-                        mediaQuery: s(e[t])
-                    })))
-                };
-                t.setMediaQueryCssVars = function() {
-                    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : document
-                        .documentElement,
-                        t = arguments.length > 1 ? arguments[1] : void 0;
-                    Object.keys(t).forEach((i => {
-                        const n = t[i],
-                            r = s(n);
-                        e.style.setProperty(`--vp-mq-${i}`, r)
-                    }))
-                }
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(69),
-                    n = i(70);
+                    return s
+                })).flat();
+            return t.push(i),
+                t.flat().join(" and ")
+        };
+        t.composeMediaQuery = s;
+        t.translateToMediaQuery = function() {
+            let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+            return Object.keys(e).map((t => ({
+                name: t,
+                mediaQuery: s(e[t])
+            })))
+        };
+        t.setMediaQueryCssVars = function() {
+            let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : document
+                .documentElement,
+                t = arguments.length > 1 ? arguments[1] : void 0;
+            Object.keys(t).forEach((i => {
+                const n = t[i],
+                    r = s(n);
+                e.style.setProperty(`--vp-mq-${i}`, r)
+            }))
+        }
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(69),
+            n = i(70);
 
-                function r(e, t) {
-                    if ("function" == typeof e.parseVersion)
-                        return e.parseVersion(t);
-                    var i, s = e.version || e.userAgent;
-                    "string" == typeof s && (s = [s]);
-                    for (var n, r = s.length, a = 0; a < r; a++)
-                        if ((n = t.match((i = s[a],
-                                new RegExp(i + "[a-zA-Z\\s/:]+([0-9_.]+)", "i")))) && n.length > 1)
-                            return n[1].replace(/_/g, ".");
-                    return !1
-                }
+        function r(e, t) {
+            if ("function" == typeof e.parseVersion)
+                return e.parseVersion(t);
+            var i, s = e.version || e.userAgent;
+            "string" == typeof s && (s = [s]);
+            for (var n, r = s.length, a = 0; a < r; a++)
+                if ((n = t.match((i = s[a],
+                        new RegExp(i + "[a-zA-Z\\s/:]+([0-9_.]+)", "i")))) && n.length > 1)
+                    return n[1].replace(/_/g, ".");
+            return !1
+        }
 
-                function a(e, t, i) {
-                    for (var s, n, a = e.length, o = 0; o < a; o++)
-                        if ("function" == typeof e[o].test ? !0 === e[o].test(i) && (s = e[o].name) : i.ua.indexOf(e[o]
-                                .userAgent) > -1 && (s = e[o].name),
-                            s) {
-                            if (t[s] = !0,
-                                "string" == typeof(n = r(e[o], i.ua))) {
-                                var l = n.split(".");
-                                t.version.string = n,
-                                    l && l.length > 0 && (t.version.major = parseInt(l[0] || 0),
-                                        t.version.minor = parseInt(l[1] || 0),
-                                        t.version.patch = parseInt(l[2] || 0))
-                            } else
-                                "edge" === s && (t.version.string = "12.0.0",
-                                    t.version.major = "12",
-                                    t.version.minor = "0",
-                                    t.version.patch = "0");
-                            return "function" == typeof e[o].parseDocumentMode && (t.version.documentMode = e[o]
-                                    .parseDocumentMode()),
-                                t
-                        }
-                    return t
-                }
-                e.exports = function(e) {
-                    var t = {};
-                    return t.browser = a(n.browser, s.browser, e),
-                        t.os = a(n.os, s.os, e),
+        function a(e, t, i) {
+            for (var s, n, a = e.length, o = 0; o < a; o++)
+                if ("function" == typeof e[o].test ? !0 === e[o].test(i) && (s = e[o].name) : i.ua.indexOf(e[o]
+                        .userAgent) > -1 && (s = e[o].name),
+                    s) {
+                    if (t[s] = !0,
+                        "string" == typeof(n = r(e[o], i.ua))) {
+                        var l = n.split(".");
+                        t.version.string = n,
+                            l && l.length > 0 && (t.version.major = parseInt(l[0] || 0),
+                                t.version.minor = parseInt(l[1] || 0),
+                                t.version.patch = parseInt(l[2] || 0))
+                    } else
+                        "edge" === s && (t.version.string = "12.0.0",
+                            t.version.major = "12",
+                            t.version.minor = "0",
+                            t.version.patch = "0");
+                    return "function" == typeof e[o].parseDocumentMode && (t.version.documentMode = e[o]
+                            .parseDocumentMode()),
                         t
                 }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    browser: {
-                        safari: !1,
-                        chrome: !1,
-                        firefox: !1,
-                        ie: !1,
-                        opera: !1,
-                        android: !1,
-                        edge: !1,
-                        edgeChromium: !1,
-                        samsung: !1,
-                        version: {
-                            string: "",
-                            major: 0,
-                            minor: 0,
-                            patch: 0,
-                            documentMode: !1
-                        }
+            return t
+        }
+        e.exports = function(e) {
+            var t = {};
+            return t.browser = a(n.browser, s.browser, e),
+                t.os = a(n.os, s.os, e),
+                t
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            browser: {
+                safari: !1,
+                chrome: !1,
+                firefox: !1,
+                ie: !1,
+                opera: !1,
+                android: !1,
+                edge: !1,
+                edgeChromium: !1,
+                samsung: !1,
+                version: {
+                    string: "",
+                    major: 0,
+                    minor: 0,
+                    patch: 0,
+                    documentMode: !1
+                }
+            },
+            os: {
+                osx: !1,
+                ios: !1,
+                android: !1,
+                windows: !1,
+                linux: !1,
+                fireos: !1,
+                chromeos: !1,
+                version: {
+                    string: "",
+                    major: 0,
+                    minor: 0,
+                    patch: 0
+                }
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = {
+            browser: [{
+                name: "edge",
+                userAgent: "Edge",
+                version: ["rv", "Edge"],
+                test: function(e) {
+                    return e.ua.indexOf("Edge") > -1 ||
+                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" === e.ua
+                }
+            }, {
+                name: "edgeChromium",
+                userAgent: "Edge",
+                version: ["rv", "Edg"],
+                test: function(e) {
+                    return e.ua.indexOf("Edg") > -1 && -1 === e.ua.indexOf("Edge")
+                }
+            }, {
+                name: "chrome",
+                userAgent: "Chrome"
+            }, {
+                name: "firefox",
+                test: function(e) {
+                    return e.ua.indexOf("Firefox") > -1 && -1 === e.ua.indexOf("Opera")
+                },
+                version: "Firefox"
+            }, {
+                name: "android",
+                userAgent: "Android"
+            }, {
+                name: "safari",
+                test: function(e) {
+                    return e.ua.indexOf("Safari") > -1 && e.vendor.indexOf("Apple") > -1
+                },
+                version: "Version"
+            }, {
+                name: "ie",
+                test: function(e) {
+                    return e.ua.indexOf("IE") > -1 || e.ua.indexOf("Trident") > -1
+                },
+                version: ["MSIE", "rv"],
+                parseDocumentMode: function() {
+                    var e = !1;
+                    return document.documentMode && (e = parseInt(document.documentMode, 10)),
+                        e
+                }
+            }, {
+                name: "opera",
+                userAgent: "Opera",
+                version: ["Version", "Opera"]
+            }, {
+                name: "samsung",
+                userAgent: "SamsungBrowser"
+            }],
+            os: [{
+                name: "windows",
+                test: function(e) {
+                    return e.ua.indexOf("Windows") > -1
+                },
+                version: "Windows NT"
+            }, {
+                name: "osx",
+                userAgent: "Mac",
+                test: function(e) {
+                    return e.ua.indexOf("Macintosh") > -1
+                }
+            }, {
+                name: "ios",
+                test: function(e) {
+                    return e.ua.indexOf("iPhone") > -1 || e.ua.indexOf("iPad") > -1
+                },
+                version: ["iPhone OS", "CPU OS"]
+            }, {
+                name: "linux",
+                userAgent: "Linux",
+                test: function(e) {
+                    return (e.ua.indexOf("Linux") > -1 || e.platform.indexOf("Linux") > -1) && -
+                        1 === e.ua.indexOf("Android")
+                }
+            }, {
+                name: "fireos",
+                test: function(e) {
+                    return e.ua.indexOf("Firefox") > -1 && e.ua.indexOf("Mobile") > -1
+                },
+                version: "rv"
+            }, {
+                name: "android",
+                userAgent: "Android",
+                test: function(e) {
+                    return e.ua.indexOf("Android") > -1
+                }
+            }, {
+                name: "chromeos",
+                userAgent: "CrOS"
+            }]
+        }
+    }, function(e, t, i) {
+        "use strict";
+        class s {
+            constructor() {
+                this._events = {}
+            }
+            on(e, t) {
+                return this._events[e] = this._events[e] || [],
+                    this._events[e].unshift(t),
+                    t
+            }
+            once(e, t) {
+                const i = s => {
+                    this.off(e, i),
+                        void 0 !== s ? t(s) : t()
+                };
+                return this.on(e, i)
+            }
+            off(e, t) {
+                if (!this.has(e))
+                    return;
+                if (!t)
+                    return void delete this._events[e];
+                const i = this._events[e].indexOf(t); -
+                1 !== i && this._events[e].splice(i, 1)
+            }
+            trigger(e, t) {
+                if (this.has(e))
+                    for (let i = this._events[e].length - 1; i >= 0; i--)
+                        void 0 !== t ? this._events[e][i](t) : this._events[e][i]()
+            }
+            has(e) {
+                return e in this._events && 0 !== this._events[e].length
+            }
+            destroy() {
+                this._events = null
+            }
+        }
+        s.EventEmitterMicro = s,
+            e.exports = s
+    }, function(e, t, i) {
+        "use strict";
+        const s = i(22),
+            n = i(99);
+        e.exports = class extends s {
+            constructor(e, t, i, s) {
+                let r = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
+                    a = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : void 0;
+                super(e, t, i, s = n(s), r, a)
+            }
+            set(e) {
+                let t = this.current;
+                this.round && (t = Math.round(t)),
+                    this.suffix && (t += this.suffix),
+                    e.setProperty(this.key, t)
+            }
+            unset(e) {
+                e.removeProperty(this.key)
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = new class {
+            constructor() {
+                this.linear = function(e) {
+                        return e
                     },
-                    os: {
-                        osx: !1,
-                        ios: !1,
-                        android: !1,
-                        windows: !1,
-                        linux: !1,
-                        fireos: !1,
-                        chromeos: !1,
-                        version: {
-                            string: "",
-                            major: 0,
-                            minor: 0,
-                            patch: 0
-                        }
+                    this.easeInQuad = function(e) {
+                        return e * e
+                    },
+                    this.easeOutQuad = function(e) {
+                        return e * (2 - e)
+                    },
+                    this.easeInOutQuad = function(e) {
+                        return e < .5 ? 2 * e * e : (4 - 2 * e) * e - 1
+                    },
+                    this.easeInSin = function(e) {
+                        return 1 + Math.sin(Math.PI / 2 * e - Math.PI / 2)
+                    },
+                    this.easeOutSin = function(e) {
+                        return Math.sin(Math.PI / 2 * e)
+                    },
+                    this.easeInOutSin = function(e) {
+                        return (1 + Math.sin(Math.PI * e - Math.PI / 2)) / 2
+                    },
+                    this.easeInElastic = function(e) {
+                        return 0 === e ? e : (.04 - .04 / e) * Math.sin(25 * e) + 1
+                    },
+                    this.easeOutElastic = function(e) {
+                        return .04 * e / --e * Math.sin(25 * e)
+                    },
+                    this.easeInOutElastic = function(e) {
+                        return (e -= .5) < 0 ? (.02 + .01 / e) * Math.sin(50 * e) : (.02 - .01 / e) *
+                            Math.sin(50 * e) + 1
+                    },
+                    this.easeOutBack = function(e) {
+                        return (e -= 1) * e * (2.70158 * e + 1.70158) + 1
+                    },
+                    this.easeInCubic = function(e) {
+                        return e * e * e
+                    },
+                    this.easeOutCubic = function(e) {
+                        return --e * e * e + 1
+                    },
+                    this.easeInOutCubic = function(e) {
+                        return e < .5 ? 4 * e * e * e : (e - 1) * (2 * e - 2) * (2 * e - 2) + 1
+                    },
+                    this.easeInQuart = function(e) {
+                        return e * e * e * e
+                    },
+                    this.easeOutQuart = function(e) {
+                        return 1 - --e * e * e * e
+                    },
+                    this.easeInOutQuart = function(e) {
+                        return e < .5 ? 8 * e * e * e * e : 1 - 8 * --e * e * e * e
+                    },
+                    this.easeInQuint = function(e) {
+                        return e * e * e * e * e
+                    },
+                    this.easeOutQuint = function(e) {
+                        return 1 + --e * e * e * e * e
+                    },
+                    this.easeInOutQuint = function(e) {
+                        return e < .5 ? 16 * e * e * e * e * e : 1 + 16 * --e * e * e * e * e
                     }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = {
-                    browser: [{
-                        name: "edge",
-                        userAgent: "Edge",
-                        version: ["rv", "Edge"],
-                        test: function(e) {
-                            return e.ua.indexOf("Edge") > -1 ||
-                                "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" === e.ua
-                        }
-                    }, {
-                        name: "edgeChromium",
-                        userAgent: "Edge",
-                        version: ["rv", "Edg"],
-                        test: function(e) {
-                            return e.ua.indexOf("Edg") > -1 && -1 === e.ua.indexOf("Edge")
-                        }
-                    }, {
-                        name: "chrome",
-                        userAgent: "Chrome"
-                    }, {
-                        name: "firefox",
-                        test: function(e) {
-                            return e.ua.indexOf("Firefox") > -1 && -1 === e.ua.indexOf("Opera")
-                        },
-                        version: "Firefox"
-                    }, {
-                        name: "android",
-                        userAgent: "Android"
-                    }, {
-                        name: "safari",
-                        test: function(e) {
-                            return e.ua.indexOf("Safari") > -1 && e.vendor.indexOf("Apple") > -1
-                        },
-                        version: "Version"
-                    }, {
-                        name: "ie",
-                        test: function(e) {
-                            return e.ua.indexOf("IE") > -1 || e.ua.indexOf("Trident") > -1
-                        },
-                        version: ["MSIE", "rv"],
-                        parseDocumentMode: function() {
-                            var e = !1;
-                            return document.documentMode && (e = parseInt(document.documentMode, 10)),
-                                e
-                        }
-                    }, {
-                        name: "opera",
-                        userAgent: "Opera",
-                        version: ["Version", "Opera"]
-                    }, {
-                        name: "samsung",
-                        userAgent: "SamsungBrowser"
-                    }],
-                    os: [{
-                        name: "windows",
-                        test: function(e) {
-                            return e.ua.indexOf("Windows") > -1
-                        },
-                        version: "Windows NT"
-                    }, {
-                        name: "osx",
-                        userAgent: "Mac",
-                        test: function(e) {
-                            return e.ua.indexOf("Macintosh") > -1
-                        }
-                    }, {
-                        name: "ios",
-                        test: function(e) {
-                            return e.ua.indexOf("iPhone") > -1 || e.ua.indexOf("iPad") > -1
-                        },
-                        version: ["iPhone OS", "CPU OS"]
-                    }, {
-                        name: "linux",
-                        userAgent: "Linux",
-                        test: function(e) {
-                            return (e.ua.indexOf("Linux") > -1 || e.platform.indexOf("Linux") > -1) && -
-                                1 === e.ua.indexOf("Android")
-                        }
-                    }, {
-                        name: "fireos",
-                        test: function(e) {
-                            return e.ua.indexOf("Firefox") > -1 && e.ua.indexOf("Mobile") > -1
-                        },
-                        version: "rv"
-                    }, {
-                        name: "android",
-                        userAgent: "Android",
-                        test: function(e) {
-                            return e.ua.indexOf("Android") > -1
-                        }
-                    }, {
-                        name: "chromeos",
-                        userAgent: "CrOS"
-                    }]
-                }
-            }, function(e, t, i) {
-                "use strict";
-                class s {
-                    constructor() {
-                        this._events = {}
-                    }
-                    on(e, t) {
-                        return this._events[e] = this._events[e] || [],
-                            this._events[e].unshift(t),
-                            t
-                    }
-                    once(e, t) {
-                        const i = s => {
-                            this.off(e, i),
-                                void 0 !== s ? t(s) : t()
-                        };
-                        return this.on(e, i)
-                    }
-                    off(e, t) {
-                        if (!this.has(e))
-                            return;
-                        if (!t)
-                            return void delete this._events[e];
-                        const i = this._events[e].indexOf(t); -
-                        1 !== i && this._events[e].splice(i, 1)
-                    }
-                    trigger(e, t) {
-                        if (this.has(e))
-                            for (let i = this._events[e].length - 1; i >= 0; i--)
-                                void 0 !== t ? this._events[e][i](t) : this._events[e][i]()
-                    }
-                    has(e) {
-                        return e in this._events && 0 !== this._events[e].length
-                    }
-                    destroy() {
-                        this._events = null
-                    }
-                }
-                s.EventEmitterMicro = s,
-                    e.exports = s
-            }, function(e, t, i) {
-                "use strict";
-                const s = i(22),
-                    n = i(99);
-                e.exports = class extends s {
-                    constructor(e, t, i, s) {
-                        let r = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
-                            a = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : void 0;
-                        super(e, t, i, s = n(s), r, a)
-                    }
-                    set(e) {
-                        let t = this.current;
-                        this.round && (t = Math.round(t)),
-                            this.suffix && (t += this.suffix),
-                            e.setProperty(this.key, t)
-                    }
-                    unset(e) {
-                        e.removeProperty(this.key)
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = new class {
-                    constructor() {
-                        this.linear = function(e) {
-                                return e
-                            },
-                            this.easeInQuad = function(e) {
-                                return e * e
-                            },
-                            this.easeOutQuad = function(e) {
-                                return e * (2 - e)
-                            },
-                            this.easeInOutQuad = function(e) {
-                                return e < .5 ? 2 * e * e : (4 - 2 * e) * e - 1
-                            },
-                            this.easeInSin = function(e) {
-                                return 1 + Math.sin(Math.PI / 2 * e - Math.PI / 2)
-                            },
-                            this.easeOutSin = function(e) {
-                                return Math.sin(Math.PI / 2 * e)
-                            },
-                            this.easeInOutSin = function(e) {
-                                return (1 + Math.sin(Math.PI * e - Math.PI / 2)) / 2
-                            },
-                            this.easeInElastic = function(e) {
-                                return 0 === e ? e : (.04 - .04 / e) * Math.sin(25 * e) + 1
-                            },
-                            this.easeOutElastic = function(e) {
-                                return .04 * e / --e * Math.sin(25 * e)
-                            },
-                            this.easeInOutElastic = function(e) {
-                                return (e -= .5) < 0 ? (.02 + .01 / e) * Math.sin(50 * e) : (.02 - .01 / e) *
-                                    Math.sin(50 * e) + 1
-                            },
-                            this.easeOutBack = function(e) {
-                                return (e -= 1) * e * (2.70158 * e + 1.70158) + 1
-                            },
-                            this.easeInCubic = function(e) {
-                                return e * e * e
-                            },
-                            this.easeOutCubic = function(e) {
-                                return --e * e * e + 1
-                            },
-                            this.easeInOutCubic = function(e) {
-                                return e < .5 ? 4 * e * e * e : (e - 1) * (2 * e - 2) * (2 * e - 2) + 1
-                            },
-                            this.easeInQuart = function(e) {
-                                return e * e * e * e
-                            },
-                            this.easeOutQuart = function(e) {
-                                return 1 - --e * e * e * e
-                            },
-                            this.easeInOutQuart = function(e) {
-                                return e < .5 ? 8 * e * e * e * e : 1 - 8 * --e * e * e * e
-                            },
-                            this.easeInQuint = function(e) {
-                                return e * e * e * e * e
-                            },
-                            this.easeOutQuint = function(e) {
-                                return 1 + --e * e * e * e * e
-                            },
-                            this.easeInOutQuint = function(e) {
-                                return e < .5 ? 16 * e * e * e * e * e : 1 + 16 * --e * e * e * e * e
-                            }
-                    }
-                }
-            }, function(e, t, i) {
-                "use strict";
-                e.exports = function(e) {
-                    return e.reduce(((e, t) => (e[t] = t,
-                        e)), {})
-                }
-            }, function(e, t, i) {
-                "use strict";
-                const s = i(51),
-                    n = i(10),
-                    r = i(22);
-                class a extends s {
-                    constructor(e, t) {
-                        super(e, t),
-                            this.keyframeType = n.KeyframeTypes.CSSClass,
-                            this._triggerType = a.TRIGGER_TYPE_CSS_CLASS,
-                            this.cssClass = "",
-                            this.friendlyName = "",
-                            this.style = {
-                                on: null,
-                                off: null
-                            },
-                            this.toggle = n.KeyframeDefaults.toggle,
-                            this.isApplied = !1
-                    }
-                    parseOptions(e) {
-                        if (!this.controller._ownerIsElement)
-                            throw new TypeError("CSS Keyframes cannot be applied to JS Objects");
-                        if (e.x = void 0,
-                            e.y = void 0,
-                            e.z = void 0,
-                            e.scale = void 0,
-                            e.scaleX = void 0,
-                            e.scaleY = void 0,
-                            e.rotationX = void 0,
-                            e.rotationY = void 0,
-                            e.rotationZ = void 0,
-                            e.rotation = void 0,
-                            e.opacity = void 0,
-                            e.hold = void 0,
-                            void 0 !== e.toggle && (this.toggle = e.toggle),
-                            void 0 !== e.cssClass)
-                            this._triggerType = a.TRIGGER_TYPE_CSS_CLASS,
-                            this.cssClass = e.cssClass,
-                            this.friendlyName = "." + this.cssClass,
-                            void 0 === this.controller.tweenProps.targetClasses && (this.controller.tweenProps
-                                .targetClasses = {
-                                    add: [],
-                                    remove: []
-                                });
-                        else {
-                            if (void 0 === e.style || !this.isValidStyleProperty(e.style))
-                                throw new TypeError(
-                                    "KeyframeCSSClass no 'cssClass` property found. If using `style` property its also missing or invalid"
+            }
+        }
+    }, function(e, t, i) {
+        "use strict";
+        e.exports = function(e) {
+            return e.reduce(((e, t) => (e[t] = t,
+                e)), {})
+        }
+    }, function(e, t, i) {
+        "use strict";
+        const s = i(51),
+            n = i(10),
+            r = i(22);
+        class a extends s {
+            constructor(e, t) {
+                super(e, t),
+                    this.keyframeType = n.KeyframeTypes.CSSClass,
+                    this._triggerType = a.TRIGGER_TYPE_CSS_CLASS,
+                    this.cssClass = "",
+                    this.friendlyName = "",
+                    this.style = {
+                        on: null,
+                        off: null
+                    },
+                    this.toggle = n.KeyframeDefaults.toggle,
+                    this.isApplied = !1
+            }
+            parseOptions(e) {
+                if (!this.controller._ownerIsElement)
+                    throw new TypeError("CSS Keyframes cannot be applied to JS Objects");
+                if (e.x = void 0,
+                    e.y = void 0,
+                    e.z = void 0,
+                    e.scale = void 0,
+                    e.scaleX = void 0,
+                    e.scaleY = void 0,
+                    e.rotationX = void 0,
+                    e.rotationY = void 0,
+                    e.rotationZ = void 0,
+                    e.rotation = void 0,
+                    e.opacity = void 0,
+                    e.hold = void 0,
+                    void 0 !== e.toggle && (this.toggle = e.toggle),
+                    void 0 !== e.cssClass)
+                    this._triggerType = a.TRIGGER_TYPE_CSS_CLASS,
+                    this.cssClass = e.cssClass,
+                    this.friendlyName = "." + this.cssClass,
+                    void 0 === this.controller.tweenProps.targetClasses && (this.controller.tweenProps
+                        .targetClasses = {
+                            add: [],
+                            remove: []
+                        });
+                else {
+                    if (void 0 === e.style || !this.isValidStyleProperty(e.style))
+                        throw new TypeError(
+                            "KeyframeCSSClass no 'cssClass` property found. If using `style` property its also missing or invalid"
                         );
                     if (this._triggerType = a.TRIGGER_TYPE_STYLE_PROPERTY,
                         this.style = e.style,
@@ -18825,76 +18821,76 @@
                 r = t % (10 * a) / a,
                     t > this.maxValues[s] && (r = this.statDigits[s]),
                     n.style.transform = `translateY(-${r}em)`
-                    }
-                    destroy() {
-                        super.destroy(),
-                            this._els.statCount.innerHTML = this.statCount
-                    }
-                    static IS_SUPPORTED() {
-                        return document.documentElement.classList.contains(r)
-                    }
-                }
-                t.default = l
-            }, function(e, t, i) {
-                "use strict";
-                var s = i(0);
-                Object.defineProperty(t, "__esModule", {
-                        value: !0
-                    }),
-                    t.default = void 0;
-                var n = s(i(23));
-                class r extends n.default {
-                    constructor(e) {
-                        super(e),
-                            this._els = {
-                                tradeInBanner: document.querySelector(".trade-in-ribbon"),
-                                lockup: e.el.querySelector(".welcome__lockup")
-                            },
-                            this._hiddenEls = Object.values(this._els).filter((e => !!e)),
-                            this.scrollGroup = this.anim.createScrollGroup(this.el),
-                            this._showAllHiddenElements = this._showAllHiddenElements.bind(this),
-                            this._onTabNav = this._onTabNav.bind(this)
-                    }
-                    mounted() {
-                        this._setupLockupTradeInBannerAbortAnimation(),
-                            this._setupTabNavHandler(),
-                            setTimeout((() => {
-                                this._destroyTabNavHandler(),
-                                    this._showAllHiddenElements()
-                            }), 1e3)
-                    }
-                    onBreakpointChange() {
-                        this._showAllHiddenElements()
-                    }
-                    _showAllHiddenElements() {
-                        this._hiddenEls.forEach((e => e.classList.add("show")))
-                    }
-                    _onTabNav(e) {
-                        9 === e.keyCode && (this._showAllHiddenElements(),
-                            this._destroyTabNavHandler(),
-                            this.scrollGroup.remove())
-                    }
-                    _setupTabNavHandler() {
-                        document.addEventListener("keydown", this._onTabNav)
-                    }
-                    _destroyTabNavHandler() {
-                        document.removeEventListener("keydown", this._onTabNav)
-                    }
-                    _setupLockupTradeInBannerAbortAnimation() {
-                        this._hiddenEls.forEach((e => {
-                            this.scrollGroup.addKeyframe(e, {
-                                start: "1px",
-                                cssClass: "show"
-                            })
-                        }))
-                    }
-                    static IS_SUPPORTED() {
-                        return document.documentElement.classList.contains("no-reduced-motion")
-                    }
-                }
-                t.default = r
-            }]);
-        </script>
+            }
+            destroy() {
+                super.destroy(),
+                    this._els.statCount.innerHTML = this.statCount
+            }
+            static IS_SUPPORTED() {
+                return document.documentElement.classList.contains(r)
+            }
+        }
+        t.default = l
+    }, function(e, t, i) {
+        "use strict";
+        var s = i(0);
+        Object.defineProperty(t, "__esModule", {
+                value: !0
+            }),
+            t.default = void 0;
+        var n = s(i(23));
+        class r extends n.default {
+            constructor(e) {
+                super(e),
+                    this._els = {
+                        tradeInBanner: document.querySelector(".trade-in-ribbon"),
+                        lockup: e.el.querySelector(".welcome__lockup")
+                    },
+                    this._hiddenEls = Object.values(this._els).filter((e => !!e)),
+                    this.scrollGroup = this.anim.createScrollGroup(this.el),
+                    this._showAllHiddenElements = this._showAllHiddenElements.bind(this),
+                    this._onTabNav = this._onTabNav.bind(this)
+            }
+            mounted() {
+                this._setupLockupTradeInBannerAbortAnimation(),
+                    this._setupTabNavHandler(),
+                    setTimeout((() => {
+                        this._destroyTabNavHandler(),
+                            this._showAllHiddenElements()
+                    }), 1e3)
+            }
+            onBreakpointChange() {
+                this._showAllHiddenElements()
+            }
+            _showAllHiddenElements() {
+                this._hiddenEls.forEach((e => e.classList.add("show")))
+            }
+            _onTabNav(e) {
+                9 === e.keyCode && (this._showAllHiddenElements(),
+                    this._destroyTabNavHandler(),
+                    this.scrollGroup.remove())
+            }
+            _setupTabNavHandler() {
+                document.addEventListener("keydown", this._onTabNav)
+            }
+            _destroyTabNavHandler() {
+                document.removeEventListener("keydown", this._onTabNav)
+            }
+            _setupLockupTradeInBannerAbortAnimation() {
+                this._hiddenEls.forEach((e => {
+                    this.scrollGroup.addKeyframe(e, {
+                        start: "1px",
+                        cssClass: "show"
+                    })
+                }))
+            }
+            static IS_SUPPORTED() {
+                return document.documentElement.classList.contains("no-reduced-motion")
+            }
+        }
+        t.default = r
+    }]);
+    </script>
     @endsection
 </body>
 

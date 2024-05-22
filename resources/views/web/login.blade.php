@@ -96,7 +96,10 @@
                     <a href="{{ route('password.request') }}" style="color: black; text-decoration: none;">Forgot
                         Password?</a>
                 </center>
-
+                <center>
+                    <a href="{{ route('password.reset.withotp') }}" style="color: black; text-decoration: none;">Reset
+                        password with OTP</a>
+                </center>
             </form>
         </div>
 
