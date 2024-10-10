@@ -54,7 +54,7 @@ class MenuController extends Controller
         // Hiển thị thông báo thành công
         toastr()->success(config('custom_messages.success.addedMenu', ['timeOut' => 5000]));
         // Redirect về trang trước
-        return redirect()->back();
+        return redirect('category/list');
     }
     public function editCategories(Request $request)
     {
